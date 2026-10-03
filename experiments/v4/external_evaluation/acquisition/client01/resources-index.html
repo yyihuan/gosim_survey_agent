@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+<script>(function(){var p=location.pathname;if(p.length>1&&p.slice(-1)==='/')history.replaceState(null,'',p.replace(/\/+$/,'')+location.search+location.hash)})()</script>
+<script src="/survey26/platform/restore-route.js"></script>
+    <meta charset="UTF-8" />
+    <script>
+      // The platform now lives on the official GOSIM domain; the personal address only forwards.
+      if (window.location.hostname === 'bh3gei.github.io') {
+        const rest = window.location.pathname.replace(/^\/agent-observer\/?/, '')
+        window.location.replace('https://create.gosim.org/survey26/platform/' + rest + window.location.search + window.location.hash)
+      }
+      // Each release replaces every file, but a browser may keep this page for ten minutes and then ask
+      // for script and style files that no longer exist — a blank page the app can never recover from,
+      // because it never starts. If one of the site's own files fails to load, fetch a fresh copy of the
+      // page once. The app clears the marker only after it has actually started (main.ts), so a genuinely
+      // broken release gets exactly one retry and never a reload loop.
+      window.addEventListener('error', function (event) {
+        var el = event.target
+        var url = el && (el.src || el.href)
+        if (!url || !/\/assets\/[^/]+\.(js|css)(\?|$)/.test(url)) return
+        try {
+          if (window.sessionStorage.getItem('sac-asset-retry')) return
+          window.sessionStorage.setItem('sac-asset-retry', '1')
+        } catch (e) { return }
+        var next = new URL(window.location.href)
+        next.searchParams.set('_v', String(Date.now()))
+        window.location.replace(next.toString())
+      }, true)
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/survey26/platform/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/survey26/platform/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/survey26/platform/favicon-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/survey26/platform/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/survey26/platform/favicon.ico" />
+    <meta name="theme-color" content="#05070d" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>资源 · 巡天智能体</title>
+    <meta name="description" content="入门套件、各场景的配置与参考文件，以及公开开发场景。" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      try {
+        const redirect = window.sessionStorage.getItem('gosim-pages-redirect')
+        const eventBase = '/survey26/platform/'
+        if (redirect) {
+          const target = new URL(redirect, window.location.origin)
+          if (target.origin === window.location.origin && target.pathname.startsWith(eventBase)) {
+            window.sessionStorage.removeItem('gosim-pages-redirect')
+            window.history.replaceState(null, '', target.pathname + target.search + target.hash)
+          }
+        }
+      } catch (_) {}
+    </script>
+    <script type="module" crossorigin src="/survey26/platform/assets/index-B1JXh6Ge.js"></script>
+    <link rel="modulepreload" crossorigin href="/survey26/platform/assets/reactivity.esm-bundler-CFHV90yP.js">
+    <link rel="modulepreload" crossorigin href="/survey26/platform/assets/useI18n-D5MMM8RK.js">
+    <link rel="modulepreload" crossorigin href="/survey26/platform/assets/supabase-HbgHf8cp.js">
+    <link rel="modulepreload" crossorigin href="/survey26/platform/assets/rolldown-runtime-DK3Fl9T5.js">
+    <link rel="modulepreload" crossorigin href="/survey26/platform/assets/competition-BovYJNu8.js">
+    <link rel="modulepreload" crossorigin href="/survey26/platform/assets/format-DlhgamlG.js">
+    <link rel="stylesheet" crossorigin href="/survey26/platform/assets/index-EAkggIc2.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

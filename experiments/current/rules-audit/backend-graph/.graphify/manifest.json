@@ -1,0 +1,146 @@
+{
+  "challenge/__init__.py": {
+    "mtime": 1791004713000,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "challenge/challenge_workflow.py": {
+    "mtime": 1791004713000,
+    "hash": "fc19aca1be7a9719b97bb31458a64daa"
+  },
+  "challenge/contracts.py": {
+    "mtime": 1791004713000,
+    "hash": "6a451d73b613412c1f4cb941bd7662c0"
+  },
+  "challenge/observation_request_simulator.py": {
+    "mtime": 1791004713000,
+    "hash": "fa1ecb9393e8383145578951bd73189d"
+  },
+  "challenge/observing_calendar.py": {
+    "mtime": 1791004713000,
+    "hash": "f7dd456b1fc16714e90bda1c8f056ce2"
+  },
+  "challenge/project_paths.py": {
+    "mtime": 1791004713000,
+    "hash": "089ec1ecf6e05f8dcae43de4f9d96e32"
+  },
+  "challenge/scoring_core.py": {
+    "mtime": 1791004713000,
+    "hash": "a74f4cb2bd10b1c73e477bad8f3fee8b"
+  },
+  "challenge/tile_geometry_simulator.py": {
+    "mtime": 1791004713000,
+    "hash": "7214bfdf3ca2450ee58f21806290e05d"
+  },
+  "challenge/v4_config_check.py": {
+    "mtime": 1791004713000,
+    "hash": "7a80f781b75d6a4ba38320fb614041db"
+  },
+  "challenge/v4_fiber_map.py": {
+    "mtime": 1791004713000,
+    "hash": "92a2edbae2813b8271b32a42436821c5"
+  },
+  "challenge/v4_runner.py": {
+    "mtime": 1791004713000,
+    "hash": "b9060da277c6f5debd9acc93ae4023a7"
+  },
+  "challenge/v4_scorer.py": {
+    "mtime": 1791004713000,
+    "hash": "7528df96d902d9fdb8970b5dd668fd3b"
+  },
+  "challenge/v4_workflow.py": {
+    "mtime": 1791004713000,
+    "hash": "4df9dd22bbbc414219c27450fc4a72e1"
+  },
+  "challenge/weather_simulator.py": {
+    "mtime": 1791004713000,
+    "hash": "732ae95ba8a7122ea0a432e2f10c5161"
+  },
+  "project_platform/__init__.py": {
+    "mtime": 1791004713000,
+    "hash": "f2c604641eee1ae035266e2a5dd780db"
+  },
+  "project_platform/transport.py": {
+    "mtime": 1791004713000,
+    "hash": "3681d0c37ba37ee8528e4a7490c73b40"
+  },
+  "run_local.py": {
+    "mtime": 1791004713000,
+    "hash": "076e6774f9ce38aa44b8fe8243476221"
+  },
+  "verify_engine.py": {
+    "mtime": 1791004713000,
+    "hash": "dda88b5e736c749ada27dc3703853b3b"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/__init__.py": {
+    "mtime": 1791007756095.213,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/challenge_workflow.py": {
+    "mtime": 1791007756091.9849,
+    "hash": "fc19aca1be7a9719b97bb31458a64daa"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/contracts.py": {
+    "mtime": 1791007756097.3315,
+    "hash": "6a451d73b613412c1f4cb941bd7662c0"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/observation_request_simulator.py": {
+    "mtime": 1791007756095.6067,
+    "hash": "fa1ecb9393e8383145578951bd73189d"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/observing_calendar.py": {
+    "mtime": 1791007756097.7417,
+    "hash": "f7dd456b1fc16714e90bda1c8f056ce2"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/project_paths.py": {
+    "mtime": 1791007756098.8274,
+    "hash": "089ec1ecf6e05f8dcae43de4f9d96e32"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/scoring_core.py": {
+    "mtime": 1791007756090.3254,
+    "hash": "a74f4cb2bd10b1c73e477bad8f3fee8b"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/tile_geometry_simulator.py": {
+    "mtime": 1791007756098.4324,
+    "hash": "7214bfdf3ca2450ee58f21806290e05d"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_config_check.py": {
+    "mtime": 1791007756096.4663,
+    "hash": "7a80f781b75d6a4ba38320fb614041db"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_fiber_map.py": {
+    "mtime": 1791007756098.063,
+    "hash": "92a2edbae2813b8271b32a42436821c5"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_runner.py": {
+    "mtime": 1791007756093.6538,
+    "hash": "b9060da277c6f5debd9acc93ae4023a7"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_scorer.py": {
+    "mtime": 1791007756096.9023,
+    "hash": "7528df96d902d9fdb8970b5dd668fd3b"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_workflow.py": {
+    "mtime": 1791007756095.006,
+    "hash": "4df9dd22bbbc414219c27450fc4a72e1"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/weather_simulator.py": {
+    "mtime": 1791007756095.9553,
+    "hash": "732ae95ba8a7122ea0a432e2f10c5161"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/project_platform/__init__.py": {
+    "mtime": 1791007756089.8582,
+    "hash": "f2c604641eee1ae035266e2a5dd780db"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/project_platform/transport.py": {
+    "mtime": 1791007756089.61,
+    "hash": "3681d0c37ba37ee8528e4a7490c73b40"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/run_local.py": {
+    "mtime": 1791007756089.0996,
+    "hash": "076e6774f9ce38aa44b8fe8243476221"
+  },
+  "/private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/verify_engine.py": {
+    "mtime": 1791007756088.6667,
+    "hash": "dda88b5e736c749ada27dc3703853b3b"
+  }
+}

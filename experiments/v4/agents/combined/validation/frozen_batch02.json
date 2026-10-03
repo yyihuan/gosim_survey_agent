@@ -1,0 +1,18 @@
+{
+  "configs": {
+    "dpg": {
+      "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dpg-frozen02.json",
+      "sha256": "38284abbcc93bcb55161506731b41b2939d32bf2c35c65792e83db931ced7752"
+    },
+    "dtgp": {
+      "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dtgp-frozen02.json",
+      "sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931"
+    },
+    "dtgpcw": {
+      "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dtgpcw-frozen02.json",
+      "sha256": "e74fc757653743767a8d633266654ce8b687288f36b9997df3867a35def074e1"
+    }
+  },
+  "scope": "root-authorized R4 batch02: dpg,dtgp,dtgpcw; each on demo and dev-season; no tuning or holdout",
+  "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+}

@@ -1,0 +1,8 @@
+{
+  "family": "T",
+  "variant": "cap900",
+  "strict_slot": false,
+  "exposure_cap_seconds": 900,
+  "science_exponent": 2.0,
+  "geometry_strength": 0.0
+}

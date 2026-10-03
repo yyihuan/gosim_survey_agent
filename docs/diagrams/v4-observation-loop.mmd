@@ -1,0 +1,15 @@
+sequenceDiagram
+    participant P as 评测平台
+    participant E as 模拟环境与评分器
+    participant A as 参赛 Agent
+    P->>E: 载入任务卡及隐藏真值
+    E->>A: initialize：目录、仪器、日历、计分参数
+    loop 每次动作结束后
+        E->>A: decision_request：时间、简报、预报、反馈、请求
+        Note over A: 推断条件，选指向、源、光纤、曝光与程序
+        A->>E: decision_response：一个动作
+        Note over E: observe 推进模拟时间并分段积分
+        Note over E: 曝光中不回调 Agent；120 秒积分不是决策周期
+    end
+    E->>P: 每源最好贡献、终局扣分、奖励、运行状态
+    P->>P: 按阶段汇总各卡成绩

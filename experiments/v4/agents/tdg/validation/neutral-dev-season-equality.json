@@ -1,0 +1,12 @@
+{
+  "actions.jsonl": {
+    "byte_equal": true,
+    "original_sha256": "742eca273921da2eafe766314e236f9651711af80d2f637f52c17ee77d3c92a8",
+    "control_sha256": "742eca273921da2eafe766314e236f9651711af80d2f637f52c17ee77d3c92a8"
+  },
+  "score_report.json": {
+    "byte_equal": true,
+    "original_sha256": "a509013ba0a27f94278a8abca96e0c24b08e851854b138b50e07e2594cd9eeca",
+    "control_sha256": "a509013ba0a27f94278a8abca96e0c24b08e851854b138b50e07e2594cd9eeca"
+  }
+}

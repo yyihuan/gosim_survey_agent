@@ -1,0 +1,13 @@
+{
+  "family": "DG",
+  "stage": "R4",
+  "variant": "frozen01",
+  "strict_slot": false,
+  "exposure_cap_seconds": null,
+  "conditional_long_exposure": false,
+  "science_exponent": 1.0,
+  "geometry_strength": 0.5,
+  "C": {"enabled": false},
+  "W": {"enabled": false},
+  "environment": {"PACKING_ANCHORS": "3", "USE_LLM": "0"}
+}

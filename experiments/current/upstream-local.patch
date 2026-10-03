@@ -1,0 +1,83 @@
+--- upstream/AGENTS.md
++++ working/AGENTS.md
+@@ -1,3 +1,9 @@
++# 本地工作副本说明
++
++此目录来自官方固定提交 149c659（算法与初次 ce6b88b 工作副本相同），当前项目入口与边界以根 AGENTS.md、docs/current-environment.md 为准。
++本地实验使用 USE_LLM=0；工作副本在 agent_core/llm_client.py 实现该开关。直接运行默认仍要求真实密钥。
++上游说明保留如下，其中密钥、上传与外部调用指南只是能力说明，不构成本轮授权。
++
+ # AGENTS.md -- python-agent
+ 
+ Guide for AI coding assistants working in this project. Humans: see README.md /
+--- upstream/README.md
++++ working/README.md
+@@ -1,3 +1,6 @@
++> 本地工作副本：项目离线入口见 [当前环境](../../../docs/current-environment.md)。
++> `USE_LLM=0` 可无密钥运行确定性回退，项目入口默认使用此模式。下文为原上游指南；真实模型和上传尚未执行。
++
+ # python-agent -- an example agent for participant-agent-protocol-v4
+ 
+ [中文说明见 README.zh.md](README.zh.md)
+@@ -177,5 +180,5 @@
+ 
+ Task cards, simulated data, evaluation code and this example project are licensed under
+ [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) (attribution, non-commercial);
+-please cite the GOSIM 2026 Agentic Observer Hackathon (https://create.gosim.org/survey26/). Your own agent code is not restricted
++please cite the GOSIM 2026 Agentic Observer Hackathon. Your own agent code is not restricted
+ by this. See `LICENSE.md` for details.
+--- upstream/README.zh.md
++++ working/README.zh.md
+@@ -1,3 +1,6 @@
++> 本地工作副本：项目离线入口见 [当前环境](../../../docs/current-environment.md)。
++> `USE_LLM=0` 可无密钥运行确定性回退，项目入口默认使用此模式。下文为原上游指南；真实模型和上传尚未执行。
++
+ # python-agent —— participant-agent-protocol-v4 的示例智能体
+ 
+ [English README see README.md](README.md)
+@@ -154,5 +157,5 @@
+ ## 许可 / 引用
+ 
+ 任务卡、模拟数据、评测代码与本示例项目按 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+-提供（署名、非商业）；使用请引用 GOSIM 2026 Agentic Observer Hackathon (https://create.gosim.org/survey26/)。选手自己编写的代码不受此限制。
++提供（署名、非商业）；使用请引用 GOSIM 2026 Agentic Observer Hackathon。选手自己编写的代码不受此限制。
+ 详见 `LICENSE.md`。
+--- upstream/agent.py
++++ working/agent.py
+@@ -7,7 +7,7 @@
+ scoring, planning, the LLM client, memory/log, action validation) so this file
+ stays a readable map of "what happens for each message type".
+ 
+-Before reading anything from stdin, the process checks for an API key (see
++Unless USE_LLM=0 selects the local offline mode, the process checks for an API key (see
+ agent_core/llm_client.py) and exits right away if none is configured, since
+ this example's planner uses an LLM for part of its per-night planning. See the
+ README for configuration details.
+--- upstream/agent_core/llm_client.py
++++ working/agent_core/llm_client.py
+@@ -42,6 +42,8 @@
+ def require_api_key() -> None:
+     """Raise MissingAPIKeyError if neither OPENAI_API_KEY nor KIMI_API_KEY is set.
+     Called once at process startup, before reading anything from stdin."""
++    if os.environ.get("USE_LLM", "1") == "0":
++        return
+     if not (os.environ.get("OPENAI_API_KEY", "").strip() or os.environ.get("KIMI_API_KEY", "").strip()):
+         raise MissingAPIKeyError("missing API key: set OPENAI_API_KEY")
+ 
+@@ -50,6 +52,7 @@
+     def __init__(self, log=lambda text: None, call_timeout_seconds: float = 12.0,
+                  total_budget_seconds: float = 300.0, max_calls: int = 100, max_retries: int = 3):
+         self.log = log
++        self.enabled = os.environ.get("USE_LLM", "1") != "0"
+         self.base_url = os.environ.get("OPENAI_BASE_URL", "").strip().rstrip("/") or DEFAULT_BASE_URL
+         self.api_key = os.environ.get("OPENAI_API_KEY", "").strip() or os.environ.get("KIMI_API_KEY", "").strip()
+         self.model = os.environ.get("OPENAI_MODEL", "").strip() or DEFAULT_MODEL
+@@ -96,6 +99,8 @@
+         """One planning question, answered as exactly one JSON object. Retries up to
+         `max_retries` times on failure; returns None once the budget/call cap/retries
+         are exhausted, so the caller's rule-based answer can take over for this step."""
++        if not self.enabled:
++            return None
+         last_error: Optional[Exception] = None
+         for _attempt_number in range(self.max_retries):
+             if self.calls_made >= self.max_calls:

@@ -1,0 +1,34 @@
+{
+  "C": {
+    "enabled": false
+  },
+  "E": {
+    "enabled": true,
+    "quantum_seconds": 30
+  },
+  "H": {
+    "enabled": false,
+    "strength": 2.0
+  },
+  "Q": {
+    "enabled": false,
+    "memory_hours": 2.0,
+    "minimum_margin": 0.6,
+    "minimum_samples": 8,
+    "quantile": 0.25
+  },
+  "W": {
+    "enabled": false
+  },
+  "base": "Dlinear",
+  "conditional_long_exposure": false,
+  "environment": {
+    "PACKING_ANCHORS": "3",
+    "USE_LLM": "0"
+  },
+  "family": "E",
+  "geometry_strength": 0.0,
+  "science_exponent": 1.0,
+  "strict_slot": false,
+  "variant": "e-threshold30"
+}

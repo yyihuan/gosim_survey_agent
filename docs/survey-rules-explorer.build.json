@@ -1,0 +1,51 @@
+{
+  "upstream_commit": "149c6590c49cf289c325b8e2fedfee1035975c6f",
+  "sources": [
+    {
+      "path": "docs/v4-rules-and-protocol.md",
+      "sha256": "84f8233bb5abcc4a19569767834adad91e28c154d747bd683a8f7694165151d9"
+    },
+    {
+      "path": "docs/python-source-map.md",
+      "sha256": "e13f38befe3002f696317a9d577f7cba53b64819a7210c7b453b15a8db942d9b"
+    }
+  ],
+  "diagrams": [
+    {
+      "source": "docs/diagrams/v4-slot-boundaries.mmd",
+      "sha256": "a494ef681b0f440c90872b9052e3f129bd612ed10706d070436fe73a7fe00ae1"
+    },
+    {
+      "source": "docs/diagrams/v4-protocol-sequence.mmd",
+      "sha256": "3e14a5ee8198879368201f3362548fa5f7a6b9e82469f5a69c5d253803d26335"
+    },
+    {
+      "source": "docs/diagrams/v4-backend-classes.mmd",
+      "sha256": "bf87247a791bd65573bf8033b53f013aee1b15ce046dba88713a3f65e3062d98"
+    },
+    {
+      "source": "docs/diagrams/python-agent-classes.mmd",
+      "sha256": "ff2c658f50249736ce3f8c8b00074d94220c9c5fbae3d3e0dd084127184c4600"
+    },
+    {
+      "source": "docs/diagrams/python-decision-flow.mmd",
+      "sha256": "36f6180fcca9462c3b922a15ada093f1452f2d6e287ef105dc110db9c53e2ba1"
+    },
+    {
+      "source": "docs/diagrams/v4-action-state.mmd",
+      "sha256": "109357f30198bc9e19b5bc0723e6793f7c38cd32466a9d114286eec1d83f867b"
+    }
+  ],
+  "assets": [
+    {
+      "path": "scripts/rules_explorer/page.css",
+      "sha256": "21d53c366ab70374a79fa0f1e68cf6884900a10fa8d827998206522e40dbf919"
+    },
+    {
+      "path": "scripts/rules_explorer/page.js",
+      "sha256": "598f2a347ed62aa40f147a80ac2fb904c1fe2c35da20c4feb5b90495b3849401"
+    }
+  ],
+  "output_sha256": "b3144c3f203cbf999780804c64f45e0c4ae4e784d2f44b6ac42597bc6d45d705",
+  "message_evidence": "experiments/current/rules-audit/evidence-refresh"
+}

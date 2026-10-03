@@ -1,0 +1,53 @@
+{
+  "row_count": 84,
+  "r5_rows": 26,
+  "extension_rows": 97,
+  "extension_reference_rows": 6,
+  "record_issues": 0,
+  "output": "docs/v4-strategy-study.html",
+  "html_sha256": "1a8a1d45aaeaf6d6c1783ece7491512d20d73d71a35b9c1f9b2986c724f00082",
+  "inputs": {
+    "report_sha256": "2e01591f19aa75e3c216f1270ff57f4341f412545f5c0c7b9d511aeb8f14efab",
+    "data_sha256": "f550366db6a9d56647a84f4703112783d719c6a6de9af84718c4b318f1eb0a2a",
+    "flow_sha256": "401272b49e146e1a7f848ce5d7e464d64f42d7f2f3ee804958b9c57a4cbfe4a1",
+    "builder_sha256": "7f8771fb37f8c9c98f1ce6b23de4fc570f73ee4bbd287424a7c8ab0f5b2ac1b5",
+    "template_sha256": "dfbc99cd598bfea45df5ee73b4f8e085ad0bfb2b2f3f632920aae057ff55ab7e",
+    "javascript_sha256": "20ebbd2277e52eda12390faa83fdfebdbc4d2a90cceffccbc165a0004fa18069",
+    "stylesheet_sha256": "6bca42990f2e5b59f2a564c5d01a15bf2aaad12d6ea7e7fa3ee0ba6d520d0e2f",
+    "extension_javascript_sha256": "45f6c9fa19ede79e6b376a8d7daa4104e86f471d828bded958e031b086bb9e28",
+    "extension_stylesheet_sha256": "3621b3a1fd4df9e662f52f35fd8b1dba1c7e230d604aa64f20da90e573da3cdc",
+    "extension_data_sha256": "5ad223ca5d743c1c7283f5c95204440458d64624311b35390d2449992079c2ac",
+    "extension_guide_sha256": "88cf88864e0e40babe72ceefd1e43a49a8e9286282cbe2595ab2a70cdba4380a",
+    "guide_sha256": "db677522db3e08504857ef49f6cecabef7b3e0ab4c268e7962fa8c651cdb6750",
+    "external_results_sha256": "4e616a2831567efba4e80a4ade968245b5a0cde6f75cab86bdf5ab281921aa7e",
+    "leaderboard_screenshots_sha256": "1f9ea5a0dcb4bc415d230c3ffe24e4efc640f23864d9caf59a6ed23352660a82"
+  },
+  "input_states": {
+    "guide": {
+      "path": "docs/v4-strategy-study-guide.json",
+      "status": "loaded",
+      "sha256": "db677522db3e08504857ef49f6cecabef7b3e0ab4c268e7962fa8c651cdb6750"
+    },
+    "external": {
+      "path": "experiments/v4/external_evaluation/results.json",
+      "status": "loaded",
+      "sha256": "4e616a2831567efba4e80a4ade968245b5a0cde6f75cab86bdf5ab281921aa7e"
+    },
+    "screenshots": {
+      "path": "experiments/v4/external_evaluation/leaderboard-screenshots.json",
+      "status": "loaded",
+      "sha256": "1f9ea5a0dcb4bc415d230c3ffe24e4efc640f23864d9caf59a6ed23352660a82"
+    },
+    "extension": {
+      "path": "experiments/v4/extension/results/all_runs.json",
+      "status": "loaded",
+      "sha256": "5ad223ca5d743c1c7283f5c95204440458d64624311b35390d2449992079c2ac"
+    },
+    "extension_guide": {
+      "path": "docs/v4-strategy-extension-guide.json",
+      "status": "loaded",
+      "sha256": "88cf88864e0e40babe72ceefd1e43a49a8e9286282cbe2595ab2a70cdba4380a"
+    }
+  },
+  "generated_at_utc": "2026-10-02T13:48:42.019267+00:00"
+}

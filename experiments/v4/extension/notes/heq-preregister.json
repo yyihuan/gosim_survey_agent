@@ -1,0 +1,20 @@
+{
+  "base_source": "experiments/v4/agents/combined/source",
+  "base_config": "experiments/v4/configs/tdg/d-linear.json",
+  "stage": "N2",
+  "allowed_cards": [
+    "demo",
+    "dev-season"
+  ],
+  "initial_configs": [
+    "neutral",
+    "h-opportunity2",
+    "e-threshold30",
+    "q-quantile25"
+  ],
+  "H": "Eligible required candidates replace 1+2/nights_left with 1+2/(1+future geometrically completable nights); future clear-sky public Moon/airmass estimate, one opportunity per night.",
+  "E": "Keep baseline durations and add 30-second-ceiling required 0.5 / saturation 1 / active request threshold divided by existing predicted k; no exposure cap.",
+  "Q": "For unfinished required bonus gating only, use k_protected=k*clamp(recent quality-ratio Q25 / baseline scale,0.6,1), with at least 8 received unsaturated samples over 2 survey hours.",
+  "expectation": "H may rescue scarce-window required targets; E may reduce overexposure; Q may reduce optimistic threshold failures but can lose science and miss scarce windows. Preserve all negative outcomes.",
+  "iteration": "one config per family; no parameter scan or holdout"
+}

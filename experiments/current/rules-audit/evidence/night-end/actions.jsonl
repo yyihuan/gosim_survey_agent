@@ -1,0 +1,3 @@
+{"action": "wait", "until_utc": "2026-11-02T08:29:30Z"}
+{"action": "observe", "assignments": {}, "duration_seconds": 60, "pointing": {"alt_deg": 60, "az_deg": 0}}
+{"action": "finish"}

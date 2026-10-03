@@ -1,0 +1,33 @@
+flowchart TD
+  H[用户确定目标与边界]
+  subgraph OFF[一轮离线研究]
+    R[研究问题与候选方法]
+    D[开发实验与反例]
+    V[独立程序与冻结评价]
+    R --> D
+    D -->|候选冻结| V
+  end
+  K[版本化能力与经验]
+  subgraph ON[一次在线决策]
+    S[程序更新事实与估计]
+    P[高层规划与局部纠错]
+    T[工具计算与建议检查]
+    A[执行合法动作或回退]
+    E[环境执行与公开反馈]
+    S --> P
+    P --> T
+    T --> A
+    A --> E
+  end
+  F[反馈进入下一轮研究或决策]
+  H --> R
+  V -->|证据支持| K
+  V -->|负结果与新问题| F
+  K --> P
+  E -->|公开轨迹与新状态| F
+  classDef model fill:#fff2d8,stroke:#c79236,color:#5b4015
+  classDef program fill:#eaf4f2,stroke:#278277,color:#173d38
+  classDef artifact fill:#edf1fa,stroke:#6680ad,color:#253c62
+  class R,P model
+  class D,V,S,T,A program
+  class K,F artifact

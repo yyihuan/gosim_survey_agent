@@ -1,0 +1,5 @@
+family,card,run_id,total,baseline_total,delta_total,required_missing,baseline_required_missing,coverage_jain,delta_coverage_jain,runtime_seconds,termination_reason,exit_code
+C,demo,r2-c-soft06-demo,1213.370613,1082.572141,130.79847199999995,1,1,0.974486695,-0.004581970000000046,2.655266958,survey_complete,0
+C,dev-season,r2-c-soft06-dev-season,-2270.806958,-2232.887855,-37.91910300000018,66,65,0.53503239,-0.004100269999999906,4.492086916,survey_complete,0
+W,demo,r2-w-forecast02-demo,891.582284,1082.572141,-190.98985700000014,4,1,0.97948934,0.0004206749999999815,2.4318427079999996,survey_complete,0
+W,dev-season,r2-w-forecast02-dev-season,-2492.442866,-2232.887855,-259.5550109999999,70,65,0.544543475,0.005410815000000069,4.388729832999999,survey_complete,0

@@ -1,0 +1,1366 @@
+{
+  "recorded_at_utc": "2026-10-02T13:22:41.499347+00:00",
+  "phase": "R2 only",
+  "control_validations": [
+    {
+      "baseline_run": "r1-official-demo-repeat",
+      "control_run": "r2-c-control-demo",
+      "checks": {
+        "normalized_actions_sha256": true,
+        "normalized_score_sha256": true
+      },
+      "baseline_total": 1082.572141,
+      "control_total": 1082.572141,
+      "control_exit": 0,
+      "pace_changes": []
+    },
+    {
+      "baseline_run": "r1-official-dev-season",
+      "control_run": "r2-c-control-dev-season",
+      "checks": {
+        "normalized_actions_sha256": true,
+        "normalized_score_sha256": true
+      },
+      "baseline_total": -2232.887855,
+      "control_total": -2232.887855,
+      "control_exit": 0,
+      "pace_changes": []
+    }
+  ],
+  "runs": [
+    {
+      "family": "C",
+      "card": "demo",
+      "run_id": "r2-c-soft06-demo",
+      "baseline_run_id": "r1-official-demo-repeat",
+      "total": 1213.370613,
+      "baseline_total": 1082.572141,
+      "delta_total": 130.79847199999995,
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -50.0,
+        "sum_best_scores": 1068.473273,
+        "uniformity_penalty": -5.102661
+      },
+      "component_deltas": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": 131.71486500000003,
+        "uniformity_penalty": -0.9163940000000004
+      },
+      "required_missing": 1,
+      "baseline_required_missing": 1,
+      "coverage_jain": 0.974486695,
+      "delta_coverage_jain": -0.004581970000000046,
+      "uniformity_bands": {
+        "ra_0_10": 0.30303,
+        "ra_20_30": 0.44086,
+        "ra_30_40": 0.433198,
+        "ra_330_340": 0.537037,
+        "ra_340_350": 0.481611,
+        "ra_350_360": 0.446397,
+        "ra_40_50": 0.405714,
+        "ra_50_60": 0.347826
+      },
+      "counts": {
+        "decisions": 246,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 1629,
+        "observe_actions": 143,
+        "required_missing": 1,
+        "targets_observed": 1330
+      },
+      "exposure": {
+        "actual_seconds": {
+          "count": 143,
+          "histogram": {
+            "1200": 9,
+            "1500": 7,
+            "1800": 19,
+            "2400": 14,
+            "300": 23,
+            "3000": 17,
+            "3600": 10,
+            "450": 14,
+            "600": 10,
+            "900": 20
+          },
+          "max": 3600.0,
+          "mean": 1491.6083916083917,
+          "median": 1200.0,
+          "min": 300.0,
+          "sum": 213300.0
+        },
+        "assigned_targets": 1629,
+        "extra_hit_rows_after_first": 299,
+        "hit_fraction": 1.0,
+        "hit_targets": 1629,
+        "positive_observation_rows": 1629,
+        "program_counts": {
+          "BACKUP": 22,
+          "BRIGHT": 46,
+          "DARK": 75
+        },
+        "repeated_hit_targets": 260,
+        "requested_seconds": {
+          "count": 143,
+          "histogram": {
+            "1200": 9,
+            "1500": 7,
+            "1800": 19,
+            "2400": 14,
+            "300": 23,
+            "3000": 17,
+            "3600": 10,
+            "450": 14,
+            "600": 10,
+            "900": 20
+          },
+          "max": 3600.0,
+          "mean": 1491.6083916083917,
+          "median": 1200.0,
+          "min": 300.0,
+          "sum": 213300.0
+        },
+        "simulated_observe_seconds": 213300.0,
+        "simulated_span_seconds": 549900.0,
+        "simulated_wait_seconds": 336600.0
+      },
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "runtime_seconds": 2.655266958,
+      "accounted_wallclock_seconds": 2.268,
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 897.749,
+        "minimum_remaining_wallclock_seconds": 897.749,
+        "telemetry_available": true,
+        "telemetry_requests": 160
+      },
+      "mechanism": {
+        "run_id": "r2-c-soft06-demo",
+        "plans": 143,
+        "candidate_evaluations": 38827,
+        "selected_assignments": 1629,
+        "baseline_internal_errors": [],
+        "C": {
+          "triggered_plans": 142,
+          "plan_trigger_rate": 0.993006993006993,
+          "boosted_candidate_evaluations": 14142,
+          "candidate_trigger_rate": 0.36423107631287505,
+          "boosted_selected_assignments": 767,
+          "selected_trigger_rate": 0.470841006752609,
+          "maximum_multiplier_seen": 1.096022075230388
+        },
+        "W": {
+          "triggered_plans": 0,
+          "plan_trigger_rate": 0.0,
+          "penalized_candidate_evaluations": 0,
+          "candidate_trigger_rate": 0.0,
+          "penalized_selected_assignments": 0,
+          "selected_trigger_rate": 0.0,
+          "plans_with_matching_forecast_directions": 0,
+          "forecast_directions_seen": [],
+          "forecasts_received": 0
+        },
+        "definitions": {
+          "plans": "planner.plan 调用数；不包含基线先行白昼/关闭等待或 report",
+          "candidate_evaluations": "每次规划 achievable 缓存中唯一候选的计数，跨规划重复计数",
+          "selected": "每个 observe 最终 assignments 的目标数，跨观测重复计数",
+          "forecast_trigger": "已收到且匹配本夜的方向在本次规划命中候选；不是实际天气命中率",
+          "errors": "官方 Agent 异常后回退等待的标准错误记录"
+        }
+      },
+      "source_tree_sha256": "9babcbd762f24b0973d427a6aab2bbc7147644cc27f75bd73d6e48f0a160bee1",
+      "config_sha256": "19644ca1b4ebd2993f048fedf0a4d40920fa1919ad13d7d8755f3df132ec7fa1",
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          1.84423828125,
+          2.45849609375,
+          2.98828125
+        ],
+        "lock_wait_seconds": 0.00022941700000000953,
+        "peers_at_acquisition": [
+          {
+            "exclusive": false,
+            "harness_pid": 36839,
+            "run_id": "r2-w-forecast02-demo",
+            "slot": 0
+          }
+        ],
+        "simulator_limit": 2,
+        "slots": [
+          1
+        ]
+      },
+      "normalized_actions_sha256": "fa1db6c56992f3fad532acf73b3792468247fd8eea74df0dc14b50d5746a6011",
+      "normalized_score_sha256": "5a5760951616d0f8e3c5ed45f76d9c25c1165c3fc97f841632d2e68106dfccf4",
+      "actions_equal_baseline": false
+    },
+    {
+      "family": "C",
+      "card": "dev-season",
+      "run_id": "r2-c-soft06-dev-season",
+      "baseline_run_id": "r1-official-dev-season",
+      "total": -2270.806958,
+      "baseline_total": -2232.887855,
+      "delta_total": -37.91910300000018,
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3300.0,
+        "sum_best_scores": 1122.186564,
+        "uniformity_penalty": -92.993522
+      },
+      "component_deltas": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -50.0,
+        "sum_best_scores": 12.900951000000077,
+        "uniformity_penalty": -0.820053999999999
+      },
+      "required_missing": 66,
+      "baseline_required_missing": 65,
+      "coverage_jain": 0.53503239,
+      "delta_coverage_jain": -0.004100269999999906,
+      "uniformity_bands": {
+        "ra_120_130": 0.0,
+        "ra_130_140": 0.0,
+        "ra_140_150": 0.0,
+        "ra_150_160": 0.0,
+        "ra_310_320": 0.245833,
+        "ra_320_330": 0.375398,
+        "ra_330_340": 0.320702,
+        "ra_340_350": 0.317427,
+        "ra_350_360": 0.446429
+      },
+      "counts": {
+        "decisions": 570,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1922,
+        "observe_actions": 157,
+        "required_missing": 66,
+        "targets_observed": 1611
+      },
+      "exposure": {
+        "actual_seconds": {
+          "count": 157,
+          "histogram": {
+            "1200": 12,
+            "1500": 4,
+            "1800": 3,
+            "2400": 8,
+            "300": 28,
+            "3000": 15,
+            "3600": 33,
+            "450": 19,
+            "600": 16,
+            "900": 19
+          },
+          "max": 3600.0,
+          "mean": 1607.9617834394905,
+          "median": 900.0,
+          "min": 300.0,
+          "sum": 252450.0
+        },
+        "assigned_targets": 1922,
+        "extra_hit_rows_after_first": 311,
+        "hit_fraction": 1.0,
+        "hit_targets": 1922,
+        "positive_observation_rows": 1900,
+        "program_counts": {
+          "BACKUP": 57,
+          "DARK": 100
+        },
+        "repeated_hit_targets": 259,
+        "requested_seconds": {
+          "count": 157,
+          "histogram": {
+            "1200": 12,
+            "1500": 4,
+            "1800": 3,
+            "2400": 8,
+            "300": 28,
+            "3000": 15,
+            "3600": 33,
+            "450": 19,
+            "600": 16,
+            "900": 19
+          },
+          "max": 3600.0,
+          "mean": 1607.9617834394905,
+          "median": 900.0,
+          "min": 300.0,
+          "sum": 252450.0
+        },
+        "simulated_observe_seconds": 252450.0,
+        "simulated_span_seconds": 1154700.0,
+        "simulated_wait_seconds": 902250.0
+      },
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "runtime_seconds": 4.492086916,
+      "accounted_wallclock_seconds": 4.123,
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.902,
+        "minimum_remaining_wallclock_seconds": 895.902,
+        "telemetry_available": true,
+        "telemetry_requests": 379
+      },
+      "mechanism": {
+        "run_id": "r2-c-soft06-dev-season",
+        "plans": 271,
+        "candidate_evaluations": 94160,
+        "selected_assignments": 1922,
+        "baseline_internal_errors": [],
+        "C": {
+          "triggered_plans": 98,
+          "plan_trigger_rate": 0.36162361623616235,
+          "boosted_candidate_evaluations": 23571,
+          "candidate_trigger_rate": 0.2503292268479184,
+          "boosted_selected_assignments": 140,
+          "selected_trigger_rate": 0.07284079084287201,
+          "maximum_multiplier_seen": 1.1133825913072848
+        },
+        "W": {
+          "triggered_plans": 0,
+          "plan_trigger_rate": 0.0,
+          "penalized_candidate_evaluations": 0,
+          "candidate_trigger_rate": 0.0,
+          "penalized_selected_assignments": 0,
+          "selected_trigger_rate": 0.0,
+          "plans_with_matching_forecast_directions": 0,
+          "forecast_directions_seen": [],
+          "forecasts_received": 0
+        },
+        "definitions": {
+          "plans": "planner.plan 调用数；不包含基线先行白昼/关闭等待或 report",
+          "candidate_evaluations": "每次规划 achievable 缓存中唯一候选的计数，跨规划重复计数",
+          "selected": "每个 observe 最终 assignments 的目标数，跨观测重复计数",
+          "forecast_trigger": "已收到且匹配本夜的方向在本次规划命中候选；不是实际天气命中率",
+          "errors": "官方 Agent 异常后回退等待的标准错误记录"
+        }
+      },
+      "source_tree_sha256": "9babcbd762f24b0973d427a6aab2bbc7147644cc27f75bd73d6e48f0a160bee1",
+      "config_sha256": "19644ca1b4ebd2993f048fedf0a4d40920fa1919ad13d7d8755f3df132ec7fa1",
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          3.49951171875,
+          2.79931640625,
+          3.0849609375
+        ],
+        "lock_wait_seconds": 0.0002972909999999912,
+        "peers_at_acquisition": [
+          {
+            "exclusive": false,
+            "harness_pid": 37043,
+            "run_id": "r2-w-forecast02-dev-season",
+            "slot": 0
+          }
+        ],
+        "simulator_limit": 2,
+        "slots": [
+          1
+        ]
+      },
+      "normalized_actions_sha256": "b4b71d594736c00853c332e6f012d3a88c9b62f5d9adcedfe57d085704202429",
+      "normalized_score_sha256": "bb1f7357d20910268620be02b804bb211279bab7d0f5eef7e238282af7543543",
+      "actions_equal_baseline": false
+    },
+    {
+      "family": "W",
+      "card": "demo",
+      "run_id": "r2-w-forecast02-demo",
+      "baseline_run_id": "r1-official-demo-repeat",
+      "total": 891.582284,
+      "baseline_total": 1082.572141,
+      "delta_total": -190.98985700000014,
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -200.0,
+        "sum_best_scores": 895.684416,
+        "uniformity_penalty": -4.102132
+      },
+      "component_deltas": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -150.0,
+        "sum_best_scores": -41.073991999999976,
+        "uniformity_penalty": 0.08413499999999985
+      },
+      "required_missing": 4,
+      "baseline_required_missing": 1,
+      "coverage_jain": 0.97948934,
+      "delta_coverage_jain": 0.0004206749999999815,
+      "uniformity_bands": {
+        "ra_0_10": 0.252525,
+        "ra_20_30": 0.360215,
+        "ra_30_40": 0.350202,
+        "ra_330_340": 0.37037,
+        "ra_340_350": 0.385289,
+        "ra_350_360": 0.455185,
+        "ra_40_50": 0.397143,
+        "ra_50_60": 0.391304
+      },
+      "counts": {
+        "decisions": 227,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 1407,
+        "observe_actions": 121,
+        "required_missing": 4,
+        "targets_observed": 1166
+      },
+      "exposure": {
+        "actual_seconds": {
+          "count": 121,
+          "histogram": {
+            "1200": 2,
+            "1500": 3,
+            "1800": 3,
+            "2400": 9,
+            "300": 24,
+            "3000": 19,
+            "3600": 25,
+            "450": 13,
+            "600": 11,
+            "900": 12
+          },
+          "max": 3600.0,
+          "mean": 1746.6942148760331,
+          "median": 1200.0,
+          "min": 300.0,
+          "sum": 211350.0
+        },
+        "assigned_targets": 1407,
+        "extra_hit_rows_after_first": 241,
+        "hit_fraction": 1.0,
+        "hit_targets": 1407,
+        "positive_observation_rows": 1407,
+        "program_counts": {
+          "BACKUP": 40,
+          "BRIGHT": 32,
+          "DARK": 49
+        },
+        "repeated_hit_targets": 209,
+        "requested_seconds": {
+          "count": 121,
+          "histogram": {
+            "1200": 2,
+            "1500": 3,
+            "1800": 3,
+            "2400": 9,
+            "300": 24,
+            "3000": 19,
+            "3600": 25,
+            "450": 13,
+            "600": 11,
+            "900": 12
+          },
+          "max": 3600.0,
+          "mean": 1746.6942148760331,
+          "median": 1200.0,
+          "min": 300.0,
+          "sum": 211350.0
+        },
+        "simulated_observe_seconds": 211350.0,
+        "simulated_span_seconds": 549900.0,
+        "simulated_wait_seconds": 338550.0
+      },
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "runtime_seconds": 2.4318427079999996,
+      "accounted_wallclock_seconds": 2.076,
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 897.942,
+        "minimum_remaining_wallclock_seconds": 897.942,
+        "telemetry_available": true,
+        "telemetry_requests": 141
+      },
+      "mechanism": {
+        "run_id": "r2-w-forecast02-demo",
+        "plans": 122,
+        "candidate_evaluations": 35600,
+        "selected_assignments": 1407,
+        "baseline_internal_errors": [],
+        "C": {
+          "triggered_plans": 0,
+          "plan_trigger_rate": 0.0,
+          "boosted_candidate_evaluations": 0,
+          "candidate_trigger_rate": 0.0,
+          "boosted_selected_assignments": 0,
+          "selected_trigger_rate": 0.0,
+          "maximum_multiplier_seen": 1.0
+        },
+        "W": {
+          "triggered_plans": 17,
+          "plan_trigger_rate": 0.13934426229508196,
+          "penalized_candidate_evaluations": 1878,
+          "candidate_trigger_rate": 0.05275280898876405,
+          "penalized_selected_assignments": 18,
+          "selected_trigger_rate": 0.01279317697228145,
+          "plans_with_matching_forecast_directions": 31,
+          "forecast_directions_seen": [
+            "N",
+            "NE",
+            "NW"
+          ],
+          "forecasts_received": 1
+        },
+        "definitions": {
+          "plans": "planner.plan 调用数；不包含基线先行白昼/关闭等待或 report",
+          "candidate_evaluations": "每次规划 achievable 缓存中唯一候选的计数，跨规划重复计数",
+          "selected": "每个 observe 最终 assignments 的目标数，跨观测重复计数",
+          "forecast_trigger": "已收到且匹配本夜的方向在本次规划命中候选；不是实际天气命中率",
+          "errors": "官方 Agent 异常后回退等待的标准错误记录"
+        }
+      },
+      "source_tree_sha256": "9babcbd762f24b0973d427a6aab2bbc7147644cc27f75bd73d6e48f0a160bee1",
+      "config_sha256": "b9b816883260a1a76041969e32e585206461166d8e8119a273c552432d18810b",
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          1.84423828125,
+          2.45849609375,
+          2.98828125
+        ],
+        "lock_wait_seconds": 0.0001494169999999989,
+        "peers_at_acquisition": [],
+        "simulator_limit": 2,
+        "slots": [
+          0
+        ]
+      },
+      "normalized_actions_sha256": "5449ca06aefc4da74272efa20c5211b1a4f4edb6d233c8797fd271d49534648a",
+      "normalized_score_sha256": "88144cc9410dba759f9fc48808b27f9b484098ad1f466ceebffef42968485252",
+      "actions_equal_baseline": false
+    },
+    {
+      "family": "W",
+      "card": "dev-season",
+      "run_id": "r2-w-forecast02-dev-season",
+      "baseline_run_id": "r1-official-dev-season",
+      "total": -2492.442866,
+      "baseline_total": -2232.887855,
+      "delta_total": -259.5550109999999,
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3500.0,
+        "sum_best_scores": 1098.648439,
+        "uniformity_penalty": -91.091305
+      },
+      "component_deltas": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -250.0,
+        "sum_best_scores": -10.637173999999959,
+        "uniformity_penalty": 1.0821629999999942
+      },
+      "required_missing": 70,
+      "baseline_required_missing": 65,
+      "coverage_jain": 0.544543475,
+      "delta_coverage_jain": 0.005410815000000069,
+      "uniformity_bands": {
+        "ra_120_130": 0.0,
+        "ra_130_140": 0.0,
+        "ra_140_150": 0.0,
+        "ra_150_160": 0.0,
+        "ra_310_320": 0.341667,
+        "ra_320_330": 0.394486,
+        "ra_330_340": 0.31146,
+        "ra_340_350": 0.275934,
+        "ra_350_360": 0.40625
+      },
+      "counts": {
+        "decisions": 565,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1877,
+        "observe_actions": 155,
+        "required_missing": 70,
+        "targets_observed": 1621
+      },
+      "exposure": {
+        "actual_seconds": {
+          "count": 155,
+          "histogram": {
+            "1200": 8,
+            "1500": 4,
+            "1800": 5,
+            "2400": 5,
+            "300": 27,
+            "3000": 11,
+            "3600": 39,
+            "450": 19,
+            "600": 16,
+            "900": 21
+          },
+          "max": 3600.0,
+          "mean": 1646.1290322580646,
+          "median": 900.0,
+          "min": 300.0,
+          "sum": 255150.0
+        },
+        "assigned_targets": 1877,
+        "extra_hit_rows_after_first": 256,
+        "hit_fraction": 1.0,
+        "hit_targets": 1877,
+        "positive_observation_rows": 1867,
+        "program_counts": {
+          "BACKUP": 56,
+          "DARK": 99
+        },
+        "repeated_hit_targets": 234,
+        "requested_seconds": {
+          "count": 155,
+          "histogram": {
+            "1200": 8,
+            "1500": 4,
+            "1800": 5,
+            "2400": 5,
+            "300": 27,
+            "3000": 11,
+            "3600": 39,
+            "450": 19,
+            "600": 16,
+            "900": 21
+          },
+          "max": 3600.0,
+          "mean": 1646.1290322580646,
+          "median": 900.0,
+          "min": 300.0,
+          "sum": 255150.0
+        },
+        "simulated_observe_seconds": 255150.0,
+        "simulated_span_seconds": 1154700.0,
+        "simulated_wait_seconds": 899550.0
+      },
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 3,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "runtime_seconds": 4.388729832999999,
+      "accounted_wallclock_seconds": 3.977,
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.048,
+        "minimum_remaining_wallclock_seconds": 896.048,
+        "telemetry_available": true,
+        "telemetry_requests": 374
+      },
+      "mechanism": {
+        "run_id": "r2-w-forecast02-dev-season",
+        "plans": 268,
+        "candidate_evaluations": 94588,
+        "selected_assignments": 1877,
+        "baseline_internal_errors": [],
+        "C": {
+          "triggered_plans": 0,
+          "plan_trigger_rate": 0.0,
+          "boosted_candidate_evaluations": 0,
+          "candidate_trigger_rate": 0.0,
+          "boosted_selected_assignments": 0,
+          "selected_trigger_rate": 0.0,
+          "maximum_multiplier_seen": 1.0
+        },
+        "W": {
+          "triggered_plans": 174,
+          "plan_trigger_rate": 0.6492537313432836,
+          "penalized_candidate_evaluations": 34503,
+          "candidate_trigger_rate": 0.3647714297796761,
+          "penalized_selected_assignments": 286,
+          "selected_trigger_rate": 0.1523708044752264,
+          "plans_with_matching_forecast_directions": 239,
+          "forecast_directions_seen": [
+            "E",
+            "N",
+            "NE",
+            "NW",
+            "S",
+            "SE",
+            "W"
+          ],
+          "forecasts_received": 2
+        },
+        "definitions": {
+          "plans": "planner.plan 调用数；不包含基线先行白昼/关闭等待或 report",
+          "candidate_evaluations": "每次规划 achievable 缓存中唯一候选的计数，跨规划重复计数",
+          "selected": "每个 observe 最终 assignments 的目标数，跨观测重复计数",
+          "forecast_trigger": "已收到且匹配本夜的方向在本次规划命中候选；不是实际天气命中率",
+          "errors": "官方 Agent 异常后回退等待的标准错误记录"
+        }
+      },
+      "source_tree_sha256": "9babcbd762f24b0973d427a6aab2bbc7147644cc27f75bd73d6e48f0a160bee1",
+      "config_sha256": "b9b816883260a1a76041969e32e585206461166d8e8119a273c552432d18810b",
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          3.49951171875,
+          2.79931640625,
+          3.0849609375
+        ],
+        "lock_wait_seconds": 0.00015670799999999152,
+        "peers_at_acquisition": [],
+        "simulator_limit": 2,
+        "slots": [
+          0
+        ]
+      },
+      "normalized_actions_sha256": "4d2a78c136be727364276b962eac06567f39fa85af73c828fc68153dcf9d77af",
+      "normalized_score_sha256": "a012e11d5a2490b95d3e836f8aa10d68b816da14bd1bdddf0f8f3fbb8c634d18",
+      "actions_equal_baseline": false
+    }
+  ],
+  "control_runs": [
+    {
+      "accounted_wallclock_seconds": 1.992,
+      "agent_wallclock_seconds": 1.551,
+      "by_class": {
+        "BGS": 110.884097,
+        "ELG": 427.649947,
+        "LRG": 182.713516,
+        "QSO": 194.008283,
+        "Star": 21.502566
+      },
+      "card": {
+        "night_count": 7,
+        "source": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "target_count": 2400,
+        "tree_sha256": "9974ab9c6ea33b36119ac46b3602cd37c4962d31206877344d08ecafba4ef2cc"
+      },
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -50.0,
+        "sum_best_scores": 936.758408,
+        "uniformity_penalty": -4.186267
+      },
+      "counts": {
+        "decisions": 229,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 1425,
+        "observe_actions": 123,
+        "required_missing": 1,
+        "targets_observed": 1206
+      },
+      "coverage": {
+        "factor_threshold": 0.5,
+        "jain_from_official_penalty": 0.979068665,
+        "qualified_target_count": 949,
+        "required_total": 120,
+        "uniformity_bands": {
+          "ra_0_10": 0.282828,
+          "ra_20_30": 0.44086,
+          "ra_30_40": 0.406883,
+          "ra_330_340": 0.305556,
+          "ra_340_350": 0.401051,
+          "ra_350_360": 0.434095,
+          "ra_40_50": 0.342857,
+          "ra_50_60": 0.391304
+        },
+        "uniformity_weight": 200.0
+      },
+      "decision_requests": 143,
+      "definitions": {
+        "exposure": "requested 来自 actions；actual 和时间来自 decisions，包括后续失效的观测",
+        "hashes": "规范化 JSON 使用排序键和紧凑分隔符；官方 actions 本身已剔除 reason/envelope",
+        "jain": "1 + 官方 uniformity_penalty / 卡片公开 uniformity.weight；受官方6位舍入影响",
+        "pace": "变化来自 agent.log；remaining wallclock 来自透传收到的 decision_request。缺少记录时为 null",
+        "qualified": "observations 中有效且 factor 达公开 required 阈值的不同 target；计数受CSV6位舍入影响",
+        "scores": "官方 score_report 原值，未重评分"
+      },
+      "exit_code": 0,
+      "exposure": {
+        "actual_seconds": {
+          "count": 123,
+          "histogram": {
+            "1200": 4,
+            "1500": 5,
+            "1800": 7,
+            "2400": 7,
+            "300": 25,
+            "3000": 13,
+            "3600": 28,
+            "450": 13,
+            "600": 8,
+            "900": 13
+          },
+          "max": 3600.0,
+          "mean": 1718.2926829268292,
+          "median": 1200.0,
+          "min": 300.0,
+          "sum": 211350.0
+        },
+        "assigned_targets": 1425,
+        "extra_hit_rows_after_first": 219,
+        "hit_fraction": 1.0,
+        "hit_targets": 1425,
+        "positive_observation_rows": 1425,
+        "program_counts": {
+          "BACKUP": 34,
+          "BRIGHT": 17,
+          "DARK": 72
+        },
+        "repeated_hit_targets": 186,
+        "requested_seconds": {
+          "count": 123,
+          "histogram": {
+            "1200": 4,
+            "1500": 5,
+            "1800": 7,
+            "2400": 7,
+            "300": 25,
+            "3000": 13,
+            "3600": 28,
+            "450": 13,
+            "600": 8,
+            "900": 13
+          },
+          "max": 3600.0,
+          "mean": 1718.2926829268292,
+          "median": 1200.0,
+          "min": 300.0,
+          "sum": 211350.0
+        },
+        "simulated_observe_seconds": 211350.0,
+        "simulated_span_seconds": 549900.0,
+        "simulated_wait_seconds": 338550.0
+      },
+      "global_wallclock_seconds": 900.0,
+      "hashes": {
+        "normalized_actions_sha256": "f0b78a51d12d863eb9d8d066c3e926e1f060fcfa53e03313bc91e73820aed6b1",
+        "normalized_score_sha256": "77ca4d08020e440544aaeada7722e2753e6a31523b320f3a4a37903b681a4787",
+        "raw_outputs": {
+          "actions.jsonl": "84fc87d0de2e2e60a2f9cc6cebf02d05cc5c90d4cbbac1a8343f8dc27bfc7b1b",
+          "agent.log": "1784d1ed24a353aedca383ec9581d07779df2b868a6a421e700f9e0489c783b8",
+          "decisions.csv": "27c302ccd89c9cf436aea47ff8f87f52fa6970944af061567b0eaf30dcbf3828",
+          "messages.jsonl": "a07dfb295731cf26abf1682e4dc346759957f409a6a99221a625f390615c5618",
+          "observations.csv": "4bd4d334828f3963d3b45664142c2b6f3b78f6f3f3c97d4b5cb97d2c35e2c0c4",
+          "protocol_telemetry.jsonl": "d90e92474313e968716b8ca27538fa82d57041fdb1bc1f0efbf9d4b9b3a3ff7b",
+          "proxy_pid.json": "7405ab59955dfc85a67ba87c714fd198fb5402185d60132e3ce1ce4eeaf6ca59",
+          "score_report.json": "220e1ea59e7edec3f5a35dd2017b8492315b2b7c91dbe5708140511dbf8e52cd",
+          "workflow_result.json": "b391391f5702a8ecca53330905587e95bb5ff84fd110a8975733b0ace9876aa7"
+        }
+      },
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 898.024,
+        "minimum_remaining_wallclock_seconds": 898.024,
+        "telemetry_available": true,
+        "telemetry_requests": 143
+      },
+      "provenance": {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py",
+          "--agent",
+          "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-control-demo/agent/_harness_proxy.py",
+          "--card",
+          "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-control-demo/card_snapshot",
+          "--out",
+          "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-control-demo/output",
+          "--python",
+          "/usr/bin/python3",
+          "--wallclock",
+          "900",
+          "--init-timeout",
+          "30",
+          "--grace",
+          "30",
+          "--quiet"
+        ],
+        "concurrency": {
+          "cpu_count": 8,
+          "exclusive": true,
+          "load_average": [
+            2.07958984375,
+            2.59033203125,
+            3.06201171875
+          ],
+          "lock_wait_seconds": 0.00013879099999999922,
+          "peers_at_acquisition": [],
+          "simulator_limit": 2,
+          "slots": [
+            0,
+            1
+          ]
+        },
+        "config_sha256": "f687db37fb77987a02029f777843d83b281e6e1a95c28109db7716452293a88a",
+        "cwd": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-control-demo/work",
+        "effective_agent_tree_sha256": "458fad7288ee7fb471acced5e62e3825d6306a68214b579a705dd45778bb191f",
+        "harness_tree_sha256": "cbcee937e4045c89d2f183b33b1ff96228ea06faa3aa599b8b9d430da8dead26",
+        "python_executable": "/usr/bin/python3",
+        "python_version": "Python 3.9.6",
+        "snapshot_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+        "source_tree_sha256": "9babcbd762f24b0973d427a6aab2bbc7147644cc27f75bd73d6e48f0a160bee1"
+      },
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "run_id": "r2-c-control-demo",
+      "runtime_seconds": 2.3371,
+      "runtime_with_setup_seconds": 2.365860125,
+      "schema_version": "v4-experiment-metrics-v1",
+      "stage": "R2-control",
+      "termination_detail": "",
+      "termination_reason": "survey_complete",
+      "total": 1082.572141
+    },
+    {
+      "accounted_wallclock_seconds": 3.698,
+      "agent_wallclock_seconds": 2.984,
+      "by_class": {
+        "BGS": 148.785695,
+        "ELG": 516.941438,
+        "LRG": 217.329674,
+        "QSO": 192.858704,
+        "Star": 33.370101
+      },
+      "card": {
+        "night_count": 14,
+        "source": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+        "target_count": 4800,
+        "tree_sha256": "1f79643ddc3aa34f95759037e3a3215bea1d8d725e6b1b394edc05304c61f2ba"
+      },
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3250.0,
+        "sum_best_scores": 1109.285613,
+        "uniformity_penalty": -92.173468
+      },
+      "counts": {
+        "decisions": 564,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1873,
+        "observe_actions": 154,
+        "required_missing": 65,
+        "targets_observed": 1608
+      },
+      "coverage": {
+        "factor_threshold": 0.5,
+        "jain_from_official_penalty": 0.5391326599999999,
+        "qualified_target_count": 1156,
+        "required_total": 240,
+        "uniformity_bands": {
+          "ra_120_130": 0.0,
+          "ra_130_140": 0.0,
+          "ra_140_150": 0.0,
+          "ra_150_160": 0.0,
+          "ra_310_320": 0.320833,
+          "ra_320_330": 0.358431,
+          "ra_330_340": 0.31146,
+          "ra_340_350": 0.309129,
+          "ra_350_360": 0.473214
+        },
+        "uniformity_weight": 200.0
+      },
+      "decision_requests": 373,
+      "definitions": {
+        "exposure": "requested 来自 actions；actual 和时间来自 decisions，包括后续失效的观测",
+        "hashes": "规范化 JSON 使用排序键和紧凑分隔符；官方 actions 本身已剔除 reason/envelope",
+        "jain": "1 + 官方 uniformity_penalty / 卡片公开 uniformity.weight；受官方6位舍入影响",
+        "pace": "变化来自 agent.log；remaining wallclock 来自透传收到的 decision_request。缺少记录时为 null",
+        "qualified": "observations 中有效且 factor 达公开 required 阈值的不同 target；计数受CSV6位舍入影响",
+        "scores": "官方 score_report 原值，未重评分"
+      },
+      "exit_code": 0,
+      "exposure": {
+        "actual_seconds": {
+          "count": 154,
+          "histogram": {
+            "1200": 11,
+            "1500": 6,
+            "1800": 2,
+            "2400": 4,
+            "300": 30,
+            "3000": 7,
+            "3600": 43,
+            "450": 15,
+            "600": 16,
+            "900": 20
+          },
+          "max": 3600.0,
+          "mean": 1652.922077922078,
+          "median": 900.0,
+          "min": 300.0,
+          "sum": 254550.0
+        },
+        "assigned_targets": 1873,
+        "extra_hit_rows_after_first": 265,
+        "hit_fraction": 1.0,
+        "hit_targets": 1873,
+        "positive_observation_rows": 1872,
+        "program_counts": {
+          "BACKUP": 55,
+          "BRIGHT": 4,
+          "DARK": 95
+        },
+        "repeated_hit_targets": 235,
+        "requested_seconds": {
+          "count": 154,
+          "histogram": {
+            "1200": 11,
+            "1500": 6,
+            "1800": 2,
+            "2400": 4,
+            "300": 30,
+            "3000": 7,
+            "3600": 43,
+            "450": 15,
+            "600": 16,
+            "900": 20
+          },
+          "max": 3600.0,
+          "mean": 1652.922077922078,
+          "median": 900.0,
+          "min": 300.0,
+          "sum": 254550.0
+        },
+        "simulated_observe_seconds": 254550.0,
+        "simulated_span_seconds": 1154700.0,
+        "simulated_wait_seconds": 900150.0
+      },
+      "global_wallclock_seconds": 900.0,
+      "hashes": {
+        "normalized_actions_sha256": "865678821c77bd9a5974e071afc9545e0e08df10623eb7bbb44f013b52de8da2",
+        "normalized_score_sha256": "cf915df5269dae0cd82448cb2688d7f68e840c0671f50459871bde61fb25ceb4",
+        "raw_outputs": {
+          "actions.jsonl": "742eca273921da2eafe766314e236f9651711af80d2f637f52c17ee77d3c92a8",
+          "agent.log": "ad948affdb245c9f6849fcc5d9d988e4048b84c0b3e6ba4499e8816cfeb18565",
+          "decisions.csv": "4716678310f6a2074ba79fa010a48ccc026058b541e96806e3c347ec1245e2e3",
+          "messages.jsonl": "912177c72c2c88098a82260e5af80e14b26e305035f1df12e700e98bd4916201",
+          "observations.csv": "e7448c6b6931c2788830657ddd61549cf8c2e0de831f28c1ef9dc248dbb98e72",
+          "protocol_telemetry.jsonl": "fae3ef4fe4621b6df6d486ff5ceb10bfb13d74f2b9edd25d2f2972c747afd6ea",
+          "proxy_pid.json": "959854c3141bfab5388cfbab7954fbff201cee4d5433e6fb962f2b3bf54f6d4e",
+          "score_report.json": "a509013ba0a27f94278a8abca96e0c24b08e851854b138b50e07e2594cd9eeca",
+          "workflow_result.json": "e1f364551ea0a8e77d5d3cb028950faeea23550ae362d3dd870c7e351b989546"
+        }
+      },
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.325,
+        "minimum_remaining_wallclock_seconds": 896.325,
+        "telemetry_available": true,
+        "telemetry_requests": 373
+      },
+      "provenance": {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py",
+          "--agent",
+          "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-control-dev-season/agent/_harness_proxy.py",
+          "--card",
+          "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-control-dev-season/card_snapshot",
+          "--out",
+          "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-control-dev-season/output",
+          "--python",
+          "/usr/bin/python3",
+          "--wallclock",
+          "900",
+          "--init-timeout",
+          "30",
+          "--grace",
+          "30",
+          "--quiet"
+        ],
+        "concurrency": {
+          "cpu_count": 8,
+          "exclusive": true,
+          "load_average": [
+            1.974609375,
+            2.525390625,
+            3.0244140625
+          ],
+          "lock_wait_seconds": 0.00011904199999999976,
+          "peers_at_acquisition": [],
+          "simulator_limit": 2,
+          "slots": [
+            0,
+            1
+          ]
+        },
+        "config_sha256": "f687db37fb77987a02029f777843d83b281e6e1a95c28109db7716452293a88a",
+        "cwd": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-control-dev-season/work",
+        "effective_agent_tree_sha256": "dfe8bfa269ef1a1096e0a3409f521dbc87bd8ceb1bd7b82dad4c9bca5e73b272",
+        "harness_tree_sha256": "cbcee937e4045c89d2f183b33b1ff96228ea06faa3aa599b8b9d430da8dead26",
+        "python_executable": "/usr/bin/python3",
+        "python_version": "Python 3.9.6",
+        "snapshot_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+        "source_tree_sha256": "9babcbd762f24b0973d427a6aab2bbc7147644cc27f75bd73d6e48f0a160bee1"
+      },
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "run_id": "r2-c-control-dev-season",
+      "runtime_seconds": 4.099913625,
+      "runtime_with_setup_seconds": 4.1273927089999995,
+      "schema_version": "v4-experiment-metrics-v1",
+      "stage": "R2-control",
+      "termination_detail": "",
+      "termination_reason": "survey_complete",
+      "total": -2232.887855
+    }
+  ],
+  "selftest": {
+    "command": "/usr/bin/python3 -B experiments/v4/agents/cw/selftest.py",
+    "exit_code": 0,
+    "status": "pass",
+    "source_sha256": "a6b868bf5c834f5c5800711242deb06d832b48c4d6f26b35b47bdeea35ab4eae"
+  },
+  "diagram_freshness": {
+    "command": "node /Users/cxjh168/.codex/skills/document-diagrams/scripts/diagram.mjs check experiments/v4/notes/cw.md",
+    "exit_code": 0
+  }
+}

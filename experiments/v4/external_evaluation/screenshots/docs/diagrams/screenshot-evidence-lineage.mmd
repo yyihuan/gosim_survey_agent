@@ -1,0 +1,25 @@
+erDiagram
+    SNAPSHOT ||--|{ CARD : "包含四卡"
+    CARD ||--|{ ROW : "转录八行"
+    CARD ||--|| SUMMARY : "按显示值计算"
+    SNAPSHOT {
+        string source_type
+        datetime capture_time
+        datetime ingested_at
+    }
+    CARD {
+        string card_id
+        string screenshot_path
+        string sha256
+    }
+    ROW {
+        integer rank
+        string team_display
+        decimal total
+    }
+    SUMMARY {
+        integer n
+        decimal median_total
+        decimal top_total
+        decimal min_total
+    }

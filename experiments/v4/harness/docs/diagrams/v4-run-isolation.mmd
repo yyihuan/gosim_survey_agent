@@ -1,0 +1,13 @@
+flowchart LR
+    S[策略源码与配置] --> H[run_one]
+    C[只读卡片] --> H
+    H --> L[全局两槽锁]
+    L --> A[本次 Agent 副本]
+    L --> E[固定官方 runner]
+    A <--> P[协议转发器]
+    P <--> E
+    E --> O[本次原始输出]
+    P --> T[wallclock 记录]
+    O --> M[metrics]
+    T --> M
+    H --> I[只读源码和卡片快照]

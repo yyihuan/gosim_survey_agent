@@ -1,0 +1,37 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-B",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/run_one.py",
+    "--run-id",
+    "ext-n2-heq-h-opportunity2-demo",
+    "--stage",
+    "N2",
+    "--agent",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/heq/source",
+    "--config",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/heq/h-opportunity2.json",
+    "--card",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+    "--wallclock",
+    "900"
+  ],
+  "cwd": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition",
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-02T16:18:04.505925+00:00",
+  "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+  "original_harness_files_modified": false,
+  "original_harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+  "original_harness_unchanged_after_run": true,
+  "run_id": "ext-n2-heq-h-opportunity2-demo",
+  "runner_and_metrics": "unchanged experiments/v4/harness/run.py and metrics.py",
+  "schema_version": "v4-extension-wrapper-v1",
+  "simulator_limit": 6,
+  "started_at_utc": "2026-10-02T16:17:58.334380+00:00",
+  "status": "completed",
+  "wrapper_source_sha256": {
+    "extension_lease.py": "aa13ed889c323bc92a39c035116f0fa2492d66947e748a830ffec7126f92caef",
+    "run_one.py": "c3551ce4da66fb861e70ba2e9430eafef029bd4e3a2e066a1bac325df8e45c54"
+  },
+  "wrapper_source_unchanged_after_run": true
+}

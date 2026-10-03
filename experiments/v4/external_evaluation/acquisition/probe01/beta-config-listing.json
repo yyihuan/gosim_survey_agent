@@ -1,0 +1,25 @@
+{
+  "name": "beta-config-listing",
+  "url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/list/scenarios",
+  "method": "POST",
+  "payload": {
+    "prefix": "v4-practice-beta/config",
+    "limit": 1000,
+    "offset": 0,
+    "sortBy": {
+      "column": "name",
+      "order": "asc"
+    }
+  },
+  "started_at_utc": "2026-10-02T15:02:00.787172+00:00",
+  "finished_at_utc": "2026-10-02T15:02:22.856661+00:00",
+  "runtime_seconds": 22.0692755,
+  "http_status": null,
+  "error": "timeout: The read operation timed out",
+  "response_headers": {},
+  "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "body": "",
+  "permission": "public_frontend_anon",
+  "attempts": 1,
+  "timeout_seconds": 20
+}

@@ -1,0 +1,13 @@
+run_id,candidate,family,card,card_nights,card_targets,total,science,required_missing,coverage_jain,request_issued,request_completed,report_count,report_correct,report_false,full_season_complete,runtime_seconds,accounted_wallclock_seconds,pace_change_count,internal_error_count,error,not_run_reason,executed,exit_code,run_status,termination_reason,delta_total_vs_baseline,artifact_path
+r6-baseline-official-alpha,baseline,baseline,alpha,38,10000,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-baseline-official-beta,baseline,baseline,beta,38,9600,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-baseline-official-gamma,baseline,baseline,gamma,38,9900,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-baseline-official-delta,baseline,baseline,delta,38,9400,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-d-official-alpha,d,D,alpha,38,10000,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-d-official-beta,d,D,beta,38,9600,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-d-official-gamma,d,D,gamma,38,9900,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-d-official-delta,d,D,delta,38,9400,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-dtgp-official-alpha,dtgp,DTGP,alpha,38,10000,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-dtgp-official-beta,dtgp,DTGP,beta,38,9600,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-dtgp-official-gamma,dtgp,DTGP,gamma,38,9900,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,
+r6-dtgp-official-delta,dtgp,DTGP,delta,38,9400,,,,,,,,,,False,,,,,,incomplete_official_bundle,False,,not_run_incomplete_official_bundle,,,

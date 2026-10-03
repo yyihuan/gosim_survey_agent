@@ -1,0 +1,11 @@
+{
+  "url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-alpha/config/v4_scenario.json",
+  "http_status": 429,
+  "retrieved_at_utc": "2026-10-02T13:10:12.314554+00:00",
+  "payload": {
+    "statusCode": "429",
+    "error": "too_many_connections",
+    "message": "Too many connections issued to the database",
+    "code": "SlowDown"
+  }
+}

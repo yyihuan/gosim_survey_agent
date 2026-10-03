@@ -1,0 +1,18 @@
+ok       challenge/__init__.py
+ok       challenge/challenge_workflow.py
+ok       challenge/contracts.py
+ok       challenge/observation_request_simulator.py
+ok       challenge/observing_calendar.py
+ok       challenge/project_paths.py
+ok       challenge/scoring_core.py
+ok       challenge/tile_geometry_simulator.py
+ok       challenge/v4_config_check.py
+ok       challenge/v4_fiber_map.py
+ok       challenge/v4_runner.py
+ok       challenge/v4_scorer.py
+ok       challenge/v4_workflow.py
+ok       challenge/weather_simulator.py
+ok       project_platform/__init__.py
+ok       project_platform/transport.py
+
+All 16 engine files match ENGINE_MANIFEST.json (source commit db4bddf3cc67fb5f0036d9fb2cf90b9e2b7e8f4a).

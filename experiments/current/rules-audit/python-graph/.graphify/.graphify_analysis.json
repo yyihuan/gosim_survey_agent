@@ -1,0 +1,341 @@
+{
+  "communities": {
+    "0": [
+      "agent_core_geometry_fibergrid",
+      "agent_core_geometry_fibergrid_classify",
+      "agent_core_geometry_fibergrid_fiber_center",
+      "agent_core_geometry_fibergrid_init",
+      "agent_core_geometry_rationale_150",
+      "agent_core_geometry_rationale_166",
+      "agent_core_state",
+      "agent_core_state_faultevidence",
+      "agent_core_state_mod",
+      "agent_core_state_rationale_1",
+      "agent_core_state_rationale_141",
+      "agent_core_state_rationale_167",
+      "agent_core_state_surveystate",
+      "agent_core_state_surveystate_all_sky_notice",
+      "agent_core_state_surveystate_build_index",
+      "agent_core_state_surveystate_build_windows",
+      "agent_core_state_surveystate_current_night",
+      "agent_core_state_surveystate_fault_evidence",
+      "agent_core_state_surveystate_forget_quality_history",
+      "agent_core_state_surveystate_has_recent_sample",
+      "agent_core_state_surveystate_init",
+      "agent_core_state_surveystate_neighbours",
+      "agent_core_state_surveystate_next_night_start",
+      "agent_core_state_surveystate_on_messages",
+      "agent_core_state_surveystate_on_result",
+      "agent_core_state_surveystate_resync",
+      "agent_core_state_surveystate_site_closed",
+      "agent_core_state_surveystate_update_scale",
+      "namedtuple"
+    ],
+    "1": [
+      "agent_core_geometry",
+      "agent_core_geometry_altaz_to_radec",
+      "agent_core_geometry_format_utc",
+      "agent_core_geometry_julian_date",
+      "agent_core_geometry_local_sidereal_deg",
+      "agent_core_geometry_lunar_factor",
+      "agent_core_geometry_max_hour_angle_deg",
+      "agent_core_geometry_moon_init",
+      "agent_core_geometry_moon_radec",
+      "agent_core_geometry_normalized_airmass",
+      "agent_core_geometry_parse_utc",
+      "agent_core_geometry_radec_to_altaz",
+      "agent_core_geometry_rationale_1",
+      "agent_core_geometry_rationale_110",
+      "agent_core_geometry_rationale_193",
+      "agent_core_geometry_rationale_40",
+      "agent_core_geometry_rationale_53",
+      "agent_core_geometry_rationale_66",
+      "agent_core_geometry_rationale_81",
+      "agent_core_geometry_rationale_94",
+      "agent_core_geometry_separation_deg",
+      "agent_core_geometry_shift_altaz",
+      "agent_core_geometry_sun_radec",
+      "agent_core_geometry_tangent_offsets",
+      "agent_core_geometry_wrap180"
+    ],
+    "2": [
+      "agent_core_geometry_moon",
+      "agent_core_geometry_rationale_181",
+      "agent_core_llm_client_llmclient",
+      "agent_core_llm_client_llmclient_ask_json",
+      "agent_core_llm_client_llmclient_attempt",
+      "agent_core_llm_client_llmclient_budget_left",
+      "agent_core_llm_client_llmclient_init",
+      "agent_core_llm_client_rationale_73",
+      "agent_core_llm_client_rationale_99",
+      "agent_core_memory",
+      "agent_core_memory_rationale_1",
+      "agent_core_memory_tracelog",
+      "agent_core_memory_tracelog_close",
+      "agent_core_memory_tracelog_init",
+      "agent_core_memory_tracelog_write",
+      "agent_core_planner_rationale_1",
+      "agent_core_planner_rationale_157",
+      "agent_core_planner_rationale_167",
+      "agent_core_planner_rationale_181",
+      "agent_core_planner_rationale_301",
+      "agent_core_planner_rationale_70",
+      "agent_core_state_pendingprediction"
+    ],
+    "3": [
+      "agent_core_planner",
+      "agent_core_planner_az_distance",
+      "agent_core_planner_bulletin_text",
+      "agent_core_planner_planner",
+      "agent_core_planner_planner_decide",
+      "agent_core_planner_planner_direction_factor",
+      "agent_core_planner_planner_finish_plan",
+      "agent_core_planner_planner_init",
+      "agent_core_planner_planner_maybe_report",
+      "agent_core_planner_planner_night_advice",
+      "agent_core_planner_planner_note_action",
+      "agent_core_planner_planner_on_finish",
+      "agent_core_planner_planner_pace",
+      "agent_core_planner_planner_plan",
+      "agent_core_planner_planner_to_next_slot",
+      "agent_core_planner_planner_value"
+    ],
+    "4": [
+      "agent_core_scoring",
+      "agent_core_scoring_rationale_1",
+      "agent_core_scoring_rationale_26",
+      "agent_core_scoring_rationale_54",
+      "agent_core_scoring_scoringmodel",
+      "agent_core_scoring_scoringmodel_completion_factor",
+      "agent_core_scoring_scoringmodel_init",
+      "agent_core_scoring_scoringmodel_program_band",
+      "agent_core_scoring_scoringmodel_program_multiplier",
+      "agent_core_scoring_scoringmodel_quality_model"
+    ],
+    "5": [
+      "agent_core_validation",
+      "agent_core_validation_actionrejected",
+      "agent_core_validation_fallback_action",
+      "agent_core_validation_rationale_1",
+      "agent_core_validation_rationale_19",
+      "agent_core_validation_rationale_25",
+      "agent_core_validation_validate_action",
+      "agent_core_validation_validate_observe",
+      "agent_core_validation_validate_wait",
+      "valueerror"
+    ],
+    "6": [
+      "agent_core_protocol",
+      "agent_core_protocol_log",
+      "agent_core_protocol_rationale_1",
+      "agent_core_protocol_rationale_29",
+      "agent_core_protocol_rationale_37",
+      "agent_core_protocol_rationale_59",
+      "agent_core_protocol_read_messages",
+      "agent_core_protocol_send_response"
+    ],
+    "7": [
+      "agent",
+      "agent_core_llm_client",
+      "agent_core_llm_client_missingapikeyerror",
+      "agent_core_llm_client_rationale_1",
+      "agent_core_llm_client_rationale_43",
+      "agent_core_llm_client_require_api_key",
+      "agent_main",
+      "runtimeerror"
+    ],
+    "8": [
+      "pack_agent",
+      "pack_agent_collect",
+      "pack_agent_main"
+    ],
+    "9": [
+      "agent_core_init",
+      "agent_core_init_rationale_1"
+    ]
+  },
+  "cohesion": {
+    "0": 0.0960591133004926,
+    "1": 0.10666666666666667,
+    "2": 0.1645021645021645,
+    "3": 0.20833333333333334,
+    "4": 0.2,
+    "5": 0.3111111111111111,
+    "6": 0.32142857142857145,
+    "7": 0.2857142857142857,
+    "8": 1,
+    "9": 1
+  },
+  "gods": [
+    {
+      "id": "agent_core_state_surveystate",
+      "label": "SurveyState",
+      "edges": 18,
+      "degree": 18
+    },
+    {
+      "id": "agent_core_planner_planner",
+      "label": "Planner",
+      "edges": 17,
+      "degree": 17
+    },
+    {
+      "id": "agent_core_scoring_scoringmodel",
+      "label": "ScoringModel",
+      "edges": 13,
+      "degree": 13
+    },
+    {
+      "id": "agent_core_llm_client_llmclient",
+      "label": "LLMClient",
+      "edges": 12,
+      "degree": 12
+    },
+    {
+      "id": "agent_core_geometry_fibergrid",
+      "label": "FiberGrid",
+      "edges": 11,
+      "degree": 11
+    },
+    {
+      "id": "agent_core_memory_tracelog",
+      "label": "TraceLog",
+      "edges": 11,
+      "degree": 11
+    },
+    {
+      "id": "agent_core_state_pendingprediction",
+      "label": "PendingPrediction",
+      "edges": 11,
+      "degree": 11
+    },
+    {
+      "id": "agent_core_geometry_moon",
+      "label": "Moon",
+      "edges": 10,
+      "degree": 10
+    },
+    {
+      "id": "agent_core_planner_rationale_1",
+      "label": "Decision logic: pick a pointing, fill the 16 fibres, choose exposure length and",
+      "edges": 5,
+      "degree": 5
+    },
+    {
+      "id": "agent_core_planner_rationale_70",
+      "label": "A human-readable rendering of a bulletin's notices, for the LLM call that reads",
+      "edges": 5,
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Planner",
+      "target": "Moon",
+      "source_files": [
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/planner.py",
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/geometry.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "Planner",
+      "target": "LLMClient",
+      "source_files": [
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/planner.py",
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/llm_client.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "Planner",
+      "target": "TraceLog",
+      "source_files": [
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/planner.py",
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/memory.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "Planner",
+      "target": "PendingPrediction",
+      "source_files": [
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/planner.py",
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/state.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "FaultEvidence",
+      "target": "ScoringModel",
+      "source_files": [
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/state.py",
+        "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/scoring.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `FiberGrid` connect `Community 0` to `Community 1`, `Community 2`?",
+      "why": "High betweenness centrality (0.255) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `SurveyState` connect `Community 0` to `Community 4`?",
+      "why": "High betweenness centrality (0.215) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `PendingPrediction` connect `Community 2` to `Community 3`, `Community 0`, `Community 4`?",
+      "why": "High betweenness centrality (0.211) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `SurveyState` (e.g. with `FiberGrid` and `ScoringModel`) actually correct?",
+      "why": "`SurveyState` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 4 inferred relationships involving `Planner` (e.g. with `Moon` and `LLMClient`) actually correct?",
+      "why": "`Planner` has 4 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 6 inferred relationships involving `ScoringModel` (e.g. with `FaultEvidence` and `PendingPrediction`) actually correct?",
+      "why": "`ScoringModel` has 6 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 7 inferred relationships involving `LLMClient` (e.g. with `Planner` and `Decision logic: pick a pointing, fill the 16 fibres, choose exposure length and`) actually correct?",
+      "why": "`LLMClient` has 7 INFERRED edges - model-reasoned connections that need verification."
+    }
+  ],
+  "labels": {
+    "0": "Community 0",
+    "1": "Community 1",
+    "2": "Community 2",
+    "3": "Community 3",
+    "4": "Community 4",
+    "5": "Community 5",
+    "6": "Community 6",
+    "7": "Community 7",
+    "8": "Community 8",
+    "9": "Community 9"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

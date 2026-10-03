@@ -1,0 +1,43 @@
+classDiagram
+  class V4Workflow {
+    +initialize_payload()
+    +request_message()
+    +action_from_response()
+    +run()
+  }
+  class Scenario {
+    +slots
+    +nights
+    +score_config
+  }
+  class WeatherTruth {
+    +segments()
+    +band_quality()
+    +report_fault()
+  }
+  class BestLedger {
+    +record()
+    +best()
+    +max_factors()
+    +request_factors()
+    +invalidate_window()
+  }
+  class Runner {
+    <<module>>
+    +run_scenario()
+    +normalize_action()
+  }
+  class Scorer {
+    <<module>>
+    +score_target_exposure()
+    +observation_request_status()
+    +required_penalty()
+    +uniformity_penalty()
+  }
+  V4Workflow --> Runner : 协议桥接
+  Runner --> Scenario : 加载完整卡
+  Runner --> WeatherTruth : 仅可信后端读取
+  Runner --> BestLedger : 有效观测账本
+  Runner --> Scorer : 命中后计分与终局结算
+  Scorer --> WeatherTruth : 分段质量
+  Scorer --> BestLedger : 请求与罚分

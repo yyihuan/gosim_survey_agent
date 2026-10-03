@@ -1,0 +1,18 @@
+{
+  "configs": {
+    "dg": {
+      "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dg-frozen01.json",
+      "sha256": "bdb7d6052bcce3d4dfe539638db5c0b21f7dc763653ceaca387c1c9bf142071e"
+    },
+    "dp": {
+      "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dp-frozen01.json",
+      "sha256": "c7a627227640ad04e8dad7768693b3a0d0b5c52638a80cbfa38e99b91fb599fd"
+    },
+    "dt": {
+      "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dt-frozen01.json",
+      "sha256": "d1831d5af85f6512e71280659474dcad5ea80f4bbfb398d7d01c92ceae328c96"
+    }
+  },
+  "scope": "root-authorized R4 first batch: DP, DG, DTconditional; each on demo and dev-season; no tuning or holdout",
+  "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+}

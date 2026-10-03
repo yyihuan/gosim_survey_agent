@@ -1,0 +1,40 @@
+{
+  "demo_core_outputs_all_equal": {
+    "actions.jsonl": true,
+    "decisions.csv": true,
+    "observations.csv": true,
+    "score_report.json": true
+  },
+  "diagram": {
+    "command": [
+      "node",
+      "/Users/cxjh168/.codex/skills/document-diagrams/scripts/diagram.mjs",
+      "check",
+      "experiments/v4/environment.md"
+    ],
+    "exit_code": 0
+  },
+  "guard": {
+    "proxy_and_runner_pid_absent_after_cleanup": true,
+    "run_id": "r1-harness-guard",
+    "status": "guard_timeout",
+    "total": null
+  },
+  "locks": {
+    "command": [
+      "/usr/bin/python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "experiments/v4/harness/tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "result": "OK; cross-process epochs use time.time on macOS Python 3.9",
+    "tests_run": 3
+  },
+  "source_upstream_matches_vendor": true,
+  "vendor_matches_frozen_snapshot": true
+}

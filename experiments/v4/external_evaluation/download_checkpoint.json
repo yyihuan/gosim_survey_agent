@@ -1,0 +1,49 @@
+{
+  "recorded_at_utc": "2026-10-02T15:02:39.566040+00:00",
+  "requests": [
+    {
+      "name": "alpha-config-listing",
+      "http_status": null,
+      "error": "timeout: The read operation timed out",
+      "runtime_seconds": 20.922691458,
+      "evidence": "acquisition/probe01/alpha-config-listing.json"
+    },
+    {
+      "name": "beta-config-listing",
+      "http_status": null,
+      "error": "timeout: The read operation timed out",
+      "runtime_seconds": 22.0692755,
+      "evidence": "acquisition/probe01/beta-config-listing.json"
+    },
+    {
+      "name": "gamma-config-listing",
+      "http_status": 200,
+      "error": null,
+      "runtime_seconds": 16.14621925,
+      "evidence": "acquisition/probe01/gamma-config-listing.json"
+    },
+    {
+      "name": "delta-config-listing",
+      "http_status": 200,
+      "error": null,
+      "runtime_seconds": 16.408034666,
+      "evidence": "acquisition/probe01/delta-config-listing.json"
+    },
+    {
+      "name": "alpha-known-config",
+      "http_status": 200,
+      "error": null,
+      "runtime_seconds": 1.706113541999997,
+      "evidence": "acquisition/probe01/alpha-known-config.json"
+    }
+  ],
+  "success_count": 3,
+  "bounded_probe": {
+    "requests": 5,
+    "maximum_parallel": 2,
+    "timeout_seconds_each": 20,
+    "retries": 0
+  },
+  "permission": "public_frontend_anon; no account/session/server credential",
+  "prior_evidence_preserved": true
+}

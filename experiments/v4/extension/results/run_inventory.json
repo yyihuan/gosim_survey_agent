@@ -1,0 +1,191 @@
+{
+  "schema_version": "v4-extension-final-run-inventory-v1",
+  "recorded_at_utc": "2026-10-02T16:46:40.929831+00:00",
+  "extension_rows": 97,
+  "research_evaluations_including_reference_controls": 78,
+  "independent_strategy_evaluations": 66,
+  "N5_reference_controls": 12,
+  "repeat_migration_verifications": 19,
+  "reused_old_development_reference_rows_separate": 6,
+  "old84_unchanged": true,
+  "by_stage": {
+    "N1-verification": {
+      "run_count": 19,
+      "full_season_count": 19,
+      "pace_change_runs": [],
+      "runtime_seconds": {
+        "sum": 118.98440516699999,
+        "min": 3.861036833,
+        "median": 6.321481166,
+        "max": 10.111459374999999
+      },
+      "run_ids": [
+        "ext-integration-combined-d-demo",
+        "ext-integration-combined-d-dev-season",
+        "ext-integration-combined-e-demo",
+        "ext-integration-combined-e-dev-season",
+        "ext-integration-combined-f6-demo",
+        "ext-integration-combined-f6-dev-season",
+        "ext-integration-combined-h-demo",
+        "ext-integration-combined-h-dev-season",
+        "ext-integration-combined-j-demo",
+        "ext-integration-combined-j-dev-season",
+        "ext-integration-combined-m-demo",
+        "ext-integration-combined-m-dev-season",
+        "ext-integration-combined-q-demo",
+        "ext-integration-combined-q-dev-season",
+        "ext-n1-wrapper-d-demo",
+        "ext-n2-heq-neutral-demo",
+        "ext-n2-heq-neutral-dev-season",
+        "ext-n2-mfj-control-demo",
+        "ext-n2-mfj-control-dev-season"
+      ]
+    },
+    "N2": {
+      "run_count": 12,
+      "full_season_count": 12,
+      "pace_change_runs": [],
+      "runtime_seconds": {
+        "sum": 86.699845418,
+        "min": 4.710715667,
+        "median": 7.117455479,
+        "max": 9.596707875
+      },
+      "run_ids": [
+        "ext-n2-f-initial-demo",
+        "ext-n2-f-initial-dev-season",
+        "ext-n2-heq-e-threshold30-demo",
+        "ext-n2-heq-e-threshold30-dev-season",
+        "ext-n2-heq-h-opportunity2-demo",
+        "ext-n2-heq-h-opportunity2-dev-season",
+        "ext-n2-heq-q-quantile25-demo",
+        "ext-n2-heq-q-quantile25-dev-season",
+        "ext-n2-j-initial-demo",
+        "ext-n2-j-initial-dev-season",
+        "ext-n2-m-initial-demo",
+        "ext-n2-m-initial-dev-season"
+      ]
+    },
+    "N3": {
+      "run_count": 6,
+      "full_season_count": 6,
+      "pace_change_runs": [],
+      "runtime_seconds": {
+        "sum": 32.762637126,
+        "min": 3.9676594589999996,
+        "median": 5.3991551875,
+        "max": 6.983806749999999
+      },
+      "run_ids": [
+        "ext-n3-f-fields12-demo",
+        "ext-n3-f-fields12-dev-season",
+        "ext-n3-heq-e-required-request30-demo",
+        "ext-n3-heq-e-required-request30-dev-season",
+        "ext-n3-heq-h-window-fraction2-demo",
+        "ext-n3-heq-h-window-fraction2-dev-season"
+      ]
+    },
+    "N4": {
+      "run_count": 8,
+      "full_season_count": 8,
+      "pace_change_runs": [],
+      "runtime_seconds": {
+        "sum": 67.578375376,
+        "min": 5.224321165999999,
+        "median": 8.056755563000001,
+        "max": 12.220405917
+      },
+      "run_ids": [
+        "ext-n4-fe-demo",
+        "ext-n4-fe-dev-season",
+        "ext-n4-fm-demo",
+        "ext-n4-fm-dev-season",
+        "ext-n4-fmq-demo",
+        "ext-n4-fmq-dev-season",
+        "ext-n4-fq-demo",
+        "ext-n4-fq-dev-season"
+      ]
+    },
+    "N5": {
+      "run_count": 52,
+      "full_season_count": 52,
+      "pace_change_runs": [],
+      "runtime_seconds": {
+        "sum": 454.52408554100015,
+        "min": 5.457007000000001,
+        "median": 8.286295354,
+        "max": 19.668591624999998
+      },
+      "run_ids": [
+        "ext-n5-baseline-ext-holdout-a",
+        "ext-n5-baseline-ext-holdout-b",
+        "ext-n5-baseline-ext-holdout-c",
+        "ext-n5-baseline-ext-holdout-d",
+        "ext-n5-d-ext-holdout-a",
+        "ext-n5-d-ext-holdout-b",
+        "ext-n5-d-ext-holdout-c",
+        "ext-n5-d-ext-holdout-d",
+        "ext-n5-dtgp-ext-holdout-a",
+        "ext-n5-dtgp-ext-holdout-b",
+        "ext-n5-dtgp-ext-holdout-c",
+        "ext-n5-dtgp-ext-holdout-d",
+        "ext-n5-e-ext-holdout-a",
+        "ext-n5-e-ext-holdout-b",
+        "ext-n5-e-ext-holdout-c",
+        "ext-n5-e-ext-holdout-d",
+        "ext-n5-f-ext-holdout-a",
+        "ext-n5-f-ext-holdout-b",
+        "ext-n5-f-ext-holdout-c",
+        "ext-n5-f-ext-holdout-d",
+        "ext-n5-fe-ext-holdout-a",
+        "ext-n5-fe-ext-holdout-b",
+        "ext-n5-fe-ext-holdout-c",
+        "ext-n5-fe-ext-holdout-d",
+        "ext-n5-fm-ext-holdout-a",
+        "ext-n5-fm-ext-holdout-b",
+        "ext-n5-fm-ext-holdout-c",
+        "ext-n5-fm-ext-holdout-d",
+        "ext-n5-fmq-ext-holdout-a",
+        "ext-n5-fmq-ext-holdout-b",
+        "ext-n5-fmq-ext-holdout-c",
+        "ext-n5-fmq-ext-holdout-d",
+        "ext-n5-fq-ext-holdout-a",
+        "ext-n5-fq-ext-holdout-b",
+        "ext-n5-fq-ext-holdout-c",
+        "ext-n5-fq-ext-holdout-d",
+        "ext-n5-h-ext-holdout-a",
+        "ext-n5-h-ext-holdout-b",
+        "ext-n5-h-ext-holdout-c",
+        "ext-n5-h-ext-holdout-d",
+        "ext-n5-j-ext-holdout-a",
+        "ext-n5-j-ext-holdout-b",
+        "ext-n5-j-ext-holdout-c",
+        "ext-n5-j-ext-holdout-d",
+        "ext-n5-m-ext-holdout-a",
+        "ext-n5-m-ext-holdout-b",
+        "ext-n5-m-ext-holdout-c",
+        "ext-n5-m-ext-holdout-d",
+        "ext-n5-q-ext-holdout-a",
+        "ext-n5-q-ext-holdout-b",
+        "ext-n5-q-ext-holdout-c",
+        "ext-n5-q-ext-holdout-d"
+      ]
+    }
+  },
+  "N5_batch_runtime_seconds": 88.730173834,
+  "actual_peak_simulator_concurrency": 6,
+  "all_pace_changes_zero": true,
+  "no_errors": true,
+  "all_source_config_card_hashes_match": true,
+  "final_outputs": {
+    "all_runs.json": "5ad223ca5d743c1c7283f5c95204440458d64624311b35390d2449992079c2ac",
+    "all_runs.csv": "46d7ca2205b7b18a283b60c91e86e88e687336bf3fa7874a096302a284d61f26",
+    "n5_results.json": "6b93726690a7eee4caf8684577a2fc06142587afbe1fba8bcdca62bb990899b8",
+    "n5_results.csv": "6f43ca0ab4e871f73986c9cd9fff8b655e0987ab96cb6b4c3f9c366cf03df280",
+    "reference_runs.csv": "8c50a066becc7c53e8bc99a0e450bc159c6fb4f86689a998abf968da70b03a25",
+    "concurrency.json": "7562c906b2e678613a90cac8e966aa5e12b4e5d6e9ca22508fb31b2e8301268d",
+    "schema.json": "eb1ee9bee741443a731790baa5358d02df2f2df5e0e5ba8e52e74d7183ffd513"
+  },
+  "integrity_check": "../validation/final-integrity.json",
+  "boundary": "Local research cards from unchanged official generator and scorer; no official alpha-delta simulation or online submission."
+}

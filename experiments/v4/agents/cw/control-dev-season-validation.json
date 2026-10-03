@@ -1,0 +1,12 @@
+{
+  "baseline_run": "r1-official-dev-season",
+  "control_run": "r2-c-control-dev-season",
+  "checks": {
+    "normalized_actions_sha256": true,
+    "normalized_score_sha256": true
+  },
+  "baseline_total": -2232.887855,
+  "control_total": -2232.887855,
+  "control_exit": 0,
+  "pace_changes": []
+}

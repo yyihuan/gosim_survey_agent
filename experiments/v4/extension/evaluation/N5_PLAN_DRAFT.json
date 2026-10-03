@@ -1,0 +1,1563 @@
+{
+  "schema_version": "v4-extension-N5-plan-v1",
+  "status": "draft-awaiting-N4-and-explicit-Root-freeze",
+  "prepared_at_utc": "2026-10-02T16:36:47.425449+00:00",
+  "authority": "Root message fixing 13 cases x 4 cards before new holdout scores",
+  "source_policy": "Original tested source/config per single; independent integrated source per combinations; no retuning",
+  "upstream_commit": "18be105bc517938c8341ad79646cf397e3293016",
+  "simulator_limit": 6,
+  "wallclock_seconds": 900,
+  "USE_LLM": "0",
+  "harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+  "vendor_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+  "wrapper_source_sha256": {
+    "run_one.py": "c3551ce4da66fb861e70ba2e9430eafef029bd4e3a2e066a1bac325df8e45c54",
+    "extension_lease.py": "aa13ed889c323bc92a39c035116f0fa2492d66947e748a830ffec7126f92caef"
+  },
+  "cases": [
+    {
+      "case_id": "official-baseline",
+      "case_tag": "baseline",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/vendor/starter_kit_v4/agent",
+      "config": null,
+      "source_tree_sha256": "8204d3ccec2975c874ab2384c7b786ce4f877dc843ed268a55036ab18260c2c3",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 9604,
+          "sha256": "189621fcbd9704c56baa6de7da2796fbf1246641890281268fb311f0854d05d9"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 29486,
+          "sha256": "5eafa7c91ba743fed971e2ed4c10129dc0b61ebf2d885af0f15d852e5861c75d"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "development_evidence": [
+        {
+          "run_id": "r1-harness-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "r1-official-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D-linear",
+      "case_tag": "d",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/tdg/d-linear.json",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 34614,
+          "sha256": "e644662391810de87c3f69b6178665a43b7b30b9a8c9a5521ea7b1a3f4f07150"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "development_evidence": [
+        {
+          "run_id": "r4-equivalence-d-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "r4-equivalence-d-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "DTGP-frozen02",
+      "case_tag": "dtgp",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/combined/dtgp-frozen02.json",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 34614,
+          "sha256": "e644662391810de87c3f69b6178665a43b7b30b9a8c9a5521ea7b1a3f4f07150"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+      "development_evidence": [
+        {
+          "run_id": "r4-dtgp-frozen02-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "r4-dtgp-frozen02-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+H",
+      "case_tag": "h",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/h-opportunity2.json",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "heq_policy.py",
+          "bytes": 9510,
+          "sha256": "0394021163531ddc3984d1cd2f0629bf3c0a569b3442c86eef3d68837b2fd3cd"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 35068,
+          "sha256": "107716ac29e2a22507c94d8b37dc7e8ef694a244faeea5921a5a9357e06cf4cf"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "development_evidence": [
+        {
+          "run_id": "ext-n2-heq-h-opportunity2-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n2-heq-h-opportunity2-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+E",
+      "case_tag": "e",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/e-threshold30.json",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "heq_policy.py",
+          "bytes": 9510,
+          "sha256": "0394021163531ddc3984d1cd2f0629bf3c0a569b3442c86eef3d68837b2fd3cd"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 35068,
+          "sha256": "107716ac29e2a22507c94d8b37dc7e8ef694a244faeea5921a5a9357e06cf4cf"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "7109bbb5ee19f5e79952936bc46516a3c4ce42274c41da9a52d0871947417bb4",
+      "development_evidence": [
+        {
+          "run_id": "ext-n2-heq-e-threshold30-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n2-heq-e-threshold30-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+Q",
+      "case_tag": "q",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/q-quantile25.json",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "heq_policy.py",
+          "bytes": 9510,
+          "sha256": "0394021163531ddc3984d1cd2f0629bf3c0a569b3442c86eef3d68837b2fd3cd"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 35068,
+          "sha256": "107716ac29e2a22507c94d8b37dc7e8ef694a244faeea5921a5a9357e06cf4cf"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "19094d1a26062af79106b2429d9af96d0c080adbaff294d5d6e7b333c4e5b4ce",
+      "development_evidence": [
+        {
+          "run_id": "ext-n2-heq-q-quantile25-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n2-heq-q-quantile25-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+M",
+      "case_tag": "m",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/m-initial.json",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "mfj_policy.py",
+          "bytes": 7139,
+          "sha256": "e4bc101cab299f05b77f519b6d28f2c235c9cb03346e5fa1fd44cddfcb4201f6"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 37017,
+          "sha256": "6d828cce61ef9043c551306f52d431c196873ba3e2892933564218b334927548"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "b50825126fe761107588d9416fdf100db6bb6815a8a947d849e00b0df610c914",
+      "development_evidence": [
+        {
+          "run_id": "ext-n2-m-initial-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n2-m-initial-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+F",
+      "case_tag": "f",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/f-initial.json",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "mfj_policy.py",
+          "bytes": 7139,
+          "sha256": "e4bc101cab299f05b77f519b6d28f2c235c9cb03346e5fa1fd44cddfcb4201f6"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 37017,
+          "sha256": "6d828cce61ef9043c551306f52d431c196873ba3e2892933564218b334927548"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "80c46cefd7f6ea4a32aae7223c47b2ab3fb6c00a3f770baa4b3629a2150fdcfc",
+      "development_evidence": [
+        {
+          "run_id": "ext-n2-f-initial-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n2-f-initial-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+J",
+      "case_tag": "j",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/j-initial.json",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "mfj_policy.py",
+          "bytes": 7139,
+          "sha256": "e4bc101cab299f05b77f519b6d28f2c235c9cb03346e5fa1fd44cddfcb4201f6"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 37017,
+          "sha256": "6d828cce61ef9043c551306f52d431c196873ba3e2892933564218b334927548"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "development_evidence": [
+        {
+          "run_id": "ext-n2-j-initial-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n2-j-initial-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+F+E",
+      "case_tag": "fe",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fe.json",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "heq_policy.py",
+          "bytes": 13120,
+          "sha256": "2091d0f41206f5fa1a2108eb40b6eb02fe6c082aece5657ad96276b901e8f740"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "mfj_policy.py",
+          "bytes": 7077,
+          "sha256": "2fd08bad76a82280e3445e9fa6e475af51fa1c8c0b8a48852319a410e2956cc0"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 37475,
+          "sha256": "6f7d4d3d8f5758f36af2a0a39bdee4a140cbf5cf4d74dbe64c43d31af4260e18"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "8f9b54156189a2a1c99cfeda1dc36a97a401777720a73c81f4d15516bba0f693",
+      "development_evidence": [
+        {
+          "run_id": "ext-n4-fe-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n4-fe-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+F+M",
+      "case_tag": "fm",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fm.json",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "heq_policy.py",
+          "bytes": 13120,
+          "sha256": "2091d0f41206f5fa1a2108eb40b6eb02fe6c082aece5657ad96276b901e8f740"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "mfj_policy.py",
+          "bytes": 7077,
+          "sha256": "2fd08bad76a82280e3445e9fa6e475af51fa1c8c0b8a48852319a410e2956cc0"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 37475,
+          "sha256": "6f7d4d3d8f5758f36af2a0a39bdee4a140cbf5cf4d74dbe64c43d31af4260e18"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "e6328f33ffcc2e96b5e006f36da0cf296e17489eabccabf4a64467c70406d46d",
+      "development_evidence": [
+        {
+          "run_id": "ext-n4-fm-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n4-fm-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+F+Q",
+      "case_tag": "fq",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fq.json",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "heq_policy.py",
+          "bytes": 13120,
+          "sha256": "2091d0f41206f5fa1a2108eb40b6eb02fe6c082aece5657ad96276b901e8f740"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "mfj_policy.py",
+          "bytes": 7077,
+          "sha256": "2fd08bad76a82280e3445e9fa6e475af51fa1c8c0b8a48852319a410e2956cc0"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 37475,
+          "sha256": "6f7d4d3d8f5758f36af2a0a39bdee4a140cbf5cf4d74dbe64c43d31af4260e18"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "d9bd858ac26291d8fc39c76985fb456738c2aeede73d36a2dd7244c6360b853a",
+      "development_evidence": [
+        {
+          "run_id": "ext-n4-fq-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n4-fq-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    },
+    {
+      "case_id": "D+F+M+Q",
+      "case_tag": "fmq",
+      "reference_id": "D-linear",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fmq.json",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "source_files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "heq_policy.py",
+          "bytes": 13120,
+          "sha256": "2091d0f41206f5fa1a2108eb40b6eb02fe6c082aece5657ad96276b901e8f740"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "mfj_policy.py",
+          "bytes": 7077,
+          "sha256": "2fd08bad76a82280e3445e9fa6e475af51fa1c8c0b8a48852319a410e2956cc0"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 37475,
+          "sha256": "6f7d4d3d8f5758f36af2a0a39bdee4a140cbf5cf4d74dbe64c43d31af4260e18"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "config_sha256": "1243f40e66739aa67b849ed5af4436b08b724967f2c2a1444050d57715460ea0",
+      "development_evidence": [
+        {
+          "run_id": "ext-n4-fmq-demo",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        },
+        {
+          "run_id": "ext-n4-fmq-dev-season",
+          "status": "completed",
+          "source_matches_current": true,
+          "config_matches_current": true,
+          "full_season_complete": true,
+          "pace_change_count": 0
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ext-holdout-a",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711",
+      "bundle_manifest_sha256": "2eb8d13a97b735599420a8bffe7c3707de378e339d1a77a988c08c49a7c4c54c",
+      "spec_sha256": "e212df97944b5faa45eee798da5311df4b94099207bc635282c696727c0847ec"
+    },
+    {
+      "card_id": "ext-holdout-b",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261",
+      "bundle_manifest_sha256": "81f01054eb9ccca7a5d5a2f38095fa35190e38b06be37459115a3f4ea11d511b",
+      "spec_sha256": "90484322f47e0157d671d01cfc295960be59588477f98feb4abeeddcfd8db3cf"
+    },
+    {
+      "card_id": "ext-holdout-c",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3",
+      "bundle_manifest_sha256": "40bd4a297c332de410348e5793a395aa95eeb772334981770670a4fd476c0b09",
+      "spec_sha256": "450020764abc7cc6bbdf2f4fa895767c59e1b73fbca41008bccaca126b62bf44"
+    },
+    {
+      "card_id": "ext-holdout-d",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e",
+      "bundle_manifest_sha256": "c287775d6f3abe378d58fd0aa6d7af9f2f6519d98aaad68be570b57ab52efd81",
+      "spec_sha256": "a9e52cbb8cfc991358277fe039185a6498cefddcba1e265aac54c288e742191a"
+    }
+  ],
+  "case_count": 13,
+  "run_count": 52,
+  "runs": [
+    {
+      "run_id": "ext-n5-baseline-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/vendor/starter_kit_v4/agent",
+      "config": null,
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "8204d3ccec2975c874ab2384c7b786ce4f877dc843ed268a55036ab18260c2c3",
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-baseline-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/vendor/starter_kit_v4/agent",
+      "config": null,
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "8204d3ccec2975c874ab2384c7b786ce4f877dc843ed268a55036ab18260c2c3",
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-baseline-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/vendor/starter_kit_v4/agent",
+      "config": null,
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "8204d3ccec2975c874ab2384c7b786ce4f877dc843ed268a55036ab18260c2c3",
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-baseline-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/vendor/starter_kit_v4/agent",
+      "config": null,
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "8204d3ccec2975c874ab2384c7b786ce4f877dc843ed268a55036ab18260c2c3",
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-d-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/tdg/d-linear.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-d-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/tdg/d-linear.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-d-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/tdg/d-linear.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-d-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/tdg/d-linear.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-dtgp-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/combined/dtgp-frozen02.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-dtgp-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/combined/dtgp-frozen02.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-dtgp-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/combined/dtgp-frozen02.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-dtgp-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/agents/combined/source",
+      "config": "experiments/v4/configs/combined/dtgp-frozen02.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-h-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/h-opportunity2.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-h-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/h-opportunity2.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-h-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/h-opportunity2.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-h-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/h-opportunity2.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-e-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/e-threshold30.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "7109bbb5ee19f5e79952936bc46516a3c4ce42274c41da9a52d0871947417bb4",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-e-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/e-threshold30.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "7109bbb5ee19f5e79952936bc46516a3c4ce42274c41da9a52d0871947417bb4",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-e-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/e-threshold30.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "7109bbb5ee19f5e79952936bc46516a3c4ce42274c41da9a52d0871947417bb4",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-e-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/e-threshold30.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "7109bbb5ee19f5e79952936bc46516a3c4ce42274c41da9a52d0871947417bb4",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-q-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/q-quantile25.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "19094d1a26062af79106b2429d9af96d0c080adbaff294d5d6e7b333c4e5b4ce",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-q-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/q-quantile25.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "19094d1a26062af79106b2429d9af96d0c080adbaff294d5d6e7b333c4e5b4ce",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-q-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/q-quantile25.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "19094d1a26062af79106b2429d9af96d0c080adbaff294d5d6e7b333c4e5b4ce",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-q-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/heq/source",
+      "config": "experiments/v4/extension/configs/heq/q-quantile25.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "config_sha256": "19094d1a26062af79106b2429d9af96d0c080adbaff294d5d6e7b333c4e5b4ce",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-m-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/m-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "b50825126fe761107588d9416fdf100db6bb6815a8a947d849e00b0df610c914",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-m-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/m-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "b50825126fe761107588d9416fdf100db6bb6815a8a947d849e00b0df610c914",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-m-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/m-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "b50825126fe761107588d9416fdf100db6bb6815a8a947d849e00b0df610c914",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-m-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/m-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "b50825126fe761107588d9416fdf100db6bb6815a8a947d849e00b0df610c914",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-f-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/f-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "80c46cefd7f6ea4a32aae7223c47b2ab3fb6c00a3f770baa4b3629a2150fdcfc",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-f-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/f-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "80c46cefd7f6ea4a32aae7223c47b2ab3fb6c00a3f770baa4b3629a2150fdcfc",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-f-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/f-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "80c46cefd7f6ea4a32aae7223c47b2ab3fb6c00a3f770baa4b3629a2150fdcfc",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-f-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/f-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "80c46cefd7f6ea4a32aae7223c47b2ab3fb6c00a3f770baa4b3629a2150fdcfc",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-j-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/j-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-j-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/j-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-j-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/j-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-j-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/j-initial.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-fe-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fe.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "8f9b54156189a2a1c99cfeda1dc36a97a401777720a73c81f4d15516bba0f693",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-fe-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fe.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "8f9b54156189a2a1c99cfeda1dc36a97a401777720a73c81f4d15516bba0f693",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-fe-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fe.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "8f9b54156189a2a1c99cfeda1dc36a97a401777720a73c81f4d15516bba0f693",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-fe-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fe.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "8f9b54156189a2a1c99cfeda1dc36a97a401777720a73c81f4d15516bba0f693",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-fm-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fm.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "e6328f33ffcc2e96b5e006f36da0cf296e17489eabccabf4a64467c70406d46d",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-fm-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fm.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "e6328f33ffcc2e96b5e006f36da0cf296e17489eabccabf4a64467c70406d46d",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-fm-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fm.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "e6328f33ffcc2e96b5e006f36da0cf296e17489eabccabf4a64467c70406d46d",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-fm-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fm.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "e6328f33ffcc2e96b5e006f36da0cf296e17489eabccabf4a64467c70406d46d",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-fq-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fq.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "d9bd858ac26291d8fc39c76985fb456738c2aeede73d36a2dd7244c6360b853a",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-fq-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fq.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "d9bd858ac26291d8fc39c76985fb456738c2aeede73d36a2dd7244c6360b853a",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-fq-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fq.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "d9bd858ac26291d8fc39c76985fb456738c2aeede73d36a2dd7244c6360b853a",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-fq-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fq.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "d9bd858ac26291d8fc39c76985fb456738c2aeede73d36a2dd7244c6360b853a",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    },
+    {
+      "run_id": "ext-n5-fmq-ext-holdout-a",
+      "stage": "N5",
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-a",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fmq.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-a",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "1243f40e66739aa67b849ed5af4436b08b724967f2c2a1444050d57715460ea0",
+      "card_tree_sha256": "2e71343cd3e3581be917a30fd950f41c359c8738fa5d7295841397bdddcac711"
+    },
+    {
+      "run_id": "ext-n5-fmq-ext-holdout-b",
+      "stage": "N5",
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-b",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fmq.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-b",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "1243f40e66739aa67b849ed5af4436b08b724967f2c2a1444050d57715460ea0",
+      "card_tree_sha256": "6f5f353d6f9b6baae1e275c350f9221def559082015345f1b094b974b8163261"
+    },
+    {
+      "run_id": "ext-n5-fmq-ext-holdout-c",
+      "stage": "N5",
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-c",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fmq.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-c",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "1243f40e66739aa67b849ed5af4436b08b724967f2c2a1444050d57715460ea0",
+      "card_tree_sha256": "344d238df74eeb7272a14e64dc1d52356f4ae4e32c680f0233932918b0b06dd3"
+    },
+    {
+      "run_id": "ext-n5-fmq-ext-holdout-d",
+      "stage": "N5",
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "card_id": "ext-holdout-d",
+      "agent": "experiments/v4/extension/agents/combined/source",
+      "config": "experiments/v4/extension/configs/combined/fmq.json",
+      "card": "experiments/v4/extension/data/cards/ext-holdout-d",
+      "source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+      "config_sha256": "1243f40e66739aa67b849ed5af4436b08b724967f2c2a1444050d57715460ea0",
+      "card_tree_sha256": "7bab7854e7de2710a41da8042710142bfd4337e694ff5cd117f95404c847587e"
+    }
+  ],
+  "authorized": false,
+  "holdouts_run": false
+}

@@ -1,0 +1,41 @@
+{
+  "files": {
+    "code": [
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/__init__.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/geometry.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/llm_client.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/memory.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/planner.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/protocol.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/scoring.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/state.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/agent_core/validation.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-3vwnl94o/pack_agent.py"
+    ],
+    "document": [],
+    "paper": [],
+    "image": [],
+    "video": []
+  },
+  "total_files": 11,
+  "total_words": 8054,
+  "needs_graph": false,
+  "warning": "Corpus is ~8,054 words - fits in a single context window. You may not need a graph.",
+  "skipped_sensitive": [],
+  "graphifyignore_patterns": 10,
+  "scope": {
+    "requested_mode": "all",
+    "resolved_mode": "all",
+    "source": "cli",
+    "root": ".",
+    "candidate_count": null,
+    "included_count": 11,
+    "excluded_untracked_count": 0,
+    "excluded_ignored_count": 0,
+    "excluded_sensitive_count": 0,
+    "missing_committed_count": 0,
+    "warnings": [],
+    "recommendation": null
+  }
+}

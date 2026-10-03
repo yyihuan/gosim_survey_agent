@@ -1,0 +1,7 @@
+{
+  "recorded_at_utc": "2026-10-02T16:17:22.123344+00:00",
+  "status": "pre_generation_script_path_error",
+  "cards_generated": 0,
+  "cause": "score reference precheck used nonexisting vendor/starter_kit_v4/config; real reference is cards/demo/config",
+  "correction": "Only extension generator wrapper path corrected; official source/specs untouched"
+}

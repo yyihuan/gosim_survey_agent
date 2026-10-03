@@ -1,0 +1,12 @@
+{
+  "family": "W",
+  "stage": "R2",
+  "C": {"enabled": false},
+  "W": {
+    "enabled": true,
+    "penalty_fraction": 0.2,
+    "angular_half_width_deg": 67.5,
+    "maximum_altitude_deg": 75.0,
+    "event_kinds": ["rain", "storm", "overcast", "haze", "rocket_launch"]
+  }
+}

@@ -1,0 +1,13 @@
+flowchart TD
+  I[当时公开消息与自身结果] --> B[官方 baseline 状态]
+  B --> T[T 限制当前格内 horizon]
+  B --> D[D 替换科学收益指数]
+  B --> G[G 增加几何软权重]
+  T --> A[可达收益与候选视场]
+  D --> A
+  G --> A
+  A --> E[离散曝光与 program 搜索]
+  D --> E
+  T --> E
+  E --> P[pending 使用最终时长]
+  P --> O[observe 响应]

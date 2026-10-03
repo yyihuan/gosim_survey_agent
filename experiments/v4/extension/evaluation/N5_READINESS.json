@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-10-02T16:40:24.129168+00:00",
+  "draft_plan_sha256": "3c4f2e68bfd12cd9026610e55444a8e81d5783b2f00dbd55938a11fbf0eb14c0",
+  "batch_source_sha256": "1b4481014acf318d40a28a25ac92c9a8b48cb2849eb972ab8226e3a31174e2f4",
+  "preflight": {
+    "plan": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/evaluation/N5_PLAN_DRAFT.json",
+    "plan_sha256": "3c4f2e68bfd12cd9026610e55444a8e81d5783b2f00dbd55938a11fbf0eb14c0",
+    "passed": true,
+    "case_count": 13,
+    "run_count": 52,
+    "card_count": 4,
+    "all_source_config_card_hashes_match": true,
+    "old_harness_and_vendor_match": true,
+    "no_run_started": true,
+    "authorization_checked": false
+  },
+  "authorization_boundary_test": "../validation/n5-batch-authorization-gate.json",
+  "N5_started": false
+}

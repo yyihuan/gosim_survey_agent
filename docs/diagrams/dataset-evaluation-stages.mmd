@@ -1,0 +1,20 @@
+flowchart TD
+  R[固定规则与数据配方] --> G[官方生成器与数据校验]
+  G --> D[模拟开发组]
+  G --> S[模拟选择组]
+  G --> F[模拟冻结组]
+  G --> X[天文扩展与成对诊断]
+  D --> C[候选研究]
+  C --> S
+  X --> C
+  S --> V[冻结候选和评价约定]
+  V --> F
+  F --> T[官方 L1至L4复测]
+  T --> P[通过复测的同一版本]
+  P --> A[明确线上授权]
+  A --> O[平台线上测试]
+  T -->|修改策略后返回| D
+  classDef data fill:#edf1fa,stroke:#6680ad,color:#253c62
+  classDef program fill:#eaf4f2,stroke:#278277,color:#173d38
+  class D,S,F,X data
+  class G,C,V,T,P,A,O program

@@ -1,0 +1,38 @@
+{
+  "archived_hash_checks": {
+    "card": true,
+    "config": true,
+    "source": true
+  },
+  "card_id": "ext-holdout-b",
+  "case_id": "D+E",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/run_one.py",
+    "--run-id",
+    "ext-n5-e-ext-holdout-b",
+    "--stage",
+    "N5",
+    "--agent",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/heq/source",
+    "--card",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/data/cards/ext-holdout-b",
+    "--wallclock",
+    "900",
+    "--config",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/heq/e-threshold30.json"
+  ],
+  "error": null,
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-02T16:43:41.974959+00:00",
+  "full_season_complete": true,
+  "pace_change_count": 0,
+  "reference_id": "D-linear",
+  "run_id": "ext-n5-e-ext-holdout-b",
+  "runtime_seconds": 8.875787042000002,
+  "score": -217.621552,
+  "started_at_utc": "2026-10-02T16:43:09.299173+00:00",
+  "status": "completed",
+  "termination_reason": "survey_complete"
+}

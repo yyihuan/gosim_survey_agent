@@ -1,0 +1,48 @@
+{
+  "C": {
+    "enabled": false
+  },
+  "E": {
+    "enabled": false,
+    "include_saturation": true,
+    "quantum_seconds": 30
+  },
+  "F": {
+    "candidate_fields": 6,
+    "enabled": true
+  },
+  "H": {
+    "enabled": false,
+    "strength": 2.0
+  },
+  "J": {
+    "enabled": false,
+    "maximum_reward_per_target": 10.0
+  },
+  "M": {
+    "enabled": true
+  },
+  "Q": {
+    "enabled": true,
+    "memory_hours": 2.0,
+    "minimum_margin": 0.6,
+    "minimum_samples": 8,
+    "quantile": 0.25
+  },
+  "W": {
+    "enabled": false
+  },
+  "base": "Dlinear",
+  "case_id": "D+F+M+Q",
+  "conditional_long_exposure": false,
+  "environment": {
+    "PACKING_ANCHORS": "3",
+    "USE_LLM": "0"
+  },
+  "family": "combined",
+  "geometry_strength": 0.0,
+  "reference_id": "D-linear",
+  "science_exponent": 1.0,
+  "strict_slot": false,
+  "variant": "FMQ"
+}

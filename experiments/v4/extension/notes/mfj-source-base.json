@@ -1,0 +1,13 @@
+{
+  "baseline_source": "experiments/v4/agents/combined/source",
+  "baseline_config": "experiments/v4/configs/tdg/d-linear.json",
+  "baseline_files_sha256": {
+    "planner.py": "e644662391810de87c3f69b6178665a43b7b30b9a8c9a5521ea7b1a3f4f07150",
+    "skymath.py": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26",
+    "cw_policy.py": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60",
+    "llm_hook.py": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543",
+    "observer.project.json": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc",
+    "baseline_agent.py": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+  },
+  "scope": "M/F/J independent factors on D-linear; only demo/dev-season"
+}

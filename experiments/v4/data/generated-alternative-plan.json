@@ -1,0 +1,53 @@
+{
+  "status": "proposal_only_not_generated",
+  "generator": "research/2026-10-02/upstream/challenge/v4_bundle.py:build_card_bundle",
+  "upstream_commit": "18be105bc517938c8341ad79646cf397e3293016",
+  "notes": [
+    "No generator executed. Main Agent must lock groups before score reveal.",
+    "build_card_bundle uses 2 footprint components for area<3000; this differs from official 3-region practice cards.",
+    "Uses official reference configs and hashed independent streams; output normal 13 files, stress 14 files.",
+    "Generator refuses existing output directory.",
+    "No claim of reconstructing secret practice seeds or exact official data."
+  ],
+  "specs": [
+    {
+      "start_date": "2026-10-04",
+      "end_date": "2026-11-11",
+      "targets": 10000,
+      "area_deg2": 2000.0,
+      "wallclock_seconds": 900,
+      "name": "Local independent development",
+      "card_id": "local-dev-seed1",
+      "scenario_slug": "local-v4-dev-seed1",
+      "phase": "local",
+      "seed": 2026100201,
+      "stress": false
+    },
+    {
+      "start_date": "2026-10-04",
+      "end_date": "2026-11-11",
+      "targets": 10000,
+      "area_deg2": 2000.0,
+      "wallclock_seconds": 900,
+      "name": "Local independent normal holdout",
+      "card_id": "local-holdout-normal",
+      "scenario_slug": "local-v4-holdout-normal",
+      "phase": "local",
+      "seed": 2026100202,
+      "stress": false
+    },
+    {
+      "start_date": "2026-10-04",
+      "end_date": "2026-11-11",
+      "targets": 10000,
+      "area_deg2": 2000.0,
+      "wallclock_seconds": 900,
+      "name": "Local independent stress holdout",
+      "card_id": "local-holdout-stress",
+      "scenario_slug": "local-v4-holdout-stress",
+      "phase": "local",
+      "seed": 2026100203,
+      "stress": true
+    }
+  ]
+}

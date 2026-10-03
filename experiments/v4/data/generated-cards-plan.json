@@ -1,0 +1,66 @@
+{
+  "recorded_before_generation_at_utc": "2026-10-02T13:13:54.615851+00:00",
+  "authority": "Main Agent explicit pre-registered choice received 2026-10-02; replaces earlier unexecuted proposal",
+  "upstream_commit": "18be105bc517938c8341ad79646cf397e3293016",
+  "generator": "challenge/v4_bundle.py::build_card_bundle",
+  "source_path": "research/2026-10-02/upstream",
+  "python": "/usr/bin/python3",
+  "output_root": "experiments/v4/data/cards",
+  "groups": {
+    "development": [
+      "demo",
+      "dev-season"
+    ],
+    "holdout": [
+      "holdout-season",
+      "holdout-stress"
+    ]
+  },
+  "restrictions": [
+    "No score evaluation",
+    "No truth analysis",
+    "No seed redraw",
+    "No simulator/reference score changes"
+  ],
+  "specs": [
+    {
+      "phase": "local-research",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-15",
+      "targets": 4800,
+      "area_deg2": 1600.0,
+      "wallclock_seconds": 900,
+      "name": "dev-season",
+      "card_id": "dev-season",
+      "scenario_slug": "local-v4-dev-season",
+      "seed": 2026100201,
+      "stress": false
+    },
+    {
+      "phase": "local-research",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-15",
+      "targets": 4800,
+      "area_deg2": 1600.0,
+      "wallclock_seconds": 900,
+      "name": "holdout-season",
+      "card_id": "holdout-season",
+      "scenario_slug": "local-v4-holdout-season",
+      "seed": 2026100202,
+      "stress": false
+    },
+    {
+      "phase": "local-research",
+      "start_date": "2026-10-15",
+      "end_date": "2026-10-29",
+      "targets": 4800,
+      "area_deg2": 1600.0,
+      "wallclock_seconds": 900,
+      "name": "holdout-stress",
+      "card_id": "holdout-stress",
+      "scenario_slug": "local-v4-holdout-stress",
+      "seed": 2026100203,
+      "stress": true
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "authorization": "Root: diagnose missing objects; bounded targeted retries; verified cards may run separately",
+  "first_inventory_preserved": "card_inventory.json",
+  "maximum_attempts_each": 2,
+  "maximum_parallel": 2,
+  "source_script_sha256": "73a36c4c3430487fc4772042ee5b8abbe1a4bf108d65ab9044935ddfc85f64a6",
+  "started_at_utc": "2026-10-02T15:08:36.243294+00:00",
+  "targets": [
+    {
+      "card": "alpha",
+      "relative_path": "public/v4_bulletins.jsonl"
+    },
+    {
+      "card": "alpha",
+      "relative_path": "public/v4_forecasts.jsonl"
+    },
+    {
+      "card": "alpha",
+      "relative_path": "truth/v4_earthquake_effects.csv"
+    },
+    {
+      "card": "alpha",
+      "relative_path": "truth/v4_events.csv"
+    },
+    {
+      "card": "alpha",
+      "relative_path": "truth/v4_observation_requests.jsonl"
+    },
+    {
+      "card": "alpha",
+      "relative_path": "truth/v4_slots.csv"
+    },
+    {
+      "card": "alpha",
+      "relative_path": "truth/v4_weather_truth.csv"
+    },
+    {
+      "card": "beta",
+      "relative_path": "public/v4_bulletins.jsonl"
+    },
+    {
+      "card": "beta",
+      "relative_path": "public/v4_forecasts.jsonl"
+    },
+    {
+      "card": "beta",
+      "relative_path": "truth/v4_earthquake_effects.csv"
+    },
+    {
+      "card": "beta",
+      "relative_path": "truth/v4_events.csv"
+    },
+    {
+      "card": "beta",
+      "relative_path": "truth/v4_observation_requests.jsonl"
+    },
+    {
+      "card": "beta",
+      "relative_path": "truth/v4_slots.csv"
+    },
+    {
+      "card": "beta",
+      "relative_path": "truth/v4_weather_truth.csv"
+    },
+    {
+      "card": "gamma",
+      "relative_path": "public/v4_bulletins.jsonl"
+    },
+    {
+      "card": "gamma",
+      "relative_path": "public/v4_forecasts.jsonl"
+    },
+    {
+      "card": "gamma",
+      "relative_path": "truth/v4_earthquake_effects.csv"
+    },
+    {
+      "card": "gamma",
+      "relative_path": "truth/v4_events.csv"
+    },
+    {
+      "card": "gamma",
+      "relative_path": "truth/v4_observation_requests.jsonl"
+    },
+    {
+      "card": "gamma",
+      "relative_path": "truth/v4_slots.csv"
+    },
+    {
+      "card": "gamma",
+      "relative_path": "truth/v4_stress_events.csv"
+    },
+    {
+      "card": "gamma",
+      "relative_path": "truth/v4_weather_truth.csv"
+    },
+    {
+      "card": "delta",
+      "relative_path": "public/v4_bulletins.jsonl"
+    },
+    {
+      "card": "delta",
+      "relative_path": "public/v4_forecasts.jsonl"
+    },
+    {
+      "card": "delta",
+      "relative_path": "truth/v4_earthquake_effects.csv"
+    },
+    {
+      "card": "delta",
+      "relative_path": "truth/v4_events.csv"
+    },
+    {
+      "card": "delta",
+      "relative_path": "truth/v4_observation_requests.jsonl"
+    },
+    {
+      "card": "delta",
+      "relative_path": "truth/v4_slots.csv"
+    },
+    {
+      "card": "delta",
+      "relative_path": "truth/v4_stress_events.csv"
+    },
+    {
+      "card": "delta",
+      "relative_path": "truth/v4_weather_truth.csv"
+    }
+  ],
+  "timeout_seconds_each": 15,
+  "truth_policy": "download and hashes only",
+  "whole_phase_deadline_seconds": 240
+}

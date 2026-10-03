@@ -1,0 +1,1588 @@
+{
+  "schema_version": "mfj-n2-n3-results-v1",
+  "rows": [
+    {
+      "run_id": "ext-n2-mfj-control-demo",
+      "stage": "integration-verification",
+      "family": "CONTROL",
+      "card": "demo",
+      "total": 1501.174588,
+      "delta_total_vs_d_control": 0.0,
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1306.431365,
+        "uniformity_penalty": -5.256777
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": 0.0,
+        "uniformity_penalty": 0.0
+      },
+      "required_missing": 0,
+      "J": 0.973716115,
+      "qualified_target_count": 1236,
+      "observe_actions": 230,
+      "mean_exposure_seconds": 918.9130434782609,
+      "request_issued": 1,
+      "request_completed": 1,
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000716",
+            "V4T002258"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "runtime_seconds": 3.9009685,
+      "accounted_wallclock_seconds": 3.539,
+      "agent_wallclock_seconds": 2.857,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.481,
+        "minimum_remaining_wallclock_seconds": 896.481,
+        "telemetry_available": true,
+        "telemetry_requests": 252
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "01b97334da171fffa10f3296a42837cd5fe0b28d0c887bb111f710dd607da9d3",
+      "config": {
+        "family": "D+MFJ-control",
+        "variant": "all-off",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": false
+        },
+        "F": {
+          "enabled": false,
+          "candidate_fields": 6
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": true,
+        "load_average": [
+          6.427734375,
+          5.09423828125,
+          5.16455078125
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.0004525420000000002,
+        "peers_at_acquisition": [],
+        "simulator_limit": 6,
+        "slots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 0,
+        "logged_observe_plans": 0
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n2-mfj-control-demo/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n2-mfj-control-demo/metrics.json",
+        "score": "experiments/v4/runs/ext-n2-mfj-control-demo/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n2-mfj-control-demo/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n2-mfj-control-demo/output/actions.jsonl"
+      },
+      "variant": "all-off"
+    },
+    {
+      "run_id": "ext-n2-mfj-control-dev-season",
+      "stage": "integration-verification",
+      "family": "CONTROL",
+      "card": "dev-season",
+      "total": -1851.06202,
+      "delta_total_vs_d_control": 0.0,
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2900.0,
+        "sum_best_scores": 1140.085039,
+        "uniformity_penalty": -91.14706
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": 0.0,
+        "uniformity_penalty": 0.0
+      },
+      "required_missing": 58,
+      "J": 0.5442647,
+      "qualified_target_count": 1131,
+      "observe_actions": 198,
+      "mean_exposure_seconds": 1227.2727272727273,
+      "request_issued": 1,
+      "request_completed": 0,
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "runtime_seconds": 6.080415917,
+      "accounted_wallclock_seconds": 5.601,
+      "agent_wallclock_seconds": 4.553,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 894.539,
+        "minimum_remaining_wallclock_seconds": 894.539,
+        "telemetry_available": true,
+        "telemetry_requests": 434
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "01b97334da171fffa10f3296a42837cd5fe0b28d0c887bb111f710dd607da9d3",
+      "config": {
+        "family": "D+MFJ-control",
+        "variant": "all-off",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": false
+        },
+        "F": {
+          "enabled": false,
+          "candidate_fields": 6
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": true,
+        "load_average": [
+          3.72705078125,
+          4.5390625,
+          4.94580078125
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.0002455000000000096,
+        "peers_at_acquisition": [],
+        "simulator_limit": 6,
+        "slots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 0,
+        "logged_observe_plans": 0
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n2-mfj-control-dev-season/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n2-mfj-control-dev-season/metrics.json",
+        "score": "experiments/v4/runs/ext-n2-mfj-control-dev-season/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n2-mfj-control-dev-season/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n2-mfj-control-dev-season/output/actions.jsonl"
+      },
+      "variant": "all-off"
+    },
+    {
+      "run_id": "ext-n2-m-initial-demo",
+      "stage": "N2",
+      "family": "M",
+      "card": "demo",
+      "total": 1494.658892,
+      "delta_total_vs_d_control": -6.515696000000162,
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1300.092064,
+        "uniformity_penalty": -5.433172
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": -6.339300999999978,
+        "uniformity_penalty": -0.1763950000000003
+      },
+      "required_missing": 0,
+      "J": 0.97283414,
+      "qualified_target_count": 1205,
+      "observe_actions": 232,
+      "mean_exposure_seconds": 913.5775862068965,
+      "request_issued": 1,
+      "request_completed": 1,
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "runtime_seconds": 6.189874916,
+      "accounted_wallclock_seconds": 5.679,
+      "agent_wallclock_seconds": 4.54,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 894.342,
+        "minimum_remaining_wallclock_seconds": 894.342,
+        "telemetry_available": true,
+        "telemetry_requests": 253
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "b50825126fe761107588d9416fdf100db6bb6815a8a947d849e00b0df610c914",
+      "config": {
+        "family": "M",
+        "variant": "feedback-best-score",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": true
+        },
+        "F": {
+          "enabled": false,
+          "candidate_fields": 6
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          4.404296875,
+          4.734375,
+          4.998046875
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.000403083999999998,
+        "peers_at_acquisition": [
+          {
+            "exclusive": false,
+            "harness_pid": 58832,
+            "limit": 6,
+            "run_id": "ext-n2-f-initial-demo",
+            "slot": 0
+          }
+        ],
+        "simulator_limit": 6,
+        "slots": [
+          1
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 235,
+        "logged_observe_plans": 232,
+        "m_evaluations": 667791,
+        "m_proxy_positive_actual_zero": 1376,
+        "m_matched_evaluations": 24116,
+        "m_mismatch_evaluations": 44208,
+        "m_selected_banked_targets": 880,
+        "m_selected_predicted_science_gain": 1245.3555729546401,
+        "suppression_call_fraction": 0.002060524924714469,
+        "suppression_plan_count": 123,
+        "m_feedback_updates": 2402,
+        "m_resync_count": 0
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n2-m-initial-demo/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n2-m-initial-demo/metrics.json",
+        "score": "experiments/v4/runs/ext-n2-m-initial-demo/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n2-m-initial-demo/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n2-m-initial-demo/output/actions.jsonl"
+      },
+      "variant": "feedback-best-score"
+    },
+    {
+      "run_id": "ext-n2-m-initial-dev-season",
+      "stage": "N2",
+      "family": "M",
+      "card": "dev-season",
+      "total": -1795.364324,
+      "delta_total_vs_d_control": 55.69769600000018,
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2850.0,
+        "sum_best_scores": 1146.613847,
+        "uniformity_penalty": -91.97817
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 50.0,
+        "sum_best_scores": 6.528808000000026,
+        "uniformity_penalty": -0.8311100000000096
+      },
+      "required_missing": 57,
+      "J": 0.5401091499999999,
+      "qualified_target_count": 1143,
+      "observe_actions": 200,
+      "mean_exposure_seconds": 1218.75,
+      "request_issued": 1,
+      "request_completed": 0,
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "runtime_seconds": 8.684154083,
+      "accounted_wallclock_seconds": 8.105,
+      "agent_wallclock_seconds": 6.815,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 891.927,
+        "minimum_remaining_wallclock_seconds": 891.927,
+        "telemetry_available": true,
+        "telemetry_requests": 433
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "b50825126fe761107588d9416fdf100db6bb6815a8a947d849e00b0df610c914",
+      "config": {
+        "family": "M",
+        "variant": "feedback-best-score",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": true
+        },
+        "F": {
+          "enabled": false,
+          "candidate_fields": 6
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          4.404296875,
+          4.734375,
+          4.998046875
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.0006951249999999909,
+        "peers_at_acquisition": [
+          {
+            "exclusive": false,
+            "harness_pid": 58832,
+            "limit": 6,
+            "run_id": "ext-n2-f-initial-demo",
+            "slot": 0
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58830,
+            "limit": 6,
+            "run_id": "ext-n2-m-initial-demo",
+            "slot": 1
+          }
+        ],
+        "simulator_limit": 6,
+        "slots": [
+          2
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 326,
+        "logged_observe_plans": 200,
+        "m_evaluations": 1770066,
+        "m_proxy_positive_actual_zero": 1266,
+        "m_matched_evaluations": 24670,
+        "m_mismatch_evaluations": 49340,
+        "m_selected_banked_targets": 557,
+        "m_selected_predicted_science_gain": 1171.0936973253192,
+        "suppression_call_fraction": 0.000715227567785608,
+        "suppression_plan_count": 134,
+        "m_feedback_updates": 2304,
+        "m_resync_count": 0
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n2-m-initial-dev-season/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n2-m-initial-dev-season/metrics.json",
+        "score": "experiments/v4/runs/ext-n2-m-initial-dev-season/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n2-m-initial-dev-season/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n2-m-initial-dev-season/output/actions.jsonl"
+      },
+      "variant": "feedback-best-score"
+    },
+    {
+      "run_id": "ext-n2-f-initial-demo",
+      "stage": "N2",
+      "family": "F",
+      "card": "demo",
+      "total": 1549.896124,
+      "delta_total_vs_d_control": 48.721536000000015,
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1352.614057,
+        "uniformity_penalty": -2.717933
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": 46.18269200000009,
+        "uniformity_penalty": 2.5388439999999997
+      },
+      "required_missing": 0,
+      "J": 0.986410335,
+      "qualified_target_count": 1340,
+      "observe_actions": 233,
+      "mean_exposure_seconds": 906.4377682403433,
+      "request_issued": 1,
+      "request_completed": 1,
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000716",
+            "V4T002258"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "runtime_seconds": 5.825996792,
+      "accounted_wallclock_seconds": 5.325,
+      "agent_wallclock_seconds": 4.165,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 894.698,
+        "minimum_remaining_wallclock_seconds": 894.698,
+        "telemetry_available": true,
+        "telemetry_requests": 254
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "80c46cefd7f6ea4a32aae7223c47b2ab3fb6c00a3f770baa4b3629a2150fdcfc",
+      "config": {
+        "family": "F",
+        "variant": "fields6-rate",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": false
+        },
+        "F": {
+          "enabled": true,
+          "candidate_fields": 6
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          4.404296875,
+          4.734375,
+          4.998046875
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.0006628330000000016,
+        "peers_at_acquisition": [],
+        "simulator_limit": 6,
+        "slots": [
+          0
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 235,
+        "logged_observe_plans": 233,
+        "f_generated_fields": 10966,
+        "f_retained_fields": 1398,
+        "f_evaluated_fields": 1398,
+        "f_changed_from_potential_best": 138,
+        "changed_field_fraction_of_observe_plans": 0.592274678111588,
+        "selected_potential_rank_distribution": {
+          "1": 95,
+          "3": 33,
+          "2": 40,
+          "5": 24,
+          "4": 27,
+          "6": 14
+        },
+        "maximum_anchor_count": 3
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n2-f-initial-demo/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n2-f-initial-demo/metrics.json",
+        "score": "experiments/v4/runs/ext-n2-f-initial-demo/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n2-f-initial-demo/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n2-f-initial-demo/output/actions.jsonl"
+      },
+      "variant": "fields6-rate"
+    },
+    {
+      "run_id": "ext-n2-f-initial-dev-season",
+      "stage": "N2",
+      "family": "F",
+      "card": "dev-season",
+      "total": -1750.564019,
+      "delta_total_vs_d_control": 100.49800100000016,
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2850.0,
+        "sum_best_scores": 1192.993276,
+        "uniformity_penalty": -93.557295
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 50.0,
+        "sum_best_scores": 52.90823699999987,
+        "uniformity_penalty": -2.410235
+      },
+      "required_missing": 57,
+      "J": 0.532213525,
+      "qualified_target_count": 1208,
+      "observe_actions": 217,
+      "mean_exposure_seconds": 1155.7603686635944,
+      "request_issued": 1,
+      "request_completed": 0,
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "runtime_seconds": 8.149210084,
+      "accounted_wallclock_seconds": 7.609,
+      "agent_wallclock_seconds": 6.222,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 892.433,
+        "minimum_remaining_wallclock_seconds": 892.433,
+        "telemetry_available": true,
+        "telemetry_requests": 440
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "80c46cefd7f6ea4a32aae7223c47b2ab3fb6c00a3f770baa4b3629a2150fdcfc",
+      "config": {
+        "family": "F",
+        "variant": "fields6-rate",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": false
+        },
+        "F": {
+          "enabled": true,
+          "candidate_fields": 6
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          4.404296875,
+          4.734375,
+          4.998046875
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.0009099579999999885,
+        "peers_at_acquisition": [
+          {
+            "exclusive": false,
+            "harness_pid": 58832,
+            "limit": 6,
+            "run_id": "ext-n2-f-initial-demo",
+            "slot": 0
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58830,
+            "limit": 6,
+            "run_id": "ext-n2-m-initial-demo",
+            "slot": 1
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58831,
+            "limit": 6,
+            "run_id": "ext-n2-m-initial-dev-season",
+            "slot": 2
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58834,
+            "limit": 6,
+            "run_id": "ext-n2-j-initial-demo",
+            "slot": 3
+          }
+        ],
+        "simulator_limit": 6,
+        "slots": [
+          4
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 334,
+        "logged_observe_plans": 217,
+        "f_generated_fields": 10410,
+        "f_retained_fields": 1302,
+        "f_evaluated_fields": 1302,
+        "f_changed_from_potential_best": 118,
+        "changed_field_fraction_of_observe_plans": 0.543778801843318,
+        "selected_potential_rank_distribution": {
+          "1": 99,
+          "2": 43,
+          "6": 12,
+          "3": 25,
+          "5": 20,
+          "4": 18
+        },
+        "maximum_anchor_count": 3
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n2-f-initial-dev-season/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n2-f-initial-dev-season/metrics.json",
+        "score": "experiments/v4/runs/ext-n2-f-initial-dev-season/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n2-f-initial-dev-season/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n2-f-initial-dev-season/output/actions.jsonl"
+      },
+      "variant": "fields6-rate"
+    },
+    {
+      "run_id": "ext-n2-j-initial-demo",
+      "stage": "N2",
+      "family": "J",
+      "card": "demo",
+      "total": 1337.654389,
+      "delta_total_vs_d_control": -163.52019900000005,
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1239.372964,
+        "uniformity_penalty": -1.718575
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": -67.058401,
+        "uniformity_penalty": 3.5382019999999996
+      },
+      "required_missing": 0,
+      "J": 0.9914071250000001,
+      "qualified_target_count": 1224,
+      "observe_actions": 227,
+      "mean_exposure_seconds": 929.7356828193832,
+      "request_issued": 1,
+      "request_completed": 0,
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 5,
+          "completed_target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000716"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "runtime_seconds": 5.787088834,
+      "accounted_wallclock_seconds": 5.26,
+      "agent_wallclock_seconds": 4.137,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 894.766,
+        "minimum_remaining_wallclock_seconds": 894.766,
+        "telemetry_available": true,
+        "telemetry_requests": 249
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "config": {
+        "family": "J",
+        "variant": "delta-j-cap10",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": false
+        },
+        "F": {
+          "enabled": false,
+          "candidate_fields": 6
+        },
+        "J": {
+          "enabled": true,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          4.404296875,
+          4.734375,
+          4.998046875
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.0016147499999999981,
+        "peers_at_acquisition": [
+          {
+            "exclusive": false,
+            "harness_pid": 58832,
+            "limit": 6,
+            "run_id": "ext-n2-f-initial-demo",
+            "slot": 0
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58830,
+            "limit": 6,
+            "run_id": "ext-n2-m-initial-demo",
+            "slot": 1
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58831,
+            "limit": 6,
+            "run_id": "ext-n2-m-initial-dev-season",
+            "slot": 2
+          }
+        ],
+        "simulator_limit": 6,
+        "slots": [
+          3
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 230,
+        "logged_observe_plans": 227,
+        "j_threshold_evaluations": 492644,
+        "j_reward_evaluations": 282156,
+        "j_rewarded_selected": 713,
+        "j_selected_reward_sum": 460.40369652815406,
+        "rewarded_observe_plans": 153,
+        "rewarded_observe_fraction": 0.6740088105726872,
+        "maximum_single_target_reward": 10.0
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n2-j-initial-demo/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n2-j-initial-demo/metrics.json",
+        "score": "experiments/v4/runs/ext-n2-j-initial-demo/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n2-j-initial-demo/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n2-j-initial-demo/output/actions.jsonl"
+      },
+      "variant": "delta-j-cap10"
+    },
+    {
+      "run_id": "ext-n2-j-initial-dev-season",
+      "stage": "N2",
+      "family": "J",
+      "card": "dev-season",
+      "total": -1861.152213,
+      "delta_total_vs_d_control": -10.090193,
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2900.0,
+        "sum_best_scores": 1130.276442,
+        "uniformity_penalty": -91.428655
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": -9.808596999999963,
+        "uniformity_penalty": -0.28159500000001003
+      },
+      "required_missing": 58,
+      "J": 0.542856725,
+      "qualified_target_count": 1124,
+      "observe_actions": 187,
+      "mean_exposure_seconds": 1356.4171122994653,
+      "request_issued": 1,
+      "request_completed": 0,
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "runtime_seconds": 8.045036042,
+      "accounted_wallclock_seconds": 7.355,
+      "agent_wallclock_seconds": 6.16,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 892.682,
+        "minimum_remaining_wallclock_seconds": 892.682,
+        "telemetry_available": true,
+        "telemetry_requests": 408
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "config": {
+        "family": "J",
+        "variant": "delta-j-cap10",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": false
+        },
+        "F": {
+          "enabled": false,
+          "candidate_fields": 6
+        },
+        "J": {
+          "enabled": true,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          4.404296875,
+          4.734375,
+          4.998046875
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.00036458300000000166,
+        "peers_at_acquisition": [
+          {
+            "exclusive": false,
+            "harness_pid": 58832,
+            "limit": 6,
+            "run_id": "ext-n2-f-initial-demo",
+            "slot": 0
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58830,
+            "limit": 6,
+            "run_id": "ext-n2-m-initial-demo",
+            "slot": 1
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58831,
+            "limit": 6,
+            "run_id": "ext-n2-m-initial-dev-season",
+            "slot": 2
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58834,
+            "limit": 6,
+            "run_id": "ext-n2-j-initial-demo",
+            "slot": 3
+          },
+          {
+            "exclusive": false,
+            "harness_pid": 58833,
+            "limit": 6,
+            "run_id": "ext-n2-f-initial-dev-season",
+            "slot": 4
+          }
+        ],
+        "simulator_limit": 6,
+        "slots": [
+          5
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 302,
+        "logged_observe_plans": 187,
+        "j_threshold_evaluations": 1379569,
+        "j_reward_evaluations": 1048317,
+        "j_rewarded_selected": 786,
+        "j_selected_reward_sum": 369.6065345310909,
+        "rewarded_observe_plans": 131,
+        "rewarded_observe_fraction": 0.7005347593582888,
+        "maximum_single_target_reward": 10.0
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n2-j-initial-dev-season/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n2-j-initial-dev-season/metrics.json",
+        "score": "experiments/v4/runs/ext-n2-j-initial-dev-season/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n2-j-initial-dev-season/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n2-j-initial-dev-season/output/actions.jsonl"
+      },
+      "variant": "delta-j-cap10"
+    },
+    {
+      "run_id": "ext-n3-f-fields12-demo",
+      "stage": "N3",
+      "family": "F",
+      "card": "demo",
+      "total": 1442.491759,
+      "delta_total_vs_d_control": -58.68282900000008,
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1343.403393,
+        "uniformity_penalty": -0.911633
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": 36.97202800000014,
+        "uniformity_penalty": 4.3451439999999995
+      },
+      "required_missing": 0,
+      "J": 0.995441835,
+      "qualified_target_count": 1320,
+      "observe_actions": 234,
+      "mean_exposure_seconds": 901.9230769230769,
+      "request_issued": 1,
+      "request_completed": 0,
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T001021",
+            "V4T000716"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "runtime_seconds": 4.470029042,
+      "accounted_wallclock_seconds": 4.076,
+      "agent_wallclock_seconds": 3.367,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.947,
+        "minimum_remaining_wallclock_seconds": 895.947,
+        "telemetry_available": true,
+        "telemetry_requests": 256
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "a8e1bd7ecc3fe960af9bf5161e90ca9677b0f8f3171bfc6daca2ae76551f5ef2",
+      "config": {
+        "family": "F",
+        "variant": "fields12-rate",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": false
+        },
+        "F": {
+          "enabled": true,
+          "candidate_fields": 12
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          7.65380859375,
+          5.11962890625,
+          5.0634765625
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.00034166600000000436,
+        "peers_at_acquisition": [],
+        "simulator_limit": 6,
+        "slots": [
+          0
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 237,
+        "logged_observe_plans": 234,
+        "f_generated_fields": 11005,
+        "f_retained_fields": 2808,
+        "f_evaluated_fields": 2808,
+        "f_changed_from_potential_best": 162,
+        "changed_field_fraction_of_observe_plans": 0.6923076923076923,
+        "selected_potential_rank_distribution": {
+          "1": 72,
+          "3": 29,
+          "10": 6,
+          "2": 41,
+          "7": 17,
+          "11": 11,
+          "8": 8,
+          "12": 15,
+          "5": 7,
+          "4": 13,
+          "9": 4,
+          "6": 11
+        },
+        "maximum_anchor_count": 3
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n3-f-fields12-demo/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n3-f-fields12-demo/metrics.json",
+        "score": "experiments/v4/runs/ext-n3-f-fields12-demo/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n3-f-fields12-demo/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n3-f-fields12-demo/output/actions.jsonl"
+      },
+      "variant": "fields12-rate",
+      "delta_total_vs_f6": -107.4043650000001,
+      "delta_components_vs_f6": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": -9.210663999999952,
+        "uniformity_penalty": 1.8062999999999998
+      }
+    },
+    {
+      "run_id": "ext-n3-f-fields12-dev-season",
+      "stage": "N3",
+      "family": "F",
+      "card": "dev-season",
+      "total": -1826.637492,
+      "delta_total_vs_d_control": 24.42452800000001,
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3000.0,
+        "sum_best_scores": 1264.457754,
+        "uniformity_penalty": -91.095247
+      },
+      "delta_components_vs_d_control": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -100.0,
+        "sum_best_scores": 124.37271499999997,
+        "uniformity_penalty": 0.05181299999999567
+      },
+      "required_missing": 60,
+      "J": 0.544523765,
+      "qualified_target_count": 1289,
+      "observe_actions": 243,
+      "mean_exposure_seconds": 1032.0987654320988,
+      "request_issued": 1,
+      "request_completed": 0,
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "runtime_seconds": 6.983806749999999,
+      "accounted_wallclock_seconds": 6.567,
+      "agent_wallclock_seconds": 5.52,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 893.465,
+        "minimum_remaining_wallclock_seconds": 893.465,
+        "telemetry_available": true,
+        "telemetry_requests": 468
+      },
+      "termination_reason": "survey_complete",
+      "exit_code": 0,
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "config_sha256": "a8e1bd7ecc3fe960af9bf5161e90ca9677b0f8f3171bfc6daca2ae76551f5ef2",
+      "config": {
+        "family": "F",
+        "variant": "fields12-rate",
+        "strict_slot": false,
+        "science_exponent": 1.0,
+        "geometry_strength": 0.0,
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "M": {
+          "enabled": false
+        },
+        "F": {
+          "enabled": true,
+          "candidate_fields": 12
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        }
+      },
+      "concurrency": {
+        "cpu_count": 8,
+        "exclusive": false,
+        "load_average": [
+          7.65380859375,
+          5.11962890625,
+          5.0634765625
+        ],
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+        "lock_wait_seconds": 0.00031912500000000343,
+        "peers_at_acquisition": [
+          {
+            "exclusive": false,
+            "harness_pid": 59186,
+            "limit": 6,
+            "run_id": "ext-n3-f-fields12-demo",
+            "slot": 0
+          }
+        ],
+        "simulator_limit": 6,
+        "slots": [
+          1
+        ]
+      },
+      "mechanism": {
+        "logged_plans": 359,
+        "logged_observe_plans": 243,
+        "f_generated_fields": 11632,
+        "f_retained_fields": 2916,
+        "f_evaluated_fields": 2916,
+        "f_changed_from_potential_best": 158,
+        "changed_field_fraction_of_observe_plans": 0.6502057613168725,
+        "selected_potential_rank_distribution": {
+          "1": 85,
+          "8": 9,
+          "9": 10,
+          "10": 6,
+          "4": 19,
+          "2": 37,
+          "6": 16,
+          "3": 24,
+          "11": 11,
+          "7": 8,
+          "12": 5,
+          "5": 13
+        },
+        "maximum_anchor_count": 3
+      },
+      "internal_errors": [],
+      "evidence_links": {
+        "manifest": "experiments/v4/runs/ext-n3-f-fields12-dev-season/manifest.json",
+        "metrics": "experiments/v4/runs/ext-n3-f-fields12-dev-season/metrics.json",
+        "score": "experiments/v4/runs/ext-n3-f-fields12-dev-season/output/score_report.json",
+        "agent_log": "experiments/v4/runs/ext-n3-f-fields12-dev-season/output/agent.log",
+        "actions": "experiments/v4/runs/ext-n3-f-fields12-dev-season/output/actions.jsonl"
+      },
+      "variant": "fields12-rate",
+      "delta_total_vs_f6": -76.07347300000015,
+      "delta_components_vs_f6": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -150.0,
+        "sum_best_scores": 71.4644780000001,
+        "uniformity_penalty": 2.462047999999996
+      }
+    }
+  ],
+  "row_count": 10,
+  "strategy_run_count": 8,
+  "postcheck": {
+    "source_unchanged": true,
+    "config_unchanged": true,
+    "all_run_source_snapshots_match": true,
+    "all_wrappers_and_original_harness_unchanged": true,
+    "old_all_runs_unchanged": true,
+    "combined_baseline_source_unchanged": true,
+    "all_complete": true,
+    "all_pace_zero": true,
+    "no_internal_errors": true
+  },
+  "definitions": {
+    "scores": "official metrics unchanged; deltas vs same-card MFJ all-off D control",
+    "M_trigger": "proxy-positive/actual-zero planning calls; duplicate evaluations included; not unique targets",
+    "F_trigger": "chosen field differs from highest longest-exposure potential among original anchor search",
+    "J_trigger": "observes with at least one positive truncated single-target Jain reward; summed rewards are local approximation",
+    "feedback_metrics": "M feedback/resync maxima as of last logged plan; a later final protocol result may not be included"
+  }
+}

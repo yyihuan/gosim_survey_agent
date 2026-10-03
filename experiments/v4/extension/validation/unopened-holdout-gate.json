@@ -1,0 +1,24 @@
+{
+  "recorded_at_utc": "2026-10-02T16:21:14.441998+00:00",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/run_one.py",
+    "--run-id",
+    "ext-unopened-gate-probe",
+    "--stage",
+    "N2",
+    "--agent",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+    "--config",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/d-linear.json",
+    "--card",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/data/cards/ext-holdout-a"
+  ],
+  "exit_code": 2,
+  "stdout": "",
+  "stderr": "usage: run_one.py [--run-id RUN_ID] [--stage STAGE] [--card CARD]\nrun_one.py: error: 新保留卡封存；必须等Root明确冻结并写N5_AUTHORIZATION.json\n",
+  "run_created": false,
+  "agent_or_simulator_started": false,
+  "passed": true
+}

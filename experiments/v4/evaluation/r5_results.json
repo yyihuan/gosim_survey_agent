@@ -1,0 +1,1940 @@
+{
+  "actual_runs": 26,
+  "batch_pre_and_post_hash_checks_passed": true,
+  "created_at_utc": "2026-10-02T13:46:38.628967+00:00",
+  "definitions": {
+    "error_scan": "内部错误按 agent.log 中 baseline: error 计数；Traceback 扫描 runner stderr、agent log 与执行日志。",
+    "score": "官方 score_report 原值，不重评分；delta 是同卡相对冻结官方 baseline 的算术差。",
+    "selection": "不排名、不挑选、不调参；全局判断由 Root 负责。"
+  },
+  "execution_journal": "experiments/v4/evaluation/execution.jsonl",
+  "execution_journal_sha256": "9de0ecbf05a9fedadfbe31793d159e90f0b522107510c540a536b411b6393eeb",
+  "exit_code_counts": {
+    "0": 26
+  },
+  "expected_runs": 26,
+  "extra_configuration_count": 0,
+  "freeze_manifest": "experiments/v4/evaluation/freeze_manifest.json",
+  "freeze_manifest_sha256": "19a50dd8ca97a566e7ed698b7a0a3f7eb565db27a8368ac32dd02a31f2f5504e",
+  "internal_error_count": 0,
+  "maximum_simultaneous_runs": 2,
+  "official_reports_available": 26,
+  "pace_change_count": 0,
+  "post_run_hash_checks_passed": 26,
+  "pre_run_hash_checks_passed": 26,
+  "retry_count": 0,
+  "runs": [
+    {
+      "accounted_wallclock_seconds": 3.509,
+      "artifact_sha256": {
+        "manifest": "dbd324a2922c034904b6d56c11d8d40fb836c2ebe893890e3187f1df9d176395",
+        "metrics": "5422b88b1567d756af539f02dbc16c1479bc6f31f7361dc75f50feb77f60f343",
+        "score_report": "48a2da1ba0e5b816810e2f240d3ef1eca5365249b847b230b9183cbcea2fc782"
+      },
+      "by_class": {
+        "BGS": 100.181644,
+        "ELG": 372.756935,
+        "LRG": 145.601491,
+        "QSO": 143.252642,
+        "Star": 16.862354
+      },
+      "candidate": "baseline",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6350.0,
+        "sum_best_scores": 778.655067,
+        "uniformity_penalty": -90.103077
+      },
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "counts": {
+        "decisions": 634,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 1329,
+        "observe_actions": 108,
+        "required_missing": 127,
+        "targets_observed": 1121
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": 0.0,
+        "uniformity_penalty": 0.0
+      },
+      "delta_total_vs_baseline": 0.0,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.504,
+        "minimum_remaining_wallclock_seconds": 896.504,
+        "telemetry_available": true,
+        "telemetry_requests": 443
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-baseline-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-baseline-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-baseline-holdout-season/output",
+        "run": "experiments/v4/runs/r5-baseline-holdout-season",
+        "score_report": "experiments/v4/runs/r5-baseline-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-baseline-holdout-season",
+      "runtime_seconds": 3.935980541,
+      "source_tree_sha256": "8204d3ccec2975c874ab2384c7b786ce4f877dc843ed268a55036ab18260c2c3",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5561.44801,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 3.789,
+      "artifact_sha256": {
+        "manifest": "630574405753797c14c2a44b9d2a468dad6c6ab6a07e815c3361877a3f9ba5bf",
+        "metrics": "d719d04c5f74ec693189838343609d0beb3fc440443dc3e23454a0073bde8cfa",
+        "score_report": "3a4814d64c6a2c45b11bd62b153b1b79b9b3f7246c34897e22093185ca826da4"
+      },
+      "by_class": {
+        "BGS": 143.666678,
+        "ELG": 384.245099,
+        "LRG": 125.02728,
+        "QSO": 89.080363,
+        "Star": 44.264622
+      },
+      "candidate": "baseline",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3550.0,
+        "sum_best_scores": 786.284041,
+        "uniformity_penalty": -14.517301
+      },
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "counts": {
+        "decisions": 486,
+        "invalidated_observations": 12,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1886,
+        "observe_actions": 173,
+        "required_missing": 71,
+        "targets_observed": 1555
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": 0.0,
+        "uniformity_penalty": 0.0
+      },
+      "delta_total_vs_baseline": 0.0,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.244,
+        "minimum_remaining_wallclock_seconds": 896.244,
+        "telemetry_available": true,
+        "telemetry_requests": 291
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-baseline-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-baseline-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-baseline-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-baseline-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-baseline-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-baseline-holdout-stress",
+      "runtime_seconds": 4.242804,
+      "source_tree_sha256": "8204d3ccec2975c874ab2384c7b786ce4f877dc843ed268a55036ab18260c2c3",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2778.233259,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 4.062,
+      "artifact_sha256": {
+        "manifest": "3084826b638c78f38f676c5b656d3472d5a45a75a122787ac3366eee07cfa462",
+        "metrics": "e6acd1116782eb385dc8fd71cab235a566cacceb914daa30123ea194aea171ac",
+        "score_report": "c5e79aeec3360bcebb7486a6009c3972074724b73543088c27705081d98fa329"
+      },
+      "by_class": {
+        "BGS": 154.420667,
+        "ELG": 371.080534,
+        "LRG": 130.598659,
+        "QSO": 81.558539,
+        "Star": 42.301348
+      },
+      "candidate": "t",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6350.0,
+        "sum_best_scores": 779.959747,
+        "uniformity_penalty": -89.87785
+      },
+      "config_sha256": "5ee26c130f7d005017c4bc22d4a9ce30f51f142545541b19f7c0a86151cb6516",
+      "counts": {
+        "decisions": 662,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 1546,
+        "observe_actions": 136,
+        "required_missing": 127,
+        "targets_observed": 1347
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": 1.30468,
+        "uniformity_penalty": 0.225227
+      },
+      "delta_total_vs_baseline": 1.529906,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.952,
+        "minimum_remaining_wallclock_seconds": 895.952,
+        "telemetry_available": true,
+        "telemetry_requests": 471
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-t-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-t-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-t-holdout-season/output",
+        "run": "experiments/v4/runs/r5-t-holdout-season",
+        "score_report": "experiments/v4/runs/r5-t-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-t-holdout-season",
+      "runtime_seconds": 4.497887458,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5559.918104,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 4.713,
+      "artifact_sha256": {
+        "manifest": "54e425215de250f6da2cefb5b1880c4d7438b4f2050beeed27e59b6fe651bc2f",
+        "metrics": "d3638651ce81243c5b2f467b235f2c3641034d1abf5e412ffcfb3ecfe12c3a43",
+        "score_report": "fef79c1f46ec8abf2dd4c1626f8c7ae624e421b3172185885187151e69dcdb8f"
+      },
+      "by_class": {
+        "BGS": 183.896835,
+        "ELG": 331.14764,
+        "LRG": 97.805976,
+        "QSO": 67.42256,
+        "Star": 72.909416
+      },
+      "candidate": "t",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2950.0,
+        "sum_best_scores": 753.182427,
+        "uniformity_penalty": -17.524741
+      },
+      "config_sha256": "5ee26c130f7d005017c4bc22d4a9ce30f51f142545541b19f7c0a86151cb6516",
+      "counts": {
+        "decisions": 550,
+        "invalidated_observations": 8,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2293,
+        "observe_actions": 237,
+        "required_missing": 59,
+        "targets_observed": 1886
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 600.0,
+        "sum_best_scores": -33.101614,
+        "uniformity_penalty": -3.00744
+      },
+      "delta_total_vs_baseline": 563.890946,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.322,
+        "minimum_remaining_wallclock_seconds": 895.322,
+        "telemetry_available": true,
+        "telemetry_requests": 355
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-t-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-t-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-t-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-t-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-t-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-t-holdout-stress",
+      "runtime_seconds": 5.088949583000001,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2214.342313,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 4.546,
+      "artifact_sha256": {
+        "manifest": "03a26710d58bb15a9d5f8a99f781eaeb0332445eee84c990993f92def4427e5d",
+        "metrics": "acfb7605d73bfcd2bbf8cf05e2ccd8e654b2f54e4e036c372f3a4d026b811569",
+        "score_report": "3fbc2b3d286793ad72754641a5d60fc99d918af2a96239be411b4bb7db1676cc"
+      },
+      "by_class": {
+        "BGS": 102.953514,
+        "ELG": 386.709322,
+        "LRG": 155.279372,
+        "QSO": 169.696618,
+        "Star": 23.296861
+      },
+      "candidate": "d",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6250.0,
+        "sum_best_scores": 837.935687,
+        "uniformity_penalty": -94.727448
+      },
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "counts": {
+        "decisions": 672,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1844,
+        "observe_actions": 148,
+        "required_missing": 125,
+        "targets_observed": 1407
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": 100.0,
+        "sum_best_scores": 59.28062,
+        "uniformity_penalty": -4.624371
+      },
+      "delta_total_vs_baseline": 54.656249,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.469,
+        "minimum_remaining_wallclock_seconds": 895.469,
+        "telemetry_available": true,
+        "telemetry_requests": 481
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-d-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-d-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-d-holdout-season/output",
+        "run": "experiments/v4/runs/r5-d-holdout-season",
+        "score_report": "experiments/v4/runs/r5-d-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-d-holdout-season",
+      "runtime_seconds": 4.944448708,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5506.791761,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 4.373,
+      "artifact_sha256": {
+        "manifest": "7776810df8ab8621e9e44a7a9c639b846b84672b0cd68d66326ec36b26af759c",
+        "metrics": "c5c5b9120c08e701f37756aec96ccc449e5c56849bc587dbad5c5e2aff18e16b",
+        "score_report": "cc77ea83b77d0e9ffc05c927998cbd0ee09da885d3e97c1a5cde76a16b80082f"
+      },
+      "by_class": {
+        "BGS": 132.397177,
+        "ELG": 395.412495,
+        "LRG": 142.236802,
+        "QSO": 112.904094,
+        "Star": 34.828375
+      },
+      "candidate": "d",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3200.0,
+        "sum_best_scores": 817.778944,
+        "uniformity_penalty": -39.230872
+      },
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "counts": {
+        "decisions": 513,
+        "invalidated_observations": 14,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2136,
+        "observe_actions": 196,
+        "required_missing": 64,
+        "targets_observed": 1708
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 350.0,
+        "sum_best_scores": 31.494903,
+        "uniformity_penalty": -24.713571
+      },
+      "delta_total_vs_baseline": 356.781331,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.657,
+        "minimum_remaining_wallclock_seconds": 895.657,
+        "telemetry_available": true,
+        "telemetry_requests": 318
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-d-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-d-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-d-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-d-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-d-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-d-holdout-stress",
+      "runtime_seconds": 4.769474167,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2421.451928,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 3.957,
+      "artifact_sha256": {
+        "manifest": "0b2f32475c2baa762f121e367ffb5b7c7a5a46b8bb60aca12202074bacad816c",
+        "metrics": "9abc621100b9938d8e19d0b61b829b2b22c11fca973d7909bb13a2cfbf8fd22e",
+        "score_report": "36810d40825fac39b1bedab674476dccbea1f439ba4cd84a6f4c514b60be932b"
+      },
+      "by_class": {
+        "BGS": 100.859631,
+        "ELG": 367.613093,
+        "LRG": 150.015757,
+        "QSO": 149.892168,
+        "Star": 22.006811
+      },
+      "candidate": "g",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6250.0,
+        "sum_best_scores": 790.38746,
+        "uniformity_penalty": -92.048428
+      },
+      "config_sha256": "6735114b6d3014bc0bcd70cfecf5e81ef8bda358aabc4fe246a2665093dd08a2",
+      "counts": {
+        "decisions": 639,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 1357,
+        "observe_actions": 110,
+        "required_missing": 125,
+        "targets_observed": 1136
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 100.0,
+        "sum_best_scores": 11.732393,
+        "uniformity_penalty": -1.945351
+      },
+      "delta_total_vs_baseline": 109.787042,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.057,
+        "minimum_remaining_wallclock_seconds": 896.057,
+        "telemetry_available": true,
+        "telemetry_requests": 448
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-g-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-g-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-g-holdout-season/output",
+        "run": "experiments/v4/runs/r5-g-holdout-season",
+        "score_report": "experiments/v4/runs/r5-g-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-g-holdout-season",
+      "runtime_seconds": 4.3429435409999995,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5451.660968,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 3.989,
+      "artifact_sha256": {
+        "manifest": "6d9a2e37d5c995c868a69ca7494d67a5b36530c7cfdd746b527726b10eeb7222",
+        "metrics": "0b84e0cb1be15b2ff79523721fe10c756b0cb206347a8d39ed5de18992789886",
+        "score_report": "b0d03ab07994af3fa058a40afb55c2a37a9f5558d7d606afdf3ddcec82cab87b"
+      },
+      "by_class": {
+        "BGS": 154.960176,
+        "ELG": 379.828789,
+        "LRG": 127.593521,
+        "QSO": 72.735369,
+        "Star": 39.130799
+      },
+      "candidate": "g",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3550.0,
+        "sum_best_scores": 774.248654,
+        "uniformity_penalty": -16.749392
+      },
+      "config_sha256": "6735114b6d3014bc0bcd70cfecf5e81ef8bda358aabc4fe246a2665093dd08a2",
+      "counts": {
+        "decisions": 482,
+        "invalidated_observations": 13,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1857,
+        "observe_actions": 168,
+        "required_missing": 71,
+        "targets_observed": 1515
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": -12.035387,
+        "uniformity_penalty": -2.232091
+      },
+      "delta_total_vs_baseline": -14.267479,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.044,
+        "minimum_remaining_wallclock_seconds": 896.044,
+        "telemetry_available": true,
+        "telemetry_requests": 287
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-g-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-g-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-g-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-g-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-g-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-g-holdout-stress",
+      "runtime_seconds": 4.4062614170000005,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2792.500738,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 6.729,
+      "artifact_sha256": {
+        "manifest": "4a897f03e32541443c688f4813bc3cbb33994ae70cd8082e9571a51d16dfbc24",
+        "metrics": "3fe2e85e56387e4f318729b737a384e1c69e887932a265ed82a62bbb5224d341",
+        "score_report": "47c96fb11208a82739321afa15320e3625c9b0bfa5ca1d9416f86a093790023f"
+      },
+      "by_class": {
+        "BGS": 105.632042,
+        "ELG": 369.013537,
+        "LRG": 162.078052,
+        "QSO": 133.732368,
+        "Star": 20.162307
+      },
+      "candidate": "p",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6400.0,
+        "sum_best_scores": 790.618306,
+        "uniformity_penalty": -94.231235
+      },
+      "config_sha256": "82cf839c2595b2f7e722030d278130c2e7fc20ae205ccc015f3d83500e3a97ff",
+      "counts": {
+        "decisions": 629,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1342,
+        "observe_actions": 106,
+        "required_missing": 128,
+        "targets_observed": 1114
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": -50.0,
+        "sum_best_scores": 11.963239,
+        "uniformity_penalty": -4.128158
+      },
+      "delta_total_vs_baseline": -142.164919,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 893.284,
+        "minimum_remaining_wallclock_seconds": 893.284,
+        "telemetry_available": true,
+        "telemetry_requests": 438
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-p-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-p-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-p-holdout-season/output",
+        "run": "experiments/v4/runs/r5-p-holdout-season",
+        "score_report": "experiments/v4/runs/r5-p-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-p-holdout-season",
+      "runtime_seconds": 7.148847625,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5703.612929,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 8.297,
+      "artifact_sha256": {
+        "manifest": "19b92ec8062973e37ed95e95e77336137b25840728c9676348220abd61e57314",
+        "metrics": "36e549450f78d43ed40cb3dd9327063682d47b78bfdadc766e6ed17919ae1dde",
+        "score_report": "faba8fa4ea98025501be18b20d9e11c036ee329cedacd3ae22472b30c74eab60"
+      },
+      "by_class": {
+        "BGS": 165.485741,
+        "ELG": 405.046234,
+        "LRG": 127.412027,
+        "QSO": 78.685513,
+        "Star": 42.379294
+      },
+      "candidate": "p",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3400.0,
+        "sum_best_scores": 819.008809,
+        "uniformity_penalty": -20.599431
+      },
+      "config_sha256": "82cf839c2595b2f7e722030d278130c2e7fc20ae205ccc015f3d83500e3a97ff",
+      "counts": {
+        "decisions": 488,
+        "invalidated_observations": 12,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1958,
+        "observe_actions": 176,
+        "required_missing": 68,
+        "targets_observed": 1631
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 150.0,
+        "sum_best_scores": 32.724768,
+        "uniformity_penalty": -6.08213
+      },
+      "delta_total_vs_baseline": 176.642637,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 891.753,
+        "minimum_remaining_wallclock_seconds": 891.753,
+        "telemetry_available": true,
+        "telemetry_requests": 293
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-p-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-p-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-p-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-p-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-p-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-p-holdout-stress",
+      "runtime_seconds": 8.705710374999999,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2601.590622,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 3.955,
+      "artifact_sha256": {
+        "manifest": "b08960d326229c56c055d347ccb50a251c7c27f5151049130b5d9e0221ae1d39",
+        "metrics": "3cd34b3353e62f9ed3af7d0c4bcfd8810224089c492c9639cf4928acef829050",
+        "score_report": "73b2c03b0bd1854e3d898638eb94ea2c1674432e5e6d7a2883464373a1038604"
+      },
+      "by_class": {
+        "BGS": 102.587084,
+        "ELG": 356.724419,
+        "LRG": 154.754052,
+        "QSO": 134.229249,
+        "Star": 22.995868
+      },
+      "candidate": "c",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6350.0,
+        "sum_best_scores": 771.290672,
+        "uniformity_penalty": -94.068583
+      },
+      "config_sha256": "19644ca1b4ebd2993f048fedf0a4d40920fa1919ad13d7d8755f3df132ec7fa1",
+      "counts": {
+        "decisions": 634,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1397,
+        "observe_actions": 112,
+        "required_missing": 127,
+        "targets_observed": 1140
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": 0.0,
+        "sum_best_scores": -7.364395,
+        "uniformity_penalty": -3.965506
+      },
+      "delta_total_vs_baseline": -111.3299,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.058,
+        "minimum_remaining_wallclock_seconds": 896.058,
+        "telemetry_available": true,
+        "telemetry_requests": 443
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-c-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-c-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-c-holdout-season/output",
+        "run": "experiments/v4/runs/r5-c-holdout-season",
+        "score_report": "experiments/v4/runs/r5-c-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-c-holdout-season",
+      "runtime_seconds": 4.3647322090000005,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5672.77791,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 4.108,
+      "artifact_sha256": {
+        "manifest": "cca6d0664f0b94217c2b450836d62ffa9ca3062a7d7012336ab0f89bc9fa81fa",
+        "metrics": "4db09566515691b01eb6363c636577d1edf5ffbe9292d62b9f8c7ae19ab58b1c",
+        "score_report": "caf9d712bb921e05dfab6f55150dfee4d7f0bff8e9efe7f47ec886808baea7af"
+      },
+      "by_class": {
+        "BGS": 148.217617,
+        "ELG": 388.370711,
+        "LRG": 129.265289,
+        "QSO": 84.641921,
+        "Star": 41.982396
+      },
+      "candidate": "c",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3600.0,
+        "sum_best_scores": 792.477934,
+        "uniformity_penalty": -21.353937
+      },
+      "config_sha256": "19644ca1b4ebd2993f048fedf0a4d40920fa1919ad13d7d8755f3df132ec7fa1",
+      "counts": {
+        "decisions": 486,
+        "invalidated_observations": 11,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1881,
+        "observe_actions": 173,
+        "required_missing": 72,
+        "targets_observed": 1553
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -50.0,
+        "sum_best_scores": 6.193893,
+        "uniformity_penalty": -6.836636
+      },
+      "delta_total_vs_baseline": -50.642744,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.925,
+        "minimum_remaining_wallclock_seconds": 895.925,
+        "telemetry_available": true,
+        "telemetry_requests": 291
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-c-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-c-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-c-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-c-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-c-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-c-holdout-stress",
+      "runtime_seconds": 4.49345525,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2828.876003,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 3.907,
+      "artifact_sha256": {
+        "manifest": "06d9ef5e89fdb74d7e096222515478b392a2120f7de614324b1777b75c76db6e",
+        "metrics": "643f513648af0e3234c05a00f15d642b614fc6f794620617f1cbb3510eae8fa8",
+        "score_report": "0d027a78f490083b87f2f46e1d49cede1e47c6422d227b3b2685d73b709b34d7"
+      },
+      "by_class": {
+        "BGS": 93.367118,
+        "ELG": 362.341923,
+        "LRG": 148.445135,
+        "QSO": 150.235366,
+        "Star": 19.631381
+      },
+      "candidate": "w",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6250.0,
+        "sum_best_scores": 774.020923,
+        "uniformity_penalty": -91.446936
+      },
+      "config_sha256": "b9b816883260a1a76041969e32e585206461166d8e8119a273c552432d18810b",
+      "counts": {
+        "decisions": 631,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1310,
+        "observe_actions": 108,
+        "required_missing": 125,
+        "targets_observed": 1102
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": 100.0,
+        "sum_best_scores": -4.634144,
+        "uniformity_penalty": -1.343859
+      },
+      "delta_total_vs_baseline": -5.978003,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.105,
+        "minimum_remaining_wallclock_seconds": 896.105,
+        "telemetry_available": true,
+        "telemetry_requests": 440
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-w-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-w-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-w-holdout-season/output",
+        "run": "experiments/v4/runs/r5-w-holdout-season",
+        "score_report": "experiments/v4/runs/r5-w-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-w-holdout-season",
+      "runtime_seconds": 4.2973951249999995,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5567.426013,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 4.03,
+      "artifact_sha256": {
+        "manifest": "28c51fe69e3259f0bfeeaaa79c68a1566e838a222a5ef7c076bcd5b4a3dfa2b6",
+        "metrics": "7fca4349505e4f42cc5be4bd1365ee2e5e5831bb581d7be799aaeb3ff3e96af3",
+        "score_report": "b37625f29e4e33dc0a68e2eaa8d02f80341e91c4bd4b0b37367eaea60faf116e"
+      },
+      "by_class": {
+        "BGS": 159.728864,
+        "ELG": 372.390917,
+        "LRG": 111.184924,
+        "QSO": 86.830572,
+        "Star": 37.797248
+      },
+      "candidate": "w",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3400.0,
+        "sum_best_scores": 767.932525,
+        "uniformity_penalty": -21.078634
+      },
+      "config_sha256": "b9b816883260a1a76041969e32e585206461166d8e8119a273c552432d18810b",
+      "counts": {
+        "decisions": 487,
+        "invalidated_observations": 8,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1875,
+        "observe_actions": 174,
+        "required_missing": 68,
+        "targets_observed": 1525
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 150.0,
+        "sum_best_scores": -18.351516,
+        "uniformity_penalty": -6.561333
+      },
+      "delta_total_vs_baseline": 125.08715,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 896.003,
+        "minimum_remaining_wallclock_seconds": 896.003,
+        "telemetry_available": true,
+        "telemetry_requests": 292
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-w-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-w-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-w-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-w-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-w-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-w-holdout-stress",
+      "runtime_seconds": 4.433462833,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2653.146109,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 8.164,
+      "artifact_sha256": {
+        "manifest": "e64e017cc36ff33ce567a31f6966f2480103132ba6ecf655cdf799e41c2bb907",
+        "metrics": "c29064cf15a9559d864ae9b621dc363893e1ec5bd2fca9a8b3bbf85243925b18",
+        "score_report": "cfdd1baa1fde10b1592e9aa0224bb04013df007c5221c1a79823fcbc60aff939"
+      },
+      "by_class": {
+        "BGS": 98.696436,
+        "ELG": 384.21366,
+        "LRG": 167.292503,
+        "QSO": 148.401329,
+        "Star": 22.385156
+      },
+      "candidate": "dp",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6250.0,
+        "sum_best_scores": 820.989084,
+        "uniformity_penalty": -92.260877
+      },
+      "config_sha256": "c7a627227640ad04e8dad7768693b3a0d0b5c52638a80cbfa38e99b91fb599fd",
+      "counts": {
+        "decisions": 653,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 1654,
+        "observe_actions": 130,
+        "required_missing": 125,
+        "targets_observed": 1324
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": 100.0,
+        "sum_best_scores": 42.334017,
+        "uniformity_penalty": -2.1578
+      },
+      "delta_total_vs_baseline": 40.176217,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 891.85,
+        "minimum_remaining_wallclock_seconds": 891.85,
+        "telemetry_available": true,
+        "telemetry_requests": 462
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dp-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dp-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-dp-holdout-season/output",
+        "run": "experiments/v4/runs/r5-dp-holdout-season",
+        "score_report": "experiments/v4/runs/r5-dp-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dp-holdout-season",
+      "runtime_seconds": 8.561022209,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5521.271793,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 9.722,
+      "artifact_sha256": {
+        "manifest": "b119a3c0b99cd0f75053458f8540c2f02804a3a70c01e8c98077e0154f161908",
+        "metrics": "3b3685c6f79addf557cc0bdb5404844f99c6a2a2a709a5fcd1840b6356ce9554",
+        "score_report": "bd93b6693f0c5090d94fe961a96de1b550df30d9ac3cb8e523ef4c6c74c2107d"
+      },
+      "by_class": {
+        "BGS": 145.562974,
+        "ELG": 417.036588,
+        "LRG": 151.394071,
+        "QSO": 101.452511,
+        "Star": 36.435742
+      },
+      "candidate": "dp",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3150.0,
+        "sum_best_scores": 851.881886,
+        "uniformity_penalty": -15.828414
+      },
+      "config_sha256": "c7a627227640ad04e8dad7768693b3a0d0b5c52638a80cbfa38e99b91fb599fd",
+      "counts": {
+        "decisions": 527,
+        "invalidated_observations": 14,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2410,
+        "observe_actions": 211,
+        "required_missing": 63,
+        "targets_observed": 1929
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 400.0,
+        "sum_best_scores": 65.597845,
+        "uniformity_penalty": -1.311113
+      },
+      "delta_total_vs_baseline": 464.286731,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 890.323,
+        "minimum_remaining_wallclock_seconds": 890.323,
+        "telemetry_available": true,
+        "telemetry_requests": 332
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dp-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dp-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-dp-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-dp-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-dp-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dp-holdout-stress",
+      "runtime_seconds": 10.133999625,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2313.946528,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 4.543,
+      "artifact_sha256": {
+        "manifest": "affeddeba9b3bbb19d0b17297774d9c59c2ca0dc471a0e641456acfc9d257fe8",
+        "metrics": "d7c7904e59161f47cc81dda19fb9f9773b0bc53207fa5ca5f157781590c21dad",
+        "score_report": "32d304a0c878431fbb951e416907f3b050d4efc6ed1e162e99909fc72abcd9ef"
+      },
+      "by_class": {
+        "BGS": 102.894939,
+        "ELG": 390.776836,
+        "LRG": 161.338007,
+        "QSO": 163.035889,
+        "Star": 21.5621
+      },
+      "candidate": "dg",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6250.0,
+        "sum_best_scores": 839.607771,
+        "uniformity_penalty": -92.367702
+      },
+      "config_sha256": "bdb7d6052bcce3d4dfe539638db5c0b21f7dc763653ceaca387c1c9bf142071e",
+      "counts": {
+        "decisions": 667,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 1781,
+        "observe_actions": 143,
+        "required_missing": 125,
+        "targets_observed": 1402
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 100.0,
+        "sum_best_scores": 60.952704,
+        "uniformity_penalty": -2.264625
+      },
+      "delta_total_vs_baseline": 158.688079,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.471,
+        "minimum_remaining_wallclock_seconds": 895.471,
+        "telemetry_available": true,
+        "telemetry_requests": 476
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dg-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dg-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-dg-holdout-season/output",
+        "run": "experiments/v4/runs/r5-dg-holdout-season",
+        "score_report": "experiments/v4/runs/r5-dg-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dg-holdout-season",
+      "runtime_seconds": 4.9571105,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5402.759931,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 4.606,
+      "artifact_sha256": {
+        "manifest": "9d55ac503740a58e3c6a0a0e7871c01e28e7a220eb8705d1300e5bf7b300b0f5",
+        "metrics": "b577d084ee211c4efee1d395e113925d8eb4750ee9f665bf3a17b6a8f43e57e4",
+        "score_report": "4c7e9a186ff53460d147723fa2901d44c3a55cadfb23b5de7b3c4c0e8cb61e26"
+      },
+      "by_class": {
+        "BGS": 137.906103,
+        "ELG": 379.108982,
+        "LRG": 147.559544,
+        "QSO": 108.234624,
+        "Star": 32.840484
+      },
+      "candidate": "dg",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3150.0,
+        "sum_best_scores": 805.649738,
+        "uniformity_penalty": -18.556825
+      },
+      "config_sha256": "bdb7d6052bcce3d4dfe539638db5c0b21f7dc763653ceaca387c1c9bf142071e",
+      "counts": {
+        "decisions": 511,
+        "invalidated_observations": 10,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2177,
+        "observe_actions": 194,
+        "required_missing": 63,
+        "targets_observed": 1797
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 400.0,
+        "sum_best_scores": 19.365697,
+        "uniformity_penalty": -4.039524
+      },
+      "delta_total_vs_baseline": 415.326173,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.427,
+        "minimum_remaining_wallclock_seconds": 895.427,
+        "telemetry_available": true,
+        "telemetry_requests": 316
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dg-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dg-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-dg-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-dg-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-dg-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dg-holdout-stress",
+      "runtime_seconds": 4.9961118749999995,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2362.907086,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 5.071,
+      "artifact_sha256": {
+        "manifest": "1e7dffe5dee658d6758e901047b32bf7964b49fbe48dd417715a76abdbdad3a9",
+        "metrics": "1ad821fdf0b13f895c091ef201b925a3942367c8e66c4e2a3e58c90400f8a238",
+        "score_report": "1b839dd5c7b91661313461ff912211eb32ff54d0d79ff4f0b8d6a4e28c3bdfb8"
+      },
+      "by_class": {
+        "BGS": 150.660318,
+        "ELG": 376.585135,
+        "LRG": 133.450775,
+        "QSO": 105.797451,
+        "Star": 42.97885
+      },
+      "candidate": "dt",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6250.0,
+        "sum_best_scores": 809.472529,
+        "uniformity_penalty": -92.554213
+      },
+      "config_sha256": "d1831d5af85f6512e71280659474dcad5ea80f4bbfb398d7d01c92ceae328c96",
+      "counts": {
+        "decisions": 714,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2179,
+        "observe_actions": 187,
+        "required_missing": 125,
+        "targets_observed": 1773
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": 100.0,
+        "sum_best_scores": 30.817462,
+        "uniformity_penalty": -2.451136
+      },
+      "delta_total_vs_baseline": 28.366326,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 894.944,
+        "minimum_remaining_wallclock_seconds": 894.944,
+        "telemetry_available": true,
+        "telemetry_requests": 523
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dt-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dt-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-dt-holdout-season/output",
+        "run": "experiments/v4/runs/r5-dt-holdout-season",
+        "score_report": "experiments/v4/runs/r5-dt-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dt-holdout-season",
+      "runtime_seconds": 5.541169416,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5533.081684,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 4.783,
+      "artifact_sha256": {
+        "manifest": "328c73ad66454c262fec6c38c497216fa91ae029a5489d6d16a70d97a643b18d",
+        "metrics": "54414efc8f644e6967a8908f6f9892acd22b78d87a089fcfe7db15c62432caca",
+        "score_report": "00305bcea32f5aea18d85d723dfff7eba4a91fe2b6b1d4d98fbbb5579544e57b"
+      },
+      "by_class": {
+        "BGS": 171.445458,
+        "ELG": 355.00608,
+        "LRG": 119.714062,
+        "QSO": 79.154542,
+        "Star": 57.184679
+      },
+      "candidate": "dt",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3250.0,
+        "sum_best_scores": 782.50482,
+        "uniformity_penalty": -36.319458
+      },
+      "config_sha256": "d1831d5af85f6512e71280659474dcad5ea80f4bbfb398d7d01c92ceae328c96",
+      "counts": {
+        "decisions": 547,
+        "invalidated_observations": 14,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2363,
+        "observe_actions": 231,
+        "required_missing": 65,
+        "targets_observed": 2017
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 300.0,
+        "sum_best_scores": -3.779221,
+        "uniformity_penalty": -21.802157
+      },
+      "delta_total_vs_baseline": 274.418622,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 895.25,
+        "minimum_remaining_wallclock_seconds": 895.25,
+        "telemetry_available": true,
+        "telemetry_requests": 352
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dt-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dt-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-dt-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-dt-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-dt-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dt-holdout-stress",
+      "runtime_seconds": 5.182723666999999,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2503.814637,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 8.816,
+      "artifact_sha256": {
+        "manifest": "34df855570a6fc31b3e9bb425b08f557f017e1e12e7489a8878e1a065cce89dc",
+        "metrics": "a7dd7380c03e52f87c419b4c767553a4b92dc18add2247d97135eb1c4947ac76",
+        "score_report": "d3206be5ab1b22c90ee630e65c44a3195ae57da20c55b8be27663b5796567844"
+      },
+      "by_class": {
+        "BGS": 103.530366,
+        "ELG": 371.90887,
+        "LRG": 163.239429,
+        "QSO": 147.19044,
+        "Star": 25.590632
+      },
+      "candidate": "dpg",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6300.0,
+        "sum_best_scores": 811.459737,
+        "uniformity_penalty": -91.944992
+      },
+      "config_sha256": "38284abbcc93bcb55161506731b41b2939d32bf2c35c65792e83db931ced7752",
+      "counts": {
+        "decisions": 662,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 1766,
+        "observe_actions": 138,
+        "required_missing": 126,
+        "targets_observed": 1401
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 50.0,
+        "sum_best_scores": 32.80467,
+        "uniformity_penalty": -1.841915
+      },
+      "delta_total_vs_baseline": 80.962755,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 891.199,
+        "minimum_remaining_wallclock_seconds": 891.199,
+        "telemetry_available": true,
+        "telemetry_requests": 471
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dpg-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dpg-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-dpg-holdout-season/output",
+        "run": "experiments/v4/runs/r5-dpg-holdout-season",
+        "score_report": "experiments/v4/runs/r5-dpg-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dpg-holdout-season",
+      "runtime_seconds": 9.203196375,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5480.485255,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 11.511,
+      "artifact_sha256": {
+        "manifest": "a886c9e45affa5495e2a9a49eb71edbca6cc0332d5d480538817a398473449f6",
+        "metrics": "595cfc716932f5a12e80d3ff2eb1cfd2219c70f4cffed83da898e56e4ed125b0",
+        "score_report": "f6b4defef97b577468781a8e500130b8b28584c65e518372b30fa9aa4f09792c"
+      },
+      "by_class": {
+        "BGS": 146.300971,
+        "ELG": 414.418748,
+        "LRG": 142.995131,
+        "QSO": 101.254215,
+        "Star": 37.971554
+      },
+      "candidate": "dpg",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3000.0,
+        "sum_best_scores": 842.94062,
+        "uniformity_penalty": -20.436387
+      },
+      "config_sha256": "38284abbcc93bcb55161506731b41b2939d32bf2c35c65792e83db931ced7752",
+      "counts": {
+        "decisions": 523,
+        "invalidated_observations": 12,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2351,
+        "observe_actions": 207,
+        "required_missing": 60,
+        "targets_observed": 1934
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 550.0,
+        "sum_best_scores": 56.656579,
+        "uniformity_penalty": -5.919086
+      },
+      "delta_total_vs_baseline": 600.737492,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 888.542,
+        "minimum_remaining_wallclock_seconds": 888.542,
+        "telemetry_available": true,
+        "telemetry_requests": 328
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dpg-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dpg-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-dpg-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-dpg-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-dpg-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dpg-holdout-stress",
+      "runtime_seconds": 11.902098416000001,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2177.495767,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 10.663,
+      "artifact_sha256": {
+        "manifest": "a734cc1dc0b9dd375f47c3cba96a93725a42bfd464dac4e7ae87d7ae2046fb3c",
+        "metrics": "8ac9676cc44da2b4e9c20f436d0d558f321b72890e6d56403f652062483154f5",
+        "score_report": "2f0a0d7335df0beab6e27792efef81c563958d690ce011b48655907e5f104c9d"
+      },
+      "by_class": {
+        "BGS": 147.988569,
+        "ELG": 370.365239,
+        "LRG": 139.297904,
+        "QSO": 107.176835,
+        "Star": 37.032345
+      },
+      "candidate": "dtgp",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6300.0,
+        "sum_best_scores": 801.860892,
+        "uniformity_penalty": -91.674892
+      },
+      "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+      "counts": {
+        "decisions": 690,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 1928,
+        "observe_actions": 164,
+        "required_missing": 126,
+        "targets_observed": 1640
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 50.0,
+        "sum_best_scores": 23.205825,
+        "uniformity_penalty": -1.571815
+      },
+      "delta_total_vs_baseline": 71.63401,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 889.352,
+        "minimum_remaining_wallclock_seconds": 889.352,
+        "telemetry_available": true,
+        "telemetry_requests": 499
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dtgp-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dtgp-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-dtgp-holdout-season/output",
+        "run": "experiments/v4/runs/r5-dtgp-holdout-season",
+        "score_report": "experiments/v4/runs/r5-dtgp-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dtgp-holdout-season",
+      "runtime_seconds": 11.094987375,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5489.814,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 10.929,
+      "artifact_sha256": {
+        "manifest": "279f3645a225fe3a2bf60acaa3c08d9db32fede8c039740932d5957542bb6ba4",
+        "metrics": "07540bc4251c2a5221851eae947f0fd77a55716b5f31964f3514c91b921bc89c",
+        "score_report": "07a9d9d82a64c316ec37f51f64a206b1232b4896d50ea734e64f9256d0a76750"
+      },
+      "by_class": {
+        "BGS": 161.147259,
+        "ELG": 342.557314,
+        "LRG": 112.787982,
+        "QSO": 72.58787,
+        "Star": 63.587067
+      },
+      "candidate": "dtgp",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3300.0,
+        "sum_best_scores": 752.667492,
+        "uniformity_penalty": -30.65032
+      },
+      "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+      "counts": {
+        "decisions": 570,
+        "invalidated_observations": 10,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2660,
+        "observe_actions": 257,
+        "required_missing": 66,
+        "targets_observed": 2243
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 250.0,
+        "sum_best_scores": -33.616549,
+        "uniformity_penalty": -16.133019
+      },
+      "delta_total_vs_baseline": 200.25043,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 889.122,
+        "minimum_remaining_wallclock_seconds": 889.122,
+        "telemetry_available": true,
+        "telemetry_requests": 375
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dtgp-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dtgp-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-dtgp-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-dtgp-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-dtgp-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dtgp-holdout-stress",
+      "runtime_seconds": 11.340490708,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2577.982829,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 10.366,
+      "artifact_sha256": {
+        "manifest": "0fcae7581e3c347f5196418f9b673949c5c4fdb8b7f1c194d840e78b4329abed",
+        "metrics": "0a6e75f6db4880b07890d2c3dd39ec71ac8f8293094e007304a0fef6ec962d23",
+        "score_report": "7d04c8282b3cc3adc3fad9b8eb77eef4eb7eeb6f860ec56f4ab1038b3c1cd015"
+      },
+      "by_class": {
+        "BGS": 167.159114,
+        "ELG": 394.980794,
+        "LRG": 144.890345,
+        "QSO": 107.043611,
+        "Star": 40.414689
+      },
+      "candidate": "dtgpcw",
+      "card": "holdout-season",
+      "card_tree_sha256": "af5a32fd91aee64702e7849df7944f72d950c37b9942a45c8cda9400903795ac",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -6200.0,
+        "sum_best_scores": 854.488552,
+        "uniformity_penalty": -91.721299
+      },
+      "config_sha256": "e74fc757653743767a8d633266654ce8b687288f36b9997df3867a35def074e1",
+      "counts": {
+        "decisions": 712,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2248,
+        "observe_actions": 187,
+        "required_missing": 124,
+        "targets_observed": 1815
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": -100.0,
+        "report_settlement": 0.0,
+        "required_penalty": 150.0,
+        "sum_best_scores": 75.833485,
+        "uniformity_penalty": -1.618222
+      },
+      "delta_total_vs_baseline": 124.215263,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 889.651,
+        "minimum_remaining_wallclock_seconds": 889.651,
+        "telemetry_available": true,
+        "telemetry_requests": 521
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dtgpcw-holdout-season/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dtgpcw-holdout-season/metrics.json",
+        "output": "experiments/v4/runs/r5-dtgpcw-holdout-season/output",
+        "run": "experiments/v4/runs/r5-dtgpcw-holdout-season",
+        "score_report": "experiments/v4/runs/r5-dtgpcw-holdout-season/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dtgpcw-holdout-season",
+      "runtime_seconds": 10.753995374999999,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -5437.232747,
+      "traceback_files": []
+    },
+    {
+      "accounted_wallclock_seconds": 11.474,
+      "artifact_sha256": {
+        "manifest": "3e088f20649e9c91cb158f9c4c5ba93daa06cf68a21c3ca2aaf98ae801b4695b",
+        "metrics": "b487d2932fe272602e1a307c77138c05a663b28c6347ea92b8919b9bea5ed0d6",
+        "score_report": "c6c53bede12cb21021fba6727a8f73fe7354116fb3ffbfd55bb4da18af6477d2"
+      },
+      "by_class": {
+        "BGS": 176.07351,
+        "ELG": 361.802328,
+        "LRG": 119.418181,
+        "QSO": 78.446281,
+        "Star": 62.97542
+      },
+      "candidate": "dtgpcw",
+      "card": "holdout-stress",
+      "card_tree_sha256": "a03da7cf108398a6e46efa4b0232dd03aaa96c3bb889ffa2eef7088e367838f7",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -3050.0,
+        "sum_best_scores": 798.71572,
+        "uniformity_penalty": -28.05766
+      },
+      "config_sha256": "e74fc757653743767a8d633266654ce8b687288f36b9997df3867a35def074e1",
+      "counts": {
+        "decisions": 576,
+        "invalidated_observations": 12,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2767,
+        "observe_actions": 266,
+        "required_missing": 61,
+        "targets_observed": 2290
+      },
+      "delta_components_vs_baseline": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": 500.0,
+        "sum_best_scores": 12.431679,
+        "uniformity_penalty": -13.540359
+      },
+      "delta_total_vs_baseline": 498.89132,
+      "exit_code": 0,
+      "hash_checks_passed": true,
+      "internal_error_count": 0,
+      "official_report_available": true,
+      "pace": {
+        "change_count": 0,
+        "changes_logged": [],
+        "first_remaining_wallclock_seconds": 900.0,
+        "last_remaining_wallclock_seconds": 888.58,
+        "minimum_remaining_wallclock_seconds": 888.58,
+        "telemetry_available": true,
+        "telemetry_requests": 381
+      },
+      "paths": {
+        "manifest": "experiments/v4/runs/r5-dtgpcw-holdout-stress/manifest.json",
+        "metrics": "experiments/v4/runs/r5-dtgpcw-holdout-stress/metrics.json",
+        "output": "experiments/v4/runs/r5-dtgpcw-holdout-stress/output",
+        "run": "experiments/v4/runs/r5-dtgpcw-holdout-stress",
+        "score_report": "experiments/v4/runs/r5-dtgpcw-holdout-stress/output/score_report.json"
+      },
+      "python_version": "Python 3.9.6",
+      "raw_output_hashes_passed": true,
+      "run_id": "r5-dtgpcw-holdout-stress",
+      "runtime_seconds": 11.864496167,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": -2279.341939,
+      "traceback_files": []
+    }
+  ],
+  "runtime_seconds_range": [
+    3.935980541,
+    11.902098416000001
+  ],
+  "schema_version": "v4-r5-results-v1",
+  "status_counts": {
+    "completed": 26
+  },
+  "termination_counts": {
+    "survey_complete": 26
+  },
+  "traceback_files": [],
+  "unique_started_runs": 26,
+  "upstream_commit": "18be105bc517938c8341ad79646cf397e3293016"
+}

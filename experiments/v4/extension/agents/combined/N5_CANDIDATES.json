@@ -1,0 +1,496 @@
+{
+  "candidate_count": 11,
+  "candidates": [
+    {
+      "candidate_id": "D",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/heq/neutral.json",
+      "config_sha256": "ba4c289ac6d03949aed04acd90cab0d2fa2bbd4317ae65631015585ca53a4b53",
+      "configuration": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "quantum_seconds": 30
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "Q": {
+          "enabled": false,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "control",
+        "geometry_strength": 0.0,
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "neutral"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "H",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/heq/h-opportunity2.json",
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "configuration": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "quantum_seconds": 30
+        },
+        "H": {
+          "enabled": true,
+          "strength": 2.0
+        },
+        "Q": {
+          "enabled": false,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "H",
+        "geometry_strength": 0.0,
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "h-opportunity2"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "E",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/heq/e-threshold30.json",
+      "config_sha256": "7109bbb5ee19f5e79952936bc46516a3c4ce42274c41da9a52d0871947417bb4",
+      "configuration": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": true,
+          "quantum_seconds": 30
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "Q": {
+          "enabled": false,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "E",
+        "geometry_strength": 0.0,
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "e-threshold30"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "Q",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/heq/q-quantile25.json",
+      "config_sha256": "19094d1a26062af79106b2429d9af96d0c080adbaff294d5d6e7b333c4e5b4ce",
+      "configuration": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "quantum_seconds": 30
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "Q": {
+          "enabled": true,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "Q",
+        "geometry_strength": 0.0,
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "q-quantile25"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "M",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/mfj/m-initial.json",
+      "config_sha256": "b50825126fe761107588d9416fdf100db6bb6815a8a947d849e00b0df610c914",
+      "configuration": {
+        "F": {
+          "candidate_fields": 6,
+          "enabled": false
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": true
+        },
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "family": "M",
+        "geometry_strength": 0.0,
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "feedback-best-score"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "F6",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/mfj/f-initial.json",
+      "config_sha256": "80c46cefd7f6ea4a32aae7223c47b2ab3fb6c00a3f770baa4b3629a2150fdcfc",
+      "configuration": {
+        "F": {
+          "candidate_fields": 6,
+          "enabled": true
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": false
+        },
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "family": "F",
+        "geometry_strength": 0.0,
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "fields6-rate"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "J",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/mfj/j-initial.json",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "configuration": {
+        "F": {
+          "candidate_fields": 6,
+          "enabled": false
+        },
+        "J": {
+          "enabled": true,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": false
+        },
+        "environment": {
+          "PACKING_ANCHORS": "3"
+        },
+        "family": "J",
+        "geometry_strength": 0.0,
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "delta-j-cap10"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "FE",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/combined/fe.json",
+      "config_sha256": "8f9b54156189a2a1c99cfeda1dc36a97a401777720a73c81f4d15516bba0f693",
+      "configuration": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": true,
+          "include_saturation": true,
+          "quantum_seconds": 30
+        },
+        "F": {
+          "candidate_fields": 6,
+          "enabled": true
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": false
+        },
+        "Q": {
+          "enabled": false,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "case_id": "D+F+E",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "combined",
+        "geometry_strength": 0.0,
+        "reference_id": "D-linear",
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "FE"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "FM",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/combined/fm.json",
+      "config_sha256": "e6328f33ffcc2e96b5e006f36da0cf296e17489eabccabf4a64467c70406d46d",
+      "configuration": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "include_saturation": true,
+          "quantum_seconds": 30
+        },
+        "F": {
+          "candidate_fields": 6,
+          "enabled": true
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": true
+        },
+        "Q": {
+          "enabled": false,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "case_id": "D+F+M",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "combined",
+        "geometry_strength": 0.0,
+        "reference_id": "D-linear",
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "FM"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "FQ",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/combined/fq.json",
+      "config_sha256": "d9bd858ac26291d8fc39c76985fb456738c2aeede73d36a2dd7244c6360b853a",
+      "configuration": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "include_saturation": true,
+          "quantum_seconds": 30
+        },
+        "F": {
+          "candidate_fields": 6,
+          "enabled": true
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": false
+        },
+        "Q": {
+          "enabled": true,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "case_id": "D+F+Q",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "combined",
+        "geometry_strength": 0.0,
+        "reference_id": "D-linear",
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "FQ"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    },
+    {
+      "candidate_id": "FMQ",
+      "config_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/combined/fmq.json",
+      "config_sha256": "1243f40e66739aa67b849ed5af4436b08b724967f2c2a1444050d57715460ea0",
+      "configuration": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "include_saturation": true,
+          "quantum_seconds": 30
+        },
+        "F": {
+          "candidate_fields": 6,
+          "enabled": true
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": true
+        },
+        "Q": {
+          "enabled": true,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "case_id": "D+F+M+Q",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "combined",
+        "geometry_strength": 0.0,
+        "reference_id": "D-linear",
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "FMQ"
+      },
+      "source_path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/combined/source"
+    }
+  ],
+  "common_source_tree_sha256": "6548c8a3372cee26627c4526ba897584d038a5bca0867df13ff4dc33917a23e0",
+  "equivalence_evidence": [
+    "experiments/v4/extension/agents/combined/validation/single-migration-results.json",
+    "experiments/v4/extension/agents/combined/validation/e-migration-results.json",
+    "experiments/v4/extension/agents/combined/validation/hj-migration-results.json"
+  ],
+  "limitations": [
+    "Q是经验保守余量，同曝hit高度相关且反馈样本有删失偏差；非成功概率或校准置信度。",
+    "M仍用模型估计下一次质量/program匹配，不是未来真实得分oracle。",
+    "F预览使M/Q/E评估计数包含重复函数调用；实际入选/新增时长另计。",
+    "H机会估计只使用公开几何和假定清空质量，不预测未来天气。"
+  ],
+  "n4_registration": "experiments/v4/extension/agents/combined/validation/n4-registration.json",
+  "n4_results": "experiments/v4/extension/agents/combined/validation/n4-results.json",
+  "next_authority": "Root写最终清单、选择依据快照与冻结hash，核对后明确授权environment_baseline开封。此交接不读取或运行任何新holdout。",
+  "parameter_selection": "H/E均选N2初版，F选6，Q/M/J均选初版；四组合FE/FM/FQ/FMQ参数不再变更。",
+  "pending_contract": "F preview仅返回rate/duration/program，不写pending；最终field再次_finish_plan写唯一pending及最终duration，保留原断言。",
+  "prepared_at_utc": "2026-10-02T16:38:55.398229+00:00",
+  "recipient": "environment_baseline",
+  "runner": "/usr/bin/python3 -B experiments/v4/extension/harness/run_one.py",
+  "schema_version": "extension-n5-candidate-handoff-v1",
+  "simulator_limit": 6,
+  "single_switch_equivalence": "D全关及H/E/Q/M/F6/J全部两个开发卡四个核心文件逐字节等价；14run是验证，不计独立样本",
+  "source_files_sha256": {
+    "baseline_agent.py": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1",
+    "cw_policy.py": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60",
+    "heq_policy.py": "2091d0f41206f5fa1a2108eb40b6eb02fe6c082aece5657ad96276b901e8f740",
+    "llm_hook.py": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543",
+    "mfj_policy.py": "2fd08bad76a82280e3445e9fa6e475af51fa1c8c0b8a48852319a410e2956cc0",
+    "observer.project.json": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc",
+    "planner.py": "6f7d4d3d8f5758f36af2a0a39bdee4a140cbf5cf4d74dbe64c43d31af4260e18",
+    "skymath.py": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+  },
+  "status": "候选接口交接；不是Root最终freeze或N5运行授权"
+}

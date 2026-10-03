@@ -1,0 +1,22 @@
+{
+  "recorded_at_utc": "2026-10-02T15:13:52.299434+00:00",
+  "current_public_client": {
+    "url": "https://create.gosim.org/survey26/platform/assets/taskCardSource-CbN0QFHu.js",
+    "sha256": "9fc0b4ba9a15666c8fddcf12c19c79926b664f6174af1a0681d2ed562df75e4a",
+    "evidence": "acquisition/client01/taskCardSource-CbN0QFHu.js",
+    "http_status": 200
+  },
+  "confirmed_download_contract": [
+    "lists config/public/truth separately using anonymous scenarios bucket",
+    "downloads only paths returned by listing; filters per-card ZIP entries",
+    "packages downloaded entries client-side as taskcard-id.zip",
+    "client does not obtain an additional complete-bundle archive or fill missing required files"
+  ],
+  "fixed_official_document": {
+    "path": "research/2026-10-02/upstream/cards/README.md",
+    "commit": "18be105bc517938c8341ad79646cf397e3293016",
+    "claim": "practice full config/public/truth files should be downloadable once registered"
+  },
+  "observed_conflict": "current storage returns six files per card and 404/NoSuchKey for all thirty expected missing paths",
+  "scope_limit": "does not prove whether withheld or absent, or whether another organizer-only complete archive exists; no private endpoint inspected"
+}

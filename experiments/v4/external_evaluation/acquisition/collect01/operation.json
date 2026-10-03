@@ -1,0 +1,20 @@
+{
+  "cards": [
+    "alpha",
+    "beta",
+    "gamma",
+    "delta"
+  ],
+  "derived_from": "experiments/v4/data/collect_public.py",
+  "host": "https://vdiemcofukuxglqsmlyz.supabase.co",
+  "key_source_sha256": "e7b64006115c1040d06c6bd9307e185ee763c6e557db013c3cad06b3e13ea25e",
+  "maximum_attempts_per_endpoint_including_probe01": 2,
+  "maximum_request_concurrency": 2,
+  "permission": "public_frontend_anon",
+  "source_script": "collect_cards.py",
+  "source_script_sha256": "89d5a2373866641c67d6a88632dc67f210a69cfa37f106d87afa8154fa1128f2",
+  "started_at_utc": "2026-10-02T15:04:55.898455+00:00",
+  "timeout_seconds_per_request": 15,
+  "truth_policy": "download and hashes only; successful truth bodies not written to request logs",
+  "whole_collection_deadline_seconds": 240
+}

@@ -1,0 +1,247 @@
+{
+  "configurations": [
+    {
+      "path": "experiments/v4/extension/configs/combined/fe.json",
+      "sha256": "8f9b54156189a2a1c99cfeda1dc36a97a401777720a73c81f4d15516bba0f693",
+      "values": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": true,
+          "include_saturation": true,
+          "quantum_seconds": 30
+        },
+        "F": {
+          "candidate_fields": 6,
+          "enabled": true
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": false
+        },
+        "Q": {
+          "enabled": false,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "case_id": "D+F+E",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "combined",
+        "geometry_strength": 0.0,
+        "reference_id": "D-linear",
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "FE"
+      }
+    },
+    {
+      "path": "experiments/v4/extension/configs/combined/fm.json",
+      "sha256": "e6328f33ffcc2e96b5e006f36da0cf296e17489eabccabf4a64467c70406d46d",
+      "values": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "include_saturation": true,
+          "quantum_seconds": 30
+        },
+        "F": {
+          "candidate_fields": 6,
+          "enabled": true
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": true
+        },
+        "Q": {
+          "enabled": false,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "case_id": "D+F+M",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "combined",
+        "geometry_strength": 0.0,
+        "reference_id": "D-linear",
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "FM"
+      }
+    },
+    {
+      "path": "experiments/v4/extension/configs/combined/fq.json",
+      "sha256": "d9bd858ac26291d8fc39c76985fb456738c2aeede73d36a2dd7244c6360b853a",
+      "values": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "include_saturation": true,
+          "quantum_seconds": 30
+        },
+        "F": {
+          "candidate_fields": 6,
+          "enabled": true
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": false
+        },
+        "Q": {
+          "enabled": true,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "case_id": "D+F+Q",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "combined",
+        "geometry_strength": 0.0,
+        "reference_id": "D-linear",
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "FQ"
+      }
+    },
+    {
+      "path": "experiments/v4/extension/configs/combined/fmq.json",
+      "sha256": "1243f40e66739aa67b849ed5af4436b08b724967f2c2a1444050d57715460ea0",
+      "values": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "include_saturation": true,
+          "quantum_seconds": 30
+        },
+        "F": {
+          "candidate_fields": 6,
+          "enabled": true
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "J": {
+          "enabled": false,
+          "maximum_reward_per_target": 10.0
+        },
+        "M": {
+          "enabled": true
+        },
+        "Q": {
+          "enabled": true,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "case_id": "D+F+M+Q",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "combined",
+        "geometry_strength": 0.0,
+        "reference_id": "D-linear",
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "FMQ"
+      }
+    }
+  ],
+  "expectations": {
+    "FE": "F按完整时长收益联合选场，检验初版E含饱和断点是否可改善",
+    "FM": "选场单位时间效率与真实科学边际相互作用",
+    "FMQ": "相对FM检查Q增量，不再改参数",
+    "FQ": "选场效率与required经验保守门槛相互作用"
+  },
+  "limits": "只测这四组两开发卡；不调参、不新增组合、不读新holdout；冻结与N5授权归Root。",
+  "maximum_simulators": 6,
+  "prerequisites": {
+    "FE": "E初版在两卡迁移actions/score/decisions/observations逐字节相同；通过后才启动FE",
+    "FM_FQ_FMQ": "D/M/F6/Q两卡迁移等价已通过"
+  },
+  "registered_at_utc": "2026-10-02T16:35:09.850111+00:00",
+  "runs": [
+    "ext-n4-fe-demo",
+    "ext-n4-fe-dev-season",
+    "ext-n4-fm-demo",
+    "ext-n4-fm-dev-season",
+    "ext-n4-fq-demo",
+    "ext-n4-fq-dev-season",
+    "ext-n4-fmq-demo",
+    "ext-n4-fmq-dev-season"
+  ],
+  "source": "experiments/v4/extension/agents/combined/source",
+  "source_files_sha256": {
+    "baseline_agent.py": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1",
+    "cw_policy.py": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60",
+    "heq_policy.py": "2091d0f41206f5fa1a2108eb40b6eb02fe6c082aece5657ad96276b901e8f740",
+    "llm_hook.py": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543",
+    "mfj_policy.py": "2fd08bad76a82280e3445e9fa6e475af51fa1c8c0b8a48852319a410e2956cc0",
+    "observer.project.json": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc",
+    "planner.py": "6f7d4d3d8f5758f36af2a0a39bdee4a140cbf5cf4d74dbe64c43d31af4260e18",
+    "skymath.py": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+  },
+  "stage": "N4"
+}

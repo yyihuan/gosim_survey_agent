@@ -1,0 +1,644 @@
+{
+  "recorded_at_utc": "2026-10-02T16:16:57.691655+00:00",
+  "old_all_runs_row_count": 84,
+  "protected_trees": {
+    "harness": {
+      "tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 2696,
+          "sha256": "77ebde1fc3037ebf0af19d380ae3379d0639821e6ba09fb06294ef1b26bab504"
+        },
+        {
+          "path": "aggregate_results.py",
+          "bytes": 30191,
+          "sha256": "f2720835fcc8d33e6ac4aab123745f9cdf28d58f85ed415fd53f1b63709bfcd5"
+        },
+        {
+          "path": "common.py",
+          "bytes": 5720,
+          "sha256": "f6b732fc0da7f78ebe1cae0b6089a77571200ea7346383f2e58d42d6a3cea5bb"
+        },
+        {
+          "path": "docs/diagrams/v4-run-isolation.mmd",
+          "bytes": 357,
+          "sha256": "00bbf555e4d89d0dbde9a2400b5b7735d8cd91f9a8b199da020e3247fc4d4885"
+        },
+        {
+          "path": "docs/diagrams/v4-run-isolation.svg",
+          "bytes": 10270,
+          "sha256": "4370f2058c553c81cc9759ad029328564832427e24294ba782fb778f3f9f75e2"
+        },
+        {
+          "path": "fixtures/slow_agent/main.py",
+          "bytes": 247,
+          "sha256": "5039af725d53a4b4ce0b803d7890f448dd30b55879bf9669ee2f10519d252ff3"
+        },
+        {
+          "path": "metrics.py",
+          "bytes": 9517,
+          "sha256": "0e7301d60e9422d7f49f4228383ce18e6d25ba94c3896817f86bee62f9beb20f"
+        },
+        {
+          "path": "protocol_proxy.py",
+          "bytes": 2687,
+          "sha256": "52af4bdca8a7ea7f06c084b0f0400b304f3d2018a79cb19b7a2e7788597c7fd3"
+        },
+        {
+          "path": "public_geometry.py",
+          "bytes": 8496,
+          "sha256": "0784040b78b4d7cedf3d7c7be49a4dafa7fa27b86485de7cfbcc0a26763867cd"
+        },
+        {
+          "path": "r1_checkpoint.json",
+          "bytes": 3641,
+          "sha256": "12889c465327cbec4a336cbf42593bf99a9df47243a4a9ec8aa1fa857b1db8c5"
+        },
+        {
+          "path": "run.py",
+          "bytes": 14028,
+          "sha256": "d300923697b567f3d3f1ec1961a3ae2fa32d43325bb62044fc66ee779f01615d"
+        },
+        {
+          "path": "run_one.py",
+          "bytes": 164,
+          "sha256": "2c78e891e690a57682cebe6710215a71b8c298e91556b36b648e522f99d66285"
+        },
+        {
+          "path": "tests/test_locks.py",
+          "bytes": 3053,
+          "sha256": "a7fb31ff78c36ebdd171bdc1a8ce0f6950a441fc5dced7d7a58d5ce8eea0e0ae"
+        },
+        {
+          "path": "validation.json",
+          "bytes": 907,
+          "sha256": "c0d863afa1e32485976dbb4f48c0f704f96494e6ed5d64ed1985ebe5644b208d"
+        }
+      ],
+      "hash_definition": "sha256(sorted(relative_path NUL file_sha256 LF)); excludes bytecode, .git, .env"
+    },
+    "vendor/starter_kit_v4": {
+      "tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+      "files": [
+        {
+          "path": "README.md",
+          "bytes": 19662,
+          "sha256": "55756a8e965f08f1095b79400b93c533e42a94997b37676444bc08766ebffb8d"
+        },
+        {
+          "path": "SKILL.md",
+          "bytes": 5093,
+          "sha256": "b8d8012918945704ad8b1a54511c337655258cd833f0fbabe61dc94c4d5239df"
+        },
+        {
+          "path": "agent/baseline_agent.py",
+          "bytes": 9604,
+          "sha256": "189621fcbd9704c56baa6de7da2796fbf1246641890281268fb311f0854d05d9"
+        },
+        {
+          "path": "agent/llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "agent/observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "agent/planner.py",
+          "bytes": 29486,
+          "sha256": "5eafa7c91ba743fed971e2ed4c10129dc0b61ebf2d885af0f15d852e5861c75d"
+        },
+        {
+          "path": "agent/skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        },
+        {
+          "path": "cards/demo/config/v4_fiber_config.json",
+          "bytes": 360,
+          "sha256": "85fc175cb198b1c65d33a123cfbc8b6c1deb10778eef0dbfa659156918e23c8f"
+        },
+        {
+          "path": "cards/demo/config/v4_scenario.json",
+          "bytes": 1123,
+          "sha256": "a9648e0f6f398ff2bb96144f0a6bff14d90a9b4ad88846d4803c02e05c87e2df"
+        },
+        {
+          "path": "cards/demo/config/v4_score_config.json",
+          "bytes": 909,
+          "sha256": "8b2dd879a684e8dc51e2a3f33dfe6301c277b7f0ee95415c6649498d3a8784cd"
+        },
+        {
+          "path": "cards/demo/public/footprint.csv",
+          "bytes": 1831,
+          "sha256": "457511701796794425eb839ac4b42f9ae5436628c05c900d380c8bde34299e1b"
+        },
+        {
+          "path": "cards/demo/public/targets.csv",
+          "bytes": 142896,
+          "sha256": "a91d68460d54f8fdd3cd302a4b2b9216b7aed277070c6c47d892a8fe8f14741c"
+        },
+        {
+          "path": "cards/demo/public/v4_bulletins.jsonl",
+          "bytes": 48033,
+          "sha256": "f498d0e66ade3dd82eaf9bc4480113f8aab07d61a1687754a14168cfcb55d530"
+        },
+        {
+          "path": "cards/demo/public/v4_forecasts.jsonl",
+          "bytes": 652,
+          "sha256": "2403676b6a0eb02ef9a0f7590d5d1f772e633265fa51146c806e3a3cffb1bc17"
+        },
+        {
+          "path": "cards/demo/public/v4_night_calendar.csv",
+          "bytes": 911,
+          "sha256": "597dc5e18492d51be4e3391cd3aa4740942065f4954d082956bc0cb2bd584002"
+        },
+        {
+          "path": "cards/demo/truth/README.md",
+          "bytes": 208,
+          "sha256": "b9b16c2c94d0a0764d8abf468e873f2ff218ec7d2ea63a463ac553259457b6c3"
+        },
+        {
+          "path": "cards/demo/truth/v4_earthquake_effects.csv",
+          "bytes": 348,
+          "sha256": "633f4b71353fdf07baef95f78afd1301b60889dfea30d26d97187db65b74959b"
+        },
+        {
+          "path": "cards/demo/truth/v4_events.csv",
+          "bytes": 1792,
+          "sha256": "c31d7e4883b067e097b75667feeea14c17145edf0596f6ffe050f4f25934910d"
+        },
+        {
+          "path": "cards/demo/truth/v4_observation_requests.jsonl",
+          "bytes": 438,
+          "sha256": "19e6814a52c97e711353eef1d1536bd638ccd93171141ffd7a904234eeecb706"
+        },
+        {
+          "path": "cards/demo/truth/v4_slots.csv",
+          "bytes": 12398,
+          "sha256": "155de45e10c15a5e5c181367c50829d29aca28773a1aded1a5639deec2dbc85c"
+        },
+        {
+          "path": "cards/demo/truth/v4_weather_truth.csv",
+          "bytes": 22166,
+          "sha256": "ca84bbc44c2b8bba72bd037b0dfed6e9e13f74e663bf53f224119c197d62e191"
+        },
+        {
+          "path": "challenge/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "challenge/contracts.py",
+          "bytes": 7620,
+          "sha256": "a6ea14cec151450c1e0edb2023f2fd3e5980e87ee9c8fc1717188983979f1335"
+        },
+        {
+          "path": "challenge/local_transport.py",
+          "bytes": 9834,
+          "sha256": "20bcb721c6c134de78d41d67478ab32a766948fdc807d741da3ae0a8dfd46610"
+        },
+        {
+          "path": "challenge/observing_calendar.py",
+          "bytes": 15529,
+          "sha256": "897f81e4c0fd3b8eca5a6d490d96aff2e9ff2b6ca4a1d0b6837ee9a479125117"
+        },
+        {
+          "path": "challenge/project_paths.py",
+          "bytes": 436,
+          "sha256": "0bde3926c12a89d48694bcf8ec78c1a915936d5a02b647004184ac8887df6857"
+        },
+        {
+          "path": "challenge/tile_geometry_simulator.py",
+          "bytes": 29204,
+          "sha256": "d651caa58d05db0619e408e7613db27e5665d2d15e3e13f038182e137deede73"
+        },
+        {
+          "path": "challenge/v4_config_check.py",
+          "bytes": 13668,
+          "sha256": "afb7ed2e2d81230414047dad392d39a3ad5d94d2ee089d4e78e561beee5e72a8"
+        },
+        {
+          "path": "challenge/v4_fiber_map.py",
+          "bytes": 24635,
+          "sha256": "9ac7ffd1d865d7c5bc999e554ae9516d208980d948d39223d9f0a047f2d72892"
+        },
+        {
+          "path": "challenge/v4_runner.py",
+          "bytes": 43344,
+          "sha256": "390cc6e7fa0a4ff31fa76fe4485511c026ee3355b3c4c203afea471e6a55af4d"
+        },
+        {
+          "path": "challenge/v4_scorer.py",
+          "bytes": 22703,
+          "sha256": "46154188eb409fb8408845d0a40ea07c143e1bb1f297f7ee79ab1559ac24cd66"
+        },
+        {
+          "path": "challenge/v4_workflow.py",
+          "bytes": 17308,
+          "sha256": "365d423055514373f574d924d6321735659e0eead0f6b0260904dfcdb2113fba"
+        },
+        {
+          "path": "examples/idle_agent.py",
+          "bytes": 1098,
+          "sha256": "cf8a34ecb15d7bd38067f5ff5c1f2adda90d7d6361ff48e39183821d19ceb6d8"
+        },
+        {
+          "path": "local_runner.py",
+          "bytes": 12358,
+          "sha256": "fb5b764c2ad1fd8e141deff196f07137f9492dc08b6b8113642a30b441ef2b4b"
+        },
+        {
+          "path": "pack_agent.py",
+          "bytes": 12192,
+          "sha256": "93d3b2f3253bfbff2d408ca265f29c77816cbc432bc894bd9c8c7b2f61edacc8"
+        }
+      ],
+      "hash_definition": "sha256(sorted(relative_path NUL file_sha256 LF)); excludes bytecode, .git, .env"
+    },
+    "agents/combined/source": {
+      "tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "files": [
+        {
+          "path": "baseline_agent.py",
+          "bytes": 10249,
+          "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+        },
+        {
+          "path": "cw_policy.py",
+          "bytes": 6288,
+          "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+        },
+        {
+          "path": "llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "planner.py",
+          "bytes": 34614,
+          "sha256": "e644662391810de87c3f69b6178665a43b7b30b9a8c9a5521ea7b1a3f4f07150"
+        },
+        {
+          "path": "skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        }
+      ],
+      "hash_definition": "sha256(sorted(relative_path NUL file_sha256 LF)); excludes bytecode, .git, .env"
+    },
+    "agents/official": {
+      "tree_sha256": "73f9ead624feb77d2e82393323844e741c13a4f8233d12f9fc59bb8178f111e2",
+      "files": [
+        {
+          "path": "baseline/baseline_agent.py",
+          "bytes": 9604,
+          "sha256": "189621fcbd9704c56baa6de7da2796fbf1246641890281268fb311f0854d05d9"
+        },
+        {
+          "path": "baseline/llm_hook.py",
+          "bytes": 5794,
+          "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+        },
+        {
+          "path": "baseline/observer.project.json",
+          "bytes": 274,
+          "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+        },
+        {
+          "path": "baseline/planner.py",
+          "bytes": 29486,
+          "sha256": "5eafa7c91ba743fed971e2ed4c10129dc0b61ebf2d885af0f15d852e5861c75d"
+        },
+        {
+          "path": "baseline/skymath.py",
+          "bytes": 9042,
+          "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+        },
+        {
+          "path": "idle/idle_agent.py",
+          "bytes": 1098,
+          "sha256": "cf8a34ecb15d7bd38067f5ff5c1f2adda90d7d6361ff48e39183821d19ceb6d8"
+        }
+      ],
+      "hash_definition": "sha256(sorted(relative_path NUL file_sha256 LF)); excludes bytecode, .git, .env"
+    },
+    "configs": {
+      "tree_sha256": "fa84d7e532644f2dd28fe0ee39e8dbc76959c81247853ee8b2aed65b5e3bc982",
+      "files": [
+        {
+          "path": "combined/dg-frozen01.json",
+          "bytes": 325,
+          "sha256": "bdb7d6052bcce3d4dfe539638db5c0b21f7dc763653ceaca387c1c9bf142071e"
+        },
+        {
+          "path": "combined/dp-frozen01.json",
+          "bytes": 326,
+          "sha256": "c7a627227640ad04e8dad7768693b3a0d0b5c52638a80cbfa38e99b91fb599fd"
+        },
+        {
+          "path": "combined/dpg-frozen02.json",
+          "bytes": 355,
+          "sha256": "38284abbcc93bcb55161506731b41b2939d32bf2c35c65792e83db931ced7752"
+        },
+        {
+          "path": "combined/dt-frozen01.json",
+          "bytes": 323,
+          "sha256": "d1831d5af85f6512e71280659474dcad5ea80f4bbfb398d7d01c92ceae328c96"
+        },
+        {
+          "path": "combined/dtgp-frozen02.json",
+          "bytes": 354,
+          "sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931"
+        },
+        {
+          "path": "combined/dtgpcw-frozen02.json",
+          "bytes": 585,
+          "sha256": "e74fc757653743767a8d633266654ce8b687288f36b9997df3867a35def074e1"
+        },
+        {
+          "path": "cw/c-soft06.json",
+          "bytes": 107,
+          "sha256": "19644ca1b4ebd2993f048fedf0a4d40920fa1919ad13d7d8755f3df132ec7fa1"
+        },
+        {
+          "path": "cw/control.json",
+          "bytes": 108,
+          "sha256": "f687db37fb77987a02029f777843d83b281e6e1a95c28109db7716452293a88a"
+        },
+        {
+          "path": "cw/w-forecast02.json",
+          "bytes": 272,
+          "sha256": "b9b816883260a1a76041969e32e585206461166d8e8119a273c552432d18810b"
+        },
+        {
+          "path": "packing/p12.json",
+          "bytes": 153,
+          "sha256": "82cf839c2595b2f7e722030d278130c2e7fc20ae205ccc015f3d83500e3a97ff"
+        },
+        {
+          "path": "packing/p6.json",
+          "bytes": 174,
+          "sha256": "7837f13f0f4450a19e00940a01470329860c774f450151eb6789836370b028f8"
+        },
+        {
+          "path": "tdg/d-linear.json",
+          "bytes": 122,
+          "sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443"
+        },
+        {
+          "path": "tdg/d-power075.json",
+          "bytes": 125,
+          "sha256": "5b64592b5045ce2ad5c072b60ad0e5f08e52b196b9061e69a2a2a78fe34e5d17"
+        },
+        {
+          "path": "tdg/d-power15.json",
+          "bytes": 123,
+          "sha256": "72391f114b751494b7162c6254b7a9f4832361b3a18e2fff5211114633185b9a"
+        },
+        {
+          "path": "tdg/g-soft05.json",
+          "bytes": 122,
+          "sha256": "6735114b6d3014bc0bcd70cfecf5e81ef8bda358aabc4fe246a2665093dd08a2"
+        },
+        {
+          "path": "tdg/neutral-control.json",
+          "bytes": 129,
+          "sha256": "d86a6f6757a954d0562ec6681f245588f3b993e851d14ad2631370c3f9c09a54"
+        },
+        {
+          "path": "tdg/t-cap900-conditional.json",
+          "bytes": 202,
+          "sha256": "5ee26c130f7d005017c4bc22d4a9ce30f51f142545541b19f7c0a86151cb6516"
+        },
+        {
+          "path": "tdg/t-cap900.json",
+          "bytes": 153,
+          "sha256": "cf9963ba87a64bbc7d5fbc39677abe6d10699c78cd95dda7ea16b114ace2dd87"
+        },
+        {
+          "path": "tdg/t-slot900.json",
+          "bytes": 122,
+          "sha256": "8cb004e0ecfd6e13c73a2784c1a1f84df340ebb9070125906c49fa767f7f3221"
+        }
+      ],
+      "hash_definition": "sha256(sorted(relative_path NUL file_sha256 LF)); excludes bytecode, .git, .env"
+    },
+    "results": {
+      "tree_sha256": "c091d2a34e80df4577f6371a4558bdadc47f0b53b0e852b3ef26a96faa2c810c",
+      "files": [
+        {
+          "path": ".aggregate.lock",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "all_runs.csv",
+          "bytes": 317178,
+          "sha256": "d2b4572c47fa32697fa23ef9e93b2b2577e09cd65d0d61ea8c757240e6a91259"
+        },
+        {
+          "path": "all_runs.json",
+          "bytes": 1737232,
+          "sha256": "f550366db6a9d56647a84f4703112783d719c6a6de9af84718c4b318f1eb0a2a"
+        },
+        {
+          "path": "schema.json",
+          "bytes": 14441,
+          "sha256": "6905cbcc3e51e21898671bcb94b5a195328c211f0dd605b647d8e4cdb11b0de0"
+        },
+        {
+          "path": "validation-input-hashes-before.json",
+          "bytes": 10719,
+          "sha256": "97114dc19da2412991de7b443fff34b8f74c3c761edcaafa1981074f4ecad153"
+        },
+        {
+          "path": "validation.json",
+          "bytes": 784,
+          "sha256": "6d9f767aacee006799311f43f1a7c3a98123c4b01f7d75815cee3d41ef597d3d"
+        }
+      ],
+      "hash_definition": "sha256(sorted(relative_path NUL file_sha256 LF)); excludes bytecode, .git, .env"
+    },
+    "evaluation": {
+      "tree_sha256": "f2c22482aec6ebddae4c997fc98e9f7ce889ec05a2763945c9583778769fc34e",
+      "files": [
+        {
+          "path": "execution.jsonl",
+          "bytes": 30798,
+          "sha256": "9de0ecbf05a9fedadfbe31793d159e90f0b522107510c540a536b411b6393eeb"
+        },
+        {
+          "path": "execution_logs/r5-baseline-holdout-season.log",
+          "bytes": 301,
+          "sha256": "c07d14d3100e0bb6da9798b9eff1acd6a5162750a1ff57c6194c6a822ffb1481"
+        },
+        {
+          "path": "execution_logs/r5-baseline-holdout-stress.log",
+          "bytes": 299,
+          "sha256": "c48ce9f9bedd670e34e32a3215d22b330bd7c6fa099f0461f324505af897cac1"
+        },
+        {
+          "path": "execution_logs/r5-c-holdout-season.log",
+          "bytes": 294,
+          "sha256": "2a652baafb209af687b588aa8d737f380fa4dc8c74c3a395aa56e8b19963b7c3"
+        },
+        {
+          "path": "execution_logs/r5-c-holdout-stress.log",
+          "bytes": 287,
+          "sha256": "d091b0f8ce4e0e5b447e3ac274b6534e8991b4253c907782072bbb05416c520e"
+        },
+        {
+          "path": "execution_logs/r5-d-holdout-season.log",
+          "bytes": 288,
+          "sha256": "27ad5ed1a7c3e6415f51d4e0bfe9fc15366d0b228ec97b8e9576735ac5f01666"
+        },
+        {
+          "path": "execution_logs/r5-d-holdout-stress.log",
+          "bytes": 288,
+          "sha256": "5ba90390604c7968e863f9f014dc89c5a89aba75d1483efbcba7ef1521cd6d7d"
+        },
+        {
+          "path": "execution_logs/r5-dg-holdout-season.log",
+          "bytes": 288,
+          "sha256": "4a0d46c98b5af7d8b827e31a7af920ac574e9ba7cc20f8798c10f7bff9dddb41"
+        },
+        {
+          "path": "execution_logs/r5-dg-holdout-stress.log",
+          "bytes": 297,
+          "sha256": "ab07f04317c4cb402b841a692a9db1c0ad7fee6061c86e386291581b117a0b5f"
+        },
+        {
+          "path": "execution_logs/r5-dp-holdout-season.log",
+          "bytes": 290,
+          "sha256": "7564cda08ac1fd04421959b7f0a5fab6542f75d593ba7475c17ddba11ea5eb4e"
+        },
+        {
+          "path": "execution_logs/r5-dp-holdout-stress.log",
+          "bytes": 291,
+          "sha256": "5a8547928025b94fd0d9ce79e5221b960841546d418688be9680330f57cc788d"
+        },
+        {
+          "path": "execution_logs/r5-dpg-holdout-season.log",
+          "bytes": 292,
+          "sha256": "3419818331c8b9b93f5d956cc3b7ec9fd8bdb5b7e6978df3c149eb0cb290c095"
+        },
+        {
+          "path": "execution_logs/r5-dpg-holdout-stress.log",
+          "bytes": 299,
+          "sha256": "9baa80e1f94271dbf7bace7323e280d0e1b9d327b7ca5232eb4b3b59afd2de27"
+        },
+        {
+          "path": "execution_logs/r5-dt-holdout-season.log",
+          "bytes": 290,
+          "sha256": "68a4cb03c61b74754730c38ba3ae7945fc3914f74125dca96f3fc95c6ace3c32"
+        },
+        {
+          "path": "execution_logs/r5-dt-holdout-stress.log",
+          "bytes": 296,
+          "sha256": "c09486905a1a1a614c391e4fe0f97397cecc44d3820ccf065f24daa4abb5256e"
+        },
+        {
+          "path": "execution_logs/r5-dtgp-holdout-season.log",
+          "bytes": 292,
+          "sha256": "461ff8a56bf7a073addd3fa65ce304faaa0e68031888e0782d29326064a20346"
+        },
+        {
+          "path": "execution_logs/r5-dtgp-holdout-stress.log",
+          "bytes": 295,
+          "sha256": "1d4df9e6ae69dc9ff627cfb2ed702ace574aa98ed2f5eae84661380270674699"
+        },
+        {
+          "path": "execution_logs/r5-dtgpcw-holdout-season.log",
+          "bytes": 305,
+          "sha256": "48b8bf972634db9e5534ea5d94d722bfa761de952343200134998a06638d2b90"
+        },
+        {
+          "path": "execution_logs/r5-dtgpcw-holdout-stress.log",
+          "bytes": 299,
+          "sha256": "5df654b628730806ba376e888beea8a46a921069f8257c164dfa15c9d13fef34"
+        },
+        {
+          "path": "execution_logs/r5-g-holdout-season.log",
+          "bytes": 295,
+          "sha256": "480a1d794ba521a07d32925b51825ec70debc6977bbbdb3bdb300b25a4500aec"
+        },
+        {
+          "path": "execution_logs/r5-g-holdout-stress.log",
+          "bytes": 295,
+          "sha256": "080dd2e109a7107c2ba701edabda05e4e6f0cc74b6b993b9937b2862f9e381f2"
+        },
+        {
+          "path": "execution_logs/r5-p-holdout-season.log",
+          "bytes": 288,
+          "sha256": "d92fba57b2ae30859218312a4bbce788fb7cb0534205529a98ed0ff4474b7d62"
+        },
+        {
+          "path": "execution_logs/r5-p-holdout-stress.log",
+          "bytes": 294,
+          "sha256": "db34269b3a3ac28eb8633dfcb898ea265b03780b5330c7115ce36daa4eb71483"
+        },
+        {
+          "path": "execution_logs/r5-t-holdout-season.log",
+          "bytes": 288,
+          "sha256": "3be5b7f552aa9f6230c6a7417b652afaee46d60bd096cc97dfacbdae28e0d145"
+        },
+        {
+          "path": "execution_logs/r5-t-holdout-stress.log",
+          "bytes": 294,
+          "sha256": "3164a6ff8bc6fcec74c46902867fd350ca032db3fd842653fba5a6d43179625e"
+        },
+        {
+          "path": "execution_logs/r5-w-holdout-season.log",
+          "bytes": 295,
+          "sha256": "177269b4a4e9f858fc388285c089fe319fe3bd059336442666bb41e465198080"
+        },
+        {
+          "path": "execution_logs/r5-w-holdout-stress.log",
+          "bytes": 288,
+          "sha256": "52dbb95e9b13c53523c5fb9b53e275409a0b3b13d16dd2185eb50b7e7640ce7f"
+        },
+        {
+          "path": "freeze_manifest.json",
+          "bytes": 40697,
+          "sha256": "19a50dd8ca97a566e7ed698b7a0a3f7eb565db27a8368ac32dd02a31f2f5504e"
+        },
+        {
+          "path": "plan.json",
+          "bytes": 2405,
+          "sha256": "3c6d063e45c1e615b45968521046b64a2b5a02e38bd52eb0185da04d0c919dd7"
+        },
+        {
+          "path": "r5.py",
+          "bytes": 11808,
+          "sha256": "4eb1fa598946f29b2cd80f47db57a3788054060c0e37a811f4b14183bf9890f7"
+        },
+        {
+          "path": "r5_components.csv",
+          "bytes": 7742,
+          "sha256": "5a9aa5077745922c057ff6cd17f0088784a2a015e883faf92548388c3f1276a0"
+        },
+        {
+          "path": "r5_results.json",
+          "bytes": 74673,
+          "sha256": "2a11348662c9e96509783b26f0b21500316899f1afd6a2d940f58d262fd5f4c0"
+        },
+        {
+          "path": "selection_snapshot/STUDY_DESIGN.md",
+          "bytes": 11379,
+          "sha256": "9ede93c3864601c3f0071ca612ba928e490b9bb77b28e9bff1b95f56cefded1a"
+        }
+      ],
+      "hash_definition": "sha256(sorted(relative_path NUL file_sha256 LF)); excludes bytecode, .git, .env"
+    }
+  },
+  "generation_plan_sha256": "cf887d0886546ca235d9e580eb68a2807e77d1ccbe3f357e2b13ef903f9bd9d3"
+}

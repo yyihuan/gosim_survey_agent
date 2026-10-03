@@ -1,0 +1,48 @@
+{
+  "started_at_utc": "2026-10-02T13:13:54.725962+00:00",
+  "command": "/usr/bin/python3 experiments/v4/data/generate_registered.py",
+  "python_version": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "plan_sha256": "fdae0aa4bb033397debe9310a333dc3ccef8427dc32a177def0a7aed714401d0",
+  "source_sha256_before": {
+    "research/2026-10-02/upstream/challenge/v4_bundle.py": "66ca1813dc9ef007df3d014708ee91f7632ab9a5cb1123e7115a3a99bba9f516",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_catalog_config.json": "8a817f469bcd47c2bafa270f5b56140bad28e5cb673c61132ccd4014004966bb",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_fiber_config.json": "16aa2ef0fb7466691a4f8a006f64ecc21767ad4f052df39eaf1bfe9cb29a6dfe",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_scenario_default.json": "6d7e48e26067505c5451b85e7b06a6b02e71cf26e50ddeed89936fe6a317cacb",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_scenario_stress.json": "fe6772608cbd22d73d6fae0bc98fc253ef26939b2d1664b2005f096edb241490",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_score_config.json": "4d96429e2219f96e4f882d177f69673d112f89ba2e473ac0bd628651ca087521",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_sky_map_config.json": "92903cacd818efa5decdd23b0014868515a24945be811d0ac846b4139f449fc4",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_weather_config.json": "3e9c1f03c5d925ab5bfe3402077524e92e052cd911488055a9959fdf2335ef57",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_weather_stress_config.json": "d13006552dd4d2984ad702c28cda1065d8f071e3cdcf5d68c234510f1a59e98e"
+  },
+  "builds": [
+    {
+      "card_id": "dev-season",
+      "elapsed_seconds": 0.553939792,
+      "result": "generated_and_schema_inventory_verified"
+    },
+    {
+      "card_id": "holdout-season",
+      "elapsed_seconds": 0.6239795,
+      "result": "generated_and_schema_inventory_verified"
+    },
+    {
+      "card_id": "holdout-stress",
+      "elapsed_seconds": 0.509707125,
+      "result": "generated_and_schema_inventory_verified"
+    }
+  ],
+  "finished_at_utc": "2026-10-02T13:13:56.415449+00:00",
+  "source_sha256_after": {
+    "research/2026-10-02/upstream/challenge/v4_bundle.py": "66ca1813dc9ef007df3d014708ee91f7632ab9a5cb1123e7115a3a99bba9f516",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_catalog_config.json": "8a817f469bcd47c2bafa270f5b56140bad28e5cb673c61132ccd4014004966bb",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_fiber_config.json": "16aa2ef0fb7466691a4f8a006f64ecc21767ad4f052df39eaf1bfe9cb29a6dfe",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_scenario_default.json": "6d7e48e26067505c5451b85e7b06a6b02e71cf26e50ddeed89936fe6a317cacb",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_scenario_stress.json": "fe6772608cbd22d73d6fae0bc98fc253ef26939b2d1664b2005f096edb241490",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_score_config.json": "4d96429e2219f96e4f882d177f69673d112f89ba2e473ac0bd628651ca087521",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_sky_map_config.json": "92903cacd818efa5decdd23b0014868515a24945be811d0ac846b4139f449fc4",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_weather_config.json": "3e9c1f03c5d925ab5bfe3402077524e92e052cd911488055a9959fdf2335ef57",
+    "research/2026-10-02/upstream/challenge/reference/v4/v4_weather_stress_config.json": "d13006552dd4d2984ad702c28cda1065d8f071e3cdcf5d68c234510f1a59e98e"
+  },
+  "sources_unchanged": true,
+  "exit_code": 0
+}

@@ -1,0 +1,15 @@
+{
+  "recorded_at_utc": "2026-10-02T16:20:37.439700+00:00",
+  "new_run_id": "ext-n1-wrapper-d-demo",
+  "reference_run_id": "r4-equivalence-d-demo",
+  "checks": {
+    "normalized_actions_sha256": true,
+    "normalized_score_sha256": true,
+    "total_equal": true,
+    "no_pace": true
+  },
+  "all_equal": true,
+  "total": 1501.174588,
+  "runtime_seconds": 3.861036833,
+  "verification_not_independent_sample": true
+}

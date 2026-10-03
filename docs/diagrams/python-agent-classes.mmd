@@ -1,0 +1,37 @@
+classDiagram
+  class SurveyState {
+    +factor
+    +pending
+    +notices
+    +on_messages()
+    +on_result()
+    +current_night()
+  }
+  class Planner {
+    +decide()
+    +plan()
+    +note_action()
+    +on_finish()
+  }
+  class FiberGrid {
+    +fiber_center()
+    +classify()
+  }
+  class ScoringModel {
+    +quality_model()
+    +completion_factor()
+    +program_band()
+  }
+  class LLMClient {
+    +ask_json()
+  }
+  class TraceLog {
+    +write()
+    +close()
+  }
+  Planner --> SurveyState : 读取与更新估计
+  SurveyState *-- FiberGrid : 公开几何
+  SurveyState *-- ScoringModel : 公开评分模型
+  Planner --> FiberGrid : 分配候选
+  Planner *-- LLMClient : 有预算的建议
+  Planner *-- TraceLog : 诊断日志

@@ -1,0 +1,28 @@
+import {fileURLToPath,pathToFileURL} from 'node:url';import path from 'node:path';
+const modules=process.env.SURVEY_DOC_MODULES||'/Users/cxjh168/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules';
+const {chromium}=await import(pathToFileURL(path.join(modules,'playwright/index.mjs')).href);
+import fs from 'node:fs';import assert from 'node:assert/strict';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const browser=await chromium.launch({headless:true});const page=await browser.newPage({viewport:{width:1440,height:1000},reducedMotion:'reduce'});
+const errors=[],external=[];page.on('pageerror',e=>errors.push(String(e)));page.on('request',r=>{if(/^https?:/.test(r.url()))external.push(r.url());});
+await page.goto('file://'+root+'/docs/survey-rules-explorer.html');
+assert.equal(await page.locator('.section').count(),19);assert.equal(await page.locator('.diagram svg').count(),6);
+assert.equal(await page.locator('#slot-actual').textContent(),'1800 秒');assert.equal(await page.locator('#slot-boundaries').textContent(),'2 个');
+await page.locator('#slot-night-example').click();assert.equal(await page.locator('#slot-actual').textContent(),'30 秒');assert.equal(await page.locator('#slot-next').textContent(),'开夜后 5400 秒');
+await page.locator('#slot-cross-example').click();
+const initialQ=Number(await page.locator('#q-quality').textContent()),initialB=await page.locator('#q-band').textContent();assert(initialQ>0&&Number(initialB)>0);
+await page.locator('#q-eta').fill('0.5');await page.locator('#q-eta').dispatchEvent('input');assert(Math.abs(Number(await page.locator('#q-quality').textContent())-initialQ*.5)<.001);assert.equal(await page.locator('#q-band').textContent(),initialB);
+await page.locator('#q-closed').check();assert.equal(await page.locator('#q-quality').textContent(),'0.000');assert.equal(await page.locator('#q-band').textContent(),initialB);
+assert.equal(await page.locator('#ledger-best').textContent(),'1.632');assert.equal(await page.locator('#ledger-factor').textContent(),'0.90');
+await page.locator('#ledger-loss').check();assert.equal(await page.locator('#ledger-factor').textContent(),'0.80');
+for(const id of ['ledger-g1','ledger-g2']){await page.locator('#'+id).fill('0.3');await page.locator('#'+id).dispatchEvent('input');}
+await page.locator('#ledger-loss').uncheck();assert.equal(await page.locator('#ledger-factor').textContent(),'0.30');assert.equal(await page.locator('#ledger-required').textContent(),'未达标');
+await page.locator('#message-select').selectOption('1');const msg=JSON.parse(await page.locator('#message-json').textContent());assert.equal(msg.payload.new_messages.filter(m=>m.record_type==='bulletin').length,2);
+await page.locator('#message-select').selectOption('3');const report=JSON.parse(await page.locator('#message-json').textContent());assert.equal(report.payload.last_result.action,'report');assert(report.payload.new_messages.some(m=>m.record_type==='report_result'));
+await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:root+'/docs/survey-rules-explorer-preview.png'});
+await page.locator('#slot-widget').screenshot({path:root+'/docs/survey-rules-time-preview.png'});
+await page.setViewportSize({width:390,height:844});await page.evaluate(()=>window.scrollTo(0,0));await page.screenshot({path:root+'/docs/survey-rules-mobile-preview.png'});
+const overflow=await page.evaluate(()=>({scroll:document.documentElement.scrollWidth,client:document.documentElement.clientWidth}));assert(overflow.scroll<=overflow.client+1,JSON.stringify(overflow));
+assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
+fs.writeFileSync(root+'/docs/survey-rules-explorer.validation.json',JSON.stringify({passed:true,sections:19,diagrams:6,checks:['crosses two ordinary slots','night truncates to 30 seconds','eta changes Q only','direction closure leaves B','best score and max factor independent','resync revokes contribution','no depth coadd','real batched bulletin and report messages','mobile fits viewport','no script errors','no external requests'],errors,external},null,2)+'\n');
+await browser.close();console.log('Rules HTML interactions and mobile checks passed.');

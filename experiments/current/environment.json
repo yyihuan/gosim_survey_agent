@@ -1,0 +1,17 @@
+{
+  "agent": "experiments/current/agent",
+  "cards": "research/2026-10-03/latest-149c659/examples/_local/cards",
+  "default_mode": "offline",
+  "llm_enabled": false,
+  "max_simulators": 2,
+  "protocol": "participant-agent-protocol-v4",
+  "python": "/usr/bin/python3",
+  "runner": "research/2026-10-03/latest-149c659/examples/_local/runner",
+  "runs": "experiments/current/runs",
+  "runtime_minimum": "3.9",
+  "schema_version": "survey-current-environment-v1",
+  "shared_lock": "experiments/v4/harness/.locks",
+  "snapshot_manifest": "research/2026-10-03/latest-149c659/snapshot_manifest.json",
+  "submission_image": "python:3.12-slim",
+  "upstream_commit": "149c6590c49cf289c325b8e2fedfee1035975c6f"
+}

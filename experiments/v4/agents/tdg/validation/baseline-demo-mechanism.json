@@ -1,0 +1,101 @@
+{
+  "D": {
+    "actual_duration_histogram": {
+      "300": 25,
+      "450": 13,
+      "600": 8,
+      "900": 13,
+      "1200": 4,
+      "1500": 5,
+      "1800": 7,
+      "2400": 7,
+      "3000": 13,
+      "3600": 28
+    },
+    "actual_duration_seconds": {
+      "count": 123,
+      "max": 3600,
+      "mean": 1718.2926829268292,
+      "median": 1200,
+      "min": 300,
+      "p10": 300,
+      "p90": 3600
+    },
+    "valid_hit_factor": {
+      "count": 1425,
+      "max": 1.0,
+      "mean": 0.7247317480701755,
+      "median": 0.93574,
+      "min": 0.038666,
+      "p10": 0.196562,
+      "p90": 1.0
+    },
+    "valid_hit_rows_factor_at_least_0_5": 1011,
+    "valid_hit_rows_factor_at_least_0_95": 705
+  },
+  "G": {
+    "all_hit_start_airmass": {
+      "count": 1425,
+      "max": 1.9518141215981977,
+      "mean": 1.2369375694603584,
+      "median": 1.1660105721817415,
+      "min": 1.0001029525618308,
+      "p10": 1.0147566181592673,
+      "p90": 1.5974124310666775
+    },
+    "all_hit_start_altitude_deg": {
+      "count": 1425,
+      "max": 89.16130010687503,
+      "mean": 59.55853386828839,
+      "median": 59.017824946583644,
+      "min": 30.737608700208174,
+      "p10": 38.65027008781097,
+      "p90": 80.14926641597958
+    },
+    "positive_valid_hit_start_airmass": {
+      "count": 1425,
+      "max": 1.9518141215981977,
+      "mean": 1.2369375694603584,
+      "median": 1.1660105721817415,
+      "min": 1.0001029525618308,
+      "p10": 1.0147566181592673,
+      "p90": 1.5974124310666775
+    },
+    "positive_valid_hit_start_altitude_deg": {
+      "count": 1425,
+      "max": 89.16130010687503,
+      "mean": 59.55853386828839,
+      "median": 59.017824946583644,
+      "min": 30.737608700208174,
+      "p10": 38.65027008781097,
+      "p90": 80.14926641597958
+    },
+    "valid_hit_fraction_below_45_deg": 0.18105263157894738,
+    "valid_hit_start_altitude_deg": {
+      "count": 1425,
+      "max": 89.16130010687503,
+      "mean": 59.55853386828839,
+      "median": 59.017824946583644,
+      "min": 30.737608700208174,
+      "p10": 38.65027008781097,
+      "p90": 80.14926641597958
+    }
+  },
+  "T": {
+    "actual_cross_slot_count": 87,
+    "actual_cross_slot_fraction": 0.7073170731707317,
+    "below_minimum_remainder_boundary_wait_rows": 0,
+    "night_wait_rows": 13,
+    "night_wait_seconds": 10950.0,
+    "observe_count": 123,
+    "requested_cross_slot_count": 87,
+    "requested_cross_slot_fraction": 0.7073170731707317
+  },
+  "definitions": {
+    "D": "实际曝光来自decisions；factor来自有效observations，按hit行计数，可含重复目标；CSV六位舍入会影响门槛",
+    "G": "按命中行计算曝光起始时刻目标高度与airmass；仅读公开目录/站点和原始轨迹；positive仅含valid且score>0；不把视场中心当目标高度",
+    "T": "请求时长来自actions；起点与实际时长来自decisions；当前900秒格以公开夜晚开始为原点；夜内等待是wait与观测窗口重叠秒数"
+  },
+  "run_id": "r1-official-demo-repeat",
+  "schema_version": "tdg-mechanisms-v1"
+}

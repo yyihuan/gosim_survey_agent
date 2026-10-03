@@ -1,0 +1,20 @@
+{
+  "recorded_at_utc": "2026-10-02T13:12:02.065025+00:00",
+  "recorded_at_beijing": "2026-10-02T21:12:02.065025+08:00",
+  "status": "unavailable_not_verified_empty",
+  "page_url": "https://create.gosim.org/survey26/platform/leaderboard",
+  "permission": "Public front-end anon only; no login or user session",
+  "browser_observation": "Header, navigation, footer rendered; leaderboard main content not rendered. No visible scores.",
+  "v4_practice": {
+    "n_teams_visible": null,
+    "median_total_score": null,
+    "reason": "Backend unavailable; no valid board payload or visible score rows"
+  },
+  "v3_practice": {
+    "n_teams_visible": null,
+    "median_total_score": null,
+    "reason": "Bounded public leaderboard probe did not yield a valid payload"
+  },
+  "boards": [],
+  "scope_note": "v4 snapshot SQL selects each team best complete batch by overall mean. Each card tab ranks scores from that same batch, not each card historical maximum. v3 per-scenario RPC selects each team highest score on that scenario. These are repository-defined semantics, not live results."
+}

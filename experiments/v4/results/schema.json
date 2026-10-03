@@ -1,0 +1,454 @@
+{
+  "schema_version": "v4-all-runs-v1",
+  "description": "仅标准化已有 run 记录，不执行模拟或总体分析。",
+  "json_file": "all_runs.json",
+  "csv_file": "all_runs.csv",
+  "csv_encoding": "UTF-8",
+  "row_order": "run 目录名字典序，所有目录保留，不按成绩筛选。",
+  "null_policy": "JSON null 与 CSV 空单元格均表示缺失；数值 0 保持 0；对象/数组 CSV 为紧凑 JSON。",
+  "categories": [
+    "R1",
+    "control",
+    "intentional-timeout",
+    "strategy",
+    "harness-verification",
+    "integration-verification",
+    "unknown"
+  ],
+  "evaluation_states": [
+    "expected-timeout",
+    "completed-full-season",
+    "completed-early",
+    "completed-partial",
+    "failed",
+    "running",
+    "missing-outputs",
+    "unknown"
+  ],
+  "source_precedence": "manifest 提供执行与 hash；config 提供原始策略参数；metrics 提供官方分数及派生指标。完整输入在 source_records。",
+  "scope": "仅读取 run 根目录 manifest/config/metrics；证据只检查存在并链接，不读取 card_snapshot、data/cards 或保留集内容。",
+  "rerun_command": "/usr/bin/python3 -B experiments/v4/harness/aggregate_results.py",
+  "no_simulator_execution": true,
+  "columns": [
+    {
+      "name": "run_id",
+      "type": "string",
+      "description": "run 的权威标识；缺失时用目录名。"
+    },
+    {
+      "name": "run_directory_name",
+      "type": "string",
+      "description": "实际 run 目录名，不用于覆盖已有 run_id。"
+    },
+    {
+      "name": "stage",
+      "type": "string|null",
+      "description": "manifest.stage 优先，metrics.stage 后备；保留 R2-control 等原值。"
+    },
+    {
+      "name": "stage_group",
+      "type": "string|null",
+      "description": "只提取 R1–R5 前缀便于分组，其余保持原阶段。"
+    },
+    {
+      "name": "experiment_category",
+      "type": "enum",
+      "description": "R1/control/intentional-timeout/strategy/harness-verification/integration-verification/unknown。"
+    },
+    {
+      "name": "category_evidence",
+      "type": "string",
+      "description": "类别来自哪个显式字段或明确 fixture 规则。"
+    },
+    {
+      "name": "family",
+      "type": "string|null",
+      "description": "config.family 优先；无配置的 R1 根据 agent_kind/source 区分 baseline/idle。"
+    },
+    {
+      "name": "variant",
+      "type": "string|null",
+      "description": "config.variant 或 config.version；缺失不从成绩推断。"
+    },
+    {
+      "name": "config",
+      "type": "object|null",
+      "description": "该 run 已归档的完整配置，不解读策略优劣。"
+    },
+    {
+      "name": "config_source",
+      "type": "string|null",
+      "description": "manifest.config_source 的原始配置入口路径。"
+    },
+    {
+      "name": "agent_source",
+      "type": "string|null",
+      "description": "manifest.source 的策略源路径；早期未记录保持 null。"
+    },
+    {
+      "name": "card",
+      "type": "string|null",
+      "description": "manifest/metrics 中 card_source 的末级名称；不打开卡片内容。"
+    },
+    {
+      "name": "card_source",
+      "type": "string|null",
+      "description": "记录中的原始数据目录，只作为来源字符串。"
+    },
+    {
+      "name": "card_tree_sha256",
+      "type": "string|null",
+      "description": "run 记录的卡片树散列。"
+    },
+    {
+      "name": "card_nights",
+      "type": "number|null",
+      "description": "metrics.card.night_count。"
+    },
+    {
+      "name": "card_targets",
+      "type": "number|null",
+      "description": "metrics.card.target_count。"
+    },
+    {
+      "name": "total",
+      "type": "number|null",
+      "description": "metrics.total 官方总分；缺失保持 null，不填 0。"
+    },
+    {
+      "name": "score_available",
+      "type": "boolean",
+      "description": "metrics 明确 official_report_available 且有数值 total。"
+    },
+    {
+      "name": "components",
+      "type": "object",
+      "description": "metrics.components 全部官方分项；CSV 同时展开 component_* 列。"
+    },
+    {
+      "name": "component_observation_request_reward",
+      "type": "number|null",
+      "description": "metrics.components.observation_request_reward 官方原值，单位分。"
+    },
+    {
+      "name": "component_report_settlement",
+      "type": "number|null",
+      "description": "metrics.components.report_settlement 官方原值，单位分。"
+    },
+    {
+      "name": "component_required_penalty",
+      "type": "number|null",
+      "description": "metrics.components.required_penalty 官方原值，单位分。"
+    },
+    {
+      "name": "component_sum_best_scores",
+      "type": "number|null",
+      "description": "metrics.components.sum_best_scores 官方原值，单位分。"
+    },
+    {
+      "name": "component_uniformity_penalty",
+      "type": "number|null",
+      "description": "metrics.components.uniformity_penalty 官方原值，单位分。"
+    },
+    {
+      "name": "required_missing",
+      "type": "number|null",
+      "description": "metrics.counts.required_missing。"
+    },
+    {
+      "name": "coverage_jain",
+      "type": "number|null",
+      "description": "metrics.coverage.jain_from_official_penalty，受官方舍入影响。"
+    },
+    {
+      "name": "coverage_qualified_targets",
+      "type": "number|null",
+      "description": "达到公开 factor 阈值的不同有效目标计数；来自已有 metrics。"
+    },
+    {
+      "name": "coverage_uniformity_bands",
+      "type": "object|null",
+      "description": "已有 metrics 中各 RA 条带完成率。"
+    },
+    {
+      "name": "targets_observed",
+      "type": "number|null",
+      "description": "metrics.counts.targets_observed，不同观测目标。"
+    },
+    {
+      "name": "observe_actions",
+      "type": "number|null",
+      "description": "metrics.counts.observe_actions，一次 observe 对应一次曝光动作。"
+    },
+    {
+      "name": "observation_rows",
+      "type": "number|null",
+      "description": "metrics.counts.observations，目标观测记录数，区别于曝光动作数。"
+    },
+    {
+      "name": "decisions",
+      "type": "number|null",
+      "description": "metrics.counts.decisions，官方轨迹决策记录数。"
+    },
+    {
+      "name": "decision_requests",
+      "type": "number|null",
+      "description": "metrics.decision_requests，实际 Agent 决策请求数。"
+    },
+    {
+      "name": "actual_exposure_mean_seconds",
+      "type": "number|null",
+      "description": "已有 metrics.exposure.actual_seconds.mean。"
+    },
+    {
+      "name": "actual_exposure_median_seconds",
+      "type": "number|null",
+      "description": "已有 metrics.exposure.actual_seconds.median。"
+    },
+    {
+      "name": "actual_exposure_sum_seconds",
+      "type": "number|null",
+      "description": "已有 metrics.exposure.actual_seconds.sum。"
+    },
+    {
+      "name": "requested_exposure_mean_seconds",
+      "type": "number|null",
+      "description": "已有 metrics.exposure.requested_seconds.mean。"
+    },
+    {
+      "name": "simulated_observe_seconds",
+      "type": "number|null",
+      "description": "已有 metrics 的实际模拟观测总时间。"
+    },
+    {
+      "name": "simulated_wait_seconds",
+      "type": "number|null",
+      "description": "已有 metrics 的模拟等待总时间。"
+    },
+    {
+      "name": "simulated_span_seconds",
+      "type": "number|null",
+      "description": "已有 metrics 的模拟轨迹首尾跨度。"
+    },
+    {
+      "name": "request_issued",
+      "type": "number|null",
+      "description": "metrics.counts.observation_requests_issued。"
+    },
+    {
+      "name": "request_completed",
+      "type": "number|null",
+      "description": "metrics.counts.observation_requests_completed。"
+    },
+    {
+      "name": "report_count",
+      "type": "number|null",
+      "description": "metrics.reports.count。"
+    },
+    {
+      "name": "report_correct",
+      "type": "number|null",
+      "description": "metrics.reports.correct。"
+    },
+    {
+      "name": "report_false",
+      "type": "number|null",
+      "description": "metrics.reports.false。"
+    },
+    {
+      "name": "runtime_seconds",
+      "type": "number|null",
+      "description": "manifest.runtime_seconds 优先；含 simulator 外层等待执行，不含 setup/锁等待。"
+    },
+    {
+      "name": "runtime_with_setup_seconds",
+      "type": "number|null",
+      "description": "manifest 对整次 harness 操作的真实耗时，可能含锁等待。"
+    },
+    {
+      "name": "accounted_wallclock_seconds",
+      "type": "number|null",
+      "description": "已有 metrics 的官方计时成本。"
+    },
+    {
+      "name": "agent_wallclock_seconds",
+      "type": "number|null",
+      "description": "已有 metrics 的 Agent 时间。"
+    },
+    {
+      "name": "global_wallclock_seconds",
+      "type": "number|null",
+      "description": "已有 metrics 的每卡总时间预算。"
+    },
+    {
+      "name": "pace_change_count",
+      "type": "number|null",
+      "description": "已有 metrics.pace.change_count，不把缺少日志补为 0。"
+    },
+    {
+      "name": "pace_changes",
+      "type": "array|null",
+      "description": "已有 metrics.pace.changes_logged。"
+    },
+    {
+      "name": "pace_telemetry_available",
+      "type": "boolean|null",
+      "description": "已有 metrics 的透传 telemetry 是否存在。"
+    },
+    {
+      "name": "pace_minimum_remaining_seconds",
+      "type": "number|null",
+      "description": "已有 metrics 的最小剩余 wallclock。"
+    },
+    {
+      "name": "run_status",
+      "type": "string|null",
+      "description": "原 manifest.status；早期缺失时从 exit/报告推定并明确标记。"
+    },
+    {
+      "name": "run_status_inferred",
+      "type": "boolean",
+      "description": "run_status 是否为汇总器给早期记录的机械推定。"
+    },
+    {
+      "name": "evaluation_state",
+      "type": "enum",
+      "description": "expected-timeout/completed-full-season/completed-early/completed-partial/failed/running/missing-outputs/unknown。"
+    },
+    {
+      "name": "process_complete",
+      "type": "boolean",
+      "description": "有终态 status、end_utc 或 exit_code；不是全季科学完成。"
+    },
+    {
+      "name": "full_season_complete",
+      "type": "boolean",
+      "description": "有官方分数、exit_code=0、termination_reason=survey_complete。"
+    },
+    {
+      "name": "intentional_timeout",
+      "type": "boolean",
+      "description": "类别明确为 intentional-timeout；不会据任意 timeout 猜测。"
+    },
+    {
+      "name": "termination_reason",
+      "type": "string|null",
+      "description": "manifest 优先、metrics 后备，保留外层 guard 与官方原因差异。"
+    },
+    {
+      "name": "official_termination_reason",
+      "type": "string|null",
+      "description": "manifest.official_termination_reason；早期成功记录可由 metrics 原因补齐。"
+    },
+    {
+      "name": "termination_detail",
+      "type": "string|null",
+      "description": "manifest.failure_detail 或已有 metrics 的详细原因。"
+    },
+    {
+      "name": "exit_code",
+      "type": "number|null",
+      "description": "manifest.exit_code 优先，metrics 后备。"
+    },
+    {
+      "name": "start_utc",
+      "type": "string|null",
+      "description": "run 原记录开始时间。"
+    },
+    {
+      "name": "end_utc",
+      "type": "string|null",
+      "description": "run 原记录结束时间。"
+    },
+    {
+      "name": "python_executable",
+      "type": "string|null",
+      "description": "run 原记录实际 Python 路径。"
+    },
+    {
+      "name": "python_version",
+      "type": "string|null",
+      "description": "run 原记录实际版本。"
+    },
+    {
+      "name": "upstream_commit",
+      "type": "string|null",
+      "description": "run 原记录的官方快照 commit。"
+    },
+    {
+      "name": "provenance_backfilled_after_run",
+      "type": "boolean|null",
+      "description": "旧 R1 是否明确事后补录来源；缺失不猜测。"
+    },
+    {
+      "name": "backfill_note",
+      "type": "string|null",
+      "description": "manifest 对旧 R1 来源补录的原说明。"
+    },
+    {
+      "name": "source_tree_sha256",
+      "type": "string|null",
+      "description": "策略源树散列，不含动态 harness 注入文件。"
+    },
+    {
+      "name": "effective_agent_tree_sha256",
+      "type": "string|null",
+      "description": "实际运行 Agent 树散列，可能随路径/注入变化。"
+    },
+    {
+      "name": "config_sha256",
+      "type": "string|null",
+      "description": "run 记录的配置原始字节散列。"
+    },
+    {
+      "name": "config_file_sha256_now",
+      "type": "string|null",
+      "description": "本次读取归档 config 文件的实际 SHA-256，供核对。"
+    },
+    {
+      "name": "config_hash_matches_recorded",
+      "type": "boolean|null",
+      "description": "当前配置字节与已记录 hash 是否一致；缺失则 null。"
+    },
+    {
+      "name": "harness_tree_sha256",
+      "type": "string|null",
+      "description": "运行时记录的 harness 树散列。"
+    },
+    {
+      "name": "snapshot_tree_sha256",
+      "type": "string|null",
+      "description": "运行时官方 vendor 树散列。"
+    },
+    {
+      "name": "normalized_actions_sha256",
+      "type": "string|null",
+      "description": "已有 metrics 中规范化动作散列。"
+    },
+    {
+      "name": "normalized_score_sha256",
+      "type": "string|null",
+      "description": "已有 metrics 中规范化官方报告散列。"
+    },
+    {
+      "name": "concurrency",
+      "type": "object|null",
+      "description": "manifest 记录的槽、peer、load、锁等待等；保留原值。"
+    },
+    {
+      "name": "record_issues",
+      "type": "array",
+      "description": "缺失、解析、类型或 hash 问题；问题 run 仍保留一行。"
+    },
+    {
+      "name": "input_sha256",
+      "type": "object",
+      "description": "本次读取 manifest/config/metrics 原始字节散列。"
+    },
+    {
+      "name": "evidence_links",
+      "type": "object",
+      "description": "相对结果目录的已存在原始证据路径；只链接，不读取卡片或模拟真值。"
+    }
+  ]
+}

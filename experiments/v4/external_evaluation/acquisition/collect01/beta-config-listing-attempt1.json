@@ -1,0 +1,44 @@
+{
+  "attempt": 1,
+  "body": "[{\"name\":\"v4_fiber_config.json\",\"version\":\"df745939-77d8-4a83-9999-7c7c29e75e99\",\"id\":\"f84e4fb6-368f-40be-9e40-913f5a1bcf96\",\"updated_at\":\"2026-10-02T07:12:47.431Z\",\"created_at\":\"2026-10-02T07:12:47.431Z\",\"last_accessed_at\":\"2026-10-02T07:12:47.431Z\",\"metadata\":{\"eTag\":\"\\\"385aa3af21c81c2cb134e617a4ba2cae\\\"\",\"size\":360,\"mimetype\":\"application/json\",\"cacheControl\":\"no-cache\",\"lastModified\":\"2026-10-02T07:12:48.000Z\",\"contentLength\":360,\"httpStatusCode\":200},\"archived_at\":null,\"is_delete_marker\":false,\"is_versioned\":false},{\"name\":\"v4_scenario.json\",\"version\":\"564329b3-09c1-4d31-b1e4-4f6c202da445\",\"id\":\"b54bed32-61bd-4ed1-a4b6-f368a815365e\",\"updated_at\":\"2026-10-02T07:12:48.946Z\",\"created_at\":\"2026-10-02T07:12:48.946Z\",\"last_accessed_at\":\"2026-10-02T07:12:48.946Z\",\"metadata\":{\"eTag\":\"\\\"5698c7d95425de5dd367ce0db70cd9a1\\\"\",\"size\":1156,\"mimetype\":\"application/json\",\"cacheControl\":\"no-cache\",\"lastModified\":\"2026-10-02T07:12:49.000Z\",\"contentLength\":1156,\"httpStatusCode\":200},\"archived_at\":null,\"is_delete_marker\":false,\"is_versioned\":false},{\"name\":\"v4_score_config.json\",\"version\":\"6702b970-49a4-4cba-8fbb-15521708c8a5\",\"id\":\"bcf0e7a1-c840-469b-8733-01252dfc860b\",\"updated_at\":\"2026-10-02T07:12:50.086Z\",\"created_at\":\"2026-10-02T07:12:50.086Z\",\"last_accessed_at\":\"2026-10-02T07:12:50.086Z\",\"metadata\":{\"eTag\":\"\\\"e77d9e2b5b7d7c3e6179d3b1d8eb2ad8\\\"\",\"size\":909,\"mimetype\":\"application/json\",\"cacheControl\":\"no-cache\",\"lastModified\":\"2026-10-02T07:12:51.000Z\",\"contentLength\":909,\"httpStatusCode\":200},\"archived_at\":null,\"is_delete_marker\":false,\"is_versioned\":false}]",
+  "body_sha256": "f613e9595e13d0b7e80456a6876978cfdb0b8a979a52be62fbeddcd28c34461a",
+  "bytes": 1574,
+  "error": null,
+  "finished_at_utc": "2026-10-02T15:05:08.645426+00:00",
+  "http_status": 200,
+  "method": "POST",
+  "name": "beta-config-listing",
+  "permission": "public_frontend_anon",
+  "request_payload": {
+    "limit": 1000,
+    "offset": 0,
+    "prefix": "v4-practice-beta/config",
+    "sortBy": {
+      "column": "name",
+      "order": "asc"
+    }
+  },
+  "response_headers": {
+    "Access-Control-Allow-Origin": "*",
+    "CF-Cache-Status": "DYNAMIC",
+    "CF-Ray": "a4449a7fbcac584b-LAX",
+    "Connection": "close",
+    "Content-Length": "1574",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Fri, 02 Oct 2026 15:05:08 GMT",
+    "Server": "cloudflare",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "X-Content-Type-Options": "nosniff",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-jwt-alg": "HS256",
+    "sb-jwt-iss": "supabase",
+    "sb-project-ref": "vdiemcofukuxglqsmlyz",
+    "sb-request-id": "01a0fd25-cbd9-7921-a359-f74fb044ea3e",
+    "set-cookie": "__cf_bm=.MtF_K6cDu88fABeSuV.LK.9x6uBmFUhvr8CwRoEeLA-1790953507.794236-1.0.1.1-bWbw__TDaMErT.UmQA.5mzZczTL.fv5KMM.2eTsr7yj4i.P9ofvZ0R_AlrOVPPtqpNqYrAAWFhuRMjDQJ64fvHWc_2lAXx7keUuyrdxJk0iz_XqIn2Vf9MNDgVJnop7s; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Fri, 02 Oct 2026 15:35:08 GMT"
+  },
+  "runtime_seconds": 2.114425707999999,
+  "started_at_utc": "2026-10-02T15:05:06.531009+00:00",
+  "url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/list/scenarios"
+}

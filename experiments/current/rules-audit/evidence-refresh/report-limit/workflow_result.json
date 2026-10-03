@@ -1,0 +1,63 @@
+{
+  "accounted_wallclock_seconds": 0.006,
+  "agent_wallclock_seconds": 0.0,
+  "committed_action_count": 32,
+  "decision_requests": 33,
+  "global_wallclock_seconds": 900.0,
+  "ignored_in_flight_response": false,
+  "last_decision_sequence": 33,
+  "protocol_version": "participant-agent-protocol-v4",
+  "scenario": "v4-l1",
+  "schema_version": "v4-workflow-result-v1",
+  "score_report": {
+    "by_class": {},
+    "components": {
+      "observation_request_reward": 0,
+      "report_settlement": -4500.0,
+      "required_penalty": -19500.0,
+      "sum_best_scores": 0,
+      "uniformity_penalty": -200.0
+    },
+    "counts": {
+      "decisions": 32,
+      "invalidated_observations": 0,
+      "observation_requests_completed": 0,
+      "observation_requests_issued": 0,
+      "observations": 0,
+      "observe_actions": 0,
+      "required_missing": 390,
+      "targets_observed": 0
+    },
+    "invalidations": [],
+    "observation_requests": [],
+    "scenario": "v4-l1",
+    "schema_version": "v4-score-report-v1",
+    "sha256": {
+      "decisions": "92328bb2057a784c1199c91bd0a6364720fda57d40270e8868d56518a049e914",
+      "messages": "c8f983e2d03be772235e3b12c11d80a1b363bca9e49653f74d21688be7e02f7d",
+      "observations": "b73414b2c006969ad5d6ff5df23666e573786008ca1f1f7959fc3ac98df99c2f",
+      "scenario": "c8d1a8676e4a283b55bdaa59c40f0ae53396e05a93095e6364573ad536c68c43"
+    },
+    "termination": {
+      "detail": "too many consecutive report actions",
+      "reason": "agent_error"
+    },
+    "total": -24200.0,
+    "uniformity_bands": {
+      "ra_0_10": 0.0,
+      "ra_100_110": 0.0,
+      "ra_10_20": 0.0,
+      "ra_110_120": 0.0,
+      "ra_20_30": 0.0,
+      "ra_30_40": 0.0,
+      "ra_350_360": 0.0,
+      "ra_40_50": 0.0,
+      "ra_50_60": 0.0,
+      "ra_60_70": 0.0,
+      "ra_70_80": 0.0,
+      "ra_90_100": 0.0
+    }
+  },
+  "termination_detail": "too many consecutive report actions",
+  "termination_reason": "agent_error"
+}

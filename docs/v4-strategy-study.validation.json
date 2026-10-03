@@ -1,0 +1,406 @@
+{
+  "method": "Node vm with minimal DOM fixture; not a real browser",
+  "cases": [
+    "84 rows and 26 R5 records",
+    "official component sum preserved for all complete rows",
+    "frozen T/P are matching R3 candidates; C/W retain initial settings",
+    "all 13 profiles have four runs and finite transfer means",
+    "DTGP and DPG means match Root report rounding",
+    "all T/D/P iterations are retained, no winner-only selection",
+    "R3 T and D explanations use development-iteration summaries",
+    "R5 explanation does not reuse R2 mechanism conclusions",
+    "unavailable card/stage yields explicit empty state",
+    "all 24 combo cells and original evidence links render",
+    "expected timeout stays separate with unavailable score",
+    "14 integration checks include 12 integration and two controls",
+    "search/reset and transfer filters synchronize rows and candidate text"
+  ],
+  "cases_passed": 13,
+  "browser_verification": {
+    "verifier": "Root parent agent, reported actual browser QA",
+    "verified": [
+      "card selection",
+      "T holdout-stress components",
+      "all D iterations",
+      "DPG holdout-stress interaction",
+      "DPG transfer means",
+      "guard filtering",
+      "narrow-screen bar and scatter readability",
+      "no browser console error or warning",
+      "Root reload confirmed R3 development-family summary and T_iteration correction"
+    ],
+    "status": "passed, as reported by Root",
+    "scope": "Previous R1–R5 layout only; revised overview layout awaits Root browser QA"
+  },
+  "static": {
+    "broken_links": [],
+    "embedded_network_assets": [],
+    "unique_ids": true,
+    "inline_svg_freshness": "diagram.mjs check passed",
+    "aggregator_unchanged": true,
+    "html_bytes": 3650552,
+    "original_evidence_links_checked": 1256
+  },
+  "tested_output_sha256": "a9d2b58e1bddf6d7f2cfc6aec2d565378cca7be2fd91684aadc309b88c4a11ec",
+  "final_narrative_regression": {
+    "R3": "development-family summary explicitly labeled; uses *_iteration",
+    "R5": "frozen identity and objective current-card metrics; no R2 narrative",
+    "R4": "parameter provenance and link to interaction panel"
+  },
+  "final_narrative_checks_passed": 4,
+  "final_narrative_output_sha256": "4cec4ae80f6bddec95bb84a95a8d6327e728da441e67e3dd446cf5b56156f59d",
+  "flow_container_fix": {
+    "scope": "HTML/CSS container only",
+    "min_width_px": 716,
+    "horizontal_scroll": true,
+    "height_auto": true,
+    "max_height_removed": true,
+    "svg_unchanged": true,
+    "static_checks_passed": true,
+    "browser_status": "Root to verify refreshed flow at narrow width"
+  },
+  "revised_layout": {
+    "method": "Node vm with minimal DOM fixture; not a real browser",
+    "cases": [
+      "guide: all six families and every narrative field are default-visible",
+      "guide: combination meanings, rationale, observations and value render",
+      "development matrix: 18 configurations and every R2/R3/R4 strategy run",
+      "frozen matrix: 13x4 records, exact T/P candidates, negative totals retained",
+      "frozen matrix delta toggle preserves official totals as secondary values",
+      "screenshots: direct decimal summaries, canonical alpha/beta/gamma/delta mapping",
+      "external: actual records map independently; missing results never use research scores",
+      "historical records: current official-platform label takes precedence; no zero bars",
+      "external: blocked complete environment renders exact no-run labels",
+      "external: worker schema maps four cards and three candidates independently",
+      "external: unavailable score flags, zero values, download failure and absent screenshots",
+      "version-specific explanation: R3 summaries and R5 current-card statements",
+      "extension guide: six directions, combinations, holdout findings and takeaways remain default-visible",
+      "two-study isolation: original 84 preserved; extension 97 includes 78 research and 19 verification; negative scores are completed results",
+      "extension development: all N2/N3/N4 runs plus reused references; D deltas never use old baseline",
+      "extension frozen development: exact N2/N4 candidates and reused references; no N3 substitution",
+      "extension current frozen matrix: guide order/labels, source versions, and four-card summary",
+      "compact transfer overview: all 13 labels and values reuse the same development/holdout functions",
+      "extension resize: height changes never replace tables; width changes redraw charts only and preserve checkbox state",
+      "extension pending: four sealed cards display no invented zeros",
+      "extension N5 mapping: every frozen case and four cards render totals plus same-card D differences",
+      "script execution: fixtures throw no errors and emit no console warnings/errors"
+    ],
+    "cases_passed": 22,
+    "console_messages": [],
+    "html_sha256": "a9d2b58e1bddf6d7f2cfc6aec2d565378cca7be2fd91684aadc309b88c4a11ec",
+    "research_rows": 84,
+    "development_configurations": 18,
+    "frozen_matrix_cells": 52,
+    "extension_rows": 97,
+    "extension_reference_rows": 6,
+    "external_record_rows": 12,
+    "external_scored_rows": 0,
+    "external_executed_rows": 0,
+    "browser_verification": "Root to verify actual browser UI and console for second-study layout"
+  },
+  "revised_static": {
+    "broken_links": [],
+    "embedded_network_assets": [],
+    "unique_ids": true,
+    "guide_navigation_targets_exist": true,
+    "original_all_runs_unchanged": true,
+    "svg_unchanged": true,
+    "latest_guide_hash_matches": true,
+    "external_planned_records": 12,
+    "external_scored_records": 0,
+    "external_executed_runs": 0,
+    "html_sha256": "756cde36591d3ff78c0e97933de4ef9130cbbd6fb9b21afac2f99b4ef726401b"
+  },
+  "revised_browser_verification": {
+    "method": "Root CUA real browser against localhost",
+    "checked_at_utc": "2026-10-02T15:23:57.557212+00:00",
+    "html_sha256": "756cde36591d3ff78c0e97933de4ef9130cbbd6fb9b21afac2f99b4ef726401b",
+    "widths_checked": [
+      1280,
+      392
+    ],
+    "checks": {
+      "all_six_strategy_explanations_rendered": true,
+      "all_18_development_configs_visible_without_filter": true,
+      "frozen_13_by_4_matrix_visible_without_filter": true,
+      "delta_toggle_retains_total": true,
+      "narrow_body_no_horizontal_overflow": true,
+      "narrow_tables_scroll_within_container": true,
+      "four_screenshot_medians_and_tops_match": true,
+      "twelve_external_cells_are_not_run_not_zero": true,
+      "score_click_selects_correct_r3_variant": true,
+      "final_r3_narrative_retains_result_analysis": true,
+      "console_errors_and_warnings_empty": true,
+      "viewport_override_reset": true
+    },
+    "simulation_status": "No new simulations: official bundles incomplete; original 84 runs unchanged"
+  },
+  "extension_static": {
+    "checked_at_utc": "2026-10-02T16:58:22.298373+00:00",
+    "broken_static_links": [],
+    "embedded_network_assets": [],
+    "unique_ids": true,
+    "old_84_data_sha256": "f550366db6a9d56647a84f4703112783d719c6a6de9af84718c4b318f1eb0a2a",
+    "original_flow_sha256": "401272b49e146e1a7f848ce5d7e464d64f42d7f2f3ee804958b9c57a4cbfe4a1",
+    "extension_data_hash_matches": true,
+    "extension_guide_hash_matches": true,
+    "report_hash_matches": true,
+    "html_sha256": "a9d2b58e1bddf6d7f2cfc6aec2d565378cca7be2fd91684aadc309b88c4a11ec",
+    "browser_status": "Second-study layout pending Root real-browser QA; prior verified first-study evidence retained"
+  },
+  "extension_case_identity": {
+    "method": "read-only frozen plan/source/config/record identity check; no card data reads",
+    "case_count": 13,
+    "cases": [
+      {
+        "case_id": "official-baseline",
+        "label": "官方 baseline",
+        "agent": "experiments/v4/vendor/starter_kit_v4/agent",
+        "config": null,
+        "source_matches_frozen": true,
+        "config_matches_frozen": null,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-baseline-ext-holdout-a",
+          "ext-n5-baseline-ext-holdout-b",
+          "ext-n5-baseline-ext-holdout-c",
+          "ext-n5-baseline-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D-linear",
+        "label": "D · 线性收益",
+        "agent": "experiments/v4/agents/combined/source",
+        "config": "experiments/v4/configs/tdg/d-linear.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-d-ext-holdout-a",
+          "ext-n5-d-ext-holdout-b",
+          "ext-n5-d-ext-holdout-c",
+          "ext-n5-d-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "DTGP-frozen02",
+        "label": "旧 DTGP",
+        "agent": "experiments/v4/agents/combined/source",
+        "config": "experiments/v4/configs/combined/dtgp-frozen02.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-dtgp-ext-holdout-a",
+          "ext-n5-dtgp-ext-holdout-b",
+          "ext-n5-dtgp-ext-holdout-c",
+          "ext-n5-dtgp-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+H",
+        "label": "H · 机会夜数",
+        "agent": "experiments/v4/extension/agents/heq/source",
+        "config": "experiments/v4/extension/configs/heq/h-opportunity2.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-h-ext-holdout-a",
+          "ext-n5-h-ext-holdout-b",
+          "ext-n5-h-ext-holdout-c",
+          "ext-n5-h-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+E",
+        "label": "E · 临界曝光",
+        "agent": "experiments/v4/extension/agents/heq/source",
+        "config": "experiments/v4/extension/configs/heq/e-threshold30.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-e-ext-holdout-a",
+          "ext-n5-e-ext-holdout-b",
+          "ext-n5-e-ext-holdout-c",
+          "ext-n5-e-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+Q",
+        "label": "Q · 质量余量",
+        "agent": "experiments/v4/extension/agents/heq/source",
+        "config": "experiments/v4/extension/configs/heq/q-quantile25.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-q-ext-holdout-a",
+          "ext-n5-q-ext-holdout-b",
+          "ext-n5-q-ext-holdout-c",
+          "ext-n5-q-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+M",
+        "label": "M · 边际科学分",
+        "agent": "experiments/v4/extension/agents/mfj/source",
+        "config": "experiments/v4/extension/configs/mfj/m-initial.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-m-ext-holdout-a",
+          "ext-n5-m-ext-holdout-b",
+          "ext-n5-m-ext-holdout-c",
+          "ext-n5-m-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+F",
+        "label": "F · 联合选场6",
+        "agent": "experiments/v4/extension/agents/mfj/source",
+        "config": "experiments/v4/extension/configs/mfj/f-initial.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-f-ext-holdout-a",
+          "ext-n5-f-ext-holdout-b",
+          "ext-n5-f-ext-holdout-c",
+          "ext-n5-f-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+J",
+        "label": "J · 覆盖边际",
+        "agent": "experiments/v4/extension/agents/mfj/source",
+        "config": "experiments/v4/extension/configs/mfj/j-initial.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-j-ext-holdout-a",
+          "ext-n5-j-ext-holdout-b",
+          "ext-n5-j-ext-holdout-c",
+          "ext-n5-j-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+F+E",
+        "label": "FE · 选场＋临界曝光",
+        "agent": "experiments/v4/extension/agents/combined/source",
+        "config": "experiments/v4/extension/configs/combined/fe.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-fe-ext-holdout-a",
+          "ext-n5-fe-ext-holdout-b",
+          "ext-n5-fe-ext-holdout-c",
+          "ext-n5-fe-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+F+M",
+        "label": "FM · 选场＋科学边际",
+        "agent": "experiments/v4/extension/agents/combined/source",
+        "config": "experiments/v4/extension/configs/combined/fm.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-fm-ext-holdout-a",
+          "ext-n5-fm-ext-holdout-b",
+          "ext-n5-fm-ext-holdout-c",
+          "ext-n5-fm-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+F+Q",
+        "label": "FQ · 选场＋质量余量",
+        "agent": "experiments/v4/extension/agents/combined/source",
+        "config": "experiments/v4/extension/configs/combined/fq.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-fq-ext-holdout-a",
+          "ext-n5-fq-ext-holdout-b",
+          "ext-n5-fq-ext-holdout-c",
+          "ext-n5-fq-ext-holdout-d"
+        ]
+      },
+      {
+        "case_id": "D+F+M+Q",
+        "label": "FMQ · 三项组合",
+        "agent": "experiments/v4/extension/agents/combined/source",
+        "config": "experiments/v4/extension/configs/combined/fmq.json",
+        "source_matches_frozen": true,
+        "config_matches_frozen": true,
+        "four_run_hashes_and_sources_match": true,
+        "run_ids": [
+          "ext-n5-fmq-ext-holdout-a",
+          "ext-n5-fmq-ext-holdout-b",
+          "ext-n5-fmq-ext-holdout-c",
+          "ext-n5-fmq-ext-holdout-d"
+        ]
+      }
+    ],
+    "all_source_match": true,
+    "all_file_configs_match": true,
+    "all_n5_records_match": true,
+    "guide_labels": "13 labels and order match completed Root guide frozen_cases and N5 plan"
+  },
+  "extension_final_snapshot": {
+    "guide_status": "completed_frozen_holdout",
+    "old_rows": 84,
+    "extension_rows": 97,
+    "extension_research_rows": 78,
+    "extension_verification_rows": 19,
+    "reused_reference_rows": 6,
+    "N5_frozen_cases": 13,
+    "N5_rows": 52,
+    "N5_full_season_complete": 52,
+    "N5_negative_completed_scores": 52,
+    "N5_pace_changes": 0,
+    "development_mean_policy": "N2 singles / N4 combinations / reference_rows for 3 references; both cards required; no N3 substitution",
+    "holdout_summary_policy": "4 complete same-card D comparisons required; unweighted mean; wins strictly delta_vs_D > 0",
+    "external_status": "official_cards_online_only",
+    "external_score_rows": 0,
+    "external_display": "未提交（仅平台评测）",
+    "build_command": "/usr/bin/python3 -B scripts/build_strategy_study.py",
+    "build_exit_code": 0,
+    "mapping_command": "node scripts/strategy_study/check_mapping.js",
+    "mapping_exit_code": 0,
+    "html_sha256": "a9d2b58e1bddf6d7f2cfc6aec2d565378cca7be2fd91684aadc309b88c4a11ec",
+    "external_statistics_label": "预定正式卡平台评测：0 / 12 已取得成绩",
+    "compact_transfer_case_count": 13,
+    "compact_transfer_columns": [
+      "方案",
+      "开发平均 ΔD",
+      "新卡平均 ΔD",
+      "胜过 D"
+    ],
+    "resize_behavior": "height changes ignored; width changes redraw charts only; tables/details/checkbox not replaced",
+    "mechanical_mapping_cases_passed": 22
+  },
+  "extension_root_browser_acceptance": {
+    "checked_at_utc": "2026-10-02T17:00:51.434734+00:00",
+    "url": "http://127.0.0.1:8766/docs/v4-strategy-study.html#extensionTransferOverview",
+    "browser": "Codex IAB",
+    "viewport_width": 625,
+    "document_scroll_width": 610,
+    "compact_table_width": 574,
+    "compact_rows": 13,
+    "new_card_score_cells": 52,
+    "charts": 4,
+    "bars_per_chart": 13,
+    "score_delta_toggle_verified": true,
+    "detail_expansion_stays_open_across_followup": true,
+    "console_errors": [],
+    "official_cards_show_platform_only_not_submitted": true,
+    "root_score_data_checks": "97 unique full-season runs; component sums agree; zero pace changes; old aggregate JSON/CSV SHA256 unchanged"
+  }
+}

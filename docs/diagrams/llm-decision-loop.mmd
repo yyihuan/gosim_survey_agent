@@ -1,0 +1,19 @@
+flowchart TD
+  R[1 接收本轮消息] --> S[2 更新状态与估计]
+  S --> T[3 检查触发与预算]
+  T --> C[4 生成不同候选]
+  C --> Q{本轮需要模型咨询}
+  Q -->|否| D[5 程序选择方案]
+  Q -->|是| L[5 LLM 诊断或阶段规划]
+  D --> V[6 验证方案与当前约束]
+  L --> V
+  V -->|方案有效| A[7 提交一个动作]
+  V -->|超时或无效| B[程序重算并重新检查]
+  B --> A
+  A --> E[环境执行与计分]
+  E --> F[8 反馈与计划失效检查]
+  F --> R
+  classDef program fill:#eaf4f2,stroke:#278277,color:#173d38
+  classDef model fill:#fff2d8,stroke:#c79236,color:#5b4015
+  class R,S,C,T,D,V,A,F,B,Q program
+  class L model

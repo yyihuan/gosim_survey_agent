@@ -1,0 +1,75 @@
+{
+  "schema_version": "mfj-control-validation-v1",
+  "all_equal": true,
+  "comparisons": [
+    {
+      "card": "demo",
+      "run_id": "ext-n2-mfj-control-demo",
+      "reference_run": "r4-equivalence-d-demo",
+      "all_equal": true,
+      "files": {
+        "actions.jsonl": {
+          "same_bytes": true,
+          "new_sha256": "2882b63afbe89bf8d0085a377068568f883140088f3419ee91f77c7f501cd247",
+          "reference_sha256": "2882b63afbe89bf8d0085a377068568f883140088f3419ee91f77c7f501cd247"
+        },
+        "score_report.json": {
+          "same_bytes": true,
+          "new_sha256": "b60980110f30e554e1e6cdbf935a5857512cc190696ebe80cdf9296b39958729",
+          "reference_sha256": "b60980110f30e554e1e6cdbf935a5857512cc190696ebe80cdf9296b39958729"
+        },
+        "decisions.csv": {
+          "same_bytes": true,
+          "new_sha256": "9e2bcc02e9720b470abe1d78c605e67759f707369d110c6b327e78d191eb4ec6",
+          "reference_sha256": "9e2bcc02e9720b470abe1d78c605e67759f707369d110c6b327e78d191eb4ec6"
+        },
+        "observations.csv": {
+          "same_bytes": true,
+          "new_sha256": "5e4c71c2c757311b9ebde3dd53e4ff83f776373cd0c3af977f73eeff0c184e14",
+          "reference_sha256": "5e4c71c2c757311b9ebde3dd53e4ff83f776373cd0c3af977f73eeff0c184e14"
+        }
+      }
+    },
+    {
+      "card": "dev-season",
+      "run_id": "ext-n2-mfj-control-dev-season",
+      "reference_run": "r4-equivalence-d-dev-season",
+      "all_equal": true,
+      "files": {
+        "actions.jsonl": {
+          "same_bytes": true,
+          "new_sha256": "f032a42c3c5efcabb0022e2abf7f135460f1afa101bb48a62c25a4d4173b353a",
+          "reference_sha256": "f032a42c3c5efcabb0022e2abf7f135460f1afa101bb48a62c25a4d4173b353a"
+        },
+        "score_report.json": {
+          "same_bytes": true,
+          "new_sha256": "cc16713d3fe88ff9173bf128d27351a5a51f8a614ebb1780f9f387651ef54726",
+          "reference_sha256": "cc16713d3fe88ff9173bf128d27351a5a51f8a614ebb1780f9f387651ef54726"
+        },
+        "decisions.csv": {
+          "same_bytes": true,
+          "new_sha256": "0df38aa72f6e2aa448a3f114fd28b95783aea25022f5f5c2e79bea58339decb4",
+          "reference_sha256": "0df38aa72f6e2aa448a3f114fd28b95783aea25022f5f5c2e79bea58339decb4"
+        },
+        "observations.csv": {
+          "same_bytes": true,
+          "new_sha256": "ec8060fb7a4f693df3fdc5d95ceec1d58cd27931165c8a10b3e62edbf3f0a7b6",
+          "reference_sha256": "ec8060fb7a4f693df3fdc5d95ceec1d58cd27931165c8a10b3e62edbf3f0a7b6"
+        }
+      }
+    }
+  ],
+  "unit_checks": {
+    "passed": 4,
+    "command": "/usr/bin/python3 -B -m unittest discover -s experiments/v4/extension/agents/mfj/tests -v"
+  },
+  "source_files_sha256": {
+    "planner.py": "6d828cce61ef9043c551306f52d431c196873ba3e2892933564218b334927548",
+    "mfj_policy.py": "e4bc101cab299f05b77f519b6d28f2c235c9cb03346e5fa1fd44cddfcb4201f6",
+    "skymath.py": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26",
+    "cw_policy.py": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60",
+    "llm_hook.py": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543",
+    "observer.project.json": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc",
+    "baseline_agent.py": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+  }
+}

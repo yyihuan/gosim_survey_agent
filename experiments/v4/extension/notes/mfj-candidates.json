@@ -1,0 +1,133 @@
+{
+  "schema_version": "mfj-candidate-handoff-v1",
+  "selection_rule": "maximum two-development-card mean delta vs same-card D; M/J only one tested variant retained",
+  "candidates": [
+    {
+      "family": "M",
+      "selected_variant": "feedback-best-score",
+      "source": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/m-initial.json",
+      "config_sha256": "b50825126fe761107588d9416fdf100db6bb6815a8a947d849e00b0df610c914",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "options": [
+        {
+          "variant": "feedback-best-score",
+          "mean_delta_vs_d": 24.591000000000008,
+          "cards": [
+            {
+              "card": "demo",
+              "run_id": "ext-n2-m-initial-demo",
+              "total": 1494.658892,
+              "delta_total_vs_d": -6.515696000000162
+            },
+            {
+              "card": "dev-season",
+              "run_id": "ext-n2-m-initial-dev-season",
+              "total": -1795.364324,
+              "delta_total_vs_d": 55.69769600000018
+            }
+          ]
+        }
+      ],
+      "scope": "two development cards only; Root owns N4/N5 choice"
+    },
+    {
+      "family": "F",
+      "selected_variant": "fields6-rate",
+      "source": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/f-initial.json",
+      "config_sha256": "80c46cefd7f6ea4a32aae7223c47b2ab3fb6c00a3f770baa4b3629a2150fdcfc",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "options": [
+        {
+          "variant": "fields12-rate",
+          "mean_delta_vs_d": -17.129150500000037,
+          "cards": [
+            {
+              "card": "demo",
+              "run_id": "ext-n3-f-fields12-demo",
+              "total": 1442.491759,
+              "delta_total_vs_d": -58.68282900000008
+            },
+            {
+              "card": "dev-season",
+              "run_id": "ext-n3-f-fields12-dev-season",
+              "total": -1826.637492,
+              "delta_total_vs_d": 24.42452800000001
+            }
+          ]
+        },
+        {
+          "variant": "fields6-rate",
+          "mean_delta_vs_d": 74.60976850000009,
+          "cards": [
+            {
+              "card": "demo",
+              "run_id": "ext-n2-f-initial-demo",
+              "total": 1549.896124,
+              "delta_total_vs_d": 48.721536000000015
+            },
+            {
+              "card": "dev-season",
+              "run_id": "ext-n2-f-initial-dev-season",
+              "total": -1750.564019,
+              "delta_total_vs_d": 100.49800100000016
+            }
+          ]
+        }
+      ],
+      "scope": "two development cards only; Root owns N4/N5 choice"
+    },
+    {
+      "family": "J",
+      "selected_variant": "delta-j-cap10",
+      "source": "experiments/v4/extension/agents/mfj/source",
+      "config": "experiments/v4/extension/configs/mfj/j-initial.json",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "source_tree_sha256": "faca843a7c17565c92a6f69c4d12f3dd0edc4d1fcec7035b0e878b9736f6723b",
+      "options": [
+        {
+          "variant": "delta-j-cap10",
+          "mean_delta_vs_d": -86.80519600000002,
+          "cards": [
+            {
+              "card": "demo",
+              "run_id": "ext-n2-j-initial-demo",
+              "total": 1337.654389,
+              "delta_total_vs_d": -163.52019900000005
+            },
+            {
+              "card": "dev-season",
+              "run_id": "ext-n2-j-initial-dev-season",
+              "total": -1861.152213,
+              "delta_total_vs_d": -10.090193
+            }
+          ]
+        }
+      ],
+      "scope": "two development cards only; Root owns N4/N5 choice"
+    }
+  ],
+  "integration_points": [
+    "MFJPolicy initialized after CWPolicy",
+    "on_result receives protocol last_result before original factor update",
+    "resync replaces protocol best_score ledger",
+    "begin_plan builds J band state; end_plan logs mechanism",
+    "_science_gain selects M score marginal or adds J truncated bonus",
+    "M keeps non-required high-factor targets when banked program score can still improve",
+    "F shortlist uses original anchor search; _finish_plan preview returns before pending writes",
+    "only final _finish_plan submits pending; M optional duration/program sweep is isolated"
+  ],
+  "full_results": "experiments/v4/extension/notes/mfj-results.json",
+  "postcheck": {
+    "source_unchanged": true,
+    "config_unchanged": true,
+    "all_run_source_snapshots_match": true,
+    "all_wrappers_and_original_harness_unchanged": true,
+    "old_all_runs_unchanged": true,
+    "combined_baseline_source_unchanged": true,
+    "all_complete": true,
+    "all_pace_zero": true,
+    "no_internal_errors": true
+  }
+}

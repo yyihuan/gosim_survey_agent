@@ -1,0 +1,131 @@
+{
+  "card_id": "ext-holdout-c",
+  "source_type": "registered_official_generator",
+  "local_path": "experiments/v4/extension/data/cards/ext-holdout-c",
+  "complete_bundle_verified": true,
+  "schema_checked": [
+    "public config schema names",
+    "scenario product path existence",
+    "16 fibers",
+    "900-second budget",
+    "stress flag",
+    "public target/night counts",
+    "score config unchanged SHA-256"
+  ],
+  "file_count": 14,
+  "bytes": 489065,
+  "manifest_sha256": "40bd4a297c332de410348e5793a395aa95eeb772334981770670a4fd476c0b09",
+  "public_metadata": {
+    "n_targets": 4800,
+    "n_required": 240,
+    "n_nights": 14,
+    "first_night": "2026-10-15",
+    "last_night": "2026-10-28",
+    "n_regions": 2,
+    "site": {
+      "latitude_deg": -24.6157,
+      "longitude_deg": -70.3976,
+      "name": "VISTA/Paranal (4MOST)",
+      "utc_offset_hours": -4.0
+    },
+    "instrument": {
+      "exposure": {
+        "max_duration_seconds": 3600,
+        "min_duration_seconds": 60
+      },
+      "field": {
+        "fiber_area_deg2": 0.4,
+        "gap_deg": 0.0,
+        "n_fibers": 16
+      },
+      "schema_version": "v4-fiber-map-v1",
+      "site": {
+        "latitude_deg": -24.6157,
+        "longitude_deg": -70.3976,
+        "name": "VISTA/Paranal (4MOST)",
+        "utc_offset_hours": -4.0
+      }
+    },
+    "minimum_altitude_deg": 30.0,
+    "limits": {
+      "global_wallclock_seconds": 900
+    },
+    "stress_enabled": true,
+    "area_deg2_spec": 1600.0,
+    "score_schema": "v4-score-v1"
+  },
+  "files": [
+    {
+      "relative_path": "config/v4_fiber_config.json",
+      "bytes": 357,
+      "sha256": "2f82c01de00f7bd88db9b58a976e602bba60793f0b9f7386c2a84abbddeb7165"
+    },
+    {
+      "relative_path": "config/v4_scenario.json",
+      "bytes": 1182,
+      "sha256": "9b14dd6ecaf2806b39e19fd1b147aabf4a199b3e6eefe873b1d3e7981d466725"
+    },
+    {
+      "relative_path": "config/v4_score_config.json",
+      "bytes": 869,
+      "sha256": "4d96429e2219f96e4f882d177f69673d112f89ba2e473ac0bd628651ca087521"
+    },
+    {
+      "relative_path": "public/footprint.csv",
+      "bytes": 1382,
+      "sha256": "15988e62ed44af7cbe5e5c1d58d4ccb9a5d325b94aa34c91c8e5c7593441c3f8"
+    },
+    {
+      "relative_path": "public/targets.csv",
+      "bytes": 285847,
+      "sha256": "cdf05912580442e5a5f2f5c1b370441a7b9d70009fb05805df0c57d7110ef7a0"
+    },
+    {
+      "relative_path": "public/v4_bulletins.jsonl",
+      "bytes": 126723,
+      "sha256": "3e700d247cc5d3590e46502d7aa95a9fc09f04868aaa58e19a3afff864347485"
+    },
+    {
+      "relative_path": "public/v4_forecasts.jsonl",
+      "bytes": 3113,
+      "sha256": "47a129155b0e39a198947549a880f6734392ea8cdfb2318accc1caa18466e6e1"
+    },
+    {
+      "relative_path": "public/v4_night_calendar.csv",
+      "bytes": 1709,
+      "sha256": "23dfc645cc457ef32d182b5fe1f028bf0b95549883d14804ad83f8c04da04fa8"
+    },
+    {
+      "relative_path": "truth/v4_earthquake_effects.csv",
+      "bytes": 488,
+      "sha256": "80dbf655fffa3d47c3f4d77bc05c99de9e4597847a8ab237446d73b4645a92d2"
+    },
+    {
+      "relative_path": "truth/v4_events.csv",
+      "bytes": 5391,
+      "sha256": "2f98cc834859ffffa4e757ad9a2f3dbef33d037837790d37572ec1e5ef1f965e"
+    },
+    {
+      "relative_path": "truth/v4_observation_requests.jsonl",
+      "bytes": 438,
+      "sha256": "462766e92caf33d1de145f52a8d91496052e62d42077590abf52c70c22659a33"
+    },
+    {
+      "relative_path": "truth/v4_slots.csv",
+      "bytes": 23348,
+      "sha256": "7bd08d40dc38675cbd25d6b74a0847099a842d52418e4e95008a574a5d3f8f0b"
+    },
+    {
+      "relative_path": "truth/v4_stress_events.csv",
+      "bytes": 277,
+      "sha256": "c5cd4bc764b23d9d1da28865a0b053dfec22038c6bec6cfc2e2190838975f45c"
+    },
+    {
+      "relative_path": "truth/v4_weather_truth.csv",
+      "bytes": 37941,
+      "sha256": "dadba34c010bfc8e5a2bac9802caf83a7de3e299827463a9c3ace9d43241612c"
+    }
+  ],
+  "spec_sha256": "450020764abc7cc6bbdf2f4fa895767c59e1b73fbca41008bccaca126b62bf44",
+  "evaluation_status": "unopened"
+}

@@ -1,0 +1,32 @@
+# === 竞赛敏感：正式任务卡（α–δ）不得进入公开仓库 ===
+taskcard-*.zip
+
+# === 体积大 / 含私密数据的本地研究产物 ===
+experiments/current/runs/
+experiments/current/datasets/
+experiments/v4/runs/
+experiments/v4/harness/.locks/
+# 上游独立 git 克隆（平台拒绝归档内出现 .git，且体积大）
+research/2026-10-02/upstream/
+# 与 latest-149c659 重复的示例解压副本（保留唯一权威快照）
+research/2026-10-03/examples/
+
+# === 可再生成的讲解大文件与预览图（正文 Markdown 与图源保留）===
+docs/v4-strategy-study.html
+docs/survey-rules-explorer.html
+docs/v4-llm-collaboration.html
+docs/*-preview.png
+docs/*-preview.jpg
+
+# === 凭据、缓存与归档 ===
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+__pycache__/
+*.pyc
+*.pyo
+*.zip
+.DS_Store
+Thumbs.db

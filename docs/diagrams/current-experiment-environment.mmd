@@ -1,0 +1,10 @@
+flowchart LR
+  U[官方提交 149c659] --> S[只读示例快照]
+  S --> E[官方裁判与 L1–L4]
+  S --> A[Python 工作副本]
+  C[environment.json] --> H[当前实验入口]
+  A --> H
+  E --> H
+  H --> R[独立运行目录与原始报告]
+  R --> D[验证记录与 session 交接]
+  O[历史 v4 冻结实验] --> D

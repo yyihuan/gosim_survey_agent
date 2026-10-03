@@ -1,0 +1,3719 @@
+{
+  "configured_simulator_limit": 6,
+  "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks",
+  "max_overlapping_runner_intervals": 6,
+  "interval_count": 97,
+  "intervals": [
+    {
+      "run_id": "ext-integration-combined-d-demo",
+      "runner_pid": 60506,
+      "runner_start_utc": "2026-10-02T16:31:57.221421+00:00",
+      "runtime_seconds": 5.584328290999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-integration-combined-d-dev-season",
+      "runner_pid": 60508,
+      "runner_start_utc": "2026-10-02T16:31:57.228346+00:00",
+      "runtime_seconds": 8.008310666,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60472,
+          "limit": 6,
+          "run_id": "ext-integration-combined-d-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60475,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60476,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-dev-season",
+          "slot": 2
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-e-demo",
+      "runner_pid": 61064,
+      "runner_start_utc": "2026-10-02T16:35:46.303667+00:00",
+      "runtime_seconds": 6.400755458,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61031,
+          "limit": 6,
+          "run_id": "ext-integration-combined-e-dev-season",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61034,
+          "limit": 6,
+          "run_id": "ext-n4-fq-dev-season",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61035,
+          "limit": 6,
+          "run_id": "ext-n4-fm-dev-season",
+          "slot": 2
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-e-dev-season",
+      "runner_pid": 61063,
+      "runner_start_utc": "2026-10-02T16:35:46.289040+00:00",
+      "runtime_seconds": 10.111459374999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-integration-combined-f6-demo",
+      "runner_pid": 60510,
+      "runner_start_utc": "2026-10-02T16:31:57.231597+00:00",
+      "runtime_seconds": 5.737438333999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60472,
+          "limit": 6,
+          "run_id": "ext-integration-combined-d-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60475,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60476,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60474,
+          "limit": 6,
+          "run_id": "ext-integration-combined-d-dev-season",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-f6-dev-season",
+      "runner_pid": 60558,
+      "runner_start_utc": "2026-10-02T16:32:03.000840+00:00",
+      "runtime_seconds": 6.762382958999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60479,
+          "limit": 6,
+          "run_id": "ext-integration-combined-q-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60475,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60476,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60474,
+          "limit": 6,
+          "run_id": "ext-integration-combined-d-dev-season",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60480,
+          "limit": 6,
+          "run_id": "ext-integration-combined-q-dev-season",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-h-demo",
+      "runner_pid": 61364,
+      "runner_start_utc": "2026-10-02T16:37:41.544925+00:00",
+      "runtime_seconds": 4.403511417,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-integration-combined-h-dev-season",
+      "runner_pid": 61366,
+      "runner_start_utc": "2026-10-02T16:37:41.547820+00:00",
+      "runtime_seconds": 6.384938,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61348,
+          "limit": 6,
+          "run_id": "ext-integration-combined-h-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61349,
+          "limit": 6,
+          "run_id": "ext-integration-combined-j-demo",
+          "slot": 1
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-j-demo",
+      "runner_pid": 61365,
+      "runner_start_utc": "2026-10-02T16:37:41.546630+00:00",
+      "runtime_seconds": 4.556705958,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61348,
+          "limit": 6,
+          "run_id": "ext-integration-combined-h-demo",
+          "slot": 0
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-j-dev-season",
+      "runner_pid": 61367,
+      "runner_start_utc": "2026-10-02T16:37:41.548791+00:00",
+      "runtime_seconds": 6.829321834,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61348,
+          "limit": 6,
+          "run_id": "ext-integration-combined-h-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61349,
+          "limit": 6,
+          "run_id": "ext-integration-combined-j-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61350,
+          "limit": 6,
+          "run_id": "ext-integration-combined-h-dev-season",
+          "slot": 2
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-m-demo",
+      "runner_pid": 60507,
+      "runner_start_utc": "2026-10-02T16:31:57.224964+00:00",
+      "runtime_seconds": 6.321481166,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60472,
+          "limit": 6,
+          "run_id": "ext-integration-combined-d-demo",
+          "slot": 0
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-m-dev-season",
+      "runner_pid": 60509,
+      "runner_start_utc": "2026-10-02T16:31:57.227916+00:00",
+      "runtime_seconds": 9.08285525,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60472,
+          "limit": 6,
+          "run_id": "ext-integration-combined-d-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60475,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-demo",
+          "slot": 1
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-q-demo",
+      "runner_pid": 60555,
+      "runner_start_utc": "2026-10-02T16:32:02.818491+00:00",
+      "runtime_seconds": 4.3889359169999995,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60475,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60476,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60474,
+          "limit": 6,
+          "run_id": "ext-integration-combined-d-dev-season",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60477,
+          "limit": 6,
+          "run_id": "ext-integration-combined-f6-demo",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60480,
+          "limit": 6,
+          "run_id": "ext-integration-combined-q-dev-season",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-q-dev-season",
+      "runner_pid": 60511,
+      "runner_start_utc": "2026-10-02T16:31:57.234052+00:00",
+      "runtime_seconds": 8.194043792,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60472,
+          "limit": 6,
+          "run_id": "ext-integration-combined-d-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60475,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60476,
+          "limit": 6,
+          "run_id": "ext-integration-combined-m-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60474,
+          "limit": 6,
+          "run_id": "ext-integration-combined-d-dev-season",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60477,
+          "limit": 6,
+          "run_id": "ext-integration-combined-f6-demo",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n1-wrapper-d-demo",
+      "runner_pid": 58502,
+      "runner_start_utc": "2026-10-02T16:17:05.884178+00:00",
+      "runtime_seconds": 3.861036833,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-n2-f-initial-demo",
+      "runner_pid": 58854,
+      "runner_start_utc": "2026-10-02T16:18:36.229458+00:00",
+      "runtime_seconds": 5.825996792,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-n2-f-initial-dev-season",
+      "runner_pid": 58858,
+      "runner_start_utc": "2026-10-02T16:18:36.255222+00:00",
+      "runtime_seconds": 8.149210084,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58832,
+          "limit": 6,
+          "run_id": "ext-n2-f-initial-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58830,
+          "limit": 6,
+          "run_id": "ext-n2-m-initial-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58831,
+          "limit": 6,
+          "run_id": "ext-n2-m-initial-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58834,
+          "limit": 6,
+          "run_id": "ext-n2-j-initial-demo",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-heq-e-threshold30-demo",
+      "runner_pid": 58698,
+      "runner_start_utc": "2026-10-02T16:17:58.462558+00:00",
+      "runtime_seconds": 6.00686225,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58663,
+          "limit": 6,
+          "run_id": "ext-n2-heq-neutral-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58664,
+          "limit": 6,
+          "run_id": "ext-n2-heq-h-opportunity2-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58669,
+          "limit": 6,
+          "run_id": "ext-n2-heq-e-threshold30-dev-season",
+          "slot": 2
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-heq-e-threshold30-dev-season",
+      "runner_pid": 58697,
+      "runner_start_utc": "2026-10-02T16:17:58.443543+00:00",
+      "runtime_seconds": 9.596707875,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58663,
+          "limit": 6,
+          "run_id": "ext-n2-heq-neutral-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58664,
+          "limit": 6,
+          "run_id": "ext-n2-heq-h-opportunity2-demo",
+          "slot": 1
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-heq-h-opportunity2-demo",
+      "runner_pid": 58696,
+      "runner_start_utc": "2026-10-02T16:17:58.429482+00:00",
+      "runtime_seconds": 6.056035083,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58663,
+          "limit": 6,
+          "run_id": "ext-n2-heq-neutral-demo",
+          "slot": 0
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-heq-h-opportunity2-dev-season",
+      "runner_pid": 58699,
+      "runner_start_utc": "2026-10-02T16:17:58.464741+00:00",
+      "runtime_seconds": 8.746051625000002,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58663,
+          "limit": 6,
+          "run_id": "ext-n2-heq-neutral-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58664,
+          "limit": 6,
+          "run_id": "ext-n2-heq-h-opportunity2-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58669,
+          "limit": 6,
+          "run_id": "ext-n2-heq-e-threshold30-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58665,
+          "limit": 6,
+          "run_id": "ext-n2-heq-e-threshold30-demo",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-heq-neutral-demo",
+      "runner_pid": 58695,
+      "runner_start_utc": "2026-10-02T16:17:58.424073+00:00",
+      "runtime_seconds": 5.8224469580000004,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-n2-heq-neutral-dev-season",
+      "runner_pid": 58740,
+      "runner_start_utc": "2026-10-02T16:18:04.253502+00:00",
+      "runtime_seconds": 6.553068541999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58664,
+          "limit": 6,
+          "run_id": "ext-n2-heq-h-opportunity2-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58669,
+          "limit": 6,
+          "run_id": "ext-n2-heq-e-threshold30-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58665,
+          "limit": 6,
+          "run_id": "ext-n2-heq-e-threshold30-demo",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58667,
+          "limit": 6,
+          "run_id": "ext-n2-heq-h-opportunity2-dev-season",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58670,
+          "limit": 6,
+          "run_id": "ext-n2-heq-q-quantile25-dev-season",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-heq-q-quantile25-demo",
+      "runner_pid": 58744,
+      "runner_start_utc": "2026-10-02T16:18:04.556494+00:00",
+      "runtime_seconds": 4.710715667,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58668,
+          "limit": 6,
+          "run_id": "ext-n2-heq-neutral-dev-season",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58669,
+          "limit": 6,
+          "run_id": "ext-n2-heq-e-threshold30-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58667,
+          "limit": 6,
+          "run_id": "ext-n2-heq-h-opportunity2-dev-season",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58670,
+          "limit": 6,
+          "run_id": "ext-n2-heq-q-quantile25-dev-season",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-heq-q-quantile25-dev-season",
+      "runner_pid": 58700,
+      "runner_start_utc": "2026-10-02T16:17:58.469850+00:00",
+      "runtime_seconds": 8.902112167,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58663,
+          "limit": 6,
+          "run_id": "ext-n2-heq-neutral-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58664,
+          "limit": 6,
+          "run_id": "ext-n2-heq-h-opportunity2-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58669,
+          "limit": 6,
+          "run_id": "ext-n2-heq-e-threshold30-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58665,
+          "limit": 6,
+          "run_id": "ext-n2-heq-e-threshold30-demo",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58667,
+          "limit": 6,
+          "run_id": "ext-n2-heq-h-opportunity2-dev-season",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-j-initial-demo",
+      "runner_pid": 58857,
+      "runner_start_utc": "2026-10-02T16:18:36.254506+00:00",
+      "runtime_seconds": 5.787088834,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58832,
+          "limit": 6,
+          "run_id": "ext-n2-f-initial-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58830,
+          "limit": 6,
+          "run_id": "ext-n2-m-initial-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58831,
+          "limit": 6,
+          "run_id": "ext-n2-m-initial-dev-season",
+          "slot": 2
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-j-initial-dev-season",
+      "runner_pid": 58859,
+      "runner_start_utc": "2026-10-02T16:18:36.265447+00:00",
+      "runtime_seconds": 8.045036042,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58832,
+          "limit": 6,
+          "run_id": "ext-n2-f-initial-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58830,
+          "limit": 6,
+          "run_id": "ext-n2-m-initial-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58831,
+          "limit": 6,
+          "run_id": "ext-n2-m-initial-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58834,
+          "limit": 6,
+          "run_id": "ext-n2-j-initial-demo",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58833,
+          "limit": 6,
+          "run_id": "ext-n2-f-initial-dev-season",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-m-initial-demo",
+      "runner_pid": 58855,
+      "runner_start_utc": "2026-10-02T16:18:36.235976+00:00",
+      "runtime_seconds": 6.189874916,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58832,
+          "limit": 6,
+          "run_id": "ext-n2-f-initial-demo",
+          "slot": 0
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-m-initial-dev-season",
+      "runner_pid": 58856,
+      "runner_start_utc": "2026-10-02T16:18:36.242036+00:00",
+      "runtime_seconds": 8.684154083,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 58832,
+          "limit": 6,
+          "run_id": "ext-n2-f-initial-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 58830,
+          "limit": 6,
+          "run_id": "ext-n2-m-initial-demo",
+          "slot": 1
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n2-mfj-control-demo",
+      "runner_pid": 58325,
+      "runner_start_utc": "2026-10-02T16:16:17.674423+00:00",
+      "runtime_seconds": 3.9009685,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-n2-mfj-control-dev-season",
+      "runner_pid": 58577,
+      "runner_start_utc": "2026-10-02T16:17:36.233106+00:00",
+      "runtime_seconds": 6.080415917,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-n3-f-fields12-demo",
+      "runner_pid": 59197,
+      "runner_start_utc": "2026-10-02T16:21:05.295407+00:00",
+      "runtime_seconds": 4.470029042,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-n3-f-fields12-dev-season",
+      "runner_pid": 59198,
+      "runner_start_utc": "2026-10-02T16:21:05.298901+00:00",
+      "runtime_seconds": 6.983806749999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 59186,
+          "limit": 6,
+          "run_id": "ext-n3-f-fields12-demo",
+          "slot": 0
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n3-heq-e-required-request30-demo",
+      "runner_pid": 60056,
+      "runner_start_utc": "2026-10-02T16:28:39.794537+00:00",
+      "runtime_seconds": 4.249233709,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-n3-heq-e-required-request30-dev-season",
+      "runner_pid": 60059,
+      "runner_start_utc": "2026-10-02T16:28:39.797633+00:00",
+      "runtime_seconds": 6.763626833,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60036,
+          "limit": 6,
+          "run_id": "ext-n3-heq-e-required-request30-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60035,
+          "limit": 6,
+          "run_id": "ext-n3-heq-h-window-fraction2-demo",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60037,
+          "limit": 6,
+          "run_id": "ext-n3-heq-h-window-fraction2-dev-season",
+          "slot": 2
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n3-heq-h-window-fraction2-demo",
+      "runner_pid": 60057,
+      "runner_start_utc": "2026-10-02T16:28:39.795449+00:00",
+      "runtime_seconds": 3.9676594589999996,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60036,
+          "limit": 6,
+          "run_id": "ext-n3-heq-e-required-request30-demo",
+          "slot": 0
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n3-heq-h-window-fraction2-dev-season",
+      "runner_pid": 60058,
+      "runner_start_utc": "2026-10-02T16:28:39.796845+00:00",
+      "runtime_seconds": 6.3282813330000005,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 60036,
+          "limit": 6,
+          "run_id": "ext-n3-heq-e-required-request30-demo",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 60035,
+          "limit": 6,
+          "run_id": "ext-n3-heq-h-window-fraction2-demo",
+          "slot": 1
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n4-fe-demo",
+      "runner_pid": 61141,
+      "runner_start_utc": "2026-10-02T16:35:56.573267+00:00",
+      "runtime_seconds": 5.4302114999999995,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61133,
+          "limit": 6,
+          "run_id": "ext-n4-fe-dev-season",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61035,
+          "limit": 6,
+          "run_id": "ext-n4-fm-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61036,
+          "limit": 6,
+          "run_id": "ext-n4-fmq-demo",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61037,
+          "limit": 6,
+          "run_id": "ext-n4-fmq-dev-season",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61033,
+          "limit": 6,
+          "run_id": "ext-n4-fq-demo",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n4-fe-dev-season",
+      "runner_pid": 61140,
+      "runner_start_utc": "2026-10-02T16:35:56.569179+00:00",
+      "runtime_seconds": 8.049109209000001,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61035,
+          "limit": 6,
+          "run_id": "ext-n4-fm-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61036,
+          "limit": 6,
+          "run_id": "ext-n4-fmq-demo",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61037,
+          "limit": 6,
+          "run_id": "ext-n4-fmq-dev-season",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61033,
+          "limit": 6,
+          "run_id": "ext-n4-fq-demo",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n4-fm-demo",
+      "runner_pid": 61066,
+      "runner_start_utc": "2026-10-02T16:35:46.307622+00:00",
+      "runtime_seconds": 8.064401917000001,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61031,
+          "limit": 6,
+          "run_id": "ext-integration-combined-e-dev-season",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61034,
+          "limit": 6,
+          "run_id": "ext-n4-fq-dev-season",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61035,
+          "limit": 6,
+          "run_id": "ext-n4-fm-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61030,
+          "limit": 6,
+          "run_id": "ext-integration-combined-e-demo",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61037,
+          "limit": 6,
+          "run_id": "ext-n4-fmq-dev-season",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n4-fm-dev-season",
+      "runner_pid": 61067,
+      "runner_start_utc": "2026-10-02T16:35:46.302112+00:00",
+      "runtime_seconds": 12.220405917,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61031,
+          "limit": 6,
+          "run_id": "ext-integration-combined-e-dev-season",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61034,
+          "limit": 6,
+          "run_id": "ext-n4-fq-dev-season",
+          "slot": 1
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n4-fmq-demo",
+      "runner_pid": 61119,
+      "runner_start_utc": "2026-10-02T16:35:52.763618+00:00",
+      "runtime_seconds": 7.036131458,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61031,
+          "limit": 6,
+          "run_id": "ext-integration-combined-e-dev-season",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61034,
+          "limit": 6,
+          "run_id": "ext-n4-fq-dev-season",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61035,
+          "limit": 6,
+          "run_id": "ext-n4-fm-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61037,
+          "limit": 6,
+          "run_id": "ext-n4-fmq-dev-season",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61032,
+          "limit": 6,
+          "run_id": "ext-n4-fm-demo",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n4-fmq-dev-season",
+      "runner_pid": 61065,
+      "runner_start_utc": "2026-10-02T16:35:46.304075+00:00",
+      "runtime_seconds": 12.098313125,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61031,
+          "limit": 6,
+          "run_id": "ext-integration-combined-e-dev-season",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61034,
+          "limit": 6,
+          "run_id": "ext-n4-fq-dev-season",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61035,
+          "limit": 6,
+          "run_id": "ext-n4-fm-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61030,
+          "limit": 6,
+          "run_id": "ext-integration-combined-e-demo",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n4-fq-demo",
+      "runner_pid": 61124,
+      "runner_start_utc": "2026-10-02T16:35:54.465812+00:00",
+      "runtime_seconds": 5.224321165999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61031,
+          "limit": 6,
+          "run_id": "ext-integration-combined-e-dev-season",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61034,
+          "limit": 6,
+          "run_id": "ext-n4-fq-dev-season",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61035,
+          "limit": 6,
+          "run_id": "ext-n4-fm-dev-season",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61036,
+          "limit": 6,
+          "run_id": "ext-n4-fmq-demo",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 61037,
+          "limit": 6,
+          "run_id": "ext-n4-fmq-dev-season",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n4-fq-dev-season",
+      "runner_pid": 61062,
+      "runner_start_utc": "2026-10-02T16:35:46.290259+00:00",
+      "runtime_seconds": 9.455481083999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 61031,
+          "limit": 6,
+          "run_id": "ext-integration-combined-e-dev-season",
+          "slot": 0
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-baseline-ext-holdout-a",
+      "runner_pid": 62048,
+      "runner_start_utc": "2026-10-02T16:43:01.317214+00:00",
+      "runtime_seconds": 5.612947999999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-n5-baseline-ext-holdout-b",
+      "runner_pid": 62160,
+      "runner_start_utc": "2026-10-02T16:43:08.393832+00:00",
+      "runtime_seconds": 5.868877625,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62018,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62009,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62008,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62013,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-a",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62019,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-a",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-baseline-ext-holdout-c",
+      "runner_pid": 62237,
+      "runner_start_utc": "2026-10-02T16:43:16.353315+00:00",
+      "runtime_seconds": 5.457007000000001,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62016,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62168,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62019,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-a",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62015,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-a",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-baseline-ext-holdout-d",
+      "runner_pid": 62305,
+      "runner_start_utc": "2026-10-02T16:43:22.551949+00:00",
+      "runtime_seconds": 6.26215575,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62241,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62012,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62016,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62255,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62162,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-b",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-d-ext-holdout-a",
+      "runner_pid": 62061,
+      "runner_start_utc": "2026-10-02T16:43:01.387759+00:00",
+      "runtime_seconds": 6.705436666,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62007,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62009,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62008,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62013,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-a",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-d-ext-holdout-b",
+      "runner_pid": 62396,
+      "runner_start_utc": "2026-10-02T16:43:29.806236+00:00",
+      "runtime_seconds": 8.506958167,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62241,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62321,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-b",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62307,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62014,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-a",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62357,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-c",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-d-ext-holdout-c",
+      "runner_pid": 62551,
+      "runner_start_utc": "2026-10-02T16:43:50.366451+00:00",
+      "runtime_seconds": 6.481666457999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62431,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62473,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-c",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62505,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-c",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62236,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-d-ext-holdout-d",
+      "runner_pid": 62662,
+      "runner_start_utc": "2026-10-02T16:44:05.654355+00:00",
+      "runtime_seconds": 7.646550833000001,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62593,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62528,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-c",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62583,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-d",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62575,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-c",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62490,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-d",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-dtgp-ext-holdout-a",
+      "runner_pid": 62055,
+      "runner_start_utc": "2026-10-02T16:43:01.353648+00:00",
+      "runtime_seconds": 14.882732749999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62007,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62009,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-a",
+          "slot": 1
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-dtgp-ext-holdout-b",
+      "runner_pid": 62446,
+      "runner_start_utc": "2026-10-02T16:43:35.366666+00:00",
+      "runtime_seconds": 19.668591624999998,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62408,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62191,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-b",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62156,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-b",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62307,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62382,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-c",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-dtgp-ext-holdout-c",
+      "runner_pid": 62649,
+      "runner_start_utc": "2026-10-02T16:44:04.578932+00:00",
+      "runtime_seconds": 13.524902041,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62593,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62528,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-c",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62553,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-d",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62490,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-d",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62562,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-dtgp-ext-holdout-d",
+      "runner_pid": 62714,
+      "runner_start_utc": "2026-10-02T16:44:18.236077+00:00",
+      "runtime_seconds": 11.492379125,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": []
+    },
+    {
+      "run_id": "ext-n5-e-ext-holdout-a",
+      "runner_pid": 62060,
+      "runner_start_utc": "2026-10-02T16:43:01.383786+00:00",
+      "runtime_seconds": 7.8729474999999995,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62007,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62009,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62008,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-a",
+          "slot": 2
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-e-ext-holdout-b",
+      "runner_pid": 62419,
+      "runner_start_utc": "2026-10-02T16:43:33.052860+00:00",
+      "runtime_seconds": 8.875787042000002,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62241,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62156,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-b",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62307,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62382,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-c",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62357,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-c",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-e-ext-holdout-c",
+      "runner_pid": 62561,
+      "runner_start_utc": "2026-10-02T16:43:52.861607+00:00",
+      "runtime_seconds": 7.4798814579999995,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62447,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-d",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62505,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-c",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62236,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62465,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-c",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-e-ext-holdout-d",
+      "runner_pid": 62665,
+      "runner_start_utc": "2026-10-02T16:44:07.069329+00:00",
+      "runtime_seconds": 8.059858333000001,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62593,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62583,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-d",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62575,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-c",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62490,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-d",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62610,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-f-ext-holdout-a",
+      "runner_pid": 62166,
+      "runner_start_utc": "2026-10-02T16:43:08.538410+00:00",
+      "runtime_seconds": 7.749879709000001,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62018,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62008,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62013,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-a",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62019,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-a",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62139,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-f-ext-holdout-b",
+      "runner_pid": 62519,
+      "runner_start_utc": "2026-10-02T16:43:46.633128+00:00",
+      "runtime_seconds": 9.512018625000003,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62431,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62473,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-c",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62336,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-b",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62397,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-d",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-f-ext-holdout-c",
+      "runner_pid": 62632,
+      "runner_start_utc": "2026-10-02T16:44:00.353423+00:00",
+      "runtime_seconds": 7.957506625,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62528,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-c",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62553,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-d",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62520,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-d",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62490,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-d",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62562,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-f-ext-holdout-d",
+      "runner_pid": 62681,
+      "runner_start_utc": "2026-10-02T16:44:08.528386+00:00",
+      "runtime_seconds": 7.590389167,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62634,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-d",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62583,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-d",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62575,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-c",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62666,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-d",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62610,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fe-ext-holdout-a",
+      "runner_pid": 62218,
+      "runner_start_utc": "2026-10-02T16:43:14.267214+00:00",
+      "runtime_seconds": 8.277481875,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62018,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62017,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62008,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62168,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62019,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-a",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fe-ext-holdout-b",
+      "runner_pid": 62381,
+      "runner_start_utc": "2026-10-02T16:43:28.965868+00:00",
+      "runtime_seconds": 10.364585542,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62241,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62321,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-b",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62270,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-c",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62014,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-a",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62357,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-c",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fe-ext-holdout-c",
+      "runner_pid": 62480,
+      "runner_start_utc": "2026-10-02T16:43:41.964132+00:00",
+      "runtime_seconds": 8.608872458,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62408,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62336,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-b",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62420,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-c",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62382,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-c",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fe-ext-holdout-d",
+      "runner_pid": 62581,
+      "runner_start_utc": "2026-10-02T16:43:55.506080+00:00",
+      "runtime_seconds": 9.58580825,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62482,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62447,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-d",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62236,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62465,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-c",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62562,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fm-ext-holdout-a",
+      "runner_pid": 62138,
+      "runner_start_utc": "2026-10-02T16:43:06.943019+00:00",
+      "runtime_seconds": 9.402535416,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62009,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62008,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62013,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-a",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62010,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-a",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62011,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-a",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fm-ext-holdout-b",
+      "runner_pid": 62290,
+      "runner_start_utc": "2026-10-02T16:43:21.822165+00:00",
+      "runtime_seconds": 11.707515749999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62012,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62016,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62255,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62162,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-b",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62015,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-a",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fm-ext-holdout-c",
+      "runner_pid": 62504,
+      "runner_start_utc": "2026-10-02T16:43:43.488769+00:00",
+      "runtime_seconds": 9.338996750000002,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62473,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-c",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62336,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-b",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62420,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-c",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62397,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-d",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fm-ext-holdout-d",
+      "runner_pid": 62573,
+      "runner_start_utc": "2026-10-02T16:43:55.066338+00:00",
+      "runtime_seconds": 10.543972166,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62482,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62447,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-d",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62505,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-c",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62236,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62465,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-c",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fmq-ext-holdout-a",
+      "runner_pid": 62155,
+      "runner_start_utc": "2026-10-02T16:43:08.098316+00:00",
+      "runtime_seconds": 8.504842333,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62018,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62009,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62008,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62013,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-a",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62011,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-a",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fmq-ext-holdout-b",
+      "runner_pid": 62268,
+      "runner_start_utc": "2026-10-02T16:43:17.687910+00:00",
+      "runtime_seconds": 11.239755042,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62219,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62012,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62016,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62162,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-b",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62015,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-a",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fmq-ext-holdout-c",
+      "runner_pid": 62407,
+      "runner_start_utc": "2026-10-02T16:43:32.517878+00:00",
+      "runtime_seconds": 9.865759917,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62241,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62321,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-b",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62156,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-b",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62307,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62357,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-c",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fmq-ext-holdout-d",
+      "runner_pid": 62609,
+      "runner_start_utc": "2026-10-02T16:43:56.867613+00:00",
+      "runtime_seconds": 10.543308166000001,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62482,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62447,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-d",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62553,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-d",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62520,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-d",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62562,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fq-ext-holdout-a",
+      "runner_pid": 62234,
+      "runner_start_utc": "2026-10-02T16:43:16.247074+00:00",
+      "runtime_seconds": 7.100708708999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62018,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62017,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62168,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62019,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-a",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62015,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-a",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fq-ext-holdout-b",
+      "runner_pid": 62335,
+      "runner_start_utc": "2026-10-02T16:43:23.955095+00:00",
+      "runtime_seconds": 9.072220416999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62241,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62270,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-c",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62255,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62162,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-b",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62292,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fq-ext-holdout-c",
+      "runner_pid": 62472,
+      "runner_start_utc": "2026-10-02T16:43:39.332077+00:00",
+      "runtime_seconds": 7.279593083000001,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62408,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62191,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-b",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62336,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-b",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62382,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-c",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-fq-ext-holdout-d",
+      "runner_pid": 62592,
+      "runner_start_utc": "2026-10-02T16:43:56.171023+00:00",
+      "runtime_seconds": 8.389825041999998,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62482,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62447,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-d",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62553,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-d",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62465,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-c",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62562,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-h-ext-holdout-a",
+      "runner_pid": 62058,
+      "runner_start_utc": "2026-10-02T16:43:01.323517+00:00",
+      "runtime_seconds": 7.156357334,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62007,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-a",
+          "slot": 0
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-h-ext-holdout-b",
+      "runner_pid": 62190,
+      "runner_start_utc": "2026-10-02T16:43:09.279963+00:00",
+      "runtime_seconds": 8.380852167,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        3
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62018,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62017,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62008,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62019,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-a",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62139,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-h-ext-holdout-c",
+      "runner_pid": 62320,
+      "runner_start_utc": "2026-10-02T16:43:23.367774+00:00",
+      "runtime_seconds": 6.425003833,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62241,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62012,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62255,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62162,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-b",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62292,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-h-ext-holdout-d",
+      "runner_pid": 62488,
+      "runner_start_utc": "2026-10-02T16:43:42.392855+00:00",
+      "runtime_seconds": 7.967458958,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62408,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62473,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-c",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62336,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-b",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62420,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-c",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-j-ext-holdout-a",
+      "runner_pid": 62238,
+      "runner_start_utc": "2026-10-02T16:43:16.356190+00:00",
+      "runtime_seconds": 7.589810042,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62219,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62016,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62168,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62019,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-a",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62015,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-a",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-j-ext-holdout-b",
+      "runner_pid": 62464,
+      "runner_start_utc": "2026-10-02T16:43:38.341943+00:00",
+      "runtime_seconds": 9.503637125,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62408,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62191,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-b",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62307,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62382,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-c",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-j-ext-holdout-c",
+      "runner_pid": 62624,
+      "runner_start_utc": "2026-10-02T16:43:58.982945+00:00",
+      "runtime_seconds": 8.072552792,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62482,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62553,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-d",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62520,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-d",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62490,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-d",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62562,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-j-ext-holdout-d",
+      "runner_pid": 62671,
+      "runner_start_utc": "2026-10-02T16:44:07.463906+00:00",
+      "runtime_seconds": 8.295108833,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62593,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62634,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-d",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62583,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-d",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62575,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-c",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62610,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-m-ext-holdout-a",
+      "runner_pid": 62356,
+      "runner_start_utc": "2026-10-02T16:43:24.757444+00:00",
+      "runtime_seconds": 7.749799875000001,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62241,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62321,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-b",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62270,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-c",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62255,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62292,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-m-ext-holdout-b",
+      "runner_pid": 62429,
+      "runner_start_utc": "2026-10-02T16:43:33.547512+00:00",
+      "runtime_seconds": 9.902310917,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        0
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62191,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-b",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62156,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-b",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62307,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62382,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-c",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62357,
+          "limit": 6,
+          "run_id": "ext-n5-q-ext-holdout-c",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-m-ext-holdout-c",
+      "runner_pid": 62527,
+      "runner_start_utc": "2026-10-02T16:43:47.849618+00:00",
+      "runtime_seconds": 7.64922675,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62431,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62473,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-c",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62236,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62397,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-d",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-m-ext-holdout-d",
+      "runner_pid": 62657,
+      "runner_start_utc": "2026-10-02T16:44:05.118739+00:00",
+      "runtime_seconds": 8.845020625,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        2
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62593,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62528,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-c",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62575,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-c",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62490,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-d",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62562,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-d",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-q-ext-holdout-a",
+      "runner_pid": 62062,
+      "runner_start_utc": "2026-10-02T16:43:01.399107+00:00",
+      "runtime_seconds": 6.989389,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62007,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-a",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62009,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62008,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62013,
+          "limit": 6,
+          "run_id": "ext-n5-e-ext-holdout-a",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62010,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-a",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-q-ext-holdout-b",
+      "runner_pid": 62256,
+      "runner_start_utc": "2026-10-02T16:43:16.666401+00:00",
+      "runtime_seconds": 8.066212125,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        4
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62219,
+          "limit": 6,
+          "run_id": "ext-n5-baseline-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62012,
+          "limit": 6,
+          "run_id": "ext-n5-j-ext-holdout-a",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62016,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-a",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62168,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62015,
+          "limit": 6,
+          "run_id": "ext-n5-fe-ext-holdout-a",
+          "slot": 5
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-q-ext-holdout-c",
+      "runner_pid": 62378,
+      "runner_start_utc": "2026-10-02T16:43:28.832315+00:00",
+      "runtime_seconds": 6.529483083,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        5
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62241,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-b",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62321,
+          "limit": 6,
+          "run_id": "ext-n5-fq-ext-holdout-b",
+          "slot": 1
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62270,
+          "limit": 6,
+          "run_id": "ext-n5-h-ext-holdout-c",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62255,
+          "limit": 6,
+          "run_id": "ext-n5-fmq-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62014,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-a",
+          "slot": 4
+        }
+      ]
+    },
+    {
+      "run_id": "ext-n5-q-ext-holdout-d",
+      "runner_pid": 62552,
+      "runner_start_utc": "2026-10-02T16:43:50.580895+00:00",
+      "runtime_seconds": 8.367606666999999,
+      "end_is_approximate": true,
+      "reason": "manifest runtime includes tiny Popen/start/close overhead; peers at lock acquisition are authoritative lock overlap",
+      "slots": [
+        1
+      ],
+      "peers_at_acquisition": [
+        {
+          "exclusive": false,
+          "harness_pid": 62431,
+          "limit": 6,
+          "run_id": "ext-n5-fm-ext-holdout-c",
+          "slot": 0
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62505,
+          "limit": 6,
+          "run_id": "ext-n5-m-ext-holdout-c",
+          "slot": 2
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62236,
+          "limit": 6,
+          "run_id": "ext-n5-f-ext-holdout-b",
+          "slot": 3
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62465,
+          "limit": 6,
+          "run_id": "ext-n5-d-ext-holdout-c",
+          "slot": 4
+        },
+        {
+          "exclusive": false,
+          "harness_pid": 62235,
+          "limit": 6,
+          "run_id": "ext-n5-dtgp-ext-holdout-b",
+          "slot": 5
+        }
+      ]
+    }
+  ],
+  "scope": "Only extension ext-* real simulations; lease-only cap verification is recorded separately",
+  "pace_change_runs": []
+}

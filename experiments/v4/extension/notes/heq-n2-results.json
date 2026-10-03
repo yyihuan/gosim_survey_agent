@@ -1,0 +1,996 @@
+{
+  "all_off_equals_D": true,
+  "definitions": {
+    "J": "从官方uniformity_penalty反推；受6位舍入影响。",
+    "failed_attempt": "required赋值当次未命中／无效／官方factor<0.5；包括已有达标历史之后的浅曝。",
+    "mechanism_counts": "候选计数为每次计划评估，不是独立目标数；Q gate包含选场和时长检查。",
+    "retry": "每次observe赋值给required时，此前已经赋值过且此前有效观测最高官方factor<0.5。来自动作与官方observations，不用truth。"
+  },
+  "equivalence": [
+    {
+      "card": "demo",
+      "core_equal": {
+        "actions.jsonl": true,
+        "decisions.csv": true,
+        "observations.csv": true,
+        "score_report.json": true
+      },
+      "current": "experiments/v4/runs/ext-n2-heq-neutral-demo",
+      "reference": "experiments/v4/runs/r4-equivalence-d-demo"
+    },
+    {
+      "card": "dev-season",
+      "core_equal": {
+        "actions.jsonl": true,
+        "decisions.csv": true,
+        "observations.csv": true,
+        "score_report.json": true
+      },
+      "current": "experiments/v4/runs/ext-n2-heq-neutral-dev-season",
+      "reference": "experiments/v4/runs/r4-equivalence-d-dev-season"
+    }
+  ],
+  "runs": [
+    {
+      "J": 0.973716115,
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1306.431365,
+        "uniformity_penalty": -5.256777
+      },
+      "config_sha256": "ba4c289ac6d03949aed04acd90cab0d2fa2bbd4317ae65631015585ca53a4b53",
+      "counts": {
+        "decisions": 338,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 2580,
+        "observe_actions": 230,
+        "required_missing": 0,
+        "targets_observed": 1724
+      },
+      "diagnostics": {
+        "counters": {},
+        "e_selected_new_duration_count": 0,
+        "estimated_required_retry_selected": 0,
+        "h_selected_opportunities_histogram": {},
+        "h_selected_urgency_changed": 0,
+        "logged_plans": 0,
+        "official_required_below_threshold_or_missed_attempts": 60,
+        "official_required_retry_assignments": 56,
+        "official_required_retry_targets": 34,
+        "q_margin_discounted_plans": 0,
+        "q_margin_mean_observe": null,
+        "q_margin_min": null,
+        "q_protected_required_selected": 0
+      },
+      "exit_code": 0,
+      "exposure_histogram": {
+        "1200": 20,
+        "1500": 13,
+        "1800": 22,
+        "2400": 14,
+        "300": 80,
+        "3600": 6,
+        "450": 29,
+        "600": 18,
+        "900": 28
+      },
+      "internal_errors": 0,
+      "mean_exposure_seconds": 918.9130434782609,
+      "metrics_path": "experiments/v4/runs/ext-n2-heq-neutral-demo/metrics.json",
+      "output_path": "experiments/v4/runs/ext-n2-heq-neutral-demo/output",
+      "pace_changes": 0,
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000716",
+            "V4T002258"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "run_id": "ext-n2-heq-neutral-demo",
+      "runtime_seconds": 5.8224469580000004,
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "termination_reason": "survey_complete",
+      "total": 1501.174588,
+      "variant": "neutral"
+    },
+    {
+      "J": 0.5442647,
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2900.0,
+        "sum_best_scores": 1140.085039,
+        "uniformity_penalty": -91.14706
+      },
+      "config_sha256": "ba4c289ac6d03949aed04acd90cab0d2fa2bbd4317ae65631015585ca53a4b53",
+      "counts": {
+        "decisions": 625,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2456,
+        "observe_actions": 198,
+        "required_missing": 58,
+        "targets_observed": 1875
+      },
+      "diagnostics": {
+        "counters": {},
+        "e_selected_new_duration_count": 0,
+        "estimated_required_retry_selected": 0,
+        "h_selected_opportunities_histogram": {},
+        "h_selected_urgency_changed": 0,
+        "logged_plans": 0,
+        "official_required_below_threshold_or_missed_attempts": 97,
+        "official_required_retry_assignments": 85,
+        "official_required_retry_targets": 55,
+        "q_margin_discounted_plans": 0,
+        "q_margin_mean_observe": null,
+        "q_margin_min": null,
+        "q_protected_required_selected": 0
+      },
+      "exit_code": 0,
+      "exposure_histogram": {
+        "1200": 11,
+        "1500": 13,
+        "1800": 10,
+        "2400": 12,
+        "300": 57,
+        "3000": 14,
+        "3600": 18,
+        "450": 28,
+        "600": 15,
+        "900": 20
+      },
+      "internal_errors": 0,
+      "mean_exposure_seconds": 1227.2727272727273,
+      "metrics_path": "experiments/v4/runs/ext-n2-heq-neutral-dev-season/metrics.json",
+      "output_path": "experiments/v4/runs/ext-n2-heq-neutral-dev-season/output",
+      "pace_changes": 0,
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "run_id": "ext-n2-heq-neutral-dev-season",
+      "runtime_seconds": 6.553068541999999,
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "termination_reason": "survey_complete",
+      "total": -1851.06202,
+      "variant": "neutral"
+    },
+    {
+      "J": 0.973716115,
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1306.431365,
+        "uniformity_penalty": -5.256777
+      },
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "counts": {
+        "decisions": 338,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 2580,
+        "observe_actions": 230,
+        "required_missing": 0,
+        "targets_observed": 1724
+      },
+      "diagnostics": {
+        "counters": {
+          "h_changed_urgency_candidates": 0,
+          "h_currently_reachable_required": 3458
+        },
+        "e_selected_new_duration_count": 0,
+        "estimated_required_retry_selected": 56,
+        "h_selected_opportunities_histogram": {
+          "4": 1,
+          "5": 19,
+          "6": 20,
+          "7": 136
+        },
+        "h_selected_urgency_changed": 0,
+        "logged_plans": 233,
+        "official_required_below_threshold_or_missed_attempts": 60,
+        "official_required_retry_assignments": 56,
+        "official_required_retry_targets": 34,
+        "q_margin_discounted_plans": 0,
+        "q_margin_mean_observe": 1.0,
+        "q_margin_min": 1.0,
+        "q_protected_required_selected": 0
+      },
+      "exit_code": 0,
+      "exposure_histogram": {
+        "1200": 20,
+        "1500": 13,
+        "1800": 22,
+        "2400": 14,
+        "300": 80,
+        "3600": 6,
+        "450": 29,
+        "600": 18,
+        "900": 28
+      },
+      "internal_errors": 0,
+      "mean_exposure_seconds": 918.9130434782609,
+      "metrics_path": "experiments/v4/runs/ext-n2-heq-h-opportunity2-demo/metrics.json",
+      "output_path": "experiments/v4/runs/ext-n2-heq-h-opportunity2-demo/output",
+      "pace_changes": 0,
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000716",
+            "V4T002258"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "run_id": "ext-n2-heq-h-opportunity2-demo",
+      "runtime_seconds": 6.056035083,
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "termination_reason": "survey_complete",
+      "total": 1501.174588,
+      "variant": "h-opportunity2"
+    },
+    {
+      "J": 0.5442647,
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2900.0,
+        "sum_best_scores": 1140.085039,
+        "uniformity_penalty": -91.14706
+      },
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "counts": {
+        "decisions": 625,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2456,
+        "observe_actions": 198,
+        "required_missing": 58,
+        "targets_observed": 1875
+      },
+      "diagnostics": {
+        "counters": {
+          "h_changed_urgency_candidates": 2,
+          "h_currently_reachable_required": 10728
+        },
+        "e_selected_new_duration_count": 0,
+        "estimated_required_retry_selected": 86,
+        "h_selected_opportunities_histogram": {
+          "1": 3,
+          "3": 4,
+          "4": 6,
+          "6": 4,
+          "7": 2,
+          "8": 3,
+          "9": 5,
+          "11": 5,
+          "12": 27,
+          "13": 83,
+          "14": 133
+        },
+        "h_selected_urgency_changed": 0,
+        "logged_plans": 325,
+        "official_required_below_threshold_or_missed_attempts": 97,
+        "official_required_retry_assignments": 85,
+        "official_required_retry_targets": 55,
+        "q_margin_discounted_plans": 0,
+        "q_margin_mean_observe": 1.0,
+        "q_margin_min": 1.0,
+        "q_protected_required_selected": 0
+      },
+      "exit_code": 0,
+      "exposure_histogram": {
+        "1200": 11,
+        "1500": 13,
+        "1800": 10,
+        "2400": 12,
+        "300": 57,
+        "3000": 14,
+        "3600": 18,
+        "450": 28,
+        "600": 15,
+        "900": 20
+      },
+      "internal_errors": 0,
+      "mean_exposure_seconds": 1227.2727272727273,
+      "metrics_path": "experiments/v4/runs/ext-n2-heq-h-opportunity2-dev-season/metrics.json",
+      "output_path": "experiments/v4/runs/ext-n2-heq-h-opportunity2-dev-season/output",
+      "pace_changes": 0,
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "run_id": "ext-n2-heq-h-opportunity2-dev-season",
+      "runtime_seconds": 8.746051625000002,
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "termination_reason": "survey_complete",
+      "total": -1851.06202,
+      "variant": "h-opportunity2"
+    },
+    {
+      "J": 0.98657638,
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1132.833985,
+        "uniformity_penalty": -2.684724
+      },
+      "config_sha256": "7109bbb5ee19f5e79952936bc46516a3c4ce42274c41da9a52d0871947417bb4",
+      "counts": {
+        "decisions": 345,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 2652,
+        "observe_actions": 233,
+        "required_missing": 0,
+        "targets_observed": 1666
+      },
+      "diagnostics": {
+        "counters": {
+          "e_critical_request_candidates": 9,
+          "e_critical_required_candidates": 182,
+          "e_critical_saturation_candidates": 2263,
+          "e_extra_duration_candidates": 2063
+        },
+        "e_selected_new_duration_count": 188,
+        "estimated_required_retry_selected": 62,
+        "h_selected_opportunities_histogram": {},
+        "h_selected_urgency_changed": 0,
+        "logged_plans": 238,
+        "official_required_below_threshold_or_missed_attempts": 73,
+        "official_required_retry_assignments": 62,
+        "official_required_retry_targets": 36,
+        "q_margin_discounted_plans": 0,
+        "q_margin_mean_observe": 1.0,
+        "q_margin_min": 1.0,
+        "q_protected_required_selected": 0
+      },
+      "exit_code": 0,
+      "exposure_histogram": {
+        "1020": 2,
+        "1050": 4,
+        "1080": 4,
+        "1110": 3,
+        "1140": 2,
+        "1170": 3,
+        "120": 3,
+        "1200": 3,
+        "1230": 2,
+        "1260": 1,
+        "1290": 3,
+        "1320": 3,
+        "1440": 2,
+        "1470": 2,
+        "150": 5,
+        "1500": 3,
+        "1530": 2,
+        "1560": 1,
+        "1590": 2,
+        "1680": 2,
+        "1710": 2,
+        "1740": 2,
+        "1770": 1,
+        "180": 6,
+        "1800": 2,
+        "1830": 1,
+        "1860": 1,
+        "1920": 1,
+        "1980": 2,
+        "2010": 2,
+        "2040": 2,
+        "2070": 3,
+        "210": 4,
+        "2100": 2,
+        "2130": 1,
+        "2160": 1,
+        "2190": 1,
+        "2220": 1,
+        "2250": 1,
+        "2280": 1,
+        "2310": 2,
+        "240": 10,
+        "2400": 1,
+        "2520": 1,
+        "2550": 1,
+        "2640": 1,
+        "270": 7,
+        "2790": 1,
+        "2850": 1,
+        "300": 25,
+        "3030": 1,
+        "3090": 1,
+        "3240": 1,
+        "330": 6,
+        "3480": 1,
+        "3510": 2,
+        "360": 9,
+        "390": 3,
+        "420": 2,
+        "450": 4,
+        "480": 2,
+        "510": 6,
+        "540": 2,
+        "570": 3,
+        "60": 8,
+        "600": 3,
+        "630": 5,
+        "660": 2,
+        "690": 2,
+        "720": 2,
+        "750": 2,
+        "780": 2,
+        "810": 3,
+        "840": 1,
+        "870": 2,
+        "90": 6,
+        "900": 4,
+        "930": 3,
+        "960": 3,
+        "990": 3
+      },
+      "internal_errors": 0,
+      "mean_exposure_seconds": 906.4377682403433,
+      "metrics_path": "experiments/v4/runs/ext-n2-heq-e-threshold30-demo/metrics.json",
+      "output_path": "experiments/v4/runs/ext-n2-heq-e-threshold30-demo/output",
+      "pace_changes": 0,
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T001021",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "run_id": "ext-n2-heq-e-threshold30-demo",
+      "runtime_seconds": 6.00686225,
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "termination_reason": "survey_complete",
+      "total": 1330.149261,
+      "variant": "e-threshold30"
+    },
+    {
+      "J": 0.533132495,
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2850.0,
+        "sum_best_scores": 1156.163807,
+        "uniformity_penalty": -93.373501
+      },
+      "config_sha256": "7109bbb5ee19f5e79952936bc46516a3c4ce42274c41da9a52d0871947417bb4",
+      "counts": {
+        "decisions": 664,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2977,
+        "observe_actions": 241,
+        "required_missing": 57,
+        "targets_observed": 2105
+      },
+      "diagnostics": {
+        "counters": {
+          "e_critical_request_candidates": 5,
+          "e_critical_required_candidates": 300,
+          "e_critical_saturation_candidates": 2234,
+          "e_extra_duration_candidates": 2123
+        },
+        "e_selected_new_duration_count": 177,
+        "estimated_required_retry_selected": 110,
+        "h_selected_opportunities_histogram": {},
+        "h_selected_urgency_changed": 0,
+        "logged_plans": 367,
+        "official_required_below_threshold_or_missed_attempts": 138,
+        "official_required_retry_assignments": 110,
+        "official_required_retry_targets": 72,
+        "q_margin_discounted_plans": 0,
+        "q_margin_mean_observe": 1.0,
+        "q_margin_min": 1.0,
+        "q_protected_required_selected": 0
+      },
+      "exit_code": 0,
+      "exposure_histogram": {
+        "1020": 3,
+        "1050": 1,
+        "1080": 4,
+        "1140": 1,
+        "1170": 3,
+        "120": 3,
+        "1200": 2,
+        "1230": 1,
+        "1260": 2,
+        "1290": 1,
+        "1320": 2,
+        "1350": 2,
+        "1440": 1,
+        "1470": 2,
+        "150": 5,
+        "1500": 4,
+        "1560": 2,
+        "1650": 1,
+        "1710": 1,
+        "1770": 1,
+        "180": 5,
+        "1800": 3,
+        "1830": 1,
+        "1890": 2,
+        "1920": 1,
+        "1980": 1,
+        "2040": 1,
+        "2070": 2,
+        "210": 5,
+        "2130": 1,
+        "2220": 1,
+        "2250": 1,
+        "240": 9,
+        "2400": 2,
+        "2460": 1,
+        "2490": 2,
+        "2520": 1,
+        "2580": 4,
+        "2640": 2,
+        "2670": 2,
+        "270": 6,
+        "2790": 2,
+        "2940": 2,
+        "300": 26,
+        "3060": 2,
+        "3090": 1,
+        "3150": 1,
+        "3210": 1,
+        "3270": 1,
+        "330": 3,
+        "3330": 2,
+        "3360": 1,
+        "3390": 1,
+        "3450": 1,
+        "3510": 1,
+        "360": 6,
+        "3600": 6,
+        "390": 8,
+        "420": 2,
+        "450": 12,
+        "480": 2,
+        "510": 4,
+        "540": 5,
+        "570": 2,
+        "60": 7,
+        "600": 4,
+        "630": 3,
+        "660": 3,
+        "720": 4,
+        "750": 4,
+        "780": 1,
+        "810": 2,
+        "840": 1,
+        "870": 2,
+        "90": 8,
+        "900": 5,
+        "930": 3,
+        "960": 6,
+        "990": 1
+      },
+      "internal_errors": 0,
+      "mean_exposure_seconds": 1022.6141078838174,
+      "metrics_path": "experiments/v4/runs/ext-n2-heq-e-threshold30-dev-season/metrics.json",
+      "output_path": "experiments/v4/runs/ext-n2-heq-e-threshold30-dev-season/output",
+      "pace_changes": 0,
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "run_id": "ext-n2-heq-e-threshold30-dev-season",
+      "runtime_seconds": 9.596707875,
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "termination_reason": "survey_complete",
+      "total": -1787.209694,
+      "variant": "e-threshold30"
+    },
+    {
+      "J": 0.97393916,
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1303.954327,
+        "uniformity_penalty": -5.212168
+      },
+      "config_sha256": "19094d1a26062af79106b2429d9af96d0c080adbaff294d5d6e7b333c4e5b4ce",
+      "counts": {
+        "decisions": 337,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 1,
+        "observation_requests_issued": 1,
+        "observations": 2580,
+        "observe_actions": 228,
+        "required_missing": 0,
+        "targets_observed": 1719
+      },
+      "diagnostics": {
+        "counters": {
+          "q_required_gate_evaluations": 5587,
+          "q_suppressed_bonus_evaluations": 88
+        },
+        "e_selected_new_duration_count": 0,
+        "estimated_required_retry_selected": 58,
+        "h_selected_opportunities_histogram": {},
+        "h_selected_urgency_changed": 0,
+        "logged_plans": 232,
+        "official_required_below_threshold_or_missed_attempts": 64,
+        "official_required_retry_assignments": 58,
+        "official_required_retry_targets": 34,
+        "q_margin_discounted_plans": 218,
+        "q_margin_mean_observe": 0.9569061320665335,
+        "q_margin_min": 0.6,
+        "q_protected_required_selected": 164
+      },
+      "exit_code": 0,
+      "exposure_histogram": {
+        "1200": 18,
+        "1500": 14,
+        "1800": 21,
+        "2400": 16,
+        "300": 86,
+        "3000": 1,
+        "3600": 5,
+        "450": 22,
+        "600": 17,
+        "900": 28
+      },
+      "internal_errors": 0,
+      "mean_exposure_seconds": 925.0,
+      "metrics_path": "experiments/v4/runs/ext-n2-heq-q-quantile25-demo/metrics.json",
+      "output_path": "experiments/v4/runs/ext-n2-heq-q-quantile25-demo/output",
+      "pace_changes": 0,
+      "reports": {
+        "correct": 1,
+        "count": 1,
+        "deltas": [
+          100.0
+        ],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": true,
+          "completed_count": 6,
+          "completed_target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-06T08:45:00Z",
+          "issued_at_utc": "2026-10-05T00:00:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 100.0,
+          "target_ids": [
+            "V4T000160",
+            "V4T002330",
+            "V4T000311",
+            "V4T001021",
+            "V4T000532",
+            "V4T000716",
+            "V4T001836",
+            "V4T002258"
+          ]
+        }
+      ],
+      "run_id": "ext-n2-heq-q-quantile25-demo",
+      "runtime_seconds": 4.710715667,
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "termination_reason": "survey_complete",
+      "total": 1498.742159,
+      "variant": "q-quantile25"
+    },
+    {
+      "J": 0.549608625,
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2850.0,
+        "sum_best_scores": 1144.075376,
+        "uniformity_penalty": -90.078275
+      },
+      "config_sha256": "19094d1a26062af79106b2429d9af96d0c080adbaff294d5d6e7b333c4e5b4ce",
+      "counts": {
+        "decisions": 637,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 1,
+        "observations": 2586,
+        "observe_actions": 211,
+        "required_missing": 57,
+        "targets_observed": 1988
+      },
+      "diagnostics": {
+        "counters": {
+          "q_required_gate_evaluations": 15121,
+          "q_suppressed_bonus_evaluations": 81
+        },
+        "e_selected_new_duration_count": 0,
+        "estimated_required_retry_selected": 68,
+        "h_selected_opportunities_histogram": {},
+        "h_selected_urgency_changed": 0,
+        "logged_plans": 341,
+        "official_required_below_threshold_or_missed_attempts": 83,
+        "official_required_retry_assignments": 68,
+        "official_required_retry_targets": 54,
+        "q_margin_discounted_plans": 294,
+        "q_margin_mean_observe": 0.9335390167162347,
+        "q_margin_min": 0.6,
+        "q_protected_required_selected": 243
+      },
+      "exit_code": 0,
+      "exposure_histogram": {
+        "1200": 11,
+        "1500": 19,
+        "1800": 10,
+        "2400": 7,
+        "300": 65,
+        "3000": 12,
+        "3600": 19,
+        "450": 34,
+        "600": 15,
+        "900": 19
+      },
+      "internal_errors": 0,
+      "mean_exposure_seconds": 1145.9715639810427,
+      "metrics_path": "experiments/v4/runs/ext-n2-heq-q-quantile25-dev-season/metrics.json",
+      "output_path": "experiments/v4/runs/ext-n2-heq-q-quantile25-dev-season/output",
+      "pace_changes": 0,
+      "reports": {
+        "correct": 0,
+        "count": 0,
+        "deltas": [],
+        "false": 0
+      },
+      "requests": [
+        {
+          "completed": false,
+          "completed_count": 4,
+          "completed_target_ids": [
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261"
+          ],
+          "completion_factor_threshold": 0.5,
+          "completion_reward": 100.0,
+          "deadline_utc": "2026-10-09T08:45:00Z",
+          "issued_at_utc": "2026-10-08T00:15:00Z",
+          "minimum_completed": 6,
+          "request_id": "V4RQ0001",
+          "reward": 0.0,
+          "target_ids": [
+            "V4T002286",
+            "V4T003507",
+            "V4T000108",
+            "V4T002407",
+            "V4T003261",
+            "V4T002370",
+            "V4T002627",
+            "V4T002360"
+          ]
+        }
+      ],
+      "run_id": "ext-n2-heq-q-quantile25-dev-season",
+      "runtime_seconds": 8.902112167,
+      "source_tree_sha256": "271b463acd402d8d9bcd088d28933a152bbf2db903445560673496fdec9d9829",
+      "termination_reason": "survey_complete",
+      "total": -1796.002899,
+      "variant": "q-quantile25"
+    }
+  ],
+  "schema_version": "heq-n2-results-v1"
+}

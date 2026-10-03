@@ -1,0 +1,12 @@
+{
+  "baseline_run": "r1-official-demo-repeat",
+  "control_run": "r2-c-control-demo",
+  "checks": {
+    "normalized_actions_sha256": true,
+    "normalized_score_sha256": true
+  },
+  "baseline_total": 1082.572141,
+  "control_total": 1082.572141,
+  "control_exit": 0,
+  "pace_changes": []
+}

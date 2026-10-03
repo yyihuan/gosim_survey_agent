@@ -1,0 +1,7 @@
+{
+  "recorded_at_utc": "2026-10-02T16:17:51.904549+00:00",
+  "status": "pre_generation_script_byte_equality_check_error",
+  "cards_generated": 0,
+  "cause": "Official research reference and vendor demo score JSON differ only in whitespace/numeric formatting; diff and parsed JSON equality checked",
+  "correction": "Compare parsed fixed vendor/reference score config in precheck. Generated score config must still match original reference bytes via original inspector."
+}

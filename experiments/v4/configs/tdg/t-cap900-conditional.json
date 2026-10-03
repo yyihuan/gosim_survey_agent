@@ -1,0 +1,9 @@
+{
+  "family": "T",
+  "variant": "cap900-conditional",
+  "strict_slot": false,
+  "exposure_cap_seconds": 900,
+  "conditional_long_exposure": true,
+  "science_exponent": 2.0,
+  "geometry_strength": 0.0
+}

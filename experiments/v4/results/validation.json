@@ -1,0 +1,22 @@
+{
+  "recorded_at_utc": "2026-10-02T13:33:22.083070+00:00",
+  "schema_version": "v4-all-runs-v1",
+  "row_count": 52,
+  "csv_columns": 84,
+  "csv_json_row_count_match": true,
+  "unique_run_directories": true,
+  "source_score_and_components_preserved": true,
+  "config_hashes_match_for_scored_runs": true,
+  "existing_input_files_checked": 96,
+  "existing_inputs_unchanged": true,
+  "evidence_links_checked": 776,
+  "all_evidence_links_exist": true,
+  "intentional_timeout_separated": true,
+  "integration_verification_separated": true,
+  "record_issues": [],
+  "self_test": {
+    "command": "/usr/bin/python3 -B experiments/v4/harness/aggregate_results.py --self-test",
+    "exit_code": 0
+  },
+  "aggregator_sha256": "f2720835fcc8d33e6ac4aab123745f9cdf28d58f85ed415fd53f1b63709bfcd5"
+}

@@ -1,0 +1,21 @@
+{
+  "family": "J",
+  "variant": "delta-j-cap10",
+  "strict_slot": false,
+  "science_exponent": 1.0,
+  "geometry_strength": 0.0,
+  "environment": {
+    "PACKING_ANCHORS": "3"
+  },
+  "M": {
+    "enabled": false
+  },
+  "F": {
+    "enabled": false,
+    "candidate_fields": 6
+  },
+  "J": {
+    "enabled": true,
+    "maximum_reward_per_target": 10.0
+  }
+}

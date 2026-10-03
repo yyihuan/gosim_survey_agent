@@ -1,0 +1,129 @@
+{
+  "configs": [
+    {
+      "path": "experiments/v4/extension/configs/heq/h-window-fraction2.json",
+      "sha256": "26053f0ca8854c1cf79b9c755e32446da177b87f562e741fd6776a6afe3dc866",
+      "values": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": false,
+          "quantum_seconds": 30
+        },
+        "H": {
+          "enabled": true,
+          "minimum_night_equivalents": 0.5,
+          "mode": "night_fraction",
+          "strength": 2.0
+        },
+        "Q": {
+          "enabled": false,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "H",
+        "geometry_strength": 0.0,
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "h-window-fraction2"
+      }
+    },
+    {
+      "path": "experiments/v4/extension/configs/heq/e-required-request30.json",
+      "sha256": "07224a9567c5a93e72cde3931e8af708e2b8a34fef9d725ad4bfe7de7c4fdec6",
+      "values": {
+        "C": {
+          "enabled": false
+        },
+        "E": {
+          "enabled": true,
+          "include_saturation": false,
+          "quantum_seconds": 30
+        },
+        "H": {
+          "enabled": false,
+          "strength": 2.0
+        },
+        "Q": {
+          "enabled": false,
+          "memory_hours": 2.0,
+          "minimum_margin": 0.6,
+          "minimum_samples": 8,
+          "quantile": 0.25
+        },
+        "W": {
+          "enabled": false
+        },
+        "base": "Dlinear",
+        "conditional_long_exposure": false,
+        "environment": {
+          "PACKING_ANCHORS": "3",
+          "USE_LLM": "0"
+        },
+        "family": "E",
+        "geometry_strength": 0.0,
+        "science_exponent": 1.0,
+        "strict_slot": false,
+        "variant": "e-required-request30"
+      }
+    }
+  ],
+  "expectation": "H 连续整夜等效窗口量改变紧迫度；E 仅移除普通饱和临界时长，保持安全过滤及原档位。",
+  "maximum_simulators": 6,
+  "no_additional_parameters_or_holdout": true,
+  "registered_at_utc": "2026-10-02T16:28:18.566339+00:00",
+  "runs": [
+    "ext-n3-heq-h-window-fraction2-demo",
+    "ext-n3-heq-h-window-fraction2-dev-season",
+    "ext-n3-heq-e-required-request30-demo",
+    "ext-n3-heq-e-required-request30-dev-season"
+  ],
+  "selection_basis": {
+    "path": "experiments/v4/extension/notes/heq.md",
+    "sha256": "c0e0fd752aeeb38dccacb73d5f5333f08816cad7af1aca239305e96cbe9dfff3"
+  },
+  "source": "experiments/v4/extension/agents/heq/n3_source",
+  "source_manifest": [
+    {
+      "path": "baseline_agent.py",
+      "sha256": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+    },
+    {
+      "path": "cw_policy.py",
+      "sha256": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60"
+    },
+    {
+      "path": "heq_policy.py",
+      "sha256": "014cd551321e80c40143d98778be0bfd43369e7de9b1434dab2442c3ee218796"
+    },
+    {
+      "path": "llm_hook.py",
+      "sha256": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543"
+    },
+    {
+      "path": "observer.project.json",
+      "sha256": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc"
+    },
+    {
+      "path": "planner.py",
+      "sha256": "107716ac29e2a22507c94d8b37dc7e8ef694a244faeea5921a5a9357e06cf4cf"
+    },
+    {
+      "path": "skymath.py",
+      "sha256": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26"
+    }
+  ],
+  "stage": "N3"
+}

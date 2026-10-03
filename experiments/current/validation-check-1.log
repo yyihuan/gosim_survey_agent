@@ -1,0 +1,9 @@
+test_duplicate_run_refused (test_offline.OfflineBoundary) ... ok
+test_offline_never_attempts_http_with_inherited_key (test_offline.OfflineBoundary) ... ok
+test_online_still_requires_key (test_offline.OfflineBoundary) ... ok
+test_upstream_unmodified_fails_without_key (test_offline.OfflineBoundary) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.249s
+
+OK

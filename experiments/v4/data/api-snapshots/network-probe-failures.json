@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-10-02T13:12:02.065025+00:00",
+  "requests": [
+    {
+      "request": "current_competition",
+      "url": "https://vdiemcofukuxglqsmlyz.supabase.co/rest/v1/rpc/current_competition",
+      "error": "socket.timeout: The read operation timed out",
+      "attempts": 2,
+      "timeout_seconds_each": 25
+    },
+    {
+      "request": "v3_practice_leaderboard",
+      "url": "https://vdiemcofukuxglqsmlyz.supabase.co/rest/v1/rpc/leaderboard",
+      "error": "request failed during the bounded parallel probe; no successful payload obtained",
+      "attempts": "bounded probe issued; no individual response saved after current_competition failure",
+      "timeout_seconds_each": 25
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "mfj-f-n3-preregistration-v1",
+  "registered_before_runs_utc": "2026-10-02T16:21:05.074210+00:00",
+  "only_change": "F.candidate_fields: 6 -> 12 (variant label updated)",
+  "expectation": "更多候选可能找到较高的当前收益率，同时增加曝光试算成本；不保证季末总分提高。",
+  "source_files_sha256": {
+    "planner.py": "6d828cce61ef9043c551306f52d431c196873ba3e2892933564218b334927548",
+    "mfj_policy.py": "e4bc101cab299f05b77f519b6d28f2c235c9cb03346e5fa1fd44cddfcb4201f6",
+    "skymath.py": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26",
+    "cw_policy.py": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60",
+    "llm_hook.py": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543",
+    "observer.project.json": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc",
+    "baseline_agent.py": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+  },
+  "config_path": "experiments/v4/extension/configs/mfj/f-fields12.json",
+  "config_sha256": "a8e1bd7ecc3fe960af9bf5161e90ca9677b0f8f3171bfc6daca2ae76551f5ef2",
+  "anchors": 3,
+  "other_factors": "D-linear; M/J/T/G/C/W off; original durations and assignment rules",
+  "run_ids": [
+    "ext-n3-f-fields12-demo",
+    "ext-n3-f-fields12-dev-season"
+  ],
+  "development_cards": [
+    "demo",
+    "dev-season"
+  ],
+  "stop": "only this one F iteration; no M/J tuning or holdout reads/runs"
+}

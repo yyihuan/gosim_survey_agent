@@ -1,0 +1,14 @@
+sequenceDiagram
+  participant B as 后端
+  participant A as Agent
+  B->>A: initialize 公开目录与配置
+  Note over A: 建状态 不回复
+  loop 每次动作完成后
+    B->>A: decision_request 序号 反馈 新消息
+    Note over A: 计算或模型等待 消耗真实预算
+    A->>B: decision_response 同序号 一次动作
+    Note over B: 校验 执行 分段积分 更新账本
+    Note over B: 普通slot不回调 report不推进模拟时间
+  end
+  B->>A: finish 终止原因与计数
+  Note over A: 不回复 记录总结 退出

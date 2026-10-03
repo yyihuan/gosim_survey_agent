@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "sections": 19,
+  "diagrams": 6,
+  "checks": [
+    "crosses two ordinary slots",
+    "night truncates to 30 seconds",
+    "eta changes Q only",
+    "direction closure leaves B",
+    "best score and max factor independent",
+    "resync revokes contribution",
+    "no depth coadd",
+    "real batched bulletin and report messages",
+    "mobile fits viewport",
+    "no script errors",
+    "no external requests"
+  ],
+  "errors": [],
+  "external": []
+}

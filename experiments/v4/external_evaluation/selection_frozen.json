@@ -1,0 +1,317 @@
+{
+  "authorization": "Root task to environment_baseline: 3 fixed strategies x official alpha/beta/gamma/delta = 12; public anon download and local evaluation; no tuning",
+  "boundaries": {
+    "download_card_whitelist": [
+      "v4-practice-alpha",
+      "v4-practice-beta",
+      "v4-practice-gamma",
+      "v4-practice-delta"
+    ],
+    "maximum_simulators": 2,
+    "on_download_failure": "bounded probes; preserve exact public failures; no synthetic replacement or long polling",
+    "score_policy": "unchanged official scorer, preserve all outcomes, no extra strategy or parameter change",
+    "truth_policy": "download and byte hashes only; official environment may read; no truth analysis",
+    "use_llm": false,
+    "wallclock_seconds": 900
+  },
+  "candidates": [
+    {
+      "config": null,
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "id": "baseline",
+      "label": "official baseline",
+      "source": "experiments/v4/vendor/starter_kit_v4/agent",
+      "source_tree_sha256": "8204d3ccec2975c874ab2384c7b786ce4f877dc843ed268a55036ab18260c2c3"
+    },
+    {
+      "config": "experiments/v4/configs/tdg/d-linear.json",
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "id": "d",
+      "label": "D linear p1",
+      "source": "experiments/v4/agents/combined/source",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+    },
+    {
+      "config": "experiments/v4/configs/combined/dtgp-frozen02.json",
+      "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+      "id": "dtgp",
+      "label": "DTGP frozen",
+      "source": "experiments/v4/agents/combined/source",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+    }
+  ],
+  "expected_runs": 12,
+  "frozen_at_utc": "2026-10-02T15:03:07.703133+00:00",
+  "harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+  "matrix": [
+    {
+      "candidate": "baseline",
+      "card": "alpha",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-baseline-official-alpha",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/agent",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/alpha",
+        "--wallclock",
+        "900"
+      ],
+      "run_id": "r6-baseline-official-alpha"
+    },
+    {
+      "candidate": "baseline",
+      "card": "beta",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-baseline-official-beta",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/agent",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/beta",
+        "--wallclock",
+        "900"
+      ],
+      "run_id": "r6-baseline-official-beta"
+    },
+    {
+      "candidate": "baseline",
+      "card": "gamma",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-baseline-official-gamma",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/agent",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/gamma",
+        "--wallclock",
+        "900"
+      ],
+      "run_id": "r6-baseline-official-gamma"
+    },
+    {
+      "candidate": "baseline",
+      "card": "delta",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-baseline-official-delta",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/agent",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/delta",
+        "--wallclock",
+        "900"
+      ],
+      "run_id": "r6-baseline-official-delta"
+    },
+    {
+      "candidate": "d",
+      "card": "alpha",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-d-official-alpha",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/alpha",
+        "--wallclock",
+        "900",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/d-linear.json"
+      ],
+      "run_id": "r6-d-official-alpha"
+    },
+    {
+      "candidate": "d",
+      "card": "beta",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-d-official-beta",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/beta",
+        "--wallclock",
+        "900",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/d-linear.json"
+      ],
+      "run_id": "r6-d-official-beta"
+    },
+    {
+      "candidate": "d",
+      "card": "gamma",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-d-official-gamma",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/gamma",
+        "--wallclock",
+        "900",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/d-linear.json"
+      ],
+      "run_id": "r6-d-official-gamma"
+    },
+    {
+      "candidate": "d",
+      "card": "delta",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-d-official-delta",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/delta",
+        "--wallclock",
+        "900",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/d-linear.json"
+      ],
+      "run_id": "r6-d-official-delta"
+    },
+    {
+      "candidate": "dtgp",
+      "card": "alpha",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-dtgp-official-alpha",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/alpha",
+        "--wallclock",
+        "900",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dtgp-frozen02.json"
+      ],
+      "run_id": "r6-dtgp-official-alpha"
+    },
+    {
+      "candidate": "dtgp",
+      "card": "beta",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-dtgp-official-beta",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/beta",
+        "--wallclock",
+        "900",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dtgp-frozen02.json"
+      ],
+      "run_id": "r6-dtgp-official-beta"
+    },
+    {
+      "candidate": "dtgp",
+      "card": "gamma",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-dtgp-official-gamma",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/gamma",
+        "--wallclock",
+        "900",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dtgp-frozen02.json"
+      ],
+      "run_id": "r6-dtgp-official-gamma"
+    },
+    {
+      "candidate": "dtgp",
+      "card": "delta",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r6-dtgp-official-delta",
+        "--stage",
+        "R6-external",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/external_evaluation/cards/delta",
+        "--wallclock",
+        "900",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dtgp-frozen02.json"
+      ],
+      "run_id": "r6-dtgp-official-delta"
+    }
+  ],
+  "protected_old_artifact_sha256": {
+    "experiments/v4/data/inventory-public-discovery.json": "6f90995b683e56bf6424c8959b37f011031ce383d06d0b382b1649079a40eeac",
+    "experiments/v4/data/inventory.json": "30e2e2806a6b1f2d64d2844b081db8dd687c859dd11c2277d3b1674cbd8ef0b5",
+    "experiments/v4/evaluation/freeze_manifest.json": "19a50dd8ca97a566e7ed698b7a0a3f7eb565db27a8368ac32dd02a31f2f5504e",
+    "experiments/v4/evaluation/r5_results.json": "2a11348662c9e96509783b26f0b21500316899f1afd6a2d940f58d262fd5f4c0",
+    "experiments/v4/results/all_runs.csv": "d2b4572c47fa32697fa23ef9e93b2b2577e09cd65d0d61ea8c757240e6a91259",
+    "experiments/v4/results/all_runs.json": "f550366db6a9d56647a84f4703112783d719c6a6de9af84718c4b318f1eb0a2a"
+  },
+  "schema_version": "v4-external-selection-v1",
+  "selection_basis": "Root fixed these three before any score on the four official cards was revealed; no card-score-based selection",
+  "stage": "R6-external",
+  "upstream_commit": "18be105bc517938c8341ad79646cf397e3293016",
+  "vendor_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c"
+}

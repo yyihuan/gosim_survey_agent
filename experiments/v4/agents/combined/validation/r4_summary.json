@@ -1,0 +1,279 @@
+{
+  "definition": "total_nonadditivity = combination delta minus sum of frozen constituent single deltas; for 3+ factors this is all nonadditivity, not an isolated highest-order effect",
+  "mean_development_deltas": {
+    "DG": 373.0034314999999,
+    "DP": 340.6098169999999,
+    "DPG": 260.624876,
+    "DT": 380.57695449999994,
+    "DTGP": 490.09100449999994,
+    "DTGPCW": 259.4156404999999
+  },
+  "rows": [
+    {
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1238.829964,
+        "uniformity_penalty": -7.099425
+      },
+      "delta_total": 249.15839899999992,
+      "family": "DP",
+      "jain": 0.964502875,
+      "observe_actions": 227,
+      "pace_change_count": 0,
+      "required_missing": 0,
+      "run_id": "r4-dp-frozen01-demo",
+      "runtime_seconds": 8.084944709,
+      "sum_single_deltas": 765.557286,
+      "termination_reason": "survey_complete",
+      "total": 1331.73054,
+      "total_nonadditivity": -516.3988870000001
+    },
+    {
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2900.0,
+        "sum_best_scores": 1190.918665,
+        "uniformity_penalty": -91.745284
+      },
+      "delta_total": 432.0612349999999,
+      "family": "DP",
+      "jain": 0.54127358,
+      "observe_actions": 213,
+      "pace_change_count": 0,
+      "required_missing": 58,
+      "run_id": "r4-dp-frozen01-dev-season",
+      "runtime_seconds": 10.977748833,
+      "sum_single_deltas": 341.05430699999965,
+      "termination_reason": "survey_complete",
+      "total": -1800.82662,
+      "total_nonadditivity": 91.00692800000024
+    },
+    {
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1220.36706,
+        "uniformity_penalty": -13.181379
+      },
+      "delta_total": 324.61353999999983,
+      "family": "DG",
+      "jain": 0.934093105,
+      "observe_actions": 223,
+      "pace_change_count": 0,
+      "required_missing": 0,
+      "run_id": "r4-dg-frozen01-demo",
+      "runtime_seconds": 3.825633583,
+      "sum_single_deltas": 676.962368,
+      "termination_reason": "survey_complete",
+      "total": 1407.185681,
+      "total_nonadditivity": -352.34882800000014
+    },
+    {
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2900.0,
+        "sum_best_scores": 1184.744088,
+        "uniformity_penalty": -96.23862
+      },
+      "delta_total": 421.393323,
+      "family": "DG",
+      "jain": 0.5188069,
+      "observe_actions": 216,
+      "pace_change_count": 0,
+      "required_missing": 58,
+      "run_id": "r4-dg-frozen01-dev-season",
+      "runtime_seconds": 6.024900917,
+      "sum_single_deltas": 388.4097939999999,
+      "termination_reason": "survey_complete",
+      "total": -1811.494532,
+      "total_nonadditivity": 32.98352900000009
+    },
+    {
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1314.191103,
+        "uniformity_penalty": -2.97481
+      },
+      "delta_total": 328.64415199999985,
+      "family": "DT",
+      "jain": 0.98512595,
+      "observe_actions": 271,
+      "pace_change_count": 0,
+      "required_missing": 0,
+      "run_id": "r4-dt-frozen01-demo",
+      "runtime_seconds": 4.1446654999999994,
+      "sum_single_deltas": 826.2723599999999,
+      "termination_reason": "survey_complete",
+      "total": 1411.216293,
+      "total_nonadditivity": -497.6282080000001
+    },
+    {
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2900.0,
+        "sum_best_scores": 1191.334186,
+        "uniformity_penalty": -91.712284
+      },
+      "delta_total": 432.50975700000004,
+      "family": "DT",
+      "jain": 0.54143858,
+      "observe_actions": 261,
+      "pace_change_count": 0,
+      "required_missing": 58,
+      "run_id": "r4-dt-frozen01-dev-season",
+      "runtime_seconds": 6.347932291999999,
+      "sum_single_deltas": 733.2526579999999,
+      "termination_reason": "survey_complete",
+      "total": -1800.378098,
+      "total_nonadditivity": -300.74290099999985
+    },
+    {
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 0.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1059.576793,
+        "uniformity_penalty": -7.153238
+      },
+      "delta_total": 69.85141399999998,
+      "family": "DPG",
+      "jain": 0.96423381,
+      "observe_actions": 196,
+      "pace_change_count": 0,
+      "required_missing": 0,
+      "run_id": "r4-dpg-frozen02-demo",
+      "runtime_seconds": 7.012625833,
+      "sum_single_deltas": 1023.917207,
+      "termination_reason": "survey_complete",
+      "total": 1152.423555,
+      "total_nonadditivity": -954.065793
+    },
+    {
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2900.0,
+        "sum_best_scores": 1211.38033,
+        "uniformity_penalty": -92.869848
+      },
+      "delta_total": 451.39833799999997,
+      "family": "DPG",
+      "jain": 0.53565076,
+      "observe_actions": 205,
+      "pace_change_count": 0,
+      "required_missing": 58,
+      "run_id": "r4-dpg-frozen02-dev-season",
+      "runtime_seconds": 10.95042325,
+      "sum_single_deltas": 347.6382659999997,
+      "termination_reason": "survey_complete",
+      "total": -1781.489517,
+      "total_nonadditivity": 103.76007200000026
+    },
+    {
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 100.0,
+        "required_penalty": -0.0,
+        "sum_best_scores": 1409.167311,
+        "uniformity_penalty": -2.142855
+      },
+      "delta_total": 424.452315,
+      "family": "DTGP",
+      "jain": 0.989285725,
+      "observe_actions": 289,
+      "pace_change_count": 0,
+      "required_missing": 0,
+      "run_id": "r4-dtgp-frozen02-demo",
+      "runtime_seconds": 9.378648834,
+      "sum_single_deltas": 1431.58712,
+      "termination_reason": "survey_complete",
+      "total": 1507.024456,
+      "total_nonadditivity": -1007.1348049999999
+    },
+    {
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2850.0,
+        "sum_best_scores": 1264.009576,
+        "uniformity_penalty": -91.167737
+      },
+      "delta_total": 555.7296939999999,
+      "family": "DTGP",
+      "jain": 0.544161315,
+      "observe_actions": 272,
+      "pace_change_count": 0,
+      "required_missing": 57,
+      "run_id": "r4-dtgp-frozen02-dev-season",
+      "runtime_seconds": 12.499582791,
+      "sum_single_deltas": 699.0650889999997,
+      "termination_reason": "survey_complete",
+      "total": -1677.158161,
+      "total_nonadditivity": -143.33539499999983
+    },
+    {
+      "card": "demo",
+      "components": {
+        "observation_request_reward": 100.0,
+        "report_settlement": 0.0,
+        "required_penalty": -50.0,
+        "sum_best_scores": 1090.436164,
+        "uniformity_penalty": -4.539679
+      },
+      "delta_total": 53.32434399999988,
+      "family": "DTGPCW",
+      "jain": 0.977301605,
+      "observe_actions": 298,
+      "pace_change_count": 0,
+      "required_missing": 1,
+      "run_id": "r4-dtgpcw-frozen02-demo",
+      "runtime_seconds": 10.014099292,
+      "sum_single_deltas": 1371.3957349999996,
+      "termination_reason": "survey_complete",
+      "total": 1135.896485,
+      "total_nonadditivity": -1318.0713909999997
+    },
+    {
+      "card": "dev-season",
+      "components": {
+        "observation_request_reward": 0.0,
+        "report_settlement": 0.0,
+        "required_penalty": -2900.0,
+        "sum_best_scores": 1226.637313,
+        "uniformity_penalty": -94.018231
+      },
+      "delta_total": 465.5069369999999,
+      "family": "DTGPCW",
+      "jain": 0.529908845,
+      "observe_actions": 251,
+      "pace_change_count": 0,
+      "required_missing": 58,
+      "run_id": "r4-dtgpcw-frozen02-dev-season",
+      "runtime_seconds": 12.467147459,
+      "sum_single_deltas": 401.5909749999996,
+      "termination_reason": "survey_complete",
+      "total": -1767.380918,
+      "total_nonadditivity": 63.91596200000026
+    }
+  ],
+  "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+  "status": "all 12 R4 combination runs complete; source/config frozen; no further development run; R5 interface ready"
+}

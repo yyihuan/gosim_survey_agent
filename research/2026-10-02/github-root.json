@@ -1,0 +1,338 @@
+[
+  {
+    "name": ".github",
+    "path": ".github",
+    "sha": "005f9303b27fd5a5cd746bf423f6b7d930f2f0d2",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/.github?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/.github",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/005f9303b27fd5a5cd746bf423f6b7d930f2f0d2",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/.github?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/005f9303b27fd5a5cd746bf423f6b7d930f2f0d2",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/.github"
+    }
+  },
+  {
+    "name": ".gitignore",
+    "path": ".gitignore",
+    "sha": "643d349df78089e55dc83e4f4850f2b2ad7da311",
+    "size": 463,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/.gitignore?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/.gitignore",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/643d349df78089e55dc83e4f4850f2b2ad7da311",
+    "download_url": "https://raw.githubusercontent.com/gosimfoundation/hackathon-survey26/main/.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/.gitignore?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/643d349df78089e55dc83e4f4850f2b2ad7da311",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/.gitignore"
+    }
+  },
+  {
+    "name": "AGENTS.md",
+    "path": "AGENTS.md",
+    "sha": "d082bbcf6a47f071e55ba3558c963efb38f61c0f",
+    "size": 446,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/AGENTS.md?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/AGENTS.md",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/d082bbcf6a47f071e55ba3558c963efb38f61c0f",
+    "download_url": "https://raw.githubusercontent.com/gosimfoundation/hackathon-survey26/main/AGENTS.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/AGENTS.md?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/d082bbcf6a47f071e55ba3558c963efb38f61c0f",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/AGENTS.md"
+    }
+  },
+  {
+    "name": "MAINTAINING.md",
+    "path": "MAINTAINING.md",
+    "sha": "fc1d25682886299e038c123d926e20096106dec1",
+    "size": 3564,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/MAINTAINING.md?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/MAINTAINING.md",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/fc1d25682886299e038c123d926e20096106dec1",
+    "download_url": "https://raw.githubusercontent.com/gosimfoundation/hackathon-survey26/main/MAINTAINING.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/MAINTAINING.md?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/fc1d25682886299e038c123d926e20096106dec1",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/MAINTAINING.md"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "42c76c7e26bb4188294760a0928458eee8902424",
+    "size": 10590,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/README.md?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/README.md",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/42c76c7e26bb4188294760a0928458eee8902424",
+    "download_url": "https://raw.githubusercontent.com/gosimfoundation/hackathon-survey26/main/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/README.md?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/42c76c7e26bb4188294760a0928458eee8902424",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/README.md"
+    }
+  },
+  {
+    "name": "archive",
+    "path": "archive",
+    "sha": "7893d40b9f6e959ea291513696f5f5bbe914a601",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/archive?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/archive",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/7893d40b9f6e959ea291513696f5f5bbe914a601",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/archive?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/7893d40b9f6e959ea291513696f5f5bbe914a601",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/archive"
+    }
+  },
+  {
+    "name": "cards",
+    "path": "cards",
+    "sha": "09ead135675a0caa3b1b0a8145b4b0998c0ac3e7",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/cards?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/cards",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/09ead135675a0caa3b1b0a8145b4b0998c0ac3e7",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/cards?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/09ead135675a0caa3b1b0a8145b4b0998c0ac3e7",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/cards"
+    }
+  },
+  {
+    "name": "challenge",
+    "path": "challenge",
+    "sha": "cd33b024f9178ac8f550c7398319cafce246b4cb",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/challenge?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/challenge",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/cd33b024f9178ac8f550c7398319cafce246b4cb",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/challenge?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/cd33b024f9178ac8f550c7398319cafce246b4cb",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/challenge"
+    }
+  },
+  {
+    "name": "docs",
+    "path": "docs",
+    "sha": "e37a5988f1ae0e102b648e49bbc91f9f25d2d1bc",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/docs?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/docs",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/e37a5988f1ae0e102b648e49bbc91f9f25d2d1bc",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/docs?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/e37a5988f1ae0e102b648e49bbc91f9f25d2d1bc",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/docs"
+    }
+  },
+  {
+    "name": "legacy-event",
+    "path": "legacy-event",
+    "sha": "21df6ff6e67fc8a49381b46bfee25a75e3385c4d",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/legacy-event?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/legacy-event",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/21df6ff6e67fc8a49381b46bfee25a75e3385c4d",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/legacy-event?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/21df6ff6e67fc8a49381b46bfee25a75e3385c4d",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/legacy-event"
+    }
+  },
+  {
+    "name": "ops",
+    "path": "ops",
+    "sha": "01457f1203048ce481ef85bba22bd29acba03de4",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/ops?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/ops",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/01457f1203048ce481ef85bba22bd29acba03de4",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/ops?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/01457f1203048ce481ef85bba22bd29acba03de4",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/ops"
+    }
+  },
+  {
+    "name": "project_platform",
+    "path": "project_platform",
+    "sha": "f5ba5d790806119446eac3a16e78675a8215d1e1",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/project_platform?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/project_platform",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/f5ba5d790806119446eac3a16e78675a8215d1e1",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/project_platform?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/f5ba5d790806119446eac3a16e78675a8215d1e1",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/project_platform"
+    }
+  },
+  {
+    "name": "pytest.ini",
+    "path": "pytest.ini",
+    "sha": "d164e2db15c29188e7d32b4d4e1f049d730055ef",
+    "size": 119,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/pytest.ini?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/pytest.ini",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/d164e2db15c29188e7d32b4d4e1f049d730055ef",
+    "download_url": "https://raw.githubusercontent.com/gosimfoundation/hackathon-survey26/main/pytest.ini",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/pytest.ini?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/d164e2db15c29188e7d32b4d4e1f049d730055ef",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/pytest.ini"
+    }
+  },
+  {
+    "name": "scoring",
+    "path": "scoring",
+    "sha": "2c9a3b50837b0740989691346bcb375a32d5894f",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/scoring?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/scoring",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/2c9a3b50837b0740989691346bcb375a32d5894f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/scoring?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/2c9a3b50837b0740989691346bcb375a32d5894f",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/scoring"
+    }
+  },
+  {
+    "name": "scripts",
+    "path": "scripts",
+    "sha": "c5616eaf2be3f3eca7ab691e0af359cc00648880",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/scripts?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/scripts",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/c5616eaf2be3f3eca7ab691e0af359cc00648880",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/scripts?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/c5616eaf2be3f3eca7ab691e0af359cc00648880",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/scripts"
+    }
+  },
+  {
+    "name": "site.config.json",
+    "path": "site.config.json",
+    "sha": "4ae190db0547b62fd4115913f5f7806ebad8988f",
+    "size": 152,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/site.config.json?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/site.config.json",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/4ae190db0547b62fd4115913f5f7806ebad8988f",
+    "download_url": "https://raw.githubusercontent.com/gosimfoundation/hackathon-survey26/main/site.config.json",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/site.config.json?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/blobs/4ae190db0547b62fd4115913f5f7806ebad8988f",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/blob/main/site.config.json"
+    }
+  },
+  {
+    "name": "starter_kit_v4",
+    "path": "starter_kit_v4",
+    "sha": "f63ae9e66028dde55877dde58e9036dd8dedfa11",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/starter_kit_v4?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/starter_kit_v4",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/f63ae9e66028dde55877dde58e9036dd8dedfa11",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/starter_kit_v4?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/f63ae9e66028dde55877dde58e9036dd8dedfa11",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/starter_kit_v4"
+    }
+  },
+  {
+    "name": "supabase",
+    "path": "supabase",
+    "sha": "c81b2bcc55a91a7fc71452b497d46546b8f5758d",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/supabase?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/supabase",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/c81b2bcc55a91a7fc71452b497d46546b8f5758d",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/supabase?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/c81b2bcc55a91a7fc71452b497d46546b8f5758d",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/supabase"
+    }
+  },
+  {
+    "name": "tests",
+    "path": "tests",
+    "sha": "80860dc4485d27de935ce5ec0e6c37fa6089ea22",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/tests?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/tests",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/80860dc4485d27de935ce5ec0e6c37fa6089ea22",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/tests?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/80860dc4485d27de935ce5ec0e6c37fa6089ea22",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/tests"
+    }
+  },
+  {
+    "name": "web",
+    "path": "web",
+    "sha": "0531f00286a29096f922dfe687493833bbcb6d56",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/web?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/web",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/0531f00286a29096f922dfe687493833bbcb6d56",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/web?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/0531f00286a29096f922dfe687493833bbcb6d56",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/web"
+    }
+  },
+  {
+    "name": "worker",
+    "path": "worker",
+    "sha": "033cf669a4ef2f79a7786ae226e418c6f8c1e9ac",
+    "size": 0,
+    "url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/worker?ref=main",
+    "html_url": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/worker",
+    "git_url": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/033cf669a4ef2f79a7786ae226e418c6f8c1e9ac",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/contents/worker?ref=main",
+      "git": "https://api.github.com/repos/gosimfoundation/hackathon-survey26/git/trees/033cf669a4ef2f79a7786ae226e418c6f8c1e9ac",
+      "html": "https://github.com/gosimfoundation/hackathon-survey26/tree/main/worker"
+    }
+  }
+]

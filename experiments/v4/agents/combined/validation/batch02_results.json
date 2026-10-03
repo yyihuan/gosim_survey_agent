@@ -1,0 +1,1454 @@
+{
+  "complete": true,
+  "frozen": {
+    "configs": {
+      "dpg": {
+        "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dpg-frozen02.json",
+        "sha256": "38284abbcc93bcb55161506731b41b2939d32bf2c35c65792e83db931ced7752"
+      },
+      "dtgp": {
+        "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dtgp-frozen02.json",
+        "sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931"
+      },
+      "dtgpcw": {
+        "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/combined/dtgpcw-frozen02.json",
+        "sha256": "e74fc757653743767a8d633266654ce8b687288f36b9997df3867a35def074e1"
+      }
+    },
+    "scope": "root-authorized R4 batch02: dpg,dtgp,dtgpcw; each on demo and dev-season; no tuning or holdout",
+    "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+  },
+  "results": [
+    {
+      "card": "demo",
+      "combination": "DPG",
+      "metrics": {
+        "accounted_wallclock_seconds": 6.664,
+        "agent_wallclock_seconds": 6.057,
+        "by_class": {
+          "BGS": 129.700765,
+          "ELG": 468.957466,
+          "LRG": 206.096238,
+          "QSO": 228.349119,
+          "Star": 26.473205
+        },
+        "card": {
+          "night_count": 7,
+          "source": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+          "target_count": 2400,
+          "tree_sha256": "9974ab9c6ea33b36119ac46b3602cd37c4962d31206877344d08ecafba4ef2cc"
+        },
+        "components": {
+          "observation_request_reward": 100.0,
+          "report_settlement": 0.0,
+          "required_penalty": -0.0,
+          "sum_best_scores": 1059.576793,
+          "uniformity_penalty": -7.153238
+        },
+        "counts": {
+          "decisions": 301,
+          "invalidated_observations": 0,
+          "observation_requests_completed": 1,
+          "observation_requests_issued": 1,
+          "observations": 2265,
+          "observe_actions": 196,
+          "required_missing": 0,
+          "targets_observed": 1629
+        },
+        "coverage": {
+          "factor_threshold": 0.5,
+          "jain_from_official_penalty": 0.96423381,
+          "qualified_target_count": 1099,
+          "required_total": 120,
+          "uniformity_bands": {
+            "ra_0_10": 0.272727,
+            "ra_20_30": 0.44086,
+            "ra_30_40": 0.392713,
+            "ra_330_340": 0.37963,
+            "ra_340_350": 0.548161,
+            "ra_350_360": 0.476274,
+            "ra_40_50": 0.465714,
+            "ra_50_60": 0.347826
+          },
+          "uniformity_weight": 200.0
+        },
+        "decision_requests": 215,
+        "definitions": {
+          "exposure": "requested 来自 actions；actual 和时间来自 decisions，包括后续失效的观测",
+          "hashes": "规范化 JSON 使用排序键和紧凑分隔符；官方 actions 本身已剔除 reason/envelope",
+          "jain": "1 + 官方 uniformity_penalty / 卡片公开 uniformity.weight；受官方6位舍入影响",
+          "pace": "变化来自 agent.log；remaining wallclock 来自透传收到的 decision_request。缺少记录时为 null",
+          "qualified": "observations 中有效且 factor 达公开 required 阈值的不同 target；计数受CSV6位舍入影响",
+          "scores": "官方 score_report 原值，未重评分"
+        },
+        "exit_code": 0,
+        "exposure": {
+          "actual_seconds": {
+            "count": 196,
+            "histogram": {
+              "1200": 14,
+              "1500": 19,
+              "1800": 18,
+              "2400": 23,
+              "300": 65,
+              "3000": 6,
+              "3600": 3,
+              "450": 18,
+              "600": 13,
+              "900": 17
+            },
+            "max": 3600.0,
+            "mean": 1083.6734693877552,
+            "median": 900.0,
+            "min": 300.0,
+            "sum": 212400.0
+          },
+          "assigned_targets": 2265,
+          "extra_hit_rows_after_first": 636,
+          "hit_fraction": 1.0,
+          "hit_targets": 2265,
+          "positive_observation_rows": 2255,
+          "program_counts": {
+            "BACKUP": 60,
+            "BRIGHT": 62,
+            "DARK": 74
+          },
+          "repeated_hit_targets": 528,
+          "requested_seconds": {
+            "count": 196,
+            "histogram": {
+              "1200": 14,
+              "1500": 19,
+              "1800": 18,
+              "2400": 23,
+              "300": 65,
+              "3000": 6,
+              "3600": 3,
+              "450": 18,
+              "600": 13,
+              "900": 17
+            },
+            "max": 3600.0,
+            "mean": 1083.6734693877552,
+            "median": 900.0,
+            "min": 300.0,
+            "sum": 212400.0
+          },
+          "simulated_observe_seconds": 212400.0,
+          "simulated_span_seconds": 549900.0,
+          "simulated_wait_seconds": 337500.0
+        },
+        "global_wallclock_seconds": 900.0,
+        "hashes": {
+          "normalized_actions_sha256": "8fa71593f298275613fe31d442c852fd251ba0ea43efbb3664b1e6babb978541",
+          "normalized_score_sha256": "f5bb610d20de186733ee3d20abcf6185b31b2c907f132e73bd5ed49af2a21ccc",
+          "raw_outputs": {
+            "actions.jsonl": "649a5c45aafc0faaad8a2bb357c745a9a14e73be051005864f38e6c78fbd6b94",
+            "agent.log": "53eca3b6a53332bd26db50a075b960a1837eca0003a8faec58fc3a04d57552aa",
+            "decisions.csv": "b2bcd44f046d871e2c37481a71e3a28e1e0c8991e4bb969dae25b396fe43bdbc",
+            "messages.jsonl": "88097c5af92996c07c3eef820444320fc30b5928f1fb1e9dc7bd1240942c0912",
+            "observations.csv": "0a10cb3f348c17160e4a3fac7d339b88f7d17061a0bf59cad707142ff9749829",
+            "protocol_telemetry.jsonl": "c5ed0b8b066176f2840c37814c04d8f037f9493ccae4d9eccf6adf218c29586c",
+            "proxy_pid.json": "49c1e477fcad9c0692b638e40e52ff8e8833361aee916137318320d96efaf790",
+            "score_report.json": "c72e872d4dcaaa10a15e370d747a1e2fc4a7c2ed3589cb39f6b61d11e9341548",
+            "workflow_result.json": "5bec40a62cf33515642a41c4c4a686238952563387fe3640923316d7da19bf34"
+          }
+        },
+        "official_report_available": true,
+        "pace": {
+          "change_count": 0,
+          "changes_logged": [],
+          "first_remaining_wallclock_seconds": 900.0,
+          "last_remaining_wallclock_seconds": 893.371,
+          "minimum_remaining_wallclock_seconds": 893.371,
+          "telemetry_available": true,
+          "telemetry_requests": 215
+        },
+        "provenance": {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py",
+            "--agent",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dpg-frozen02-demo/agent/_harness_proxy.py",
+            "--card",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dpg-frozen02-demo/card_snapshot",
+            "--out",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dpg-frozen02-demo/output",
+            "--python",
+            "/usr/bin/python3",
+            "--wallclock",
+            "900",
+            "--init-timeout",
+            "30",
+            "--grace",
+            "30",
+            "--quiet"
+          ],
+          "concurrency": {
+            "cpu_count": 8,
+            "exclusive": true,
+            "load_average": [
+              4.34228515625,
+              3.66259765625,
+              3.38671875
+            ],
+            "lock_wait_seconds": 0.00014020800000000277,
+            "peers_at_acquisition": [],
+            "simulator_limit": 2,
+            "slots": [
+              0,
+              1
+            ]
+          },
+          "config_sha256": "38284abbcc93bcb55161506731b41b2939d32bf2c35c65792e83db931ced7752",
+          "cwd": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dpg-frozen02-demo/work",
+          "effective_agent_tree_sha256": "5d3e0d427303c55a384036370614c9c6216a7d267b964da3b42ab0180ef25b1f",
+          "harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+          "python_executable": "/usr/bin/python3",
+          "python_version": "Python 3.9.6",
+          "snapshot_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+          "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+        },
+        "reports": {
+          "correct": 0,
+          "count": 0,
+          "deltas": [],
+          "false": 0
+        },
+        "requests": [
+          {
+            "completed": true,
+            "completed_count": 6,
+            "completed_target_ids": [
+              "V4T000160",
+              "V4T002330",
+              "V4T000311",
+              "V4T001021",
+              "V4T000716",
+              "V4T002258"
+            ],
+            "completion_factor_threshold": 0.5,
+            "completion_reward": 100.0,
+            "deadline_utc": "2026-10-06T08:45:00Z",
+            "issued_at_utc": "2026-10-05T00:00:00Z",
+            "minimum_completed": 6,
+            "request_id": "V4RQ0001",
+            "reward": 100.0,
+            "target_ids": [
+              "V4T000160",
+              "V4T002330",
+              "V4T000311",
+              "V4T001021",
+              "V4T000532",
+              "V4T000716",
+              "V4T001836",
+              "V4T002258"
+            ]
+          }
+        ],
+        "run_id": "r4-dpg-frozen02-demo",
+        "runtime_seconds": 7.012625833,
+        "runtime_with_setup_seconds": 7.052049917,
+        "schema_version": "v4-experiment-metrics-v1",
+        "stage": "R4",
+        "termination_detail": "",
+        "termination_reason": "survey_complete",
+        "total": 1152.423555
+      },
+      "run_id": "r4-dpg-frozen02-demo"
+    },
+    {
+      "card": "dev-season",
+      "combination": "DPG",
+      "metrics": {
+        "accounted_wallclock_seconds": 10.551,
+        "agent_wallclock_seconds": 9.575,
+        "by_class": {
+          "BGS": 148.535213,
+          "ELG": 569.036215,
+          "LRG": 247.827355,
+          "QSO": 217.258261,
+          "Star": 28.723286
+        },
+        "card": {
+          "night_count": 14,
+          "source": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+          "target_count": 4800,
+          "tree_sha256": "1f79643ddc3aa34f95759037e3a3215bea1d8d725e6b1b394edc05304c61f2ba"
+        },
+        "components": {
+          "observation_request_reward": 0.0,
+          "report_settlement": 0.0,
+          "required_penalty": -2900.0,
+          "sum_best_scores": 1211.38033,
+          "uniformity_penalty": -92.869848
+        },
+        "counts": {
+          "decisions": 629,
+          "invalidated_observations": 0,
+          "observation_requests_completed": 0,
+          "observation_requests_issued": 1,
+          "observations": 2605,
+          "observe_actions": 205,
+          "required_missing": 58,
+          "targets_observed": 2020
+        },
+        "coverage": {
+          "factor_threshold": 0.5,
+          "jain_from_official_penalty": 0.53565076,
+          "qualified_target_count": 1194,
+          "required_total": 240,
+          "uniformity_bands": {
+            "ra_120_130": 0.0,
+            "ra_130_140": 0.0,
+            "ra_140_150": 0.0,
+            "ra_150_160": 0.0,
+            "ra_310_320": 0.275,
+            "ra_320_330": 0.364793,
+            "ra_330_340": 0.309612,
+            "ra_340_350": 0.354772,
+            "ra_350_360": 0.477679
+          },
+          "uniformity_weight": 200.0
+        },
+        "decision_requests": 438,
+        "definitions": {
+          "exposure": "requested 来自 actions；actual 和时间来自 decisions，包括后续失效的观测",
+          "hashes": "规范化 JSON 使用排序键和紧凑分隔符；官方 actions 本身已剔除 reason/envelope",
+          "jain": "1 + 官方 uniformity_penalty / 卡片公开 uniformity.weight；受官方6位舍入影响",
+          "pace": "变化来自 agent.log；remaining wallclock 来自透传收到的 decision_request。缺少记录时为 null",
+          "qualified": "observations 中有效且 factor 达公开 required 阈值的不同 target；计数受CSV6位舍入影响",
+          "scores": "官方 score_report 原值，未重评分"
+        },
+        "exit_code": 0,
+        "exposure": {
+          "actual_seconds": {
+            "count": 205,
+            "histogram": {
+              "1200": 15,
+              "1500": 13,
+              "1800": 7,
+              "2400": 5,
+              "300": 52,
+              "3000": 17,
+              "3600": 19,
+              "450": 37,
+              "600": 18,
+              "900": 22
+            },
+            "max": 3600.0,
+            "mean": 1191.9512195121952,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 244350.0
+          },
+          "assigned_targets": 2605,
+          "extra_hit_rows_after_first": 585,
+          "hit_fraction": 1.0,
+          "hit_targets": 2605,
+          "positive_observation_rows": 2590,
+          "program_counts": {
+            "BACKUP": 75,
+            "BRIGHT": 27,
+            "DARK": 103
+          },
+          "repeated_hit_targets": 486,
+          "requested_seconds": {
+            "count": 205,
+            "histogram": {
+              "1200": 15,
+              "1500": 13,
+              "1800": 7,
+              "2400": 5,
+              "300": 52,
+              "3000": 17,
+              "3600": 19,
+              "450": 37,
+              "600": 18,
+              "900": 22
+            },
+            "max": 3600.0,
+            "mean": 1191.9512195121952,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 244350.0
+          },
+          "simulated_observe_seconds": 244350.0,
+          "simulated_span_seconds": 1154700.0,
+          "simulated_wait_seconds": 910350.0
+        },
+        "global_wallclock_seconds": 900.0,
+        "hashes": {
+          "normalized_actions_sha256": "87907e30b128647b3d7df34892503afc42a07b3670d23d7bc9ae19d8a8265706",
+          "normalized_score_sha256": "24c19439a99caba744581817224114578452fde2fe5a1d1093b275f96c8fdfce",
+          "raw_outputs": {
+            "actions.jsonl": "12518e938c8e5b8d447f27b9b2b8455b668025ef123f8fff544d3adaa0d79fe7",
+            "agent.log": "568d3862b61f536e6c6084252a3e2ea14d77e99fa967c7f01b3db2c4d8a5be9b",
+            "decisions.csv": "e4a999eb6a37d696968bdb70c483dd040220cac48cdee3e81bafeaaf366253d0",
+            "messages.jsonl": "912177c72c2c88098a82260e5af80e14b26e305035f1df12e700e98bd4916201",
+            "observations.csv": "fd0534cd0305285437c9e2bfa99e9a29925c58338ed18b74bddf6db13d7cd539",
+            "protocol_telemetry.jsonl": "0dce0276aa7e44b6fa0e728a8bbac984874cfbfc56872a67ac80826373680751",
+            "proxy_pid.json": "2750613c1134617b5db7511c189ea8257e42c804495e3772cb536c1e84babd86",
+            "score_report.json": "ac74bcc9c0bbda52f3adfb98e24c644d32e5428ded9c20289c650ad6459ebc7f",
+            "workflow_result.json": "10b8d69bda684193f546fb93f2408be7857d3e65df6d168849e15a65d093a24b"
+          }
+        },
+        "official_report_available": true,
+        "pace": {
+          "change_count": 0,
+          "changes_logged": [],
+          "first_remaining_wallclock_seconds": 900.0,
+          "last_remaining_wallclock_seconds": 889.478,
+          "minimum_remaining_wallclock_seconds": 889.478,
+          "telemetry_available": true,
+          "telemetry_requests": 438
+        },
+        "provenance": {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py",
+            "--agent",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dpg-frozen02-dev-season/agent/_harness_proxy.py",
+            "--card",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dpg-frozen02-dev-season/card_snapshot",
+            "--out",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dpg-frozen02-dev-season/output",
+            "--python",
+            "/usr/bin/python3",
+            "--wallclock",
+            "900",
+            "--init-timeout",
+            "30",
+            "--grace",
+            "30",
+            "--quiet"
+          ],
+          "concurrency": {
+            "cpu_count": 8,
+            "exclusive": true,
+            "load_average": [
+              5.89990234375,
+              4.01904296875,
+              3.51611328125
+            ],
+            "lock_wait_seconds": 0.00014274999999999705,
+            "peers_at_acquisition": [],
+            "simulator_limit": 2,
+            "slots": [
+              0,
+              1
+            ]
+          },
+          "config_sha256": "38284abbcc93bcb55161506731b41b2939d32bf2c35c65792e83db931ced7752",
+          "cwd": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dpg-frozen02-dev-season/work",
+          "effective_agent_tree_sha256": "67b2de3cb855baa54f26842391215b85f66af61798852ea9bb1c4a2e0c8086f6",
+          "harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+          "python_executable": "/usr/bin/python3",
+          "python_version": "Python 3.9.6",
+          "snapshot_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+          "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+        },
+        "reports": {
+          "correct": 0,
+          "count": 0,
+          "deltas": [],
+          "false": 0
+        },
+        "requests": [
+          {
+            "completed": false,
+            "completed_count": 4,
+            "completed_target_ids": [
+              "V4T003507",
+              "V4T000108",
+              "V4T002407",
+              "V4T003261"
+            ],
+            "completion_factor_threshold": 0.5,
+            "completion_reward": 100.0,
+            "deadline_utc": "2026-10-09T08:45:00Z",
+            "issued_at_utc": "2026-10-08T00:15:00Z",
+            "minimum_completed": 6,
+            "request_id": "V4RQ0001",
+            "reward": 0.0,
+            "target_ids": [
+              "V4T002286",
+              "V4T003507",
+              "V4T000108",
+              "V4T002407",
+              "V4T003261",
+              "V4T002370",
+              "V4T002627",
+              "V4T002360"
+            ]
+          }
+        ],
+        "run_id": "r4-dpg-frozen02-dev-season",
+        "runtime_seconds": 10.95042325,
+        "runtime_with_setup_seconds": 10.984827999999998,
+        "schema_version": "v4-experiment-metrics-v1",
+        "stage": "R4",
+        "termination_detail": "",
+        "termination_reason": "survey_complete",
+        "total": -1781.489517
+      },
+      "run_id": "r4-dpg-frozen02-dev-season"
+    },
+    {
+      "card": "demo",
+      "combination": "DTGP",
+      "metrics": {
+        "accounted_wallclock_seconds": 9.025,
+        "agent_wallclock_seconds": 8.171,
+        "by_class": {
+          "BGS": 233.18276,
+          "ELG": 649.697262,
+          "LRG": 255.410789,
+          "QSO": 217.70118,
+          "Star": 53.17532
+        },
+        "card": {
+          "night_count": 7,
+          "source": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+          "target_count": 2400,
+          "tree_sha256": "9974ab9c6ea33b36119ac46b3602cd37c4962d31206877344d08ecafba4ef2cc"
+        },
+        "components": {
+          "observation_request_reward": 0.0,
+          "report_settlement": 100.0,
+          "required_penalty": -0.0,
+          "sum_best_scores": 1409.167311,
+          "uniformity_penalty": -2.142855
+        },
+        "counts": {
+          "decisions": 398,
+          "invalidated_observations": 0,
+          "observation_requests_completed": 0,
+          "observation_requests_issued": 1,
+          "observations": 2984,
+          "observe_actions": 289,
+          "required_missing": 0,
+          "targets_observed": 2143
+        },
+        "coverage": {
+          "factor_threshold": 0.5,
+          "jain_from_official_penalty": 0.989285725,
+          "qualified_target_count": 1474,
+          "required_total": 120,
+          "uniformity_bands": {
+            "ra_0_10": 0.525253,
+            "ra_20_30": 0.586022,
+            "ra_30_40": 0.621457,
+            "ra_330_340": 0.462963,
+            "ra_340_350": 0.621716,
+            "ra_350_360": 0.623902,
+            "ra_40_50": 0.665714,
+            "ra_50_60": 0.565217
+          },
+          "uniformity_weight": 200.0
+        },
+        "decision_requests": 312,
+        "definitions": {
+          "exposure": "requested 来自 actions；actual 和时间来自 decisions，包括后续失效的观测",
+          "hashes": "规范化 JSON 使用排序键和紧凑分隔符；官方 actions 本身已剔除 reason/envelope",
+          "jain": "1 + 官方 uniformity_penalty / 卡片公开 uniformity.weight；受官方6位舍入影响",
+          "pace": "变化来自 agent.log；remaining wallclock 来自透传收到的 decision_request。缺少记录时为 null",
+          "qualified": "observations 中有效且 factor 达公开 required 阈值的不同 target；计数受CSV6位舍入影响",
+          "scores": "官方 score_report 原值，未重评分"
+        },
+        "exit_code": 0,
+        "exposure": {
+          "actual_seconds": {
+            "count": 289,
+            "histogram": {
+              "1200": 2,
+              "1500": 3,
+              "1800": 4,
+              "2400": 8,
+              "300": 112,
+              "3000": 5,
+              "3600": 5,
+              "450": 25,
+              "600": 41,
+              "900": 84
+            },
+            "max": 3600.0,
+            "mean": 731.3148788927335,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 211350.0
+          },
+          "assigned_targets": 2984,
+          "extra_hit_rows_after_first": 841,
+          "hit_fraction": 1.0,
+          "hit_targets": 2984,
+          "positive_observation_rows": 2984,
+          "program_counts": {
+            "BACKUP": 14,
+            "BRIGHT": 52,
+            "DARK": 223
+          },
+          "repeated_hit_targets": 689,
+          "requested_seconds": {
+            "count": 289,
+            "histogram": {
+              "1200": 2,
+              "1500": 3,
+              "1800": 4,
+              "2400": 8,
+              "300": 112,
+              "3000": 5,
+              "3600": 5,
+              "450": 25,
+              "600": 41,
+              "900": 84
+            },
+            "max": 3600.0,
+            "mean": 731.3148788927335,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 211350.0
+          },
+          "simulated_observe_seconds": 211350.0,
+          "simulated_span_seconds": 549900.0,
+          "simulated_wait_seconds": 338550.0
+        },
+        "global_wallclock_seconds": 900.0,
+        "hashes": {
+          "normalized_actions_sha256": "95f6469d08aff979cc471b29126b5f55012307e6e8ea7f5393869f169d77ab2e",
+          "normalized_score_sha256": "467fbcd9afad2ed3a4c12ae74b284071a156b9c925115d75c2de2af08b893350",
+          "raw_outputs": {
+            "actions.jsonl": "12b91f66ac8377657ec017ad2d2520a6bdb59f125b488c9ff8a0e805cdb007e9",
+            "agent.log": "e08ac3a872baad230ab845e85287c15c56643b5b13873a36c514d233b66d49c4",
+            "decisions.csv": "c601ddcde23c9df9dfb1c917d1552287d6d67f0e831585c947354333651438d6",
+            "messages.jsonl": "fd71cd345ffa0d4b52d07c5b33e6a87bcb0413933c0a8033be8707b856f45137",
+            "observations.csv": "75b6ad9e4054d9e9d16b5cde22d59e453741a6be16cca09a0dc2130a90bbeb7a",
+            "protocol_telemetry.jsonl": "417ca58bd0560a0fa648ded12a80c76bdc749d380236d7d75cb55cafe87dcc9f",
+            "proxy_pid.json": "b72568e87bde00bd0b9a6df00ff2c07103941546bc0c496920c5ccc9537f57c8",
+            "score_report.json": "ecf4433a27ad6bb2cea5eb9ad7369e49d5aee0787752a55999ac8c69b3409178",
+            "workflow_result.json": "87c76edba791d0e935f71854a52eb96fd9a9ebbff17e8f019ffa2e11685ad011"
+          }
+        },
+        "official_report_available": true,
+        "pace": {
+          "change_count": 0,
+          "changes_logged": [],
+          "first_remaining_wallclock_seconds": 900.0,
+          "last_remaining_wallclock_seconds": 890.997,
+          "minimum_remaining_wallclock_seconds": 890.997,
+          "telemetry_available": true,
+          "telemetry_requests": 312
+        },
+        "provenance": {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py",
+            "--agent",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgp-frozen02-demo/agent/_harness_proxy.py",
+            "--card",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgp-frozen02-demo/card_snapshot",
+            "--out",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgp-frozen02-demo/output",
+            "--python",
+            "/usr/bin/python3",
+            "--wallclock",
+            "900",
+            "--init-timeout",
+            "30",
+            "--grace",
+            "30",
+            "--quiet"
+          ],
+          "concurrency": {
+            "cpu_count": 8,
+            "exclusive": true,
+            "load_average": [
+              6.0078125,
+              4.10107421875,
+              3.55029296875
+            ],
+            "lock_wait_seconds": 0.0001265000000000016,
+            "peers_at_acquisition": [],
+            "simulator_limit": 2,
+            "slots": [
+              0,
+              1
+            ]
+          },
+          "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+          "cwd": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgp-frozen02-demo/work",
+          "effective_agent_tree_sha256": "a68cfa940dc6cb1f7388c0e3709c65efdc0e4adf3897aed380fca737e27f0feb",
+          "harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+          "python_executable": "/usr/bin/python3",
+          "python_version": "Python 3.9.6",
+          "snapshot_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+          "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+        },
+        "reports": {
+          "correct": 1,
+          "count": 1,
+          "deltas": [
+            100.0
+          ],
+          "false": 0
+        },
+        "requests": [
+          {
+            "completed": false,
+            "completed_count": 4,
+            "completed_target_ids": [
+              "V4T000160",
+              "V4T002330",
+              "V4T000716",
+              "V4T002258"
+            ],
+            "completion_factor_threshold": 0.5,
+            "completion_reward": 100.0,
+            "deadline_utc": "2026-10-06T08:45:00Z",
+            "issued_at_utc": "2026-10-05T00:00:00Z",
+            "minimum_completed": 6,
+            "request_id": "V4RQ0001",
+            "reward": 0.0,
+            "target_ids": [
+              "V4T000160",
+              "V4T002330",
+              "V4T000311",
+              "V4T001021",
+              "V4T000532",
+              "V4T000716",
+              "V4T001836",
+              "V4T002258"
+            ]
+          }
+        ],
+        "run_id": "r4-dtgp-frozen02-demo",
+        "runtime_seconds": 9.378648834,
+        "runtime_with_setup_seconds": 9.407455042,
+        "schema_version": "v4-experiment-metrics-v1",
+        "stage": "R4",
+        "termination_detail": "",
+        "termination_reason": "survey_complete",
+        "total": 1507.024456
+      },
+      "run_id": "r4-dtgp-frozen02-demo"
+    },
+    {
+      "card": "dev-season",
+      "combination": "DTGP",
+      "metrics": {
+        "accounted_wallclock_seconds": 12.106,
+        "agent_wallclock_seconds": 10.959,
+        "by_class": {
+          "BGS": 222.417409,
+          "ELG": 592.140054,
+          "LRG": 224.701701,
+          "QSO": 167.049717,
+          "Star": 57.700695
+        },
+        "card": {
+          "night_count": 14,
+          "source": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+          "target_count": 4800,
+          "tree_sha256": "1f79643ddc3aa34f95759037e3a3215bea1d8d725e6b1b394edc05304c61f2ba"
+        },
+        "components": {
+          "observation_request_reward": 0.0,
+          "report_settlement": 0.0,
+          "required_penalty": -2850.0,
+          "sum_best_scores": 1264.009576,
+          "uniformity_penalty": -91.167737
+        },
+        "counts": {
+          "decisions": 707,
+          "invalidated_observations": 0,
+          "observation_requests_completed": 0,
+          "observation_requests_issued": 1,
+          "observations": 3208,
+          "observe_actions": 272,
+          "required_missing": 57,
+          "targets_observed": 2461
+        },
+        "coverage": {
+          "factor_threshold": 0.5,
+          "jain_from_official_penalty": 0.544161315,
+          "qualified_target_count": 1386,
+          "required_total": 240,
+          "uniformity_bands": {
+            "ra_120_130": 0.0,
+            "ra_130_140": 0.0,
+            "ra_140_150": 0.0,
+            "ra_150_160": 0.0,
+            "ra_310_320": 0.320833,
+            "ra_320_330": 0.392365,
+            "ra_330_340": 0.399261,
+            "ra_340_350": 0.408714,
+            "ra_350_360": 0.504464
+          },
+          "uniformity_weight": 200.0
+        },
+        "decision_requests": 516,
+        "definitions": {
+          "exposure": "requested 来自 actions；actual 和时间来自 decisions，包括后续失效的观测",
+          "hashes": "规范化 JSON 使用排序键和紧凑分隔符；官方 actions 本身已剔除 reason/envelope",
+          "jain": "1 + 官方 uniformity_penalty / 卡片公开 uniformity.weight；受官方6位舍入影响",
+          "pace": "变化来自 agent.log；remaining wallclock 来自透传收到的 decision_request。缺少记录时为 null",
+          "qualified": "observations 中有效且 factor 达公开 required 阈值的不同 target；计数受CSV6位舍入影响",
+          "scores": "官方 score_report 原值，未重评分"
+        },
+        "exit_code": 0,
+        "exposure": {
+          "actual_seconds": {
+            "count": 272,
+            "histogram": {
+              "1200": 9,
+              "1500": 5,
+              "1800": 1,
+              "2400": 7,
+              "300": 79,
+              "3000": 12,
+              "3600": 9,
+              "450": 46,
+              "600": 26,
+              "900": 78
+            },
+            "max": 3600.0,
+            "mean": 865.8088235294117,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 235500.0
+          },
+          "assigned_targets": 3208,
+          "extra_hit_rows_after_first": 747,
+          "hit_fraction": 1.0,
+          "hit_targets": 3208,
+          "positive_observation_rows": 3152,
+          "program_counts": {
+            "BACKUP": 122,
+            "BRIGHT": 46,
+            "DARK": 104
+          },
+          "repeated_hit_targets": 632,
+          "requested_seconds": {
+            "count": 272,
+            "histogram": {
+              "1200": 9,
+              "1500": 5,
+              "1800": 1,
+              "2400": 7,
+              "300": 79,
+              "3000": 12,
+              "3600": 9,
+              "450": 46,
+              "600": 26,
+              "900": 78
+            },
+            "max": 3600.0,
+            "mean": 865.8088235294117,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 235500.0
+          },
+          "simulated_observe_seconds": 235500.0,
+          "simulated_span_seconds": 1154700.0,
+          "simulated_wait_seconds": 919200.0
+        },
+        "global_wallclock_seconds": 900.0,
+        "hashes": {
+          "normalized_actions_sha256": "90144058f49bb2a9d44233ff58f4ee17e05b196f98cc996a59ccf5bb1aaaa231",
+          "normalized_score_sha256": "6fdae2e8cc5a9a7df150d7c1af3c564334ecd0c6f68269cd984c079928e3c852",
+          "raw_outputs": {
+            "actions.jsonl": "b131c4085812536e5922ea28dc087dac7aa385b1716b7975f31e88a4bf8c6a12",
+            "agent.log": "4fa32627de9417ea0341f1106f5319fe3ac1e22e0867bd7097b8eb8bdea75fb4",
+            "decisions.csv": "113c1351c4b19bed965217f774cf61855ef7ef948a91ca44d08d27d1f3d4eb42",
+            "messages.jsonl": "912177c72c2c88098a82260e5af80e14b26e305035f1df12e700e98bd4916201",
+            "observations.csv": "bd001c93f87d67597bd261d68987bba5a91149c22ab680bcf68f52b1bd901444",
+            "protocol_telemetry.jsonl": "9c114e7b666bccec5befc584380816cb3fa7eb70f0428be57b7967faf524ccd4",
+            "proxy_pid.json": "b904493070968e6d61f6b41e9afcf0f12ed121154d2a82fb384f3f90c5e1543b",
+            "score_report.json": "607c7052c01d59e6d683e7f31250d3b32cb3fcd946b52c8e0ba70484f8df8606",
+            "workflow_result.json": "3bb2a1cba61510602280dcf279398c169f45767be6d1bad8aa532d8e647ad610"
+          }
+        },
+        "official_report_available": true,
+        "pace": {
+          "change_count": 0,
+          "changes_logged": [],
+          "first_remaining_wallclock_seconds": 900.0,
+          "last_remaining_wallclock_seconds": 887.926,
+          "minimum_remaining_wallclock_seconds": 887.926,
+          "telemetry_available": true,
+          "telemetry_requests": 516
+        },
+        "provenance": {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py",
+            "--agent",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgp-frozen02-dev-season/agent/_harness_proxy.py",
+            "--card",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgp-frozen02-dev-season/card_snapshot",
+            "--out",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgp-frozen02-dev-season/output",
+            "--python",
+            "/usr/bin/python3",
+            "--wallclock",
+            "900",
+            "--init-timeout",
+            "30",
+            "--grace",
+            "30",
+            "--quiet"
+          ],
+          "concurrency": {
+            "cpu_count": 8,
+            "exclusive": true,
+            "load_average": [
+              6.50244140625,
+              4.2763671875,
+              3.619140625
+            ],
+            "lock_wait_seconds": 0.0001389170000000023,
+            "peers_at_acquisition": [],
+            "simulator_limit": 2,
+            "slots": [
+              0,
+              1
+            ]
+          },
+          "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+          "cwd": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgp-frozen02-dev-season/work",
+          "effective_agent_tree_sha256": "86d79daf9054b95131af46c2cffb0ef3a8855af2fda131f2e647eca07f0278b3",
+          "harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+          "python_executable": "/usr/bin/python3",
+          "python_version": "Python 3.9.6",
+          "snapshot_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+          "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+        },
+        "reports": {
+          "correct": 0,
+          "count": 0,
+          "deltas": [],
+          "false": 0
+        },
+        "requests": [
+          {
+            "completed": false,
+            "completed_count": 4,
+            "completed_target_ids": [
+              "V4T003507",
+              "V4T000108",
+              "V4T002407",
+              "V4T003261"
+            ],
+            "completion_factor_threshold": 0.5,
+            "completion_reward": 100.0,
+            "deadline_utc": "2026-10-09T08:45:00Z",
+            "issued_at_utc": "2026-10-08T00:15:00Z",
+            "minimum_completed": 6,
+            "request_id": "V4RQ0001",
+            "reward": 0.0,
+            "target_ids": [
+              "V4T002286",
+              "V4T003507",
+              "V4T000108",
+              "V4T002407",
+              "V4T003261",
+              "V4T002370",
+              "V4T002627",
+              "V4T002360"
+            ]
+          }
+        ],
+        "run_id": "r4-dtgp-frozen02-dev-season",
+        "runtime_seconds": 12.499582791,
+        "runtime_with_setup_seconds": 12.530428333000001,
+        "schema_version": "v4-experiment-metrics-v1",
+        "stage": "R4",
+        "termination_detail": "",
+        "termination_reason": "survey_complete",
+        "total": -1677.158161
+      },
+      "run_id": "r4-dtgp-frozen02-dev-season"
+    },
+    {
+      "card": "demo",
+      "combination": "DTGPCW",
+      "metrics": {
+        "accounted_wallclock_seconds": 9.626,
+        "agent_wallclock_seconds": 8.778,
+        "by_class": {
+          "BGS": 212.85478,
+          "ELG": 484.664203,
+          "LRG": 184.072715,
+          "QSO": 156.022417,
+          "Star": 52.822049
+        },
+        "card": {
+          "night_count": 7,
+          "source": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+          "target_count": 2400,
+          "tree_sha256": "9974ab9c6ea33b36119ac46b3602cd37c4962d31206877344d08ecafba4ef2cc"
+        },
+        "components": {
+          "observation_request_reward": 100.0,
+          "report_settlement": 0.0,
+          "required_penalty": -50.0,
+          "sum_best_scores": 1090.436164,
+          "uniformity_penalty": -4.539679
+        },
+        "counts": {
+          "decisions": 402,
+          "invalidated_observations": 0,
+          "observation_requests_completed": 1,
+          "observation_requests_issued": 1,
+          "observations": 2965,
+          "observe_actions": 298,
+          "required_missing": 1,
+          "targets_observed": 2186
+        },
+        "coverage": {
+          "factor_threshold": 0.5,
+          "jain_from_official_penalty": 0.977301605,
+          "qualified_target_count": 1193,
+          "required_total": 120,
+          "uniformity_bands": {
+            "ra_0_10": 0.484848,
+            "ra_20_30": 0.456989,
+            "ra_30_40": 0.479757,
+            "ra_330_340": 0.314815,
+            "ra_340_350": 0.521891,
+            "ra_350_360": 0.493849,
+            "ra_40_50": 0.562857,
+            "ra_50_60": 0.565217
+          },
+          "uniformity_weight": 200.0
+        },
+        "decision_requests": 316,
+        "definitions": {
+          "exposure": "requested 来自 actions；actual 和时间来自 decisions，包括后续失效的观测",
+          "hashes": "规范化 JSON 使用排序键和紧凑分隔符；官方 actions 本身已剔除 reason/envelope",
+          "jain": "1 + 官方 uniformity_penalty / 卡片公开 uniformity.weight；受官方6位舍入影响",
+          "pace": "变化来自 agent.log；remaining wallclock 来自透传收到的 decision_request。缺少记录时为 null",
+          "qualified": "observations 中有效且 factor 达公开 required 阈值的不同 target；计数受CSV6位舍入影响",
+          "scores": "官方 score_report 原值，未重评分"
+        },
+        "exit_code": 0,
+        "exposure": {
+          "actual_seconds": {
+            "count": 298,
+            "histogram": {
+              "1200": 4,
+              "1500": 4,
+              "1800": 4,
+              "2400": 8,
+              "300": 115,
+              "3000": 3,
+              "3600": 2,
+              "450": 26,
+              "600": 21,
+              "900": 111
+            },
+            "max": 3600.0,
+            "mean": 711.744966442953,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 212100.0
+          },
+          "assigned_targets": 2965,
+          "extra_hit_rows_after_first": 779,
+          "hit_fraction": 1.0,
+          "hit_targets": 2965,
+          "positive_observation_rows": 2965,
+          "program_counts": {
+            "BACKUP": 101,
+            "BRIGHT": 102,
+            "DARK": 95
+          },
+          "repeated_hit_targets": 652,
+          "requested_seconds": {
+            "count": 298,
+            "histogram": {
+              "1200": 4,
+              "1500": 4,
+              "1800": 4,
+              "2400": 8,
+              "300": 115,
+              "3000": 3,
+              "3600": 2,
+              "450": 26,
+              "600": 21,
+              "900": 111
+            },
+            "max": 3600.0,
+            "mean": 711.744966442953,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 212100.0
+          },
+          "simulated_observe_seconds": 212100.0,
+          "simulated_span_seconds": 549900.0,
+          "simulated_wait_seconds": 337800.0
+        },
+        "global_wallclock_seconds": 900.0,
+        "hashes": {
+          "normalized_actions_sha256": "ca0be7e2f79917cbfc8dffe8f8611be9bc0afbaeb709a9ad33a65381c996b579",
+          "normalized_score_sha256": "fd019ad97290306b3321e4364ce3b0150692e901f44a9a08641b0a0b0c8bb806",
+          "raw_outputs": {
+            "actions.jsonl": "e854a411dbb89827f754a3b9a146f3c7a4273bed5d1e60efb76a448240326ccb",
+            "agent.log": "ff11ea8f93a7a29717b878efa4e115e9a1b0285053af75f0eaf3453f94433365",
+            "decisions.csv": "120873b4f4310c12a29a5d9ea39e67be54d8def0586bc3607394092ba7942254",
+            "messages.jsonl": "b6461062f79d81699178dcaaae8dacd09c6c7ca2a365ef8e7c72120a7d6469b1",
+            "observations.csv": "980ecb381ab64f54daadf773c6ea3b0865d68db2c1b50acc03e7f9bb4fea4914",
+            "protocol_telemetry.jsonl": "4a4bcf0876f744520010deeb2176ab100b7a0b1df899a0ea7a2f3b1d1ede57bc",
+            "proxy_pid.json": "7689f5125ce5184c2b580b0dd0cae119e4986a386a009d8f6957cd18725f6c2c",
+            "score_report.json": "3447ec0ce13e2dc18ac587efbe19b3c524033324804cf45a76767086bdbc3f9a",
+            "workflow_result.json": "4306fc9da536c8dcb1d47b5b7d8212addd67c9a3ab491015faa141a5c8ec3548"
+          }
+        },
+        "official_report_available": true,
+        "pace": {
+          "change_count": 0,
+          "changes_logged": [],
+          "first_remaining_wallclock_seconds": 900.0,
+          "last_remaining_wallclock_seconds": 890.401,
+          "minimum_remaining_wallclock_seconds": 890.401,
+          "telemetry_available": true,
+          "telemetry_requests": 316
+        },
+        "provenance": {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py",
+            "--agent",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgpcw-frozen02-demo/agent/_harness_proxy.py",
+            "--card",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgpcw-frozen02-demo/card_snapshot",
+            "--out",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgpcw-frozen02-demo/output",
+            "--python",
+            "/usr/bin/python3",
+            "--wallclock",
+            "900",
+            "--init-timeout",
+            "30",
+            "--grace",
+            "30",
+            "--quiet"
+          ],
+          "concurrency": {
+            "cpu_count": 8,
+            "exclusive": true,
+            "load_average": [
+              5.96337890625,
+              4.23388671875,
+              3.611328125
+            ],
+            "lock_wait_seconds": 0.00013675000000000492,
+            "peers_at_acquisition": [],
+            "simulator_limit": 2,
+            "slots": [
+              0,
+              1
+            ]
+          },
+          "config_sha256": "e74fc757653743767a8d633266654ce8b687288f36b9997df3867a35def074e1",
+          "cwd": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgpcw-frozen02-demo/work",
+          "effective_agent_tree_sha256": "db3a50fd6004760ca0779a8e92bef84ead954f9e67545a9a0ecf706157f9dd80",
+          "harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+          "python_executable": "/usr/bin/python3",
+          "python_version": "Python 3.9.6",
+          "snapshot_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+          "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+        },
+        "reports": {
+          "correct": 0,
+          "count": 0,
+          "deltas": [],
+          "false": 0
+        },
+        "requests": [
+          {
+            "completed": true,
+            "completed_count": 6,
+            "completed_target_ids": [
+              "V4T000160",
+              "V4T002330",
+              "V4T000311",
+              "V4T001021",
+              "V4T000716",
+              "V4T001836"
+            ],
+            "completion_factor_threshold": 0.5,
+            "completion_reward": 100.0,
+            "deadline_utc": "2026-10-06T08:45:00Z",
+            "issued_at_utc": "2026-10-05T00:00:00Z",
+            "minimum_completed": 6,
+            "request_id": "V4RQ0001",
+            "reward": 100.0,
+            "target_ids": [
+              "V4T000160",
+              "V4T002330",
+              "V4T000311",
+              "V4T001021",
+              "V4T000532",
+              "V4T000716",
+              "V4T001836",
+              "V4T002258"
+            ]
+          }
+        ],
+        "run_id": "r4-dtgpcw-frozen02-demo",
+        "runtime_seconds": 10.014099292,
+        "runtime_with_setup_seconds": 10.044626959,
+        "schema_version": "v4-experiment-metrics-v1",
+        "stage": "R4",
+        "termination_detail": "",
+        "termination_reason": "survey_complete",
+        "total": 1135.896485
+      },
+      "run_id": "r4-dtgpcw-frozen02-demo"
+    },
+    {
+      "card": "dev-season",
+      "combination": "DTGPCW",
+      "metrics": {
+        "accounted_wallclock_seconds": 12.071,
+        "agent_wallclock_seconds": 11.01,
+        "by_class": {
+          "BGS": 211.674642,
+          "ELG": 572.391792,
+          "LRG": 214.538679,
+          "QSO": 169.700426,
+          "Star": 58.331775
+        },
+        "card": {
+          "night_count": 14,
+          "source": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+          "target_count": 4800,
+          "tree_sha256": "1f79643ddc3aa34f95759037e3a3215bea1d8d725e6b1b394edc05304c61f2ba"
+        },
+        "components": {
+          "observation_request_reward": 0.0,
+          "report_settlement": 0.0,
+          "required_penalty": -2900.0,
+          "sum_best_scores": 1226.637313,
+          "uniformity_penalty": -94.018231
+        },
+        "counts": {
+          "decisions": 686,
+          "invalidated_observations": 0,
+          "observation_requests_completed": 0,
+          "observation_requests_issued": 1,
+          "observations": 2916,
+          "observe_actions": 251,
+          "required_missing": 58,
+          "targets_observed": 2348
+        },
+        "coverage": {
+          "factor_threshold": 0.5,
+          "jain_from_official_penalty": 0.529908845,
+          "qualified_target_count": 1328,
+          "required_total": 240,
+          "uniformity_bands": {
+            "ra_120_130": 0.0,
+            "ra_130_140": 0.0,
+            "ra_140_150": 0.0,
+            "ra_150_160": 0.0,
+            "ra_310_320": 0.254167,
+            "ra_320_330": 0.373277,
+            "ra_330_340": 0.410351,
+            "ra_340_350": 0.368257,
+            "ra_350_360": 0.517857
+          },
+          "uniformity_weight": 200.0
+        },
+        "decision_requests": 495,
+        "definitions": {
+          "exposure": "requested 来自 actions；actual 和时间来自 decisions，包括后续失效的观测",
+          "hashes": "规范化 JSON 使用排序键和紧凑分隔符；官方 actions 本身已剔除 reason/envelope",
+          "jain": "1 + 官方 uniformity_penalty / 卡片公开 uniformity.weight；受官方6位舍入影响",
+          "pace": "变化来自 agent.log；remaining wallclock 来自透传收到的 decision_request。缺少记录时为 null",
+          "qualified": "observations 中有效且 factor 达公开 required 阈值的不同 target；计数受CSV6位舍入影响",
+          "scores": "官方 score_report 原值，未重评分"
+        },
+        "exit_code": 0,
+        "exposure": {
+          "actual_seconds": {
+            "count": 251,
+            "histogram": {
+              "1200": 10,
+              "1500": 7,
+              "1800": 5,
+              "2400": 5,
+              "300": 75,
+              "3000": 10,
+              "3600": 14,
+              "450": 41,
+              "600": 21,
+              "900": 63
+            },
+            "max": 3600.0,
+            "mean": 932.8685258964143,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 234150.0
+          },
+          "assigned_targets": 2916,
+          "extra_hit_rows_after_first": 568,
+          "hit_fraction": 1.0,
+          "hit_targets": 2916,
+          "positive_observation_rows": 2903,
+          "program_counts": {
+            "BACKUP": 95,
+            "BRIGHT": 51,
+            "DARK": 105
+          },
+          "repeated_hit_targets": 477,
+          "requested_seconds": {
+            "count": 251,
+            "histogram": {
+              "1200": 10,
+              "1500": 7,
+              "1800": 5,
+              "2400": 5,
+              "300": 75,
+              "3000": 10,
+              "3600": 14,
+              "450": 41,
+              "600": 21,
+              "900": 63
+            },
+            "max": 3600.0,
+            "mean": 932.8685258964143,
+            "median": 600.0,
+            "min": 300.0,
+            "sum": 234150.0
+          },
+          "simulated_observe_seconds": 234150.0,
+          "simulated_span_seconds": 1154700.0,
+          "simulated_wait_seconds": 920550.0
+        },
+        "global_wallclock_seconds": 900.0,
+        "hashes": {
+          "normalized_actions_sha256": "5bbcdd3920c5217442072070953d258e710507c6928b2f73cda9ddc8c340befe",
+          "normalized_score_sha256": "ce0b4469a616a1ecd2ed70520057669b7a25ef8d7ebef8c67f5b866894b4bf9f",
+          "raw_outputs": {
+            "actions.jsonl": "b427e2b8a71081716278042789872d4e4c15aafa6562057cad48e80373a6e2ce",
+            "agent.log": "ee9cb3974569fc684439ba5b8d2ae09fe517939dc7a5d684e3492853533e7d7c",
+            "decisions.csv": "8911e3b7e0d802d166d567b47238fb305e054f9e8329ddcb051350a0ea9cbd19",
+            "messages.jsonl": "912177c72c2c88098a82260e5af80e14b26e305035f1df12e700e98bd4916201",
+            "observations.csv": "ab5f18580c3241a7f88419262db90aaf8893f4abff34154b2afda0f0f2a7b036",
+            "protocol_telemetry.jsonl": "efbfe0af6ae8b0ba4cd84e488e622d7e1a6876ee42ae3ee06ca3c891802d8827",
+            "proxy_pid.json": "adf8ff97a157417994305954187356f092875f235f0b0a307c763b91fd9f8742",
+            "score_report.json": "d0aebd0e5ad998c30cfb7f16b8db531a8a76a2c1e4e00837dd82e9221ce8a3f3",
+            "workflow_result.json": "04df6f6b68934d3e15fb09cad60b7ba7ef2092fc09b9d2d21514a23089a75ecf"
+          }
+        },
+        "official_report_available": true,
+        "pace": {
+          "change_count": 0,
+          "changes_logged": [],
+          "first_remaining_wallclock_seconds": 900.0,
+          "last_remaining_wallclock_seconds": 887.962,
+          "minimum_remaining_wallclock_seconds": 887.962,
+          "telemetry_available": true,
+          "telemetry_requests": 495
+        },
+        "provenance": {
+          "command": [
+            "/usr/bin/python3",
+            "-B",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py",
+            "--agent",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgpcw-frozen02-dev-season/agent/_harness_proxy.py",
+            "--card",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgpcw-frozen02-dev-season/card_snapshot",
+            "--out",
+            "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgpcw-frozen02-dev-season/output",
+            "--python",
+            "/usr/bin/python3",
+            "--wallclock",
+            "900",
+            "--init-timeout",
+            "30",
+            "--grace",
+            "30",
+            "--quiet"
+          ],
+          "concurrency": {
+            "cpu_count": 8,
+            "exclusive": true,
+            "load_average": [
+              5.2802734375,
+              4.1435546875,
+              3.5859375
+            ],
+            "lock_wait_seconds": 0.00012924999999999742,
+            "peers_at_acquisition": [],
+            "simulator_limit": 2,
+            "slots": [
+              0,
+              1
+            ]
+          },
+          "config_sha256": "e74fc757653743767a8d633266654ce8b687288f36b9997df3867a35def074e1",
+          "cwd": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r4-dtgpcw-frozen02-dev-season/work",
+          "effective_agent_tree_sha256": "c14329f6c556f829a0c0c7cbfb0aa423eac629946c544bba264852f989a985ab",
+          "harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+          "python_executable": "/usr/bin/python3",
+          "python_version": "Python 3.9.6",
+          "snapshot_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c",
+          "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+        },
+        "reports": {
+          "correct": 0,
+          "count": 0,
+          "deltas": [],
+          "false": 0
+        },
+        "requests": [
+          {
+            "completed": false,
+            "completed_count": 4,
+            "completed_target_ids": [
+              "V4T003507",
+              "V4T000108",
+              "V4T002407",
+              "V4T003261"
+            ],
+            "completion_factor_threshold": 0.5,
+            "completion_reward": 100.0,
+            "deadline_utc": "2026-10-09T08:45:00Z",
+            "issued_at_utc": "2026-10-08T00:15:00Z",
+            "minimum_completed": 6,
+            "request_id": "V4RQ0001",
+            "reward": 0.0,
+            "target_ids": [
+              "V4T002286",
+              "V4T003507",
+              "V4T000108",
+              "V4T002407",
+              "V4T003261",
+              "V4T002370",
+              "V4T002627",
+              "V4T002360"
+            ]
+          }
+        ],
+        "run_id": "r4-dtgpcw-frozen02-dev-season",
+        "runtime_seconds": 12.467147459,
+        "runtime_with_setup_seconds": 12.498555332999999,
+        "schema_version": "v4-experiment-metrics-v1",
+        "stage": "R4",
+        "termination_detail": "",
+        "termination_reason": "survey_complete",
+        "total": -1767.380918
+      },
+      "run_id": "r4-dtgpcw-frozen02-dev-season"
+    }
+  ]
+}

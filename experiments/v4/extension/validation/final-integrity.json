@@ -1,0 +1,37 @@
+{
+  "recorded_at_utc": "2026-10-02T16:45:58.644222+00:00",
+  "protected_trees_unchanged": {
+    "harness": true,
+    "vendor/starter_kit_v4": true,
+    "agents/combined/source": true,
+    "agents/official": true,
+    "configs": true,
+    "results": true,
+    "evaluation": true
+  },
+  "old_all_runs_rows": 84,
+  "old_run_record_files_unchanged": 252,
+  "old_records_all_unchanged": true,
+  "extension_rows": 97,
+  "research_evaluations": 78,
+  "strategy_evaluations": 66,
+  "N5_reference_controls": 12,
+  "repeat_migration_verifications": 19,
+  "reused_old_development_references_separate": 6,
+  "all_full_season": true,
+  "all_pace_zero": true,
+  "all_run_record_issues_empty": true,
+  "N5_plan_hash_unchanged": true,
+  "batch_source_hash_unchanged": true,
+  "N5_all_snapshots_match_frozen": true,
+  "N5_all_comparisons_same_card_available": true,
+  "batch_postflight": {
+    "cards_unchanged": true,
+    "configs_unchanged": true,
+    "harness_unchanged": true,
+    "old_results_unchanged": true,
+    "sources_unchanged": true,
+    "vendor_unchanged": true,
+    "wrapper_unchanged": true
+  }
+}

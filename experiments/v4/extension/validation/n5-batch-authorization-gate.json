@@ -1,0 +1,16 @@
+{
+  "recorded_at_utc": "2026-10-02T16:40:24.071481+00:00",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "experiments/v4/extension/harness/run_n5_batch.py",
+    "--plan",
+    "experiments/v4/extension/evaluation/N5_PLAN_DRAFT.json"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/run_n5_batch.py\", line 218, in <module>\n    raise SystemExit(main())\n  File \"/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/run_n5_batch.py\", line 92, in main\n    checked = preflight(plan, executing=not args.validate_only)\n  File \"/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/run_n5_batch.py\", line 78, in preflight\n    assert plan['status'] == 'frozen' and plan.get('authorized') is True, '必须先收到Root明确冻结授权'\nAssertionError: 必须先收到Root明确冻结授权\n",
+  "no_batch_or_run_created": true,
+  "no_simulator_started": true,
+  "passed": true
+}

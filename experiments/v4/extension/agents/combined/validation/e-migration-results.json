@@ -1,0 +1,25 @@
+{
+  "all_equal": true,
+  "runs": [
+    {
+      "run_id": "ext-integration-combined-e-demo",
+      "reference": "experiments/v4/runs/ext-n2-heq-e-threshold30-demo/output",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      }
+    },
+    {
+      "run_id": "ext-integration-combined-e-dev-season",
+      "reference": "experiments/v4/runs/ext-n2-heq-e-threshold30-dev-season/output",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      }
+    }
+  ]
+}

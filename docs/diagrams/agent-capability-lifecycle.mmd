@@ -1,0 +1,20 @@
+stateDiagram-v2
+  state "提出候选" as Proposed
+  state "实现与约束检查" as Checked
+  state "开发对照与反例" as Compared
+  state "冻结并独立评价" as Frozen
+  state "记录负结果或证据不足" as Archived
+  state "进入在线能力库" as Available
+  state "收窄适用范围或停用" as Retired
+  state "修订后另建新候选" as Rework
+  [*] --> Proposed
+  Proposed --> Checked
+  Checked --> Compared: 检查通过
+  Checked --> Rework: 检查未通过
+  Compared --> Frozen: 值得继续验证
+  Compared --> Archived: 假设不支持或预算结束
+  Frozen --> Available: 满足登记的采用条件
+  Frozen --> Archived: 未满足采用条件
+  Available --> Retired: 新反例或前提失效
+  Archived --> Rework: 新证据支持重新研究
+  Retired --> Rework: 需要修订

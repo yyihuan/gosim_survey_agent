@@ -1,0 +1,54 @@
+{
+  "schema_version": "v4-extension-execution-interface-v1",
+  "entry": "experiments/v4/extension/harness/run_one.py",
+  "python": "/usr/bin/python3 -B",
+  "command_template": "/usr/bin/python3 -B experiments/v4/extension/harness/run_one.py --run-id ext-UNIQUE --stage N2 --agent experiments/v4/extension/agents/YOUR_SOURCE --config experiments/v4/extension/configs/YOUR_CONFIG.json --card experiments/v4/data/cards/dev-season",
+  "maximum_simulators": 6,
+  "parallel_groups": "各执行者可同时启动独立命令；本轮锁不受旧二槽锁约束。组内卡顺序由各执行者安排。",
+  "outputs": "experiments/v4/runs/ext-UNIQUE/；每run源/卡/参数只读快照、原始官方输出、manifest、metrics及包装源码归档",
+  "development_cards": [
+    "experiments/v4/vendor/starter_kit_v4/cards/demo",
+    "experiments/v4/data/cards/dev-season"
+  ],
+  "stages": [
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "integration-verification"
+  ],
+  "use_llm": false,
+  "wallclock_seconds": 900,
+  "holdout_gate": "新卡仅N5允许；需Root明确冻结后在extension/evaluation/N5_AUTHORIZATION.json写authorized_by=Root和authorized_run_ids列表；当前不创建该授权。",
+  "parameter_semantics": "沿用原harness全部CLI；--exclusive在本轮取得全部六槽。原二槽harness、官方runner、评分器、策略文件均不修改。",
+  "aggregate_command": "/usr/bin/python3 -B experiments/v4/extension/harness/aggregate_results.py",
+  "aggregate_outputs": [
+    "experiments/v4/extension/results/all_runs.json",
+    "experiments/v4/extension/results/all_runs.csv",
+    "experiments/v4/extension/results/reference_runs.csv",
+    "experiments/v4/extension/results/concurrency.json",
+    "experiments/v4/extension/results/schema.json"
+  ],
+  "case_metadata": "Optional config.case_id/config.reference_id or extension/results/run_index.json {runs:{run_id:{case_id,reference_id}}}; defaults to config family:variant and D-linear",
+  "reference_policy": "D-linear same-card tree hash only; reused six old controls are separate reference_rows; N1 verification not an independent sample",
+  "aggregation_scope": "ext-* only; never invoke original aggregator/main to update old all_runs",
+  "n5_run_gate": "Root must explicitly freeze, then write extension/evaluation/N5_AUTHORIZATION.json with authorized_by=Root and authorized_run_ids array. This entry never creates permission on its own.",
+  "N5_batch": {
+    "draft": "experiments/v4/extension/evaluation/N5_PLAN_DRAFT.json",
+    "validate_only_command": "/usr/bin/python3 -B experiments/v4/extension/harness/run_n5_batch.py --plan experiments/v4/extension/evaluation/N5_PLAN_DRAFT.json --validate-only",
+    "run_command_after_Root_freeze": "/usr/bin/python3 -B experiments/v4/extension/harness/run_n5_batch.py --plan experiments/v4/extension/evaluation/N5_PLAN.json",
+    "authorization_schema": {
+      "authorized_by": "Root",
+      "plan_sha256": "SHA256 of final N5_PLAN.json",
+      "batch_source_sha256": "SHA256 of run_n5_batch.py",
+      "authorized_run_ids": "exact 52 unique run IDs"
+    },
+    "final_plan_required_fields": {
+      "status": "frozen",
+      "authorized": true
+    },
+    "parallel_policy": "all 13 strategy groups scheduled together; four cards serial within each group; shared global six-slot lease",
+    "overwrites_allowed": false
+  }
+}

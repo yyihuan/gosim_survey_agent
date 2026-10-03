@@ -1,0 +1,6 @@
+{
+  "family": "C",
+  "stage": "R2",
+  "C": {"enabled": true, "strength": 0.6},
+  "W": {"enabled": false}
+}

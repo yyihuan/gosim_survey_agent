@@ -1,0 +1,38 @@
+{
+  "archived_hash_checks": {
+    "card": true,
+    "config": true,
+    "source": true
+  },
+  "card_id": "ext-holdout-d",
+  "case_id": "D+F",
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/run_one.py",
+    "--run-id",
+    "ext-n5-f-ext-holdout-d",
+    "--stage",
+    "N5",
+    "--agent",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/agents/mfj/source",
+    "--card",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/data/cards/ext-holdout-d",
+    "--wallclock",
+    "900",
+    "--config",
+    "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/configs/mfj/f-initial.json"
+  ],
+  "error": null,
+  "exit_code": 0,
+  "finished_at_utc": "2026-10-02T16:44:16.153646+00:00",
+  "full_season_complete": true,
+  "pace_change_count": 0,
+  "reference_id": "D-linear",
+  "run_id": "ext-n5-f-ext-holdout-d",
+  "runtime_seconds": 7.590389167,
+  "score": -1395.066761,
+  "started_at_utc": "2026-10-02T16:44:08.353558+00:00",
+  "status": "completed",
+  "termination_reason": "survey_complete"
+}

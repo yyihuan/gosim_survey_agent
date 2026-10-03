@@ -1,0 +1,119 @@
+{
+  "source_unchanged": true,
+  "configs_unchanged": true,
+  "all_equal": true,
+  "runs": [
+    {
+      "run_id": "ext-integration-combined-d-demo",
+      "reference": "ext-n2-heq-neutral-demo",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      },
+      "total": 1501.174588,
+      "termination": "survey_complete",
+      "pace_changes": 0,
+      "runtime_seconds": 5.584328290999999
+    },
+    {
+      "run_id": "ext-integration-combined-d-dev-season",
+      "reference": "ext-n2-heq-neutral-dev-season",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      },
+      "total": -1851.06202,
+      "termination": "survey_complete",
+      "pace_changes": 0,
+      "runtime_seconds": 8.008310666
+    },
+    {
+      "run_id": "ext-integration-combined-m-demo",
+      "reference": "ext-n2-m-initial-demo",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      },
+      "total": 1494.658892,
+      "termination": "survey_complete",
+      "pace_changes": 0,
+      "runtime_seconds": 6.321481166
+    },
+    {
+      "run_id": "ext-integration-combined-m-dev-season",
+      "reference": "ext-n2-m-initial-dev-season",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      },
+      "total": -1795.364324,
+      "termination": "survey_complete",
+      "pace_changes": 0,
+      "runtime_seconds": 9.08285525
+    },
+    {
+      "run_id": "ext-integration-combined-f6-demo",
+      "reference": "ext-n2-f-initial-demo",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      },
+      "total": 1549.896124,
+      "termination": "survey_complete",
+      "pace_changes": 0,
+      "runtime_seconds": 5.737438333999999
+    },
+    {
+      "run_id": "ext-integration-combined-f6-dev-season",
+      "reference": "ext-n2-f-initial-dev-season",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      },
+      "total": -1750.564019,
+      "termination": "survey_complete",
+      "pace_changes": 0,
+      "runtime_seconds": 6.762382958999999
+    },
+    {
+      "run_id": "ext-integration-combined-q-demo",
+      "reference": "ext-n2-heq-q-quantile25-demo",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      },
+      "total": 1498.742159,
+      "termination": "survey_complete",
+      "pace_changes": 0,
+      "runtime_seconds": 4.3889359169999995
+    },
+    {
+      "run_id": "ext-integration-combined-q-dev-season",
+      "reference": "ext-n2-heq-q-quantile25-dev-season",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      },
+      "total": -1796.002899,
+      "termination": "survey_complete",
+      "pace_changes": 0,
+      "runtime_seconds": 8.194043792
+    }
+  ]
+}

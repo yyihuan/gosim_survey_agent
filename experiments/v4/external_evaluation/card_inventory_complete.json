@@ -1,0 +1,637 @@
+{
+  "all_four_verified": false,
+  "api_discovered_from": "experiments/v4/data/public-source/supabase-HbgHf8cp.js",
+  "cards": [
+    {
+      "bundle_manifest_sha256": "e5bae6564c022f0bc77c1294b4ae3f7d185940fa83bb80ffa98c189dd5d4c8e5",
+      "bytes": 601927,
+      "card_id": "alpha",
+      "checksum_matches_official": false,
+      "file_count": 6,
+      "files": [
+        {
+          "bytes": 360,
+          "card_id": "alpha",
+          "evidence_path": "acquisition/collect01/alpha-config-v4_fiber_config.json-attempt1.json",
+          "local_path": "cards/alpha/config/v4_fiber_config.json",
+          "relative_path": "config/v4_fiber_config.json",
+          "retrieved_at_utc": "2026-10-02T15:05:15.493405+00:00",
+          "sha256": "85fc175cb198b1c65d33a123cfbc8b6c1deb10778eef0dbfa659156918e23c8f",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-alpha/config/v4_fiber_config.json"
+        },
+        {
+          "bytes": 1159,
+          "card_id": "alpha",
+          "evidence_path": "acquisition/probe01/alpha-known-config.json",
+          "local_path": "cards/alpha/config/v4_scenario.json",
+          "relative_path": "config/v4_scenario.json",
+          "retrieved_at_utc": "2026-10-02T15:02:39.563772+00:00",
+          "sha256": "8910f40c25eddaec7db772277b8e89fad7968a0f0ef68992e3d74a256481ce9d",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-alpha/config/v4_scenario.json"
+        },
+        {
+          "bytes": 909,
+          "card_id": "alpha",
+          "evidence_path": "acquisition/collect01/alpha-config-v4_score_config.json-attempt1.json",
+          "local_path": "cards/alpha/config/v4_score_config.json",
+          "relative_path": "config/v4_score_config.json",
+          "retrieved_at_utc": "2026-10-02T15:05:15.470042+00:00",
+          "sha256": "8b2dd879a684e8dc51e2a3f33dfe6301c277b7f0ee95415c6649498d3a8784cd",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-alpha/config/v4_score_config.json"
+        },
+        {
+          "bytes": 3353,
+          "card_id": "alpha",
+          "evidence_path": "acquisition/collect01/alpha-public-footprint.csv-attempt1.json",
+          "local_path": "cards/alpha/public/footprint.csv",
+          "relative_path": "public/footprint.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:16.835165+00:00",
+          "sha256": "6f62b8733c3d0a405bde82a131110b28b383f01f91bac6e6324fb3f0661b8882",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-alpha/public/footprint.csv"
+        },
+        {
+          "bytes": 591701,
+          "card_id": "alpha",
+          "evidence_path": "acquisition/collect01/alpha-public-targets.csv-attempt1.json",
+          "local_path": "cards/alpha/public/targets.csv",
+          "relative_path": "public/targets.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:18.065408+00:00",
+          "sha256": "73242c16513c33f61dbe6cd96a358447e35267d1de6d7cef7cc4b71fad0ae0bc",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-alpha/public/targets.csv"
+        },
+        {
+          "bytes": 4445,
+          "card_id": "alpha",
+          "evidence_path": "acquisition/collect01/alpha-public-v4_night_calendar.csv-attempt1.json",
+          "local_path": "cards/alpha/public/v4_night_calendar.csv",
+          "relative_path": "public/v4_night_calendar.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:18.107209+00:00",
+          "sha256": "313243fdf7aba33fa476e4c31403ba08ee3b90c354c7bb0f82d102122d78be3c",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-alpha/public/v4_night_calendar.csv"
+        }
+      ],
+      "local_path": "cards/alpha",
+      "missing_required": [
+        "public/v4_bulletins.jsonl",
+        "public/v4_forecasts.jsonl",
+        "truth/v4_earthquake_effects.csv",
+        "truth/v4_events.csv",
+        "truth/v4_observation_requests.jsonl",
+        "truth/v4_slots.csv",
+        "truth/v4_weather_truth.csv"
+      ],
+      "official_bundle_checksum": "5455aaaf048d5076337ab523a45401b9b50c66c5b93176f4a6ecb0252a0569b4",
+      "official_facts": {
+        "area": 2000.0,
+        "card_id": "alpha",
+        "checksum": "5455aaaf048d5076337ab523a45401b9b50c66c5b93176f4a6ecb0252a0569b4",
+        "exposure": [
+          60,
+          3600
+        ],
+        "f0": 0.5,
+        "fiber_area": 0.4,
+        "fibers": 16,
+        "first_night": "2026-10-04",
+        "last_night": "2026-11-10",
+        "min_alt": 30.0,
+        "nights": 38,
+        "phase": "practice-projects",
+        "regions": 3,
+        "required": 500,
+        "site": {
+          "latitude_deg": -24.6157,
+          "longitude_deg": -70.3976,
+          "name": "Paranal, Chile (virtual)"
+        },
+        "slug": "v4-practice-alpha",
+        "stress": false,
+        "sun_limit": -18.0,
+        "t0": 900.0,
+        "targets": 10000,
+        "wallclock": 900
+      },
+      "official_facts_file_sha256": "875c19f32c40b4d9af0b9432002982be49ad10e74ac5745a94fcc50b66ab86e9",
+      "official_facts_path": "research/2026-10-02/upstream/cards/v4-practice-alpha/card.json",
+      "public_counts_match_official": true,
+      "required_files_complete": false,
+      "slug": "v4-practice-alpha",
+      "verified": false
+    },
+    {
+      "bundle_manifest_sha256": "72de49d7bfe05e45d39b802c5bc6564d4274bf2e5a67737b727bca1b2f698ae7",
+      "bytes": 577865,
+      "card_id": "beta",
+      "checksum_matches_official": false,
+      "file_count": 6,
+      "files": [
+        {
+          "bytes": 360,
+          "card_id": "beta",
+          "evidence_path": "acquisition/collect01/beta-config-v4_fiber_config.json-attempt1.json",
+          "local_path": "cards/beta/config/v4_fiber_config.json",
+          "relative_path": "config/v4_fiber_config.json",
+          "retrieved_at_utc": "2026-10-02T15:05:21.169551+00:00",
+          "sha256": "85fc175cb198b1c65d33a123cfbc8b6c1deb10778eef0dbfa659156918e23c8f",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-beta/config/v4_fiber_config.json"
+        },
+        {
+          "bytes": 1156,
+          "card_id": "beta",
+          "evidence_path": "acquisition/collect01/beta-config-v4_scenario.json-attempt1.json",
+          "local_path": "cards/beta/config/v4_scenario.json",
+          "relative_path": "config/v4_scenario.json",
+          "retrieved_at_utc": "2026-10-02T15:05:21.175088+00:00",
+          "sha256": "fbfc80887b0d50290d4bd20eb60a270111913c1cb6068a0b051010dd01c37c3c",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-beta/config/v4_scenario.json"
+        },
+        {
+          "bytes": 909,
+          "card_id": "beta",
+          "evidence_path": "acquisition/collect01/beta-config-v4_score_config.json-attempt1.json",
+          "local_path": "cards/beta/config/v4_score_config.json",
+          "relative_path": "config/v4_score_config.json",
+          "retrieved_at_utc": "2026-10-02T15:05:22.815116+00:00",
+          "sha256": "8b2dd879a684e8dc51e2a3f33dfe6301c277b7f0ee95415c6649498d3a8784cd",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-beta/config/v4_score_config.json"
+        },
+        {
+          "bytes": 3377,
+          "card_id": "beta",
+          "evidence_path": "acquisition/collect01/beta-public-footprint.csv-attempt1.json",
+          "local_path": "cards/beta/public/footprint.csv",
+          "relative_path": "public/footprint.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:23.646094+00:00",
+          "sha256": "6437c9db4bb9d71f432b5b10eb953b8df4995435b75b232734f3beb5b92bd960",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-beta/public/footprint.csv"
+        },
+        {
+          "bytes": 567618,
+          "card_id": "beta",
+          "evidence_path": "acquisition/collect01/beta-public-targets.csv-attempt1.json",
+          "local_path": "cards/beta/public/targets.csv",
+          "relative_path": "public/targets.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:27.209264+00:00",
+          "sha256": "4769aa6f76cd0225d58dff58e2cf8628ec4c95c9839d946bc8a80aa23cc0b166",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-beta/public/targets.csv"
+        },
+        {
+          "bytes": 4445,
+          "card_id": "beta",
+          "evidence_path": "acquisition/collect01/beta-public-v4_night_calendar.csv-attempt1.json",
+          "local_path": "cards/beta/public/v4_night_calendar.csv",
+          "relative_path": "public/v4_night_calendar.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:26.365354+00:00",
+          "sha256": "32813747337d6d2057a93ea7bb99e90fa52d0ea2b3701f0d87a0eaf135a577b5",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-beta/public/v4_night_calendar.csv"
+        }
+      ],
+      "local_path": "cards/beta",
+      "missing_required": [
+        "public/v4_bulletins.jsonl",
+        "public/v4_forecasts.jsonl",
+        "truth/v4_earthquake_effects.csv",
+        "truth/v4_events.csv",
+        "truth/v4_observation_requests.jsonl",
+        "truth/v4_slots.csv",
+        "truth/v4_weather_truth.csv"
+      ],
+      "official_bundle_checksum": "29d6245f65e93a98b8fb29cb33664b79a7fb4ed1b1d06d2aee53da9687d5d691",
+      "official_facts": {
+        "area": 1920.0,
+        "card_id": "beta",
+        "checksum": "29d6245f65e93a98b8fb29cb33664b79a7fb4ed1b1d06d2aee53da9687d5d691",
+        "exposure": [
+          60,
+          3600
+        ],
+        "f0": 0.5,
+        "fiber_area": 0.4,
+        "fibers": 16,
+        "first_night": "2026-10-18",
+        "last_night": "2026-11-24",
+        "min_alt": 30.0,
+        "nights": 38,
+        "phase": "practice-projects",
+        "regions": 3,
+        "required": 480,
+        "site": {
+          "latitude_deg": -24.6157,
+          "longitude_deg": -70.3976,
+          "name": "Paranal, Chile (virtual)"
+        },
+        "slug": "v4-practice-beta",
+        "stress": false,
+        "sun_limit": -18.0,
+        "t0": 900.0,
+        "targets": 9600,
+        "wallclock": 900
+      },
+      "official_facts_file_sha256": "35e723c9b19f169332e49e82d0a45a58ed623ec04842e7af424543d616b91afd",
+      "official_facts_path": "research/2026-10-02/upstream/cards/v4-practice-beta/card.json",
+      "public_counts_match_official": true,
+      "required_files_complete": false,
+      "slug": "v4-practice-beta",
+      "verified": false
+    },
+    {
+      "bundle_manifest_sha256": "e8634452a0f486064180917b0bc63204458ab9ff7ee4d31be5e06ca42492dc4a",
+      "bytes": 596588,
+      "card_id": "gamma",
+      "checksum_matches_official": false,
+      "file_count": 6,
+      "files": [
+        {
+          "bytes": 360,
+          "card_id": "gamma",
+          "evidence_path": "acquisition/collect01/gamma-config-v4_fiber_config.json-attempt1.json",
+          "local_path": "cards/gamma/config/v4_fiber_config.json",
+          "relative_path": "config/v4_fiber_config.json",
+          "retrieved_at_utc": "2026-10-02T15:05:28.087439+00:00",
+          "sha256": "85fc175cb198b1c65d33a123cfbc8b6c1deb10778eef0dbfa659156918e23c8f",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-gamma/config/v4_fiber_config.json"
+        },
+        {
+          "bytes": 1216,
+          "card_id": "gamma",
+          "evidence_path": "acquisition/collect01/gamma-config-v4_scenario.json-attempt1.json",
+          "local_path": "cards/gamma/config/v4_scenario.json",
+          "relative_path": "config/v4_scenario.json",
+          "retrieved_at_utc": "2026-10-02T15:05:28.823024+00:00",
+          "sha256": "2008e58fe43ed2c510466e626a1f00d52021a586f6fc6694f03fbf452e8335b1",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-gamma/config/v4_scenario.json"
+        },
+        {
+          "bytes": 909,
+          "card_id": "gamma",
+          "evidence_path": "acquisition/collect01/gamma-config-v4_score_config.json-attempt1.json",
+          "local_path": "cards/gamma/config/v4_score_config.json",
+          "relative_path": "config/v4_score_config.json",
+          "retrieved_at_utc": "2026-10-02T15:05:29.706263+00:00",
+          "sha256": "8b2dd879a684e8dc51e2a3f33dfe6301c277b7f0ee95415c6649498d3a8784cd",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-gamma/config/v4_score_config.json"
+        },
+        {
+          "bytes": 3380,
+          "card_id": "gamma",
+          "evidence_path": "acquisition/collect01/gamma-public-footprint.csv-attempt1.json",
+          "local_path": "cards/gamma/public/footprint.csv",
+          "relative_path": "public/footprint.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:34.236637+00:00",
+          "sha256": "da1bcfe970819a110034caf5212eddad4c7342762f1f574fb90d5facbce4263b",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-gamma/public/footprint.csv"
+        },
+        {
+          "bytes": 586278,
+          "card_id": "gamma",
+          "evidence_path": "acquisition/collect01/gamma-public-targets.csv-attempt1.json",
+          "local_path": "cards/gamma/public/targets.csv",
+          "relative_path": "public/targets.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:34.237591+00:00",
+          "sha256": "3de3c2e917fab98d0e81f8280f512f85dbebf4576cd611ea1efe52c8c9e2d488",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-gamma/public/targets.csv"
+        },
+        {
+          "bytes": 4445,
+          "card_id": "gamma",
+          "evidence_path": "acquisition/collect01/gamma-public-v4_night_calendar.csv-attempt1.json",
+          "local_path": "cards/gamma/public/v4_night_calendar.csv",
+          "relative_path": "public/v4_night_calendar.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:36.460601+00:00",
+          "sha256": "55da1bc4ab5dbbafd19c24abc01eedf5278b11552ecb04bd8a36c784734d6a16",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-gamma/public/v4_night_calendar.csv"
+        }
+      ],
+      "local_path": "cards/gamma",
+      "missing_required": [
+        "public/v4_bulletins.jsonl",
+        "public/v4_forecasts.jsonl",
+        "truth/v4_earthquake_effects.csv",
+        "truth/v4_events.csv",
+        "truth/v4_observation_requests.jsonl",
+        "truth/v4_slots.csv",
+        "truth/v4_stress_events.csv",
+        "truth/v4_weather_truth.csv"
+      ],
+      "official_bundle_checksum": "df414b2818c17043ab5510c1d634be0a2de64ef0335b234489bba5538e2fa86d",
+      "official_facts": {
+        "area": 1980.0,
+        "card_id": "gamma",
+        "checksum": "df414b2818c17043ab5510c1d634be0a2de64ef0335b234489bba5538e2fa86d",
+        "exposure": [
+          60,
+          3600
+        ],
+        "f0": 0.5,
+        "fiber_area": 0.4,
+        "fibers": 16,
+        "first_night": "2026-10-09",
+        "last_night": "2026-11-15",
+        "min_alt": 30.0,
+        "nights": 38,
+        "phase": "practice-projects",
+        "regions": 3,
+        "required": 495,
+        "site": {
+          "latitude_deg": -24.6157,
+          "longitude_deg": -70.3976,
+          "name": "Paranal, Chile (virtual)"
+        },
+        "slug": "v4-practice-gamma",
+        "stress": true,
+        "sun_limit": -18.0,
+        "t0": 900.0,
+        "targets": 9900,
+        "wallclock": 900
+      },
+      "official_facts_file_sha256": "b141c4cd0044220ec91be921bda301e1aa27c627300f68d4b0385eba2583ebde",
+      "official_facts_path": "research/2026-10-02/upstream/cards/v4-practice-gamma/card.json",
+      "public_counts_match_official": true,
+      "required_files_complete": false,
+      "slug": "v4-practice-gamma",
+      "verified": false
+    },
+    {
+      "bundle_manifest_sha256": "d86050b531ca5e782fba628e9971352c2a15b87cb47c9226bfc1fe6b12ecae49",
+      "bytes": 564616,
+      "card_id": "delta",
+      "checksum_matches_official": false,
+      "file_count": 6,
+      "files": [
+        {
+          "bytes": 360,
+          "card_id": "delta",
+          "evidence_path": "acquisition/collect01/delta-config-v4_fiber_config.json-attempt1.json",
+          "local_path": "cards/delta/config/v4_fiber_config.json",
+          "relative_path": "config/v4_fiber_config.json",
+          "retrieved_at_utc": "2026-10-02T15:05:35.826287+00:00",
+          "sha256": "85fc175cb198b1c65d33a123cfbc8b6c1deb10778eef0dbfa659156918e23c8f",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-delta/config/v4_fiber_config.json"
+        },
+        {
+          "bytes": 1216,
+          "card_id": "delta",
+          "evidence_path": "acquisition/collect01/delta-config-v4_scenario.json-attempt1.json",
+          "local_path": "cards/delta/config/v4_scenario.json",
+          "relative_path": "config/v4_scenario.json",
+          "retrieved_at_utc": "2026-10-02T15:05:37.551620+00:00",
+          "sha256": "f189487ee3c40dd082be08f8d11890949d36d8a21c91715459d6cc4c47cb759a",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-delta/config/v4_scenario.json"
+        },
+        {
+          "bytes": 909,
+          "card_id": "delta",
+          "evidence_path": "acquisition/collect01/delta-config-v4_score_config.json-attempt1.json",
+          "local_path": "cards/delta/config/v4_score_config.json",
+          "relative_path": "config/v4_score_config.json",
+          "retrieved_at_utc": "2026-10-02T15:05:38.079014+00:00",
+          "sha256": "8b2dd879a684e8dc51e2a3f33dfe6301c277b7f0ee95415c6649498d3a8784cd",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-delta/config/v4_score_config.json"
+        },
+        {
+          "bytes": 3365,
+          "card_id": "delta",
+          "evidence_path": "acquisition/collect01/delta-public-footprint.csv-attempt1.json",
+          "local_path": "cards/delta/public/footprint.csv",
+          "relative_path": "public/footprint.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:39.849482+00:00",
+          "sha256": "d33e3040681aa36993ab98c28205ecc4e4800a7b4452d197bfaf69cc261835fe",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-delta/public/footprint.csv"
+        },
+        {
+          "bytes": 554321,
+          "card_id": "delta",
+          "evidence_path": "acquisition/collect01/delta-public-targets.csv-attempt1.json",
+          "local_path": "cards/delta/public/targets.csv",
+          "relative_path": "public/targets.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:41.585316+00:00",
+          "sha256": "a9bcbe621df83bbe074075f1a786e80490dd578fbc145b028cdc30ced220f2ea",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-delta/public/targets.csv"
+        },
+        {
+          "bytes": 4445,
+          "card_id": "delta",
+          "evidence_path": "acquisition/collect01/delta-public-v4_night_calendar.csv-attempt1.json",
+          "local_path": "cards/delta/public/v4_night_calendar.csv",
+          "relative_path": "public/v4_night_calendar.csv",
+          "retrieved_at_utc": "2026-10-02T15:05:41.787015+00:00",
+          "sha256": "81f8cdcdd099f2f4cb8c6216577c7274d2fe7188b68a3acff5ca1f5ad3f6c2d4",
+          "source_url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/scenarios/v4-practice-delta/public/v4_night_calendar.csv"
+        }
+      ],
+      "local_path": "cards/delta",
+      "missing_required": [
+        "public/v4_bulletins.jsonl",
+        "public/v4_forecasts.jsonl",
+        "truth/v4_earthquake_effects.csv",
+        "truth/v4_events.csv",
+        "truth/v4_observation_requests.jsonl",
+        "truth/v4_slots.csv",
+        "truth/v4_stress_events.csv",
+        "truth/v4_weather_truth.csv"
+      ],
+      "official_bundle_checksum": "f1bfbd19427627dd2296b50c1563b579143e20cb747c5b5c09b752c09473aa59",
+      "official_facts": {
+        "area": 1880.0,
+        "card_id": "delta",
+        "checksum": "f1bfbd19427627dd2296b50c1563b579143e20cb747c5b5c09b752c09473aa59",
+        "exposure": [
+          60,
+          3600
+        ],
+        "f0": 0.5,
+        "fiber_area": 0.4,
+        "fibers": 16,
+        "first_night": "2026-10-24",
+        "last_night": "2026-11-30",
+        "min_alt": 30.0,
+        "nights": 38,
+        "phase": "practice-projects",
+        "regions": 3,
+        "required": 564,
+        "site": {
+          "latitude_deg": -24.6157,
+          "longitude_deg": -70.3976,
+          "name": "Paranal, Chile (virtual)"
+        },
+        "slug": "v4-practice-delta",
+        "stress": true,
+        "sun_limit": -18.0,
+        "t0": 900.0,
+        "targets": 9400,
+        "wallclock": 900
+      },
+      "official_facts_file_sha256": "337d20f023c2e36323f24e8ffefd7205dccb6ead6c9adf6620b4594722b4580a",
+      "official_facts_path": "research/2026-10-02/upstream/cards/v4-practice-delta/card.json",
+      "public_counts_match_official": true,
+      "required_files_complete": false,
+      "slug": "v4-practice-delta",
+      "verified": false
+    }
+  ],
+  "checksum_authority": "fixed official cards/card.json and scripts/build-v4-practice-cards.py::bundle_facts",
+  "checksum_definition": "SHA256(json.dumps(relative_path to file SHA256 map, sort_keys=True).encode())",
+  "created_at_utc": "2026-10-02T15:09:07.874118+00:00",
+  "distinct_cards_by_manifest": 4,
+  "first_inventory": "card_inventory.json",
+  "missing_object_probe_failures": [
+    {
+      "card": "alpha",
+      "error": "RuntimeError: {\"name\": \"missing-alpha-public-v4_bulletins.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-alpha-public-v4_bulletins.jsonl-attempt1.json\"}",
+      "relative_path": "public/v4_bulletins.jsonl"
+    },
+    {
+      "card": "alpha",
+      "error": "RuntimeError: {\"name\": \"missing-alpha-public-v4_forecasts.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-alpha-public-v4_forecasts.jsonl-attempt1.json\"}",
+      "relative_path": "public/v4_forecasts.jsonl"
+    },
+    {
+      "card": "alpha",
+      "error": "RuntimeError: {\"name\": \"missing-alpha-truth-v4_earthquake_effects.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-alpha-truth-v4_earthquake_effects.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_earthquake_effects.csv"
+    },
+    {
+      "card": "alpha",
+      "error": "RuntimeError: {\"name\": \"missing-alpha-truth-v4_events.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-alpha-truth-v4_events.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_events.csv"
+    },
+    {
+      "card": "alpha",
+      "error": "RuntimeError: {\"name\": \"missing-alpha-truth-v4_observation_requests.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-alpha-truth-v4_observation_requests.jsonl-attempt1.json\"}",
+      "relative_path": "truth/v4_observation_requests.jsonl"
+    },
+    {
+      "card": "alpha",
+      "error": "RuntimeError: {\"name\": \"missing-alpha-truth-v4_slots.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-alpha-truth-v4_slots.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_slots.csv"
+    },
+    {
+      "card": "alpha",
+      "error": "RuntimeError: {\"name\": \"missing-alpha-truth-v4_weather_truth.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-alpha-truth-v4_weather_truth.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_weather_truth.csv"
+    },
+    {
+      "card": "beta",
+      "error": "RuntimeError: {\"name\": \"missing-beta-public-v4_bulletins.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-beta-public-v4_bulletins.jsonl-attempt1.json\"}",
+      "relative_path": "public/v4_bulletins.jsonl"
+    },
+    {
+      "card": "beta",
+      "error": "RuntimeError: {\"name\": \"missing-beta-public-v4_forecasts.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-beta-public-v4_forecasts.jsonl-attempt1.json\"}",
+      "relative_path": "public/v4_forecasts.jsonl"
+    },
+    {
+      "card": "beta",
+      "error": "RuntimeError: {\"name\": \"missing-beta-truth-v4_earthquake_effects.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-beta-truth-v4_earthquake_effects.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_earthquake_effects.csv"
+    },
+    {
+      "card": "beta",
+      "error": "RuntimeError: {\"name\": \"missing-beta-truth-v4_events.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-beta-truth-v4_events.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_events.csv"
+    },
+    {
+      "card": "beta",
+      "error": "RuntimeError: {\"name\": \"missing-beta-truth-v4_observation_requests.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-beta-truth-v4_observation_requests.jsonl-attempt1.json\"}",
+      "relative_path": "truth/v4_observation_requests.jsonl"
+    },
+    {
+      "card": "beta",
+      "error": "RuntimeError: {\"name\": \"missing-beta-truth-v4_slots.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-beta-truth-v4_slots.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_slots.csv"
+    },
+    {
+      "card": "beta",
+      "error": "RuntimeError: {\"name\": \"missing-beta-truth-v4_weather_truth.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-beta-truth-v4_weather_truth.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_weather_truth.csv"
+    },
+    {
+      "card": "gamma",
+      "error": "RuntimeError: {\"name\": \"missing-gamma-public-v4_bulletins.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-gamma-public-v4_bulletins.jsonl-attempt1.json\"}",
+      "relative_path": "public/v4_bulletins.jsonl"
+    },
+    {
+      "card": "gamma",
+      "error": "RuntimeError: {\"name\": \"missing-gamma-public-v4_forecasts.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-gamma-public-v4_forecasts.jsonl-attempt1.json\"}",
+      "relative_path": "public/v4_forecasts.jsonl"
+    },
+    {
+      "card": "gamma",
+      "error": "RuntimeError: {\"name\": \"missing-gamma-truth-v4_earthquake_effects.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-gamma-truth-v4_earthquake_effects.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_earthquake_effects.csv"
+    },
+    {
+      "card": "gamma",
+      "error": "RuntimeError: {\"name\": \"missing-gamma-truth-v4_events.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-gamma-truth-v4_events.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_events.csv"
+    },
+    {
+      "card": "gamma",
+      "error": "RuntimeError: {\"name\": \"missing-gamma-truth-v4_observation_requests.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-gamma-truth-v4_observation_requests.jsonl-attempt1.json\"}",
+      "relative_path": "truth/v4_observation_requests.jsonl"
+    },
+    {
+      "card": "gamma",
+      "error": "RuntimeError: {\"name\": \"missing-gamma-truth-v4_slots.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-gamma-truth-v4_slots.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_slots.csv"
+    },
+    {
+      "card": "gamma",
+      "error": "RuntimeError: {\"name\": \"missing-gamma-truth-v4_stress_events.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-gamma-truth-v4_stress_events.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_stress_events.csv"
+    },
+    {
+      "card": "gamma",
+      "error": "RuntimeError: {\"name\": \"missing-gamma-truth-v4_weather_truth.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-gamma-truth-v4_weather_truth.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_weather_truth.csv"
+    },
+    {
+      "card": "delta",
+      "error": "RuntimeError: {\"name\": \"missing-delta-public-v4_bulletins.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-delta-public-v4_bulletins.jsonl-attempt1.json\"}",
+      "relative_path": "public/v4_bulletins.jsonl"
+    },
+    {
+      "card": "delta",
+      "error": "RuntimeError: {\"name\": \"missing-delta-public-v4_forecasts.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-delta-public-v4_forecasts.jsonl-attempt1.json\"}",
+      "relative_path": "public/v4_forecasts.jsonl"
+    },
+    {
+      "card": "delta",
+      "error": "RuntimeError: {\"name\": \"missing-delta-truth-v4_earthquake_effects.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-delta-truth-v4_earthquake_effects.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_earthquake_effects.csv"
+    },
+    {
+      "card": "delta",
+      "error": "RuntimeError: {\"name\": \"missing-delta-truth-v4_events.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-delta-truth-v4_events.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_events.csv"
+    },
+    {
+      "card": "delta",
+      "error": "RuntimeError: {\"name\": \"missing-delta-truth-v4_observation_requests.jsonl\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-delta-truth-v4_observation_requests.jsonl-attempt1.json\"}",
+      "relative_path": "truth/v4_observation_requests.jsonl"
+    },
+    {
+      "card": "delta",
+      "error": "RuntimeError: {\"name\": \"missing-delta-truth-v4_slots.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-delta-truth-v4_slots.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_slots.csv"
+    },
+    {
+      "card": "delta",
+      "error": "RuntimeError: {\"name\": \"missing-delta-truth-v4_stress_events.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-delta-truth-v4_stress_events.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_stress_events.csv"
+    },
+    {
+      "card": "delta",
+      "error": "RuntimeError: {\"name\": \"missing-delta-truth-v4_weather_truth.csv\", \"http_status\": 400, \"error\": null, \"evidence\": \"acquisition/collect01/missing-delta-truth-v4_weather_truth.csv-attempt1.json\"}",
+      "relative_path": "truth/v4_weather_truth.csv"
+    }
+  ],
+  "schema_version": "v4-external-card-inventory-v1",
+  "source_host": "https://vdiemcofukuxglqsmlyz.supabase.co",
+  "source_page": "https://create.gosim.org/survey26/platform/resources",
+  "targeted_download_count": 30,
+  "targeted_download_successes": 0,
+  "targeted_phase_runtime_seconds": 31.630891334,
+  "truth_policy": "download and byte hashes only; no truth content analysis",
+  "upstream_commit": "18be105bc517938c8341ad79646cf397e3293016"
+}

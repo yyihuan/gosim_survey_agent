@@ -1,0 +1,88 @@
+{
+  "recorded_before_generation_at_utc": "2026-10-02T16:16:57.691194+00:00",
+  "authority": "Root explicit extension task and extension/STUDY_DESIGN.md; all specs fixed before generation or scores",
+  "upstream_commit": "18be105bc517938c8341ad79646cf397e3293016",
+  "generator": "challenge/v4_bundle.py::build_card_bundle",
+  "source_path": "research/2026-10-02/upstream",
+  "python": "/usr/bin/python3",
+  "output_root": "experiments/v4/extension/data/cards",
+  "groups": {
+    "development": [
+      "demo",
+      "dev-season"
+    ],
+    "unopened_holdout": [
+      "ext-holdout-a",
+      "ext-holdout-b",
+      "ext-holdout-c",
+      "ext-holdout-d"
+    ]
+  },
+  "restrictions": [
+    "no scores before Root N5 freeze",
+    "no truth analysis",
+    "no reseed",
+    "no simulator or scorer changes",
+    "official alpha-delta public inputs excluded"
+  ],
+  "specs": [
+    {
+      "phase": "local-research",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-15",
+      "targets": 4800,
+      "area_deg2": 1600.0,
+      "wallclock_seconds": 900,
+      "name": "ext-holdout-a",
+      "card_id": "ext-holdout-a",
+      "scenario_slug": "local-v4-ext-holdout-a",
+      "seed": 2026100301,
+      "stress": false
+    },
+    {
+      "phase": "local-research",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-15",
+      "targets": 4800,
+      "area_deg2": 1600.0,
+      "wallclock_seconds": 900,
+      "name": "ext-holdout-b",
+      "card_id": "ext-holdout-b",
+      "scenario_slug": "local-v4-ext-holdout-b",
+      "seed": 2026100302,
+      "stress": false
+    },
+    {
+      "phase": "local-research",
+      "start_date": "2026-10-15",
+      "end_date": "2026-10-29",
+      "targets": 4800,
+      "area_deg2": 1600.0,
+      "wallclock_seconds": 900,
+      "name": "ext-holdout-c",
+      "card_id": "ext-holdout-c",
+      "scenario_slug": "local-v4-ext-holdout-c",
+      "seed": 2026100303,
+      "stress": true
+    },
+    {
+      "phase": "local-research",
+      "start_date": "2026-10-15",
+      "end_date": "2026-10-29",
+      "targets": 4800,
+      "area_deg2": 1600.0,
+      "wallclock_seconds": 900,
+      "name": "ext-holdout-d",
+      "card_id": "ext-holdout-d",
+      "scenario_slug": "local-v4-ext-holdout-d",
+      "seed": 2026100304,
+      "stress": true
+    }
+  ],
+  "spec_sha256": {
+    "ext-holdout-a": "e212df97944b5faa45eee798da5311df4b94099207bc635282c696727c0847ec",
+    "ext-holdout-b": "90484322f47e0157d671d01cfc295960be59588477f98feb4abeeddcfd8db3cf",
+    "ext-holdout-c": "450020764abc7cc6bbdf2f4fa895767c59e1b73fbca41008bccaca126b62bf44",
+    "ext-holdout-d": "a9e52cbb8cfc991358277fe039185a6498cefddcba1e265aac54c288e742191a"
+  }
+}

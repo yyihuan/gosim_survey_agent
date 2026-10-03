@@ -1,0 +1,26 @@
+{
+  "recorded_at_utc": "2026-10-02T16:45:58.644222+00:00",
+  "status": "N5_complete_all_extension_results_ready",
+  "interface": "harness/INTERFACE.json",
+  "run_entry": "harness/run_one.py",
+  "aggregate_entry": "harness/aggregate_results.py",
+  "simulator_limit": 6,
+  "unchanged_original_harness": true,
+  "new_holdouts": {
+    "inventory": "data/inventory.json",
+    "complete_count": 4,
+    "opened": true,
+    "run_count": 52
+  },
+  "d_equivalence": "validation/d-wrapper-equivalence.json",
+  "lease_cap_validation": "validation/six-slot-bound.json",
+  "real_concurrency": "results/concurrency.json",
+  "protected_check": "validation/protected-check.json",
+  "remaining_work": null,
+  "N5_results": "results/n5_results.json",
+  "final_integrity": "validation/final-integrity.json",
+  "N5_runtime_seconds": 88.730173834,
+  "extension_run_count": 97,
+  "research_evaluation_count": 78,
+  "repeat_migration_verification_count": 19
+}

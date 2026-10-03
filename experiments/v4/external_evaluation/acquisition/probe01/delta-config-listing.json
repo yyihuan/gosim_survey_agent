@@ -1,0 +1,44 @@
+{
+  "name": "delta-config-listing",
+  "url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/list/scenarios",
+  "method": "POST",
+  "payload": {
+    "prefix": "v4-practice-delta/config",
+    "limit": 1000,
+    "offset": 0,
+    "sortBy": {
+      "column": "name",
+      "order": "asc"
+    }
+  },
+  "started_at_utc": "2026-10-02T15:02:22.859016+00:00",
+  "finished_at_utc": "2026-10-02T15:02:39.267402+00:00",
+  "runtime_seconds": 16.408034666,
+  "http_status": 200,
+  "error": null,
+  "response_headers": {
+    "Date": "Fri, 02 Oct 2026 15:02:39 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "1574",
+    "Connection": "close",
+    "CF-Ray": "a4449680f94ff79a-LAX",
+    "CF-Cache-Status": "DYNAMIC",
+    "Access-Control-Allow-Origin": "*",
+    "Server": "cloudflare",
+    "X-Content-Type-Options": "nosniff",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-jwt-alg": "HS256",
+    "sb-jwt-iss": "supabase",
+    "sb-project-ref": "vdiemcofukuxglqsmlyz",
+    "sb-request-id": "01a0fd23-4ca1-7ae3-ac61-029d9b11a23e",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "set-cookie": "__cf_bm=NeqW83ijhYPmrBKnyjwMuWlbpLfMhughvh0Erysd0vs-1790953344.1560686-1.0.1.1-sVsUad9qZBzqxEIQCw.2frt.9UVfCpPR21jpfpBJZhVShZIidVBIHTLKOWEFT74wtap6EdslrTmPWOz7OfjCYCtR3.Aq7qjG7SXaoDaulfnB9bfBzlVPQYNV7MToDp5f; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Fri, 02 Oct 2026 15:32:39 GMT",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "body_sha256": "09073a06b744c8354ee91f2b545eaa41ebb0f658170a342581a23233248a77c1",
+  "body": "[{\"name\":\"v4_fiber_config.json\",\"version\":\"855e8754-d3c2-441c-90c8-eb6f5466912a\",\"id\":\"e5e60543-92bf-43ba-8db6-9e05f8fcec61\",\"updated_at\":\"2026-10-02T07:18:10.661Z\",\"created_at\":\"2026-10-02T07:18:10.661Z\",\"last_accessed_at\":\"2026-10-02T07:18:10.661Z\",\"metadata\":{\"eTag\":\"\\\"385aa3af21c81c2cb134e617a4ba2cae\\\"\",\"size\":360,\"mimetype\":\"application/json\",\"cacheControl\":\"no-cache\",\"lastModified\":\"2026-10-02T07:18:11.000Z\",\"contentLength\":360,\"httpStatusCode\":200},\"archived_at\":null,\"is_delete_marker\":false,\"is_versioned\":false},{\"name\":\"v4_scenario.json\",\"version\":\"2df6b600-635b-4be0-8849-ff5ff7e8de29\",\"id\":\"d0c8fea2-0979-4050-81d9-982f033c8e10\",\"updated_at\":\"2026-10-02T07:18:18.158Z\",\"created_at\":\"2026-10-02T07:18:18.158Z\",\"last_accessed_at\":\"2026-10-02T07:18:18.158Z\",\"metadata\":{\"eTag\":\"\\\"411e42a81fc1b50a9bb1719f8000892b\\\"\",\"size\":1216,\"mimetype\":\"application/json\",\"cacheControl\":\"no-cache\",\"lastModified\":\"2026-10-02T07:18:19.000Z\",\"contentLength\":1216,\"httpStatusCode\":200},\"archived_at\":null,\"is_delete_marker\":false,\"is_versioned\":false},{\"name\":\"v4_score_config.json\",\"version\":\"aafb3cb5-e91c-4f9f-9a50-c21c6ffeb396\",\"id\":\"a098caef-3c8e-4826-ae9f-0fb599628673\",\"updated_at\":\"2026-10-02T07:18:22.642Z\",\"created_at\":\"2026-10-02T07:18:22.642Z\",\"last_accessed_at\":\"2026-10-02T07:18:22.642Z\",\"metadata\":{\"eTag\":\"\\\"e77d9e2b5b7d7c3e6179d3b1d8eb2ad8\\\"\",\"size\":909,\"mimetype\":\"application/json\",\"cacheControl\":\"no-cache\",\"lastModified\":\"2026-10-02T07:18:23.000Z\",\"contentLength\":909,\"httpStatusCode\":200},\"archived_at\":null,\"is_delete_marker\":false,\"is_versioned\":false}]",
+  "permission": "public_frontend_anon",
+  "attempts": 1,
+  "timeout_seconds": 20
+}

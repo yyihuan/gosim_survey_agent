@@ -1,0 +1,6 @@
+{
+  "family": "P",
+  "version": "p12",
+  "parameters": {"anchors": 12, "anchor_pool": 150},
+  "environment": {"PACKING_ANCHORS": "12", "USE_LLM": "0"}
+}

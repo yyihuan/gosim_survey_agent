@@ -1,0 +1,22 @@
+stateDiagram-v2
+  [*] --> Initialization
+  state "发送公开初始化" as Initialization
+  state "构建快照 等待一条响应" as Decision
+  state "曝光 分段积分" as Exposure
+  state "展开等待" as Waiting
+  state "原模拟时刻举报" as Reporting
+  state "终局结算" as Settlement
+  state "尽力发送 finish 与清理" as Closing
+  Initialization --> Decision : 设置真实截止
+  Decision --> Exposure : 合法 observe
+  Decision --> Waiting : 合法 wait
+  Decision --> Reporting : 合法 report
+  Exposure --> Exposure : 普通 slot 或事件边界
+  Exposure --> Decision : 动作结束或夜末截断
+  Waiting --> Decision : 达到目标时刻
+  Reporting --> Decision : 相同 now 新序号
+  Decision --> Settlement : finish 非法动作或真实超时
+  Exposure --> Settlement : 模拟周期结束
+  Waiting --> Settlement : 模拟周期结束
+  Settlement --> Closing
+  Closing --> [*]

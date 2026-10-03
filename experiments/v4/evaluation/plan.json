@@ -1,0 +1,93 @@
+{
+  "candidates": [
+    {
+      "config": null,
+      "family": "baseline",
+      "id": "baseline",
+      "source": "vendor/starter_kit_v4/agent"
+    },
+    {
+      "config": "configs/tdg/t-cap900-conditional.json",
+      "family": "T",
+      "id": "t",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/tdg/d-linear.json",
+      "family": "D",
+      "id": "d",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/tdg/g-soft05.json",
+      "family": "G",
+      "id": "g",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/packing/p12.json",
+      "family": "P",
+      "id": "p",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/cw/c-soft06.json",
+      "family": "C",
+      "id": "c",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/cw/w-forecast02.json",
+      "family": "W",
+      "id": "w",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/combined/dp-frozen01.json",
+      "family": "DP",
+      "id": "dp",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/combined/dg-frozen01.json",
+      "family": "DG",
+      "id": "dg",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/combined/dt-frozen01.json",
+      "family": "DT",
+      "id": "dt",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/combined/dpg-frozen02.json",
+      "family": "DPG",
+      "id": "dpg",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/combined/dtgp-frozen02.json",
+      "family": "DTGP",
+      "id": "dtgp",
+      "source": "agents/combined/source"
+    },
+    {
+      "config": "configs/combined/dtgpcw-frozen02.json",
+      "family": "DTGPCW",
+      "id": "dtgpcw",
+      "source": "agents/combined/source"
+    }
+  ],
+  "cards": [
+    "holdout-season",
+    "holdout-stress"
+  ],
+  "equivalence_report": "agents/combined/validation/equivalence.json",
+  "final_list_authority": "Root message: baseline + six frozen families + DP,DG,DT,DPG,DTGP,DTGPCW; all combinations retained regardless of development score",
+  "holdout_seal": "data/HOLDOUT_SEAL.json",
+  "schema_version": "v4-r5-plan-v1",
+  "selection_document": "STUDY_DESIGN.md",
+  "upstream_commit": "18be105bc517938c8341ad79646cf397e3293016",
+  "wallclock_seconds": 900
+}

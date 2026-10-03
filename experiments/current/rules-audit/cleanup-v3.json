@@ -1,0 +1,73 @@
+{
+  "date": "2026-10-03",
+  "authorization": "user explicitly requested obsolete v3 cleanup",
+  "removed": [
+    {
+      "path": "agent",
+      "files": 9,
+      "bytes": 59611,
+      "content_index_sha256": "fd3d050c95372ede99771980ebe9d685760580fbe90b49d81c1dbeda8dd7c470"
+    },
+    {
+      "path": "runs",
+      "files": 23,
+      "bytes": 24894293,
+      "content_index_sha256": "2c32fec8299d15a5b5f86d6a75875c7201ecb8f68c6c5846a7dcf8bfde108b6a"
+    },
+    {
+      "path": "run_demo.command",
+      "files": 1,
+      "bytes": 433,
+      "content_index_sha256": "cb74b913371de03a56cceb1d6b28f4b04d5b0d0f2a766c98010628fe9e0d0a44"
+    },
+    {
+      "path": "run_reference.command",
+      "files": 1,
+      "bytes": 346,
+      "content_index_sha256": "59bd92075b1a8fcdf78dab295bf7d496838d06c61c8fb617aacd17da516acf5c"
+    },
+    {
+      "path": "research/2026-09-25",
+      "files": 116,
+      "bytes": 5333848,
+      "content_index_sha256": "5731c0204e4fdb97a431a18cbb0052b17263856ea514d6685ea2454f9971db1a"
+    },
+    {
+      "path": "scripts/inspect_demo.py",
+      "files": 1,
+      "bytes": 3395,
+      "content_index_sha256": "30d563283bc5015cc31222f89758fedbd43aa0b94460edaa467325246a52552f"
+    },
+    {
+      "path": "docs/playground-first-run.md",
+      "files": 1,
+      "bytes": 9141,
+      "content_index_sha256": "469df7bd0914ca7c5055212eef005d627d66165625e58db286c0abfebbb4e846"
+    },
+    {
+      "path": "docs/rules-v3-v4-and-observing-gaps.md",
+      "files": 1,
+      "bytes": 16820,
+      "content_index_sha256": "ae82582cfeeb2f04df91f855779c4155c48fc4cf69e2970945534159dd806f8c"
+    },
+    {
+      "path": "docs/diagrams/playground-data.mmd",
+      "files": 1,
+      "bytes": 279,
+      "content_index_sha256": "f3b88d11f2d4b9589a912cf2b67a21c024857225416379dffc57789bbe9ccfb0"
+    },
+    {
+      "path": "docs/diagrams/playground-data.svg",
+      "files": 1,
+      "bytes": 7479,
+      "content_index_sha256": "83d9bba2b3cfd67ac11ea6c0cba6c54db5283dc93f66f54453dd55d03fb60f92"
+    },
+    {
+      "path": "research/2026-10-02/upstream/archive/starter_kit_v3",
+      "files": 115,
+      "bytes": 4233512,
+      "content_index_sha256": "aca115d07f9c728a04ee1784e010301c6299d7be70c78fda17a8758e69c23635"
+    }
+  ],
+  "scope": "dedicated obsolete materials only; current and historic v4 evidence and required shared backend modules preserved"
+}

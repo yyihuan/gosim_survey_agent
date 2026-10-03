@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "visibility interval wrap/circumpolar boundaries",
+    "Q minimum samples and bounded quantile",
+    "Q unsaturated/raw threshold gate",
+    "E required/request/saturation ceil candidates",
+    "neutral identity",
+    "single-family isolation"
+  ]
+}

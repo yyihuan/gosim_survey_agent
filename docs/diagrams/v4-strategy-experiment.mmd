@@ -1,0 +1,18 @@
+flowchart TD
+  A[固定 v4 代码与规则] --> B[锁定四张卡与散列]
+  B --> C[开发集：demo + dev-season]
+  B --> H[封存：season + stress]
+  C --> D[R1 复现官方基线]
+  D --> E[R2 六类单项策略]
+  E --> F[R3 主 Agent 选择值得迭代的方向]
+  F --> G[R4 已测参数组合]
+  G --> I[冻结代码、配置、待测清单]
+  H --> J[R5 只评估，不调参]
+  I --> J
+  J --> K[主 Agent 分析与解释文本]
+  K --> L[子 Agent 实现交互页面]
+  M[执行：Sol xhigh，无观测 LLM] -.-> D
+  M -.-> E
+  M -.-> F
+  M -.-> G
+  M -.-> J

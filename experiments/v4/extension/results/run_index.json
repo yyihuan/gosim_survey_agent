@@ -1,0 +1,466 @@
+{
+  "schema_version": "v4-extension-run-index-v1",
+  "runs": {
+    "r1-harness-demo": {
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "r1-official-dev-season": {
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "r4-equivalence-d-demo": {
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "r4-equivalence-d-dev-season": {
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "r4-dtgp-frozen02-demo": {
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "r4-dtgp-frozen02-dev-season": {
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-heq-h-opportunity2-demo": {
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-heq-h-opportunity2-dev-season": {
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-heq-e-threshold30-demo": {
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-heq-e-threshold30-dev-season": {
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-heq-q-quantile25-demo": {
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-heq-q-quantile25-dev-season": {
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-m-initial-demo": {
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-m-initial-dev-season": {
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-f-initial-demo": {
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-f-initial-dev-season": {
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-j-initial-demo": {
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n2-j-initial-dev-season": {
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n4-fe-demo": {
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n4-fe-dev-season": {
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n4-fm-demo": {
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n4-fm-dev-season": {
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n4-fq-demo": {
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n4-fq-dev-season": {
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n4-fmq-demo": {
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n4-fmq-dev-season": {
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "selection_role": "selected-development-version"
+    },
+    "ext-n5-baseline-ext-holdout-a": {
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-baseline-ext-holdout-b": {
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-baseline-ext-holdout-c": {
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-baseline-ext-holdout-d": {
+      "case_id": "official-baseline",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-d-ext-holdout-a": {
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-d-ext-holdout-b": {
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-d-ext-holdout-c": {
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-d-ext-holdout-d": {
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-dtgp-ext-holdout-a": {
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-dtgp-ext-holdout-b": {
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-dtgp-ext-holdout-c": {
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-dtgp-ext-holdout-d": {
+      "case_id": "DTGP-frozen02",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-h-ext-holdout-a": {
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-h-ext-holdout-b": {
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-h-ext-holdout-c": {
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-h-ext-holdout-d": {
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-e-ext-holdout-a": {
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-e-ext-holdout-b": {
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-e-ext-holdout-c": {
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-e-ext-holdout-d": {
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-q-ext-holdout-a": {
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-q-ext-holdout-b": {
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-q-ext-holdout-c": {
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-q-ext-holdout-d": {
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-m-ext-holdout-a": {
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-m-ext-holdout-b": {
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-m-ext-holdout-c": {
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-m-ext-holdout-d": {
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-f-ext-holdout-a": {
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-f-ext-holdout-b": {
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-f-ext-holdout-c": {
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-f-ext-holdout-d": {
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-j-ext-holdout-a": {
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-j-ext-holdout-b": {
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-j-ext-holdout-c": {
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-j-ext-holdout-d": {
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fe-ext-holdout-a": {
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fe-ext-holdout-b": {
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fe-ext-holdout-c": {
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fe-ext-holdout-d": {
+      "case_id": "D+F+E",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fm-ext-holdout-a": {
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fm-ext-holdout-b": {
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fm-ext-holdout-c": {
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fm-ext-holdout-d": {
+      "case_id": "D+F+M",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fq-ext-holdout-a": {
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fq-ext-holdout-b": {
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fq-ext-holdout-c": {
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fq-ext-holdout-d": {
+      "case_id": "D+F+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fmq-ext-holdout-a": {
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fmq-ext-holdout-b": {
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fmq-ext-holdout-c": {
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-n5-fmq-ext-holdout-d": {
+      "case_id": "D+F+M+Q",
+      "reference_id": "D-linear",
+      "selection_role": "N5-Root-frozen-authorized"
+    },
+    "ext-integration-combined-j-dev-season": {
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-q-dev-season": {
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-m-demo": {
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-e-dev-season": {
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-j-demo": {
+      "case_id": "D+J",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-h-dev-season": {
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-f6-dev-season": {
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-m-dev-season": {
+      "case_id": "D+M",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-q-demo": {
+      "case_id": "D+Q",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-d-demo": {
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-h-demo": {
+      "case_id": "D+H",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-e-demo": {
+      "case_id": "D+E",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-d-dev-season": {
+      "case_id": "D-linear",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    },
+    "ext-integration-combined-f6-demo": {
+      "case_id": "D+F",
+      "reference_id": "D-linear",
+      "selection_role": "integration-equivalence-only"
+    }
+  },
+  "updated_at_utc": "2026-10-02T16:45:58.048923+00:00"
+}

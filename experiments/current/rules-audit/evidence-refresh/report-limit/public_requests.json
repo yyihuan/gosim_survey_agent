@@ -1,0 +1,1862 @@
+[
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 1,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "bulletin",
+          "slot_id": "N20261101-S001",
+          "night_id": "N20261101",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "initial": true,
+          "notices": [
+            {
+              "event_kind": "terrain_obstruction",
+              "direction": "SW"
+            },
+            {
+              "event_kind": "terrain_obstruction",
+              "direction": "SE"
+            }
+          ]
+        },
+        {
+          "record_type": "forecast",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "coverage_start_utc": "2026-11-02T00:30:00Z",
+          "coverage_end_utc": "2026-11-09T00:30:00Z",
+          "notices": []
+        }
+      ],
+      "last_result": null,
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 2,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": 0.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": 0.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 3,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": 0.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": 0.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 4,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 5,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 6,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 7,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 8,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 9,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 10,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 11,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 12,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 13,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 14,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 15,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 16,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 17,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 18,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 19,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 20,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 21,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 22,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 23,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.0,
+        "remaining_seconds": 900.0
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 24,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 25,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 26,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 27,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 28,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 29,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 30,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 31,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 32,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  },
+  {
+    "protocol_version": "participant-agent-protocol-v4",
+    "message_type": "decision_request",
+    "decision_sequence": 33,
+    "payload": {
+      "schema_version": "v4-decision-snapshot-v1",
+      "now_utc": "2026-11-02T00:30:00Z",
+      "survey_end_utc": "2026-12-03T08:15:00Z",
+      "observe_action_index": 0,
+      "running_total": 0,
+      "latest_bulletin": {
+        "record_type": "bulletin",
+        "slot_id": "N20261101-S001",
+        "night_id": "N20261101",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "initial": true,
+        "notices": [
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SW"
+          },
+          {
+            "event_kind": "terrain_obstruction",
+            "direction": "SE"
+          }
+        ]
+      },
+      "latest_forecast": {
+        "record_type": "forecast",
+        "issued_at_utc": "2026-11-02T00:30:00Z",
+        "coverage_start_utc": "2026-11-02T00:30:00Z",
+        "coverage_end_utc": "2026-11-09T00:30:00Z",
+        "notices": []
+      },
+      "active_requests": [],
+      "new_messages": [
+        {
+          "record_type": "report_result",
+          "issued_at_utc": "2026-11-02T00:30:00Z",
+          "correct": false,
+          "repaired": false,
+          "score_delta": -150.0
+        }
+      ],
+      "last_result": {
+        "action": "report",
+        "correct": false,
+        "repaired": false,
+        "score_delta": -150.0
+      },
+      "wallclock": {
+        "elapsed_seconds": 0.001,
+        "remaining_seconds": 899.999
+      }
+    }
+  }
+]

@@ -1,0 +1,456 @@
+{
+  "all_four_legal_complete_local_bundles": false,
+  "cards": [
+    {
+      "all_files_equal_previous_download": true,
+      "archive": "taskcard-alpha.zip",
+      "archive_bytes": 210685,
+      "archive_sha256": "2f376ab28e2dc691792b5c60c0b3f13f37c2ef6d4189fe61374168e732a27bae",
+      "bundle_manifest_sha256_partial": "e5bae6564c022f0bc77c1294b4ae3f7d185940fa83bb80ffa98c189dd5d4c8e5",
+      "card_id": "alpha",
+      "file_count": 6,
+      "legal_complete_local_bundle": false,
+      "local_path": "cards/alpha",
+      "members": [
+        {
+          "bytes": 360,
+          "crc32": "55ae9eff",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_fiber_config.json",
+          "sha256": "85fc175cb198b1c65d33a123cfbc8b6c1deb10778eef0dbfa659156918e23c8f",
+          "zip_member": "alpha/config/v4_fiber_config.json"
+        },
+        {
+          "bytes": 1159,
+          "crc32": "1278775d",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_scenario.json",
+          "sha256": "8910f40c25eddaec7db772277b8e89fad7968a0f0ef68992e3d74a256481ce9d",
+          "zip_member": "alpha/config/v4_scenario.json"
+        },
+        {
+          "bytes": 909,
+          "crc32": "8f44a667",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_score_config.json",
+          "sha256": "8b2dd879a684e8dc51e2a3f33dfe6301c277b7f0ee95415c6649498d3a8784cd",
+          "zip_member": "alpha/config/v4_score_config.json"
+        },
+        {
+          "bytes": 3353,
+          "crc32": "605e2e22",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/footprint.csv",
+          "sha256": "6f62b8733c3d0a405bde82a131110b28b383f01f91bac6e6324fb3f0661b8882",
+          "zip_member": "alpha/public/footprint.csv"
+        },
+        {
+          "bytes": 591701,
+          "crc32": "8d1bcef1",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/targets.csv",
+          "sha256": "73242c16513c33f61dbe6cd96a358447e35267d1de6d7cef7cc4b71fad0ae0bc",
+          "zip_member": "alpha/public/targets.csv"
+        },
+        {
+          "bytes": 4445,
+          "crc32": "a80d1d3f",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/v4_night_calendar.csv",
+          "sha256": "313243fdf7aba33fa476e4c31403ba08ee3b90c354c7bb0f82d102122d78be3c",
+          "zip_member": "alpha/public/v4_night_calendar.csv"
+        }
+      ],
+      "official_bundle_checksum": "5455aaaf048d5076337ab523a45401b9b50c66c5b93176f4a6ecb0252a0569b4",
+      "official_facts": {
+        "area": 2000.0,
+        "card_id": "alpha",
+        "checksum": "5455aaaf048d5076337ab523a45401b9b50c66c5b93176f4a6ecb0252a0569b4",
+        "exposure": [
+          60,
+          3600
+        ],
+        "f0": 0.5,
+        "fiber_area": 0.4,
+        "fibers": 16,
+        "first_night": "2026-10-04",
+        "last_night": "2026-11-10",
+        "min_alt": 30.0,
+        "nights": 38,
+        "phase": "practice-projects",
+        "regions": 3,
+        "required": 500,
+        "site": {
+          "latitude_deg": -24.6157,
+          "longitude_deg": -70.3976,
+          "name": "Paranal, Chile (virtual)"
+        },
+        "slug": "v4-practice-alpha",
+        "stress": false,
+        "sun_limit": -18.0,
+        "t0": 900.0,
+        "targets": 10000,
+        "wallclock": 900
+      },
+      "runner_required_missing": [
+        "public/v4_bulletins.jsonl",
+        "public/v4_forecasts.jsonl",
+        "truth/v4_earthquake_effects.csv",
+        "truth/v4_events.csv",
+        "truth/v4_observation_requests.jsonl",
+        "truth/v4_slots.csv",
+        "truth/v4_weather_truth.csv"
+      ],
+      "same_file_set_as_previous": true,
+      "tree_sha256": "f3f9864680f1f2a7440cb13b5b6a5dc079d961a1cf9682b02fc56edc2656f2c2"
+    },
+    {
+      "all_files_equal_previous_download": true,
+      "archive": "taskcard-beta.zip",
+      "archive_bytes": 202944,
+      "archive_sha256": "6b8da2474636523ef04c0241f8d0d16a48f9b27c5fe57134d2b692ed312549b5",
+      "bundle_manifest_sha256_partial": "72de49d7bfe05e45d39b802c5bc6564d4274bf2e5a67737b727bca1b2f698ae7",
+      "card_id": "beta",
+      "file_count": 6,
+      "legal_complete_local_bundle": false,
+      "local_path": "cards/beta",
+      "members": [
+        {
+          "bytes": 360,
+          "crc32": "55ae9eff",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_fiber_config.json",
+          "sha256": "85fc175cb198b1c65d33a123cfbc8b6c1deb10778eef0dbfa659156918e23c8f",
+          "zip_member": "beta/config/v4_fiber_config.json"
+        },
+        {
+          "bytes": 1156,
+          "crc32": "7f36cf14",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_scenario.json",
+          "sha256": "fbfc80887b0d50290d4bd20eb60a270111913c1cb6068a0b051010dd01c37c3c",
+          "zip_member": "beta/config/v4_scenario.json"
+        },
+        {
+          "bytes": 909,
+          "crc32": "8f44a667",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_score_config.json",
+          "sha256": "8b2dd879a684e8dc51e2a3f33dfe6301c277b7f0ee95415c6649498d3a8784cd",
+          "zip_member": "beta/config/v4_score_config.json"
+        },
+        {
+          "bytes": 3377,
+          "crc32": "5961712a",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/footprint.csv",
+          "sha256": "6437c9db4bb9d71f432b5b10eb953b8df4995435b75b232734f3beb5b92bd960",
+          "zip_member": "beta/public/footprint.csv"
+        },
+        {
+          "bytes": 567618,
+          "crc32": "16095e7e",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/targets.csv",
+          "sha256": "4769aa6f76cd0225d58dff58e2cf8628ec4c95c9839d946bc8a80aa23cc0b166",
+          "zip_member": "beta/public/targets.csv"
+        },
+        {
+          "bytes": 4445,
+          "crc32": "d166a8b8",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/v4_night_calendar.csv",
+          "sha256": "32813747337d6d2057a93ea7bb99e90fa52d0ea2b3701f0d87a0eaf135a577b5",
+          "zip_member": "beta/public/v4_night_calendar.csv"
+        }
+      ],
+      "official_bundle_checksum": "29d6245f65e93a98b8fb29cb33664b79a7fb4ed1b1d06d2aee53da9687d5d691",
+      "official_facts": {
+        "area": 1920.0,
+        "card_id": "beta",
+        "checksum": "29d6245f65e93a98b8fb29cb33664b79a7fb4ed1b1d06d2aee53da9687d5d691",
+        "exposure": [
+          60,
+          3600
+        ],
+        "f0": 0.5,
+        "fiber_area": 0.4,
+        "fibers": 16,
+        "first_night": "2026-10-18",
+        "last_night": "2026-11-24",
+        "min_alt": 30.0,
+        "nights": 38,
+        "phase": "practice-projects",
+        "regions": 3,
+        "required": 480,
+        "site": {
+          "latitude_deg": -24.6157,
+          "longitude_deg": -70.3976,
+          "name": "Paranal, Chile (virtual)"
+        },
+        "slug": "v4-practice-beta",
+        "stress": false,
+        "sun_limit": -18.0,
+        "t0": 900.0,
+        "targets": 9600,
+        "wallclock": 900
+      },
+      "runner_required_missing": [
+        "public/v4_bulletins.jsonl",
+        "public/v4_forecasts.jsonl",
+        "truth/v4_earthquake_effects.csv",
+        "truth/v4_events.csv",
+        "truth/v4_observation_requests.jsonl",
+        "truth/v4_slots.csv",
+        "truth/v4_weather_truth.csv"
+      ],
+      "same_file_set_as_previous": true,
+      "tree_sha256": "dad33a0408692d2d7ead2b714136d340b78a9e85d5084af647fad29305d86eb2"
+    },
+    {
+      "all_files_equal_previous_download": true,
+      "archive": "taskcard-gamma.zip",
+      "archive_bytes": 209083,
+      "archive_sha256": "9b7bbcb51de835b65aa6fe76476d0ef357b56739fe2717b22e5a274d27cdbcaa",
+      "bundle_manifest_sha256_partial": "e8634452a0f486064180917b0bc63204458ab9ff7ee4d31be5e06ca42492dc4a",
+      "card_id": "gamma",
+      "file_count": 6,
+      "legal_complete_local_bundle": false,
+      "local_path": "cards/gamma",
+      "members": [
+        {
+          "bytes": 360,
+          "crc32": "55ae9eff",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_fiber_config.json",
+          "sha256": "85fc175cb198b1c65d33a123cfbc8b6c1deb10778eef0dbfa659156918e23c8f",
+          "zip_member": "gamma/config/v4_fiber_config.json"
+        },
+        {
+          "bytes": 1216,
+          "crc32": "7bc2c704",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_scenario.json",
+          "sha256": "2008e58fe43ed2c510466e626a1f00d52021a586f6fc6694f03fbf452e8335b1",
+          "zip_member": "gamma/config/v4_scenario.json"
+        },
+        {
+          "bytes": 909,
+          "crc32": "8f44a667",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_score_config.json",
+          "sha256": "8b2dd879a684e8dc51e2a3f33dfe6301c277b7f0ee95415c6649498d3a8784cd",
+          "zip_member": "gamma/config/v4_score_config.json"
+        },
+        {
+          "bytes": 3380,
+          "crc32": "f34423d9",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/footprint.csv",
+          "sha256": "da1bcfe970819a110034caf5212eddad4c7342762f1f574fb90d5facbce4263b",
+          "zip_member": "gamma/public/footprint.csv"
+        },
+        {
+          "bytes": 586278,
+          "crc32": "9f054341",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/targets.csv",
+          "sha256": "3de3c2e917fab98d0e81f8280f512f85dbebf4576cd611ea1efe52c8c9e2d488",
+          "zip_member": "gamma/public/targets.csv"
+        },
+        {
+          "bytes": 4445,
+          "crc32": "1145cd34",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/v4_night_calendar.csv",
+          "sha256": "55da1bc4ab5dbbafd19c24abc01eedf5278b11552ecb04bd8a36c784734d6a16",
+          "zip_member": "gamma/public/v4_night_calendar.csv"
+        }
+      ],
+      "official_bundle_checksum": "df414b2818c17043ab5510c1d634be0a2de64ef0335b234489bba5538e2fa86d",
+      "official_facts": {
+        "area": 1980.0,
+        "card_id": "gamma",
+        "checksum": "df414b2818c17043ab5510c1d634be0a2de64ef0335b234489bba5538e2fa86d",
+        "exposure": [
+          60,
+          3600
+        ],
+        "f0": 0.5,
+        "fiber_area": 0.4,
+        "fibers": 16,
+        "first_night": "2026-10-09",
+        "last_night": "2026-11-15",
+        "min_alt": 30.0,
+        "nights": 38,
+        "phase": "practice-projects",
+        "regions": 3,
+        "required": 495,
+        "site": {
+          "latitude_deg": -24.6157,
+          "longitude_deg": -70.3976,
+          "name": "Paranal, Chile (virtual)"
+        },
+        "slug": "v4-practice-gamma",
+        "stress": true,
+        "sun_limit": -18.0,
+        "t0": 900.0,
+        "targets": 9900,
+        "wallclock": 900
+      },
+      "runner_required_missing": [
+        "public/v4_bulletins.jsonl",
+        "public/v4_forecasts.jsonl",
+        "truth/v4_earthquake_effects.csv",
+        "truth/v4_events.csv",
+        "truth/v4_observation_requests.jsonl",
+        "truth/v4_slots.csv",
+        "truth/v4_stress_events.csv",
+        "truth/v4_weather_truth.csv"
+      ],
+      "same_file_set_as_previous": true,
+      "tree_sha256": "b03026f2814a3878bb54c8008a2fd585455c9f52e41ed64ec2a62a8c19900f1e"
+    },
+    {
+      "all_files_equal_previous_download": true,
+      "archive": "taskcard-delta.zip",
+      "archive_bytes": 198234,
+      "archive_sha256": "f933704d1f422d66455d0f5ab8a8e9c44ced68b2fdbe41f95ff5212725eb2fa0",
+      "bundle_manifest_sha256_partial": "d86050b531ca5e782fba628e9971352c2a15b87cb47c9226bfc1fe6b12ecae49",
+      "card_id": "delta",
+      "file_count": 6,
+      "legal_complete_local_bundle": false,
+      "local_path": "cards/delta",
+      "members": [
+        {
+          "bytes": 360,
+          "crc32": "55ae9eff",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_fiber_config.json",
+          "sha256": "85fc175cb198b1c65d33a123cfbc8b6c1deb10778eef0dbfa659156918e23c8f",
+          "zip_member": "delta/config/v4_fiber_config.json"
+        },
+        {
+          "bytes": 1216,
+          "crc32": "29981b15",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_scenario.json",
+          "sha256": "f189487ee3c40dd082be08f8d11890949d36d8a21c91715459d6cc4c47cb759a",
+          "zip_member": "delta/config/v4_scenario.json"
+        },
+        {
+          "bytes": 909,
+          "crc32": "8f44a667",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "config/v4_score_config.json",
+          "sha256": "8b2dd879a684e8dc51e2a3f33dfe6301c277b7f0ee95415c6649498d3a8784cd",
+          "zip_member": "delta/config/v4_score_config.json"
+        },
+        {
+          "bytes": 3365,
+          "crc32": "0befa996",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/footprint.csv",
+          "sha256": "d33e3040681aa36993ab98c28205ecc4e4800a7b4452d197bfaf69cc261835fe",
+          "zip_member": "delta/public/footprint.csv"
+        },
+        {
+          "bytes": 554321,
+          "crc32": "1c96faaf",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/targets.csv",
+          "sha256": "a9bcbe621df83bbe074075f1a786e80490dd578fbc145b028cdc30ced220f2ea",
+          "zip_member": "delta/public/targets.csv"
+        },
+        {
+          "bytes": 4445,
+          "crc32": "1e3ddfdb",
+          "equal_previous_download": true,
+          "previous_download_exists": true,
+          "relative_path": "public/v4_night_calendar.csv",
+          "sha256": "81f8cdcdd099f2f4cb8c6216577c7274d2fe7188b68a3acff5ca1f5ad3f6c2d4",
+          "zip_member": "delta/public/v4_night_calendar.csv"
+        }
+      ],
+      "official_bundle_checksum": "f1bfbd19427627dd2296b50c1563b579143e20cb747c5b5c09b752c09473aa59",
+      "official_facts": {
+        "area": 1880.0,
+        "card_id": "delta",
+        "checksum": "f1bfbd19427627dd2296b50c1563b579143e20cb747c5b5c09b752c09473aa59",
+        "exposure": [
+          60,
+          3600
+        ],
+        "f0": 0.5,
+        "fiber_area": 0.4,
+        "fibers": 16,
+        "first_night": "2026-10-24",
+        "last_night": "2026-11-30",
+        "min_alt": 30.0,
+        "nights": 38,
+        "phase": "practice-projects",
+        "regions": 3,
+        "required": 564,
+        "site": {
+          "latitude_deg": -24.6157,
+          "longitude_deg": -70.3976,
+          "name": "Paranal, Chile (virtual)"
+        },
+        "slug": "v4-practice-delta",
+        "stress": true,
+        "sun_limit": -18.0,
+        "t0": 900.0,
+        "targets": 9400,
+        "wallclock": 900
+      },
+      "runner_required_missing": [
+        "public/v4_bulletins.jsonl",
+        "public/v4_forecasts.jsonl",
+        "truth/v4_earthquake_effects.csv",
+        "truth/v4_events.csv",
+        "truth/v4_observation_requests.jsonl",
+        "truth/v4_slots.csv",
+        "truth/v4_stress_events.csv",
+        "truth/v4_weather_truth.csv"
+      ],
+      "same_file_set_as_previous": true,
+      "tree_sha256": "bd219eeb993201ba531d90e7b6cbcfee36d752da733fd17d80c67058cc078575"
+    }
+  ],
+  "imported_at_utc": "2026-10-02T16:01:33.629896+00:00",
+  "safe_extract_checks": [
+    "card-specific relative path",
+    "no traversal",
+    "no symlink",
+    "no duplicate",
+    "bounded size",
+    "CRC verified",
+    "never overwrite"
+  ],
+  "schema_version": "v4-manual-card-import-v1",
+  "script_sha256": "c203de98429d25f7487715b40646305f05a098aef950188284010108ac45d852",
+  "truth_policy": "copy and hashes only; no truth content analysis"
+}

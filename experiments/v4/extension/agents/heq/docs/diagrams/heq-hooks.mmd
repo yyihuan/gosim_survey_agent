@@ -1,0 +1,16 @@
+flowchart TD
+    INPUT[公开目标与夜历] --> D[D 线性完成度底座]
+    FEEDBACK[已收到观测反馈] --> D
+    INPUT --> H[H 达标机会夜数或窗口量]
+    D --> RANK[候选紧迫度与达标收益]
+    H --> RANK
+    FEEDBACK --> Q[Q 经验保守余量]
+    Q --> RANK
+    RANK --> FIELD[原选场与光纤装填]
+    FIELD --> EXP[原离散时长]
+    FIELD --> E[E 追加门槛时长]
+    E --> EXP
+    Q --> REQ[仅 required 达标奖励]
+    EXP --> REQ
+    REQ --> RATE[原单位时间收益选择]
+    RATE --> ACTION[原 program 与 pending 动作]

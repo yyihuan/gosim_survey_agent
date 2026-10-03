@@ -1,0 +1,39 @@
+{
+  "upstream_commit": "149c6590c49cf289c325b8e2fedfee1035975c6f",
+  "source_files": [
+    {
+      "path": "research/2026-10-03/latest-149c659/challenge/v4_runner.py",
+      "sha256": "390cc6e7fa0a4ff31fa76fe4485511c026ee3355b3c4c203afea471e6a55af4d",
+      "matches_git_object": true,
+      "matches_packaged_engine": true
+    },
+    {
+      "path": "research/2026-10-03/latest-149c659/challenge/v4_workflow.py",
+      "sha256": "365d423055514373f574d924d6321735659e0eead0f6b0260904dfcdb2113fba",
+      "matches_git_object": true,
+      "matches_packaged_engine": true
+    },
+    {
+      "path": "research/2026-10-03/latest-149c659/challenge/v4_scorer.py",
+      "sha256": "46154188eb409fb8408845d0a40ea07c143e1bb1f297f7ee79ab1559ac24cd66",
+      "matches_git_object": true,
+      "matches_packaged_engine": true
+    },
+    {
+      "path": "research/2026-10-03/latest-149c659/project_platform/transport.py",
+      "sha256": "e704392660c8651d58da0413ab7fd548fda86c9062cb8f7e4030c33176bfedc3",
+      "matches_git_object": true
+    },
+    {
+      "path": "research/2026-10-03/latest-149c659/project_platform/trusted_engine.py",
+      "sha256": "b852d075813698247861ea42d157e42d05effe064405888591e1834e7b3fae01",
+      "matches_git_object": true
+    },
+    {
+      "path": "research/2026-10-03/latest-149c659/web/src/content/rules.zh.md",
+      "sha256": "08db35a397efa66b9dcfb042a304a4d8d9d6eb9d154f0e2067c782df74d2e1fb",
+      "matches_git_object": true
+    }
+  ],
+  "cloud_deployment_verified": false
+}

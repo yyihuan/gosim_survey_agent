@@ -1,0 +1,21 @@
+{
+  "baseline_path": "experiments/v4/agents/official/baseline",
+  "baseline_files_sha256": {
+    "planner.py": "5eafa7c91ba743fed971e2ed4c10129dc0b61ebf2d885af0f15d852e5861c75d",
+    "skymath.py": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26",
+    "llm_hook.py": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543",
+    "observer.project.json": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc",
+    "baseline_agent.py": "189621fcbd9704c56baa6de7da2796fbf1246641890281268fb311f0854d05d9"
+  },
+  "modified_files": [
+    "planner.py"
+  ],
+  "added_files": [
+    "cw_policy.py"
+  ],
+  "control_config": "experiments/v4/configs/cw/control.json",
+  "single_factors": [
+    "C",
+    "W"
+  ]
+}

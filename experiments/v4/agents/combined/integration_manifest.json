@@ -1,0 +1,18 @@
+{
+  "description": "TDG source as base; CW planner hooks and exact CWPolicy; P environment budget with neutral default3. Original source directories remain untouched.",
+  "inputs": {
+    "CW": {
+      "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/cw/source",
+      "tree_sha256": "9babcbd762f24b0973d427a6aab2bbc7147644cc27f75bd73d6e48f0a160bee1"
+    },
+    "P": {
+      "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/packing",
+      "tree_sha256": "e044d9126570ecb202bb2562074ce83fc69c6fb3908e2f983d6cf15be8747a2f"
+    },
+    "TDG": {
+      "path": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/tdg/source",
+      "tree_sha256": "acfac5e70c1cd8977ee3c9b46a91dd807736ead6b063b0a8b3277140def1278e"
+    }
+  },
+  "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+}

@@ -1,0 +1,21 @@
+sequenceDiagram
+  participant E as 比赛环境
+  participant P as 固定程序
+  participant L as LLM
+  E->>P: 本轮请求、上次结果、新消息
+  P->>P: 更新状态、检查触发、计算候选
+  alt 需要咨询且预算足够
+    P->>L: 证据包、候选、规则与时限
+    Note over E,L: 模拟时间不推进，真实预算继续消耗
+    alt 返回有效且未过期的建议
+      L-->>P: 方案编号、依据、失效条件
+      P->>P: 验证，生成当前一个动作
+    else 超时、无效或过期
+      P->>P: 用当前状态重算并检查方案
+    end
+  else 普通回合
+    P->>P: 选择并检查当前程序方案
+  end
+  P->>E: 一条对应序号的决策响应
+  E->>E: 执行动作，推进模拟时间
+  E-->>P: 下一轮请求与反馈

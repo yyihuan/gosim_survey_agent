@@ -1,0 +1,26 @@
+flowchart TD
+  R[收到 decision_request] --> M[新消息与 resync]
+  M --> F[消费 last_result 更新估计]
+  F --> P[按真实剩余时间调整搜索量]
+  P --> N{当前在观测夜内}
+  N -->|否| W[等到下一夜 或 finish]
+  N -->|是| A[新夜调用两项建议 离线则跳过]
+  A --> E{夜末不足最小曝光}
+  E -->|是| W
+  E -->|否| C{公告全场雨或风暴}
+  C -->|是| WS[等到下个 slot]
+  C -->|否| D{故障证据触发 report}
+  D -->|是| RP[report]
+  D -->|否| S[可见候选 锚点 光纤装填]
+  S --> T[比较时长与 program 估计收益]
+  T --> V{有可用计划}
+  V -->|否| WS
+  V -->|是| O[observe 记录 pending]
+  O --> Q[本地动作校验]
+  RP --> Q
+  WS --> Q
+  W --> Q
+  Q --> X{合法}
+  X -->|否或异常| FB[wait 回退]
+  X -->|是| SEND[更新连续举报计数 回复同一序号]
+  FB --> SEND

@@ -1,0 +1,48 @@
+{
+  "files": {
+    "code": [
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/__init__.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/challenge_workflow.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/contracts.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/observation_request_simulator.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/observing_calendar.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/project_paths.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/scoring_core.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/tile_geometry_simulator.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_config_check.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_fiber_map.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_runner.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_scorer.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/v4_workflow.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/challenge/weather_simulator.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/project_platform/__init__.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/project_platform/transport.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/run_local.py",
+      "../../../../../../private/var/folders/kb/zcxf01xs5p7gmw1kss26fp0h0000gn/T/survey-ast-m_hufpjh/verify_engine.py"
+    ],
+    "document": [],
+    "paper": [],
+    "image": [],
+    "video": []
+  },
+  "total_files": 18,
+  "total_words": 25105,
+  "needs_graph": false,
+  "warning": "Corpus is ~25,105 words - fits in a single context window. You may not need a graph.",
+  "skipped_sensitive": [],
+  "graphifyignore_patterns": 10,
+  "scope": {
+    "requested_mode": "all",
+    "resolved_mode": "all",
+    "source": "cli",
+    "root": ".",
+    "candidate_count": null,
+    "included_count": 18,
+    "excluded_untracked_count": 0,
+    "excluded_ignored_count": 0,
+    "excluded_sensitive_count": 0,
+    "missing_committed_count": 0,
+    "warnings": [],
+    "recommendation": null
+  }
+}

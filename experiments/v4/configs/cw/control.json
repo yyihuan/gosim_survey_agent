@@ -1,0 +1,6 @@
+{
+  "family": "CW-control",
+  "stage": "R2-control",
+  "C": {"enabled": false},
+  "W": {"enabled": false}
+}

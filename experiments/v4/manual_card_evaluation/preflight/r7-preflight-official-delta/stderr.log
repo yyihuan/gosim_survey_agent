@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py", line 222, in <module>
+    raise SystemExit(main())
+  File "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/local_runner.py", line 161, in main
+    args.wallclock = V4Workflow(card_dir).wallclock_budget(args.wallclock)  # min(this, card limit, 900)
+  File "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/challenge/v4_workflow.py", line 97, in __init__
+    self.scenario = validate_bundle(self.root)
+  File "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/challenge/v4_workflow.py", line 87, in validate_bundle
+    raise ValueError(f"bundle product {value!r} is missing or outside the bundle")
+ValueError: bundle product '../public/v4_bulletins.jsonl' is missing or outside the bundle

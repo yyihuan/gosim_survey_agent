@@ -1,0 +1,81 @@
+{
+  "candidates": [
+    {
+      "config": null,
+      "config_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "id": "baseline",
+      "label": "official baseline",
+      "source": "experiments/v4/vendor/starter_kit_v4/agent",
+      "source_tree_sha256": "8204d3ccec2975c874ab2384c7b786ce4f877dc843ed268a55036ab18260c2c3"
+    },
+    {
+      "config": "experiments/v4/configs/tdg/d-linear.json",
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "id": "d",
+      "label": "D linear p1",
+      "source": "experiments/v4/agents/combined/source",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+    },
+    {
+      "config": "experiments/v4/configs/combined/dtgp-frozen02.json",
+      "config_sha256": "9f25447bbc56b59a1125c32f06e253e0706db339a00a1888edf9aef14c37f931",
+      "id": "dtgp",
+      "label": "DTGP frozen",
+      "source": "experiments/v4/agents/combined/source",
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+    }
+  ],
+  "cards": [
+    {
+      "archive": "taskcard-alpha.zip",
+      "archive_sha256": "2f376ab28e2dc691792b5c60c0b3f13f37c2ef6d4189fe61374168e732a27bae",
+      "card_id": "alpha",
+      "tree_sha256": "f3f9864680f1f2a7440cb13b5b6a5dc079d961a1cf9682b02fc56edc2656f2c2"
+    },
+    {
+      "archive": "taskcard-beta.zip",
+      "archive_sha256": "6b8da2474636523ef04c0241f8d0d16a48f9b27c5fe57134d2b692ed312549b5",
+      "card_id": "beta",
+      "tree_sha256": "dad33a0408692d2d7ead2b714136d340b78a9e85d5084af647fad29305d86eb2"
+    },
+    {
+      "archive": "taskcard-gamma.zip",
+      "archive_sha256": "9b7bbcb51de835b65aa6fe76476d0ef357b56739fe2717b22e5a274d27cdbcaa",
+      "card_id": "gamma",
+      "tree_sha256": "b03026f2814a3878bb54c8008a2fd585455c9f52e41ed64ec2a62a8c19900f1e"
+    },
+    {
+      "archive": "taskcard-delta.zip",
+      "archive_sha256": "f933704d1f422d66455d0f5ab8a8e9c44ced68b2fdbe41f95ff5212725eb2fa0",
+      "card_id": "delta",
+      "tree_sha256": "bd219eeb993201ba531d90e7b6cbcfee36d752da733fd17d80c67058cc078575"
+    }
+  ],
+  "concurrency_authorization": {
+    "cards_serial_per_strategy": true,
+    "maximum_if_resources_allow": 6,
+    "old_two_slot_harness_not_used_for_three_concurrent_claim": true,
+    "preferred_simulators": 3,
+    "reason": "only implement new execution scheduling if official local bundle passes validation",
+    "strategy_groups": 3,
+    "wrapper_created": false
+  },
+  "expected_strategy_runs": 12,
+  "frozen_at_utc": "2026-10-02T16:03:42.093052+00:00",
+  "harness_tree_sha256": "88ece38f9e58f5ea9a68580413d3cfe2cf6908a1a06d1e573e809960a30909e3",
+  "protected_old_artifact_sha256": {
+    "experiments/v4/data/inventory-public-discovery.json": "6f90995b683e56bf6424c8959b37f011031ce383d06d0b382b1649079a40eeac",
+    "experiments/v4/data/inventory.json": "30e2e2806a6b1f2d64d2844b081db8dd687c859dd11c2277d3b1674cbd8ef0b5",
+    "experiments/v4/evaluation/freeze_manifest.json": "19a50dd8ca97a566e7ed698b7a0a3f7eb565db27a8368ac32dd02a31f2f5504e",
+    "experiments/v4/evaluation/r5_results.json": "2a11348662c9e96509783b26f0b21500316899f1afd6a2d940f58d262fd5f4c0",
+    "experiments/v4/external_evaluation/results.csv": "e35abf065cc66e8ee4a646bd6ad2f34cc468dfde2b4a690a6336e02720d946f8",
+    "experiments/v4/external_evaluation/results.json": "4e616a2831567efba4e80a4ade968245b5a0cde6f75cab86bdf5ab281921aa7e",
+    "experiments/v4/results/all_runs.csv": "d2b4572c47fa32697fa23ef9e93b2b2577e09cd65d0d61ea8c757240e6a91259",
+    "experiments/v4/results/all_runs.json": "f550366db6a9d56647a84f4703112783d719c6a6de9af84718c4b318f1eb0a2a"
+  },
+  "schema_version": "v4-manual-selection-v1",
+  "scope": "local import and exact official execution feasibility; no actual upload, online session, model call, tuning, or fabricated weather",
+  "selection_basis": "user preserves previously frozen official baseline, D linear, DTGP; fixed before any four-card score",
+  "stage": "R7-manual-official",
+  "vendor_tree_sha256": "90b39b0fee7133630bcc1ba2c30b509631458dd7b4529b13ff49f4bed703db5c"
+}

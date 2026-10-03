@@ -1,0 +1,31 @@
+{
+  "C": {
+    "enabled": true,
+    "strength": 0.6
+  },
+  "W": {
+    "angular_half_width_deg": 67.5,
+    "enabled": true,
+    "event_kinds": [
+      "rain",
+      "storm",
+      "overcast",
+      "haze",
+      "rocket_launch"
+    ],
+    "maximum_altitude_deg": 75.0,
+    "penalty_fraction": 0.2
+  },
+  "conditional_long_exposure": true,
+  "environment": {
+    "PACKING_ANCHORS": "12",
+    "USE_LLM": "0"
+  },
+  "exposure_cap_seconds": 900,
+  "family": "DTGPCW",
+  "geometry_strength": 0.5,
+  "science_exponent": 1.0,
+  "stage": "R4",
+  "strict_slot": false,
+  "variant": "frozen02"
+}

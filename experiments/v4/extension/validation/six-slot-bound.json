@@ -1,0 +1,268 @@
+{
+  "schema_version": "v4-extension-six-slot-verification-v1",
+  "recorded_at_utc": "2026-10-02T16:20:39.262076+00:00",
+  "type": "lease_only_bound_test_not_simulator_run",
+  "process_count": 7,
+  "peak_concurrent_leases": 6,
+  "all_same_lock_namespace": true,
+  "cap_enforced": true,
+  "records": [
+    {
+      "run_id": "ext-lease-verification-0",
+      "start": 0.119622333,
+      "end": 0.924680291,
+      "conditions": {
+        "simulator_limit": 6,
+        "exclusive": false,
+        "slots": [
+          3
+        ],
+        "peers_at_acquisition": [
+          {
+            "run_id": "ext-lease-verification-5",
+            "harness_pid": 59134,
+            "slot": 0,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-2",
+            "harness_pid": 59131,
+            "slot": 1,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-4",
+            "harness_pid": 59133,
+            "slot": 2,
+            "exclusive": false,
+            "limit": 6
+          }
+        ],
+        "cpu_count": 8,
+        "load_average": [
+          4.32861328125,
+          4.38525390625,
+          4.81396484375
+        ],
+        "lock_wait_seconds": 0.0003163750000000076,
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks"
+      }
+    },
+    {
+      "run_id": "ext-lease-verification-1",
+      "start": 0.122855458,
+      "end": 0.927879666,
+      "conditions": {
+        "simulator_limit": 6,
+        "exclusive": false,
+        "slots": [
+          4
+        ],
+        "peers_at_acquisition": [
+          {
+            "run_id": "ext-lease-verification-5",
+            "harness_pid": 59134,
+            "slot": 0,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-2",
+            "harness_pid": 59131,
+            "slot": 1,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-4",
+            "harness_pid": 59133,
+            "slot": 2,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-0",
+            "harness_pid": 59129,
+            "slot": 3,
+            "exclusive": false,
+            "limit": 6
+          }
+        ],
+        "cpu_count": 8,
+        "load_average": [
+          4.32861328125,
+          4.38525390625,
+          4.81396484375
+        ],
+        "lock_wait_seconds": 0.00032725000000000115,
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks"
+      }
+    },
+    {
+      "run_id": "ext-lease-verification-2",
+      "start": 0.108098625,
+      "end": 0.913133708,
+      "conditions": {
+        "simulator_limit": 6,
+        "exclusive": false,
+        "slots": [
+          1
+        ],
+        "peers_at_acquisition": [
+          {
+            "run_id": "ext-lease-verification-5",
+            "harness_pid": 59134,
+            "slot": 0,
+            "exclusive": false,
+            "limit": 6
+          }
+        ],
+        "cpu_count": 8,
+        "load_average": [
+          4.32861328125,
+          4.38525390625,
+          4.81396484375
+        ],
+        "lock_wait_seconds": 0.0003085000000000032,
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks"
+      }
+    },
+    {
+      "run_id": "ext-lease-verification-3",
+      "start": 0.966988541,
+      "end": 1.772034083,
+      "conditions": {
+        "simulator_limit": 6,
+        "exclusive": false,
+        "slots": [
+          0
+        ],
+        "peers_at_acquisition": [],
+        "cpu_count": 8,
+        "load_average": [
+          4.32861328125,
+          4.38525390625,
+          4.81396484375
+        ],
+        "lock_wait_seconds": 0.844869917,
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks"
+      }
+    },
+    {
+      "run_id": "ext-lease-verification-4",
+      "start": 0.114778208,
+      "end": 0.920063125,
+      "conditions": {
+        "simulator_limit": 6,
+        "exclusive": false,
+        "slots": [
+          2
+        ],
+        "peers_at_acquisition": [
+          {
+            "run_id": "ext-lease-verification-5",
+            "harness_pid": 59134,
+            "slot": 0,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-2",
+            "harness_pid": 59131,
+            "slot": 1,
+            "exclusive": false,
+            "limit": 6
+          }
+        ],
+        "cpu_count": 8,
+        "load_average": [
+          4.32861328125,
+          4.38525390625,
+          4.81396484375
+        ],
+        "lock_wait_seconds": 0.00033412500000000456,
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks"
+      }
+    },
+    {
+      "run_id": "ext-lease-verification-5",
+      "start": 0.100891166,
+      "end": 0.905948916,
+      "conditions": {
+        "simulator_limit": 6,
+        "exclusive": false,
+        "slots": [
+          0
+        ],
+        "peers_at_acquisition": [],
+        "cpu_count": 8,
+        "load_average": [
+          4.32861328125,
+          4.38525390625,
+          4.81396484375
+        ],
+        "lock_wait_seconds": 0.0006825830000000005,
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks"
+      }
+    },
+    {
+      "run_id": "ext-lease-verification-6",
+      "start": 0.116995208,
+      "end": 0.921664583,
+      "conditions": {
+        "simulator_limit": 6,
+        "exclusive": false,
+        "slots": [
+          5
+        ],
+        "peers_at_acquisition": [
+          {
+            "run_id": "ext-lease-verification-5",
+            "harness_pid": 59134,
+            "slot": 0,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-2",
+            "harness_pid": 59131,
+            "slot": 1,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-4",
+            "harness_pid": 59133,
+            "slot": 2,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-0",
+            "harness_pid": 59129,
+            "slot": 3,
+            "exclusive": false,
+            "limit": 6
+          },
+          {
+            "run_id": "ext-lease-verification-1",
+            "harness_pid": 59130,
+            "slot": 4,
+            "exclusive": false,
+            "limit": 6
+          }
+        ],
+        "cpu_count": 8,
+        "load_average": [
+          4.32861328125,
+          4.38525390625,
+          4.81396484375
+        ],
+        "lock_wait_seconds": 0.00047416699999999756,
+        "lock_namespace": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/extension/harness/.locks"
+      }
+    }
+  ]
+}

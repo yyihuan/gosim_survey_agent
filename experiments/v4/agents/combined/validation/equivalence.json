@@ -1,0 +1,709 @@
+{
+  "all_equal": true,
+  "comparisons": [
+    {
+      "all_core_files_equal": true,
+      "card": "demo",
+      "case": "control",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-control-demo",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/neutral-control.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/neutral-control.json",
+      "config_sha256": "d86a6f6757a954d0562ec6681f245588f3b993e851d14ad2631370c3f9c09a54",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "84fc87d0de2e2e60a2f9cc6cebf02d05cc5c90d4cbbac1a8343f8dc27bfc7b1b",
+          "reference_sha256": "84fc87d0de2e2e60a2f9cc6cebf02d05cc5c90d4cbbac1a8343f8dc27bfc7b1b",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "27c302ccd89c9cf436aea47ff8f87f52fa6970944af061567b0eaf30dcbf3828",
+          "reference_sha256": "27c302ccd89c9cf436aea47ff8f87f52fa6970944af061567b0eaf30dcbf3828",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "4bd4d334828f3963d3b45664142c2b6f3b78f6f3f3c97d4b5cb97d2c35e2c0c4",
+          "reference_sha256": "4bd4d334828f3963d3b45664142c2b6f3b78f6f3f3c97d4b5cb97d2c35e2c0c4",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "220e1ea59e7edec3f5a35dd2017b8492315b2b7c91dbe5708140511dbf8e52cd",
+          "reference_sha256": "220e1ea59e7edec3f5a35dd2017b8492315b2b7c91dbe5708140511dbf8e52cd",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r1-harness-demo",
+      "run_id": "r4-equivalence-control-demo",
+      "runtime_seconds": 2.4916570829999998,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": 1082.572141
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "dev-season",
+      "case": "control",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-control-dev-season",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/neutral-control.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/neutral-control.json",
+      "config_sha256": "d86a6f6757a954d0562ec6681f245588f3b993e851d14ad2631370c3f9c09a54",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "742eca273921da2eafe766314e236f9651711af80d2f637f52c17ee77d3c92a8",
+          "reference_sha256": "742eca273921da2eafe766314e236f9651711af80d2f637f52c17ee77d3c92a8",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "4716678310f6a2074ba79fa010a48ccc026058b541e96806e3c347ec1245e2e3",
+          "reference_sha256": "4716678310f6a2074ba79fa010a48ccc026058b541e96806e3c347ec1245e2e3",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "e7448c6b6931c2788830657ddd61549cf8c2e0de831f28c1ef9dc248dbb98e72",
+          "reference_sha256": "e7448c6b6931c2788830657ddd61549cf8c2e0de831f28c1ef9dc248dbb98e72",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "a509013ba0a27f94278a8abca96e0c24b08e851854b138b50e07e2594cd9eeca",
+          "reference_sha256": "a509013ba0a27f94278a8abca96e0c24b08e851854b138b50e07e2594cd9eeca",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r1-official-dev-season",
+      "run_id": "r4-equivalence-control-dev-season",
+      "runtime_seconds": 4.446227125,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": -2232.887855
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "demo",
+      "case": "T",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-t-demo",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/t-cap900-conditional.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/t-cap900-conditional.json",
+      "config_sha256": "5ee26c130f7d005017c4bc22d4a9ce30f51f142545541b19f7c0a86151cb6516",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "bef69ce7ed3dafcc58a3e13faef11e5955b83e29bc5ec4815dcbad47035f0148",
+          "reference_sha256": "bef69ce7ed3dafcc58a3e13faef11e5955b83e29bc5ec4815dcbad47035f0148",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "ca74310007cd994e0444f9b3006e6bc8a4a5a60423c9db1a2d32bb6aa34168fd",
+          "reference_sha256": "ca74310007cd994e0444f9b3006e6bc8a4a5a60423c9db1a2d32bb6aa34168fd",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "afe2aaa472dbe693eacc8513af062c5b8b4df1db949c700972d5a8658270fbe4",
+          "reference_sha256": "afe2aaa472dbe693eacc8513af062c5b8b4df1db949c700972d5a8658270fbe4",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "e3e7f1b07f85d61f48b87cc4edec9f4e5e0189cd93f0efcea6e5845e1225f107",
+          "reference_sha256": "e3e7f1b07f85d61f48b87cc4edec9f4e5e0189cd93f0efcea6e5845e1225f107",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r3-t-cap900-conditional-demo",
+      "run_id": "r4-equivalence-t-demo",
+      "runtime_seconds": 3.4560555419999996,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": 1490.242054
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "dev-season",
+      "case": "T",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-t-dev-season",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/t-cap900-conditional.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/t-cap900-conditional.json",
+      "config_sha256": "5ee26c130f7d005017c4bc22d4a9ce30f51f142545541b19f7c0a86151cb6516",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "61c6ef7b7c4621cdcc72a74c1373de87872ae8ba69a55dc2455646d1e8d533b9",
+          "reference_sha256": "61c6ef7b7c4621cdcc72a74c1373de87872ae8ba69a55dc2455646d1e8d533b9",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "68f131c7234484a7640f4fe3438edd153b1a6537c00217fa06834fe87f7ec576",
+          "reference_sha256": "68f131c7234484a7640f4fe3438edd153b1a6537c00217fa06834fe87f7ec576",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "baaf75d84cfce62e0e97d6cdc2082b6b9790fa638b1c85c4b0c2871cd925f68c",
+          "reference_sha256": "baaf75d84cfce62e0e97d6cdc2082b6b9790fa638b1c85c4b0c2871cd925f68c",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "afa28bfda42280bd63c45f5ea136f0a3f960f81ce8bd168dfdb4c405fe182e4f",
+          "reference_sha256": "afa28bfda42280bd63c45f5ea136f0a3f960f81ce8bd168dfdb4c405fe182e4f",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r3-t-cap900-conditional-dev-season",
+      "run_id": "r4-equivalence-t-dev-season",
+      "runtime_seconds": 5.537594583,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": -1881.461032
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "demo",
+      "case": "D",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-d-demo",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/d-linear.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/d-linear.json",
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "2882b63afbe89bf8d0085a377068568f883140088f3419ee91f77c7f501cd247",
+          "reference_sha256": "2882b63afbe89bf8d0085a377068568f883140088f3419ee91f77c7f501cd247",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "9e2bcc02e9720b470abe1d78c605e67759f707369d110c6b327e78d191eb4ec6",
+          "reference_sha256": "9e2bcc02e9720b470abe1d78c605e67759f707369d110c6b327e78d191eb4ec6",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "5e4c71c2c757311b9ebde3dd53e4ff83f776373cd0c3af977f73eeff0c184e14",
+          "reference_sha256": "5e4c71c2c757311b9ebde3dd53e4ff83f776373cd0c3af977f73eeff0c184e14",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "b60980110f30e554e1e6cdbf935a5857512cc190696ebe80cdf9296b39958729",
+          "reference_sha256": "b60980110f30e554e1e6cdbf935a5857512cc190696ebe80cdf9296b39958729",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-d-linear-demo",
+      "run_id": "r4-equivalence-d-demo",
+      "runtime_seconds": 3.723409416,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": 1501.174588
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "dev-season",
+      "case": "D",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-d-dev-season",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/d-linear.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/d-linear.json",
+      "config_sha256": "12738a8c2deb63a185756944e47aeb3253aa27af8fe00997002ce8419120b443",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "f032a42c3c5efcabb0022e2abf7f135460f1afa101bb48a62c25a4d4173b353a",
+          "reference_sha256": "f032a42c3c5efcabb0022e2abf7f135460f1afa101bb48a62c25a4d4173b353a",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "0df38aa72f6e2aa448a3f114fd28b95783aea25022f5f5c2e79bea58339decb4",
+          "reference_sha256": "0df38aa72f6e2aa448a3f114fd28b95783aea25022f5f5c2e79bea58339decb4",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "ec8060fb7a4f693df3fdc5d95ceec1d58cd27931165c8a10b3e62edbf3f0a7b6",
+          "reference_sha256": "ec8060fb7a4f693df3fdc5d95ceec1d58cd27931165c8a10b3e62edbf3f0a7b6",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "cc16713d3fe88ff9173bf128d27351a5a51f8a614ebb1780f9f387651ef54726",
+          "reference_sha256": "cc16713d3fe88ff9173bf128d27351a5a51f8a614ebb1780f9f387651ef54726",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-d-linear-dev-season",
+      "run_id": "r4-equivalence-d-dev-season",
+      "runtime_seconds": 5.741319417000001,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": -1851.06202
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "demo",
+      "case": "G",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-g-demo",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/g-soft05.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/g-soft05.json",
+      "config_sha256": "6735114b6d3014bc0bcd70cfecf5e81ef8bda358aabc4fe246a2665093dd08a2",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "4d1ade57a366362eb0f4d4805b114465e09a32abafd599a4416c6fe9fe84f3df",
+          "reference_sha256": "4d1ade57a366362eb0f4d4805b114465e09a32abafd599a4416c6fe9fe84f3df",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "7fbddd5ca1e48341fc7446a17ed7f23c76ffb221956da939d8ba0c09ccb20f45",
+          "reference_sha256": "7fbddd5ca1e48341fc7446a17ed7f23c76ffb221956da939d8ba0c09ccb20f45",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "7fa882097959ccd9c4c513c14a4de54788606a1c5de2cadc8372d66072be66f7",
+          "reference_sha256": "7fa882097959ccd9c4c513c14a4de54788606a1c5de2cadc8372d66072be66f7",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "a03de07ba2936ee9eb30d1c2c5d71fa0e29ffd7e285d1c7d11a2eb26e5c78109",
+          "reference_sha256": "a03de07ba2936ee9eb30d1c2c5d71fa0e29ffd7e285d1c7d11a2eb26e5c78109",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-g-soft05-demo",
+      "run_id": "r4-equivalence-g-demo",
+      "runtime_seconds": 3.009437958,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": 1340.932062
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "dev-season",
+      "case": "G",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-g-dev-season",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/g-soft05.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/tdg/g-soft05.json",
+      "config_sha256": "6735114b6d3014bc0bcd70cfecf5e81ef8bda358aabc4fe246a2665093dd08a2",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "3480276ac55a32a30efbf170a05a502759f5dd619c0798ff40d61580820f5bc5",
+          "reference_sha256": "3480276ac55a32a30efbf170a05a502759f5dd619c0798ff40d61580820f5bc5",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "633de4a8deb71bf320415c2def0bd480e6ba50d33f517922d6be7b53ed2ac641",
+          "reference_sha256": "633de4a8deb71bf320415c2def0bd480e6ba50d33f517922d6be7b53ed2ac641",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "68e04c2563f569022a8e853e21f55e7e44eea24e70be9f4fd4849f316d64d0ab",
+          "reference_sha256": "68e04c2563f569022a8e853e21f55e7e44eea24e70be9f4fd4849f316d64d0ab",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "a52cf21a76d938e94332f9044d89303e37568cefbb3f3ddde19f76b8083053cd",
+          "reference_sha256": "a52cf21a76d938e94332f9044d89303e37568cefbb3f3ddde19f76b8083053cd",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-g-soft05-dev-season",
+      "run_id": "r4-equivalence-g-dev-season",
+      "runtime_seconds": 4.762675833,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": -2226.303896
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "demo",
+      "case": "C",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-c-demo",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/cw/c-soft06.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/cw/c-soft06.json",
+      "config_sha256": "19644ca1b4ebd2993f048fedf0a4d40920fa1919ad13d7d8755f3df132ec7fa1",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "a0abc387f4e2b58c0b803ebf68f2031b0a8462482c2b9fa4ca4921648970a533",
+          "reference_sha256": "a0abc387f4e2b58c0b803ebf68f2031b0a8462482c2b9fa4ca4921648970a533",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "53aa0e7b3d28e316d9925db733913ba210cee6444960df5376843cc38695f953",
+          "reference_sha256": "53aa0e7b3d28e316d9925db733913ba210cee6444960df5376843cc38695f953",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "bbd054f75bca26771284c8a0502adb94fbced4207b56e5579f94f18825020a81",
+          "reference_sha256": "bbd054f75bca26771284c8a0502adb94fbced4207b56e5579f94f18825020a81",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "952ecca667f798d46301d8add449bf9a642c48d81aae3c9acbcddda7e1dec9c1",
+          "reference_sha256": "952ecca667f798d46301d8add449bf9a642c48d81aae3c9acbcddda7e1dec9c1",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-soft06-demo",
+      "run_id": "r4-equivalence-c-demo",
+      "runtime_seconds": 2.6334145419999997,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": 1213.370613
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "dev-season",
+      "case": "C",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-c-dev-season",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/cw/c-soft06.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/cw/c-soft06.json",
+      "config_sha256": "19644ca1b4ebd2993f048fedf0a4d40920fa1919ad13d7d8755f3df132ec7fa1",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "3f82e99535c7a3d37c81be3d3c7d382c8907e07eac19093f95c8a47e9a0b096c",
+          "reference_sha256": "3f82e99535c7a3d37c81be3d3c7d382c8907e07eac19093f95c8a47e9a0b096c",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "30b4379f21627a0bd8671392f2e90472f124fdf19b2d3b958bc61a6ca0c95e13",
+          "reference_sha256": "30b4379f21627a0bd8671392f2e90472f124fdf19b2d3b958bc61a6ca0c95e13",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "1480e4df43d7f6f7d9e6e00b00e548f210c218568a18dcda1495e6d42e14fc1e",
+          "reference_sha256": "1480e4df43d7f6f7d9e6e00b00e548f210c218568a18dcda1495e6d42e14fc1e",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "c3b3dd01e30ec6eb63a2a337075433ad53d599ef8ddffcedfb63d6eb56317191",
+          "reference_sha256": "c3b3dd01e30ec6eb63a2a337075433ad53d599ef8ddffcedfb63d6eb56317191",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-c-soft06-dev-season",
+      "run_id": "r4-equivalence-c-dev-season",
+      "runtime_seconds": 4.738068792,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": -2270.806958
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "demo",
+      "case": "W",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-w-demo",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/cw/w-forecast02.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/cw/w-forecast02.json",
+      "config_sha256": "b9b816883260a1a76041969e32e585206461166d8e8119a273c552432d18810b",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "696f690d5e36aa3629baeb82b4f450c6566852f0438e7d1e6148c316276dba9b",
+          "reference_sha256": "696f690d5e36aa3629baeb82b4f450c6566852f0438e7d1e6148c316276dba9b",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "977966a4c44987ecde1bd16aef0c6be0a444e16e7effbf54729c909461573c99",
+          "reference_sha256": "977966a4c44987ecde1bd16aef0c6be0a444e16e7effbf54729c909461573c99",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "aeb9912d55ef51997b07101e54d595a3b36fc035edda3fc4c17d0405fcd559d4",
+          "reference_sha256": "aeb9912d55ef51997b07101e54d595a3b36fc035edda3fc4c17d0405fcd559d4",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "aeb1d8204ab26a443bcce4f8a5df939e58388693a64eaf54cab394fd098ed03c",
+          "reference_sha256": "aeb1d8204ab26a443bcce4f8a5df939e58388693a64eaf54cab394fd098ed03c",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-w-forecast02-demo",
+      "run_id": "r4-equivalence-w-demo",
+      "runtime_seconds": 2.454403458,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": 891.582284
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "dev-season",
+      "case": "W",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-w-dev-season",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/cw/w-forecast02.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/cw/w-forecast02.json",
+      "config_sha256": "b9b816883260a1a76041969e32e585206461166d8e8119a273c552432d18810b",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "6d992d83ccaecb9af0758df8ca2bedbdc85ab33aa982769bbb45e9e3f57c4312",
+          "reference_sha256": "6d992d83ccaecb9af0758df8ca2bedbdc85ab33aa982769bbb45e9e3f57c4312",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "f9e6f04f90f50a6aa3cd3c92f48d7ec5491ac215afd076d81c91d8107cbad37b",
+          "reference_sha256": "f9e6f04f90f50a6aa3cd3c92f48d7ec5491ac215afd076d81c91d8107cbad37b",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "37a1bd457cf3002ee5ceaa5be915960da5b26a80d7ccb2cfe91f65513bb9b5b4",
+          "reference_sha256": "37a1bd457cf3002ee5ceaa5be915960da5b26a80d7ccb2cfe91f65513bb9b5b4",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "6e3bb2a03d0a97d564d15bc2089c22a523b364cb3777d341e88db95ba4d0960e",
+          "reference_sha256": "6e3bb2a03d0a97d564d15bc2089c22a523b364cb3777d341e88db95ba4d0960e",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r2-w-forecast02-dev-season",
+      "run_id": "r4-equivalence-w-dev-season",
+      "runtime_seconds": 4.618691834,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": -2492.442866
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "demo",
+      "case": "P",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-p-demo",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/packing/p12.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/packing/p12.json",
+      "config_sha256": "82cf839c2595b2f7e722030d278130c2e7fc20ae205ccc015f3d83500e3a97ff",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "c7a51804aecfb4596e560c5ba6a92ed766300d391cf0101d1885d10f431249ee",
+          "reference_sha256": "c7a51804aecfb4596e560c5ba6a92ed766300d391cf0101d1885d10f431249ee",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "1b1097256320d46f2be829d6ad479b6b5be5b7715c0c9baf97befa9734edfb5c",
+          "reference_sha256": "1b1097256320d46f2be829d6ad479b6b5be5b7715c0c9baf97befa9734edfb5c",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "655932d06a64cc257ec2bf5721f06cb462a4f8769003fcc0392d36e12a223f2f",
+          "reference_sha256": "655932d06a64cc257ec2bf5721f06cb462a4f8769003fcc0392d36e12a223f2f",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "12001b38c7eb6a96048bd507e8de0c3ea4fbe7941d527b7448c770a753027949",
+          "reference_sha256": "12001b38c7eb6a96048bd507e8de0c3ea4fbe7941d527b7448c770a753027949",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r3-p-p12-demo",
+      "run_id": "r4-equivalence-p-demo",
+      "runtime_seconds": 6.321209125,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": 1429.52698
+    },
+    {
+      "all_core_files_equal": true,
+      "card": "dev-season",
+      "case": "P",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/harness/run_one.py",
+        "--run-id",
+        "r4-equivalence-p-dev-season",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+        "--config",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/packing/p12.json",
+        "--card",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/data/cards/dev-season",
+        "--exclusive"
+      ],
+      "config": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/configs/packing/p12.json",
+      "config_sha256": "82cf839c2595b2f7e722030d278130c2e7fc20ae205ccc015f3d83500e3a97ff",
+      "files": {
+        "actions.jsonl": {
+          "combined_sha256": "38538626a8dc27331b2327e0cb52f5e902a2e4118e714fb9dccf13872f53aef5",
+          "reference_sha256": "38538626a8dc27331b2327e0cb52f5e902a2e4118e714fb9dccf13872f53aef5",
+          "same_bytes": true
+        },
+        "decisions.csv": {
+          "combined_sha256": "55380f7eaf5a3c2f9e8d9b841b129f721372fcaace671db0d30f64dcf11c4704",
+          "reference_sha256": "55380f7eaf5a3c2f9e8d9b841b129f721372fcaace671db0d30f64dcf11c4704",
+          "same_bytes": true
+        },
+        "observations.csv": {
+          "combined_sha256": "2c9e27976d8e290d971fac0e6ee94b3a856bccc290b698d391ea3da15c7e5c67",
+          "reference_sha256": "2c9e27976d8e290d971fac0e6ee94b3a856bccc290b698d391ea3da15c7e5c67",
+          "same_bytes": true
+        },
+        "score_report.json": {
+          "combined_sha256": "3a352350dd795496d55a4b21327a0646c8fa828185473b6760105391ca5192f9",
+          "reference_sha256": "3a352350dd795496d55a4b21327a0646c8fa828185473b6760105391ca5192f9",
+          "same_bytes": true
+        }
+      },
+      "reference": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/runs/r3-p-p12-dev-season",
+      "run_id": "r4-equivalence-p-dev-season",
+      "runtime_seconds": 8.607259667000001,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "total": -2273.659383
+    }
+  ],
+  "schema_version": "combined-equivalence-v1",
+  "scope": "all-off and one active family on each development card; no multi-family combinations or holdout",
+  "source": "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/v4/agents/combined/source",
+  "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4"
+}

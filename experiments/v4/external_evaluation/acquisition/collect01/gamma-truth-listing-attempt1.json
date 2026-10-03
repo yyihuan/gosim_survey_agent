@@ -1,0 +1,44 @@
+{
+  "attempt": 1,
+  "body": "[]",
+  "body_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "bytes": 2,
+  "error": null,
+  "finished_at_utc": "2026-10-02T15:05:11.751517+00:00",
+  "http_status": 200,
+  "method": "POST",
+  "name": "gamma-truth-listing",
+  "permission": "public_frontend_anon",
+  "request_payload": {
+    "limit": 1000,
+    "offset": 0,
+    "prefix": "v4-practice-gamma/truth",
+    "sortBy": {
+      "column": "name",
+      "order": "asc"
+    }
+  },
+  "response_headers": {
+    "Access-Control-Allow-Origin": "*",
+    "CF-Cache-Status": "DYNAMIC",
+    "CF-Ray": "a4449a965f65dab4-LAX",
+    "Connection": "close",
+    "Content-Length": "2",
+    "Content-Type": "application/json; charset=utf-8",
+    "Date": "Fri, 02 Oct 2026 15:05:11 GMT",
+    "Server": "cloudflare",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+    "X-Content-Type-Options": "nosniff",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "sb-gateway-mode": "direct",
+    "sb-gateway-version": "1",
+    "sb-jwt-alg": "HS256",
+    "sb-jwt-iss": "supabase",
+    "sb-project-ref": "vdiemcofukuxglqsmlyz",
+    "sb-request-id": "01a0fd25-d9ff-7e4d-b6f1-b94277d65ffa",
+    "set-cookie": "__cf_bm=3BNi6oGk0YW4J42dRe1xei42t_BmIp4X5PPZhCOmBE8-1790953511.4162-1.0.1.1-eWOK8zYGLRLpB0OlUsaEDoCTgI0BVlwb5UDzH.Nexia.vZ0REejgJTOLjyMKhbfx8T2wHBFbHXydgqH.YbykYLjP6vwY.vJsSdKlv.EwLKPkmUkZy8RJcv9dbSfA6mBP; HttpOnly; SameSite=None; Secure; Path=/; Domain=supabase.co; Expires=Fri, 02 Oct 2026 15:35:11 GMT"
+  },
+  "runtime_seconds": 1.5828359170000006,
+  "started_at_utc": "2026-10-02T15:05:10.168713+00:00",
+  "url": "https://vdiemcofukuxglqsmlyz.supabase.co/storage/v1/object/list/scenarios"
+}

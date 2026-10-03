@@ -1,0 +1,258 @@
+{
+  "checks": {
+    "L1_repeat_byte_identical": true,
+    "command_0_passed": true,
+    "command_1_passed": true,
+    "four_cards_complete": true,
+    "guard_has_no_complete_score": true,
+    "latest_L1_byte_identical": true,
+    "latest_L1_complete": true,
+    "latest_L1_zero_llm_calls": true,
+    "legacy_D_compatible": true,
+    "new_planner_no_exceptions": true,
+    "offline_calls_zero": true,
+    "old_harness_unchanged": true,
+    "old_vendor_unchanged": true,
+    "owned_processes_exited": true,
+    "protected_old_artifacts_unchanged": true,
+    "snapshot_docs_unchanged": true,
+    "snapshot_examples_unchanged": true
+  },
+  "commands": [
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/research/2026-10-03/latest-149c659/examples/_local/runner/verify_engine.py"
+      ],
+      "exit_code": 0,
+      "log": "validation-check-0.log"
+    },
+    {
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "/Users/cxjh168/Documents/codex_project/sky_survey_agent_competition/experiments/current/tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "validation-check-1.log"
+    }
+  ],
+  "limitations": [
+    "local scores only",
+    "LLM not called",
+    "public L cards are not blind holdout",
+    "Python 3.12 platform image not run",
+    "process isolation is not OS filesystem or network sandbox"
+  ],
+  "local_modified_files": [
+    "AGENTS.md",
+    "README.md",
+    "README.zh.md",
+    "agent.py",
+    "agent_core/llm_client.py"
+  ],
+  "passed": true,
+  "protected_old_artifacts": {
+    "experiments/v4/data/inventory-public-discovery.json": true,
+    "experiments/v4/data/inventory.json": true,
+    "experiments/v4/evaluation/freeze_manifest.json": true,
+    "experiments/v4/evaluation/r5_results.json": true,
+    "experiments/v4/external_evaluation/results.csv": true,
+    "experiments/v4/external_evaluation/results.json": true,
+    "experiments/v4/results/all_runs.csv": true,
+    "experiments/v4/results/all_runs.json": true
+  },
+  "repeat_file_checks": {
+    "actions.jsonl": true,
+    "decisions.csv": true,
+    "observations.csv": true,
+    "score_report.json": true
+  },
+  "residual_processes": [],
+  "runs": [
+    {
+      "card_tree_sha256": "5bc8de55aaf39bb0dd438437ac23de096a43d4c01463550760679889f498c99e",
+      "counts": {
+        "decisions": 1122,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 2,
+        "observations": 7296,
+        "observe_actions": 557,
+        "required_missing": 2,
+        "targets_observed": 5162
+      },
+      "evidence_path": "experiments/current/runs/migration-python-L1",
+      "planner_error_present": false,
+      "required_missing": 2,
+      "run_id": "migration-python-L1",
+      "runtime_seconds": 22.136890333,
+      "source_tree_sha256": "1d74901f32ef728d9e10e5358df4b5e0bf94e8af29cc3bd7a2dec8c0027fb723",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": 4529.721115,
+      "zero_llm_calls_logged": true
+    },
+    {
+      "card_tree_sha256": "5bc8de55aaf39bb0dd438437ac23de096a43d4c01463550760679889f498c99e",
+      "counts": {
+        "decisions": 1122,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 2,
+        "observations": 7296,
+        "observe_actions": 557,
+        "required_missing": 2,
+        "targets_observed": 5162
+      },
+      "evidence_path": "experiments/current/runs/migration-python-L1-repeat",
+      "planner_error_present": false,
+      "required_missing": 2,
+      "run_id": "migration-python-L1-repeat",
+      "runtime_seconds": 22.100401916,
+      "source_tree_sha256": "1d74901f32ef728d9e10e5358df4b5e0bf94e8af29cc3bd7a2dec8c0027fb723",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": 4529.721115,
+      "zero_llm_calls_logged": true
+    },
+    {
+      "card_tree_sha256": "274f4f63d18a5e50ab079e30851e5fea08facef070f07046a66e3c1ce73763da",
+      "counts": {
+        "decisions": 1219,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 2,
+        "observations": 7542,
+        "observe_actions": 573,
+        "required_missing": 4,
+        "targets_observed": 5537
+      },
+      "evidence_path": "experiments/current/runs/migration-python-L2",
+      "planner_error_present": false,
+      "required_missing": 4,
+      "run_id": "migration-python-L2",
+      "runtime_seconds": 22.646375250000002,
+      "source_tree_sha256": "1d74901f32ef728d9e10e5358df4b5e0bf94e8af29cc3bd7a2dec8c0027fb723",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": 4767.69708,
+      "zero_llm_calls_logged": true
+    },
+    {
+      "card_tree_sha256": "f13d7b4bf92973a5921dea94b2bdc6dac2fcf145d45c8742cd929daea413b85b",
+      "counts": {
+        "decisions": 1260,
+        "invalidated_observations": 12,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 2,
+        "observations": 7053,
+        "observe_actions": 572,
+        "required_missing": 1,
+        "targets_observed": 5300
+      },
+      "evidence_path": "experiments/current/runs/migration-python-L3",
+      "planner_error_present": false,
+      "required_missing": 1,
+      "run_id": "migration-python-L3",
+      "runtime_seconds": 23.599317624999998,
+      "source_tree_sha256": "1d74901f32ef728d9e10e5358df4b5e0bf94e8af29cc3bd7a2dec8c0027fb723",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": 4288.301065,
+      "zero_llm_calls_logged": true
+    },
+    {
+      "card_tree_sha256": "74b86fefc6d87468755c0b94bfd1567accf664c191223b3143791276ddf67cf1",
+      "counts": {
+        "decisions": 1196,
+        "invalidated_observations": 174,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 2,
+        "observations": 6289,
+        "observe_actions": 504,
+        "required_missing": 8,
+        "targets_observed": 4856
+      },
+      "evidence_path": "experiments/current/runs/migration-python-L4",
+      "planner_error_present": false,
+      "required_missing": 8,
+      "run_id": "migration-python-L4",
+      "runtime_seconds": 21.260969291,
+      "source_tree_sha256": "1d74901f32ef728d9e10e5358df4b5e0bf94e8af29cc3bd7a2dec8c0027fb723",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": 3378.53575,
+      "zero_llm_calls_logged": true
+    },
+    {
+      "card_tree_sha256": "5bc8de55aaf39bb0dd438437ac23de096a43d4c01463550760679889f498c99e",
+      "counts": {
+        "decisions": 1353,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 2,
+        "observations": 10169,
+        "observe_actions": 779,
+        "required_missing": 2,
+        "targets_observed": 6022
+      },
+      "evidence_path": "experiments/current/runs/migration-old-D-L1",
+      "planner_error_present": false,
+      "required_missing": 2,
+      "run_id": "migration-old-D-L1",
+      "runtime_seconds": 23.291060208,
+      "source_tree_sha256": "b6a982565108c7709623d4bf6f4bfdf7ba86bc8af9848cddc77b0cf96be133a4",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": 4275.700613,
+      "zero_llm_calls_logged": false
+    },
+    {
+      "card_tree_sha256": "5bc8de55aaf39bb0dd438437ac23de096a43d4c01463550760679889f498c99e",
+      "counts": {},
+      "evidence_path": "experiments/current/runs/migration-guard-timeout",
+      "planner_error_present": false,
+      "required_missing": null,
+      "run_id": "migration-guard-timeout",
+      "runtime_seconds": 1.020944084,
+      "source_tree_sha256": "7a31e276462d26c2e657fea090aea57d2bc19db330f85eefd02b72dd00b350e6",
+      "status": "guard_timeout",
+      "termination_reason": "harness_guard_timeout",
+      "total": null,
+      "zero_llm_calls_logged": false
+    },
+    {
+      "card_tree_sha256": "5bc8de55aaf39bb0dd438437ac23de096a43d4c01463550760679889f498c99e",
+      "counts": {
+        "decisions": 1122,
+        "invalidated_observations": 0,
+        "observation_requests_completed": 0,
+        "observation_requests_issued": 2,
+        "observations": 7296,
+        "observe_actions": 557,
+        "required_missing": 2,
+        "targets_observed": 5162
+      },
+      "evidence_path": "experiments/current/runs/rules-refresh-python-L1",
+      "planner_error_present": false,
+      "required_missing": 2,
+      "run_id": "rules-refresh-python-L1",
+      "runtime_seconds": 23.521380709,
+      "source_tree_sha256": "0acf24ee7f0104bb744f19bf1573adad8fc10a31f8a175001ab24e762bba581d",
+      "status": "completed",
+      "termination_reason": "survey_complete",
+      "total": 4529.721115,
+      "zero_llm_calls_logged": true
+    }
+  ],
+  "schema_version": "survey-migration-validation-v1",
+  "upstream_commit": "149c6590c49cf289c325b8e2fedfee1035975c6f",
+  "working_agent_tree_sha256": "fde70a4f31e6e5562ada5404cb4a34cfa2f7b1b13eb935528b3edbbbd3f7c303"
+}

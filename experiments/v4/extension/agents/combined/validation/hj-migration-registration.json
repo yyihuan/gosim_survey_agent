@@ -1,0 +1,108 @@
+{
+  "registered_at_utc": "2026-10-02T16:37:41.423620+00:00",
+  "source_files_sha256": {
+    "planner.py": "6f7d4d3d8f5758f36af2a0a39bdee4a140cbf5cf4d74dbe64c43d31af4260e18",
+    "heq_policy.py": "2091d0f41206f5fa1a2108eb40b6eb02fe6c082aece5657ad96276b901e8f740",
+    "mfj_policy.py": "2fd08bad76a82280e3445e9fa6e475af51fa1c8c0b8a48852319a410e2956cc0",
+    "skymath.py": "584d792155ef3ac02b0fa53c2241f3b72366de034b6ee82e44d8c10389841e26",
+    "cw_policy.py": "eed3c1cc2d153c15f1fc8209761318b7983aef53706337d7e6038707df756f60",
+    "llm_hook.py": "f84d2f1e496fa00d00d83cd31b932b5a5ea88c91e314908e10e18f98dcf12543",
+    "observer.project.json": "bcd2e9fcff86fdb97a13f260327ab23fb59e2761c0b895c194c0e493014c7ccc",
+    "baseline_agent.py": "0d49c9e78bb92cb9bcdca26b8b032618da1f9961d19debe82c459c1b8d8ff3c1"
+  },
+  "runs": [
+    {
+      "run_id": "ext-integration-combined-h-demo",
+      "config": "experiments/v4/extension/configs/heq/h-opportunity2.json",
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "reference": "ext-n2-heq-h-opportunity2-demo",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "experiments/v4/extension/harness/run_one.py",
+        "--run-id",
+        "ext-integration-combined-h-demo",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "experiments/v4/extension/agents/combined/source",
+        "--config",
+        "experiments/v4/extension/configs/heq/h-opportunity2.json",
+        "--card",
+        "experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "--wallclock",
+        "900"
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-h-dev-season",
+      "config": "experiments/v4/extension/configs/heq/h-opportunity2.json",
+      "config_sha256": "c984fb54949dcfeb4c43799bd29bf553d02801462e57034afb506af95de76fa5",
+      "reference": "ext-n2-heq-h-opportunity2-dev-season",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "experiments/v4/extension/harness/run_one.py",
+        "--run-id",
+        "ext-integration-combined-h-dev-season",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "experiments/v4/extension/agents/combined/source",
+        "--config",
+        "experiments/v4/extension/configs/heq/h-opportunity2.json",
+        "--card",
+        "experiments/v4/data/cards/dev-season",
+        "--wallclock",
+        "900"
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-j-demo",
+      "config": "experiments/v4/extension/configs/mfj/j-initial.json",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "reference": "ext-n2-j-initial-demo",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "experiments/v4/extension/harness/run_one.py",
+        "--run-id",
+        "ext-integration-combined-j-demo",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "experiments/v4/extension/agents/combined/source",
+        "--config",
+        "experiments/v4/extension/configs/mfj/j-initial.json",
+        "--card",
+        "experiments/v4/vendor/starter_kit_v4/cards/demo",
+        "--wallclock",
+        "900"
+      ]
+    },
+    {
+      "run_id": "ext-integration-combined-j-dev-season",
+      "config": "experiments/v4/extension/configs/mfj/j-initial.json",
+      "config_sha256": "a49f6fbf11c06c994663c2f2754d0dc2e0d31b1d4c1c26e671257509b73e380e",
+      "reference": "ext-n2-j-initial-dev-season",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "experiments/v4/extension/harness/run_one.py",
+        "--run-id",
+        "ext-integration-combined-j-dev-season",
+        "--stage",
+        "integration-verification",
+        "--agent",
+        "experiments/v4/extension/agents/combined/source",
+        "--config",
+        "experiments/v4/extension/configs/mfj/j-initial.json",
+        "--card",
+        "experiments/v4/data/cards/dev-season",
+        "--wallclock",
+        "900"
+      ]
+    }
+  ],
+  "purpose": "已选H/J初版迁移核对；非新参数或独立策略样本"
+}

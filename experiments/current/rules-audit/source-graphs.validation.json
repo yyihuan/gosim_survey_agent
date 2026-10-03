@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": {
+    "python-graph_files_current": true,
+    "python-graph_graph_current": true,
+    "backend-graph_files_current": true,
+    "backend-graph_graph_current": true,
+    "both_studios_loaded_without_script_errors": true
+  },
+  "mode": "local HTTP static preview; server stopped after verification"
+}

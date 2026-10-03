@@ -1,0 +1,6 @@
+{"test": "selftest-001", "exit_code": 1, "error": "KeyError: fov_side_deg", "classification": "synthetic initialize fixture omitted public instrument field; fixture repaired; no strategy change"}
+{"test": "selftest-002", "exit_code": 0, "result": {"baseline_control_decisions": 180, "g_weights_30_45_60_90": [1.0, 1.2069590101478065, 1.3659625170909777, 1.5], "python": "3.9.6", "status": "passed", "t_short_wait_seconds": 30, "t_tail_duration": 150}}
+{"test": "mechanism-001", "exit_code": 1, "error": "TypeError: card_source missing in legacy R1 manifest", "classification": "legacy manifest compatibility; added command --card fallback; no strategy change"}
+{"test": "mechanism-002", "exit_code": 0, "result_path": "experiments/v4/agents/tdg/validation/baseline-demo-mechanism.json"}
+{"test": "selftest-r3-001", "exit_code": 0, "result": {"baseline_control_decisions": 180, "g_weights_30_45_60_90": [1.0, 1.2069590101478065, 1.3659625170909777, 1.5], "python": "3.9.6", "status": "passed", "t_short_wait_seconds": 30, "t_tail_duration": 150}}
+{"test": "selftest-r3-002", "exit_code": 0, "result": {"baseline_control_decisions": 180, "g_weights_30_45_60_90": [1.0, 1.2069590101478065, 1.3659625170909777, 1.5], "python": "3.9.6", "status": "passed", "t_cap900_tail_duration": 600, "t_short_wait_seconds": 30, "t_tail_duration": 150}}

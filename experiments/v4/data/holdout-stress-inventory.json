@@ -1,0 +1,129 @@
+{
+  "card_id": "holdout-stress",
+  "source_type": "registered_official_generator",
+  "local_path": "experiments/v4/data/cards/holdout-stress",
+  "complete_bundle_verified": true,
+  "schema_checked": [
+    "public config schema names",
+    "scenario product path existence",
+    "16 fibers",
+    "900-second budget",
+    "stress flag",
+    "public target/night counts",
+    "score config unchanged SHA-256"
+  ],
+  "file_count": 14,
+  "bytes": 501095,
+  "manifest_sha256": "c280b9293efb5d3aef109eff93d93d478081d23bb375099e5d983bff98dd965c",
+  "public_metadata": {
+    "n_targets": 4800,
+    "n_required": 240,
+    "n_nights": 14,
+    "first_night": "2026-10-15",
+    "last_night": "2026-10-28",
+    "n_regions": 2,
+    "site": {
+      "latitude_deg": -24.6157,
+      "longitude_deg": -70.3976,
+      "name": "VISTA/Paranal (4MOST)",
+      "utc_offset_hours": -4.0
+    },
+    "instrument": {
+      "exposure": {
+        "max_duration_seconds": 3600,
+        "min_duration_seconds": 60
+      },
+      "field": {
+        "fiber_area_deg2": 0.4,
+        "gap_deg": 0.0,
+        "n_fibers": 16
+      },
+      "schema_version": "v4-fiber-map-v1",
+      "site": {
+        "latitude_deg": -24.6157,
+        "longitude_deg": -70.3976,
+        "name": "VISTA/Paranal (4MOST)",
+        "utc_offset_hours": -4.0
+      }
+    },
+    "minimum_altitude_deg": 30.0,
+    "limits": {
+      "global_wallclock_seconds": 900
+    },
+    "stress_enabled": true,
+    "area_deg2_spec": 1600.0,
+    "score_schema": "v4-score-v1"
+  },
+  "files": [
+    {
+      "relative_path": "config/v4_fiber_config.json",
+      "bytes": 357,
+      "sha256": "2f82c01de00f7bd88db9b58a976e602bba60793f0b9f7386c2a84abbddeb7165"
+    },
+    {
+      "relative_path": "config/v4_scenario.json",
+      "bytes": 1185,
+      "sha256": "6680a67a3417d4e12a380b775e37c9d478c1538d4871e3894aad0b9d7e05d4b2"
+    },
+    {
+      "relative_path": "config/v4_score_config.json",
+      "bytes": 869,
+      "sha256": "4d96429e2219f96e4f882d177f69673d112f89ba2e473ac0bd628651ca087521"
+    },
+    {
+      "relative_path": "public/footprint.csv",
+      "bytes": 1384,
+      "sha256": "6981d2d674de1f63e0fee7091bdca8e4f23f48c338c2154c4d1dc6956b920bfe"
+    },
+    {
+      "relative_path": "public/targets.csv",
+      "bytes": 284955,
+      "sha256": "0c4214651b528848d42ce4c07feec19d3188d46016c0fd515fa808d978caf6dd"
+    },
+    {
+      "relative_path": "public/v4_bulletins.jsonl",
+      "bytes": 137262,
+      "sha256": "1c0156b1dc3a0da7ece062e97e877b5252c7d27a61c43b39b05a8c6c13116d03"
+    },
+    {
+      "relative_path": "public/v4_forecasts.jsonl",
+      "bytes": 3092,
+      "sha256": "8fc82714a07167b84cfb7327fb01b17eeb7c3335387aeed7597c7d3006fe7ec7"
+    },
+    {
+      "relative_path": "public/v4_night_calendar.csv",
+      "bytes": 1709,
+      "sha256": "23dfc645cc457ef32d182b5fe1f028bf0b95549883d14804ad83f8c04da04fa8"
+    },
+    {
+      "relative_path": "truth/v4_earthquake_effects.csv",
+      "bytes": 1748,
+      "sha256": "fc71ab44d75d9f9460adffcd753a4a7c6687bf300b92f72c3de713dfe36256c6"
+    },
+    {
+      "relative_path": "truth/v4_events.csv",
+      "bytes": 5444,
+      "sha256": "d658fa776e55e621f1f0afceadf7f7d28e09f6a716dc9cc1d08a6a718026517e"
+    },
+    {
+      "relative_path": "truth/v4_observation_requests.jsonl",
+      "bytes": 438,
+      "sha256": "ce9d547d316c3ab84824b4135f20560c20a14ffdd6b717ebb9eb4c195abf1b72"
+    },
+    {
+      "relative_path": "truth/v4_slots.csv",
+      "bytes": 23348,
+      "sha256": "7bd08d40dc38675cbd25d6b74a0847099a842d52418e4e95008a574a5d3f8f0b"
+    },
+    {
+      "relative_path": "truth/v4_stress_events.csv",
+      "bytes": 278,
+      "sha256": "8df25bde2d49309f5b35b64f1383eed3c7bef8b9f745085754450db524a0cabf"
+    },
+    {
+      "relative_path": "truth/v4_weather_truth.csv",
+      "bytes": 39026,
+      "sha256": "ca6700b0fcaeb1d02030f2ebe7d18170f425f5a9cb571ff592182f9bc2aa571e"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "status": "harness run_one ready; R1 dev baseline complete",
+  "python": "/usr/bin/python3 3.9.6",
+  "runs": [
+    {
+      "run": "r1-official-demo",
+      "total": 1082.572141,
+      "required_missing": 1,
+      "observe_actions": 123,
+      "termination_reason": "survey_complete",
+      "runtime_seconds": 2.1337697500000004,
+      "wall_seconds": 1.795,
+      "hashes": {
+        "actions.jsonl": "84fc87d0de2e2e60a2f9cc6cebf02d05cc5c90d4cbbac1a8343f8dc27bfc7b1b",
+        "score_report.json": "220e1ea59e7edec3f5a35dd2017b8492315b2b7c91dbe5708140511dbf8e52cd",
+        "decisions.csv": "27c302ccd89c9cf436aea47ff8f87f52fa6970944af061567b0eaf30dcbf3828",
+        "observations.csv": "4bd4d334828f3963d3b45664142c2b6f3b78f6f3f3c97d4b5cb97d2c35e2c0c4"
+      }
+    },
+    {
+      "run": "r1-idle-demo",
+      "total": -6200.0,
+      "required_missing": 120,
+      "observe_actions": 0,
+      "termination_reason": "agent_finished",
+      "runtime_seconds": 0.18669175000000005,
+      "wall_seconds": 0.005,
+      "hashes": {
+        "actions.jsonl": "77b420bbcb328a22adefc2e9643de62d736832fa7bbc08d7335c5dcdc86f6e85",
+        "score_report.json": "179157d7ade830d3c210be14fea06b555cce0a5bb8646300f62eac2164330d44",
+        "decisions.csv": "ad7e90f41d3aa3b7603504720f8e67ee6948317649ccf1cbfb7997bb23b568cc",
+        "observations.csv": "b73414b2c006969ad5d6ff5df23666e573786008ca1f1f7959fc3ac98df99c2f"
+      }
+    },
+    {
+      "run": "r1-official-demo-repeat",
+      "total": 1082.572141,
+      "required_missing": 1,
+      "observe_actions": 123,
+      "termination_reason": "survey_complete",
+      "runtime_seconds": 2.138704417,
+      "wall_seconds": 1.836,
+      "hashes": {
+        "actions.jsonl": "84fc87d0de2e2e60a2f9cc6cebf02d05cc5c90d4cbbac1a8343f8dc27bfc7b1b",
+        "score_report.json": "220e1ea59e7edec3f5a35dd2017b8492315b2b7c91dbe5708140511dbf8e52cd",
+        "decisions.csv": "27c302ccd89c9cf436aea47ff8f87f52fa6970944af061567b0eaf30dcbf3828",
+        "observations.csv": "4bd4d334828f3963d3b45664142c2b6f3b78f6f3f3c97d4b5cb97d2c35e2c0c4"
+      }
+    }
+  ],
+  "baseline_repeat_same_actions_and_score": true,
+  "mount_entry": "local_runner.py --agent <directory or entry.py> --card <card> --out <unique output> --python /usr/bin/python3",
+  "note": "All R1 runs were exclusive, USE_LLM=0; no pace level change emitted (baseline initial level 0). Protocol remaining-wallclock telemetry will be added by a forwarding proxy without editing official source.",
+  "run_one_command": "/usr/bin/python3 -B experiments/v4/harness/run_one.py --run-id UNIQUE --agent AGENT --card CARD",
+  "dev_season": {
+    "run": "r1-official-dev-season",
+    "total": -2232.887855,
+    "components": {
+      "observation_request_reward": 0.0,
+      "report_settlement": 0.0,
+      "required_penalty": -3250.0,
+      "sum_best_scores": 1109.285613,
+      "uniformity_penalty": -92.173468
+    },
+    "counts": {
+      "decisions": 564,
+      "invalidated_observations": 0,
+      "observation_requests_completed": 0,
+      "observation_requests_issued": 1,
+      "observations": 1873,
+      "observe_actions": 154,
+      "required_missing": 65,
+      "targets_observed": 1608
+    },
+    "runtime_seconds": 4.150428667,
+    "termination_reason": "survey_complete",
+    "pace": {
+      "change_count": 0,
+      "changes_logged": [],
+      "first_remaining_wallclock_seconds": 900.0,
+      "last_remaining_wallclock_seconds": 896.271,
+      "minimum_remaining_wallclock_seconds": 896.271,
+      "telemetry_available": true,
+      "telemetry_requests": 373
+    }
+  },
+  "locks_verified": true,
+  "proxy_demo_raw_core_outputs_equal_to_R1": true
+}

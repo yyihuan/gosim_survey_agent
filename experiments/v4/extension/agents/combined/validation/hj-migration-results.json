@@ -1,0 +1,47 @@
+{
+  "all_equal": true,
+  "source_unchanged": true,
+  "configs_unchanged": true,
+  "runs": [
+    {
+      "run_id": "ext-integration-combined-h-demo",
+      "reference": "ext-n2-heq-h-opportunity2-demo",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      }
+    },
+    {
+      "run_id": "ext-integration-combined-j-demo",
+      "reference": "ext-n2-j-initial-demo",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      }
+    },
+    {
+      "run_id": "ext-integration-combined-h-dev-season",
+      "reference": "ext-n2-heq-h-opportunity2-dev-season",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      }
+    },
+    {
+      "run_id": "ext-integration-combined-j-dev-season",
+      "reference": "ext-n2-j-initial-dev-season",
+      "core_equal": {
+        "actions.jsonl": true,
+        "score_report.json": true,
+        "decisions.csv": true,
+        "observations.csv": true
+      }
+    }
+  ]
+}
