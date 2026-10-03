@@ -4,6 +4,16 @@
 
 先前讨论成果保留：在 [方法论](agent-optimizer-methodology.md)基础上，经用户前置核对形成 [方案大纲](agent-optimizer-outline.md)与 [核对记录](agent-optimizer-decisions.md)。原讨论轮只交付大纲；用户后来确认方案并授权数据构建，本轮推进M1，未开展候选策略搜索或独立评审。此前的 Python 环境迁移与完整链路验证仍按下文保留。
 
+## 竞赛提交仓库
+
+2026-10-03 已建公开仓库 <https://github.com/yyihuan/gosim_survey_agent>（分支 main）。根目录
+observer.project.json 是平台项目清单：working_directory=experiments/current/agent、
+run=["python3","-u","agent.py"]、image=python:3.12-slim、protocol=jsonl-v4。用主办方
+project_platform.package 读取真实 GitHub 归档复核：11.37 MB / 1458 文件 / 解压 33.49 MB，清单位于
+去根后的归档根，满足 50 MB、100 MB、10,000 文件以及 .git/.env 规则。运行产物、私有种子、正式任务卡
+α–δ、上游 .git 与重复示例副本由 .gitignore 排除；主办方材料的 CC BY-NC 4.0 归属见 NOTICE.md。
+提交前仍未核实平台镜像 python:3.12-slim 内的实际执行，也未进行正式 online 相位的完整项目评测。
+
 ## 开始工作先看什么
 
 1. [当前环境](current-environment.md)：入口、运行方法、版本与边界。
