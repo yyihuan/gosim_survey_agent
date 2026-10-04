@@ -23,6 +23,8 @@ example target-for-target, so both examples solve the problem the same way.
 from __future__ import annotations
 
 from datetime import timedelta
+import math
+import time
 
 from .geometry import (
     Moon,
@@ -75,11 +77,12 @@ def _bulletin_text(notices: list) -> str:
 
 
 class Planner:
-    def __init__(self, state, log=lambda text: None):
+    def __init__(self, state, log=lambda text: None, *, model_audit_sink=None,
+                 model_transport=None):
         self.state = state
         self.log = log
         self.grid = state.fiber_grid
-        self.llm = LLMClient(log=log)
+        self.llm = LLMClient(log=log, audit_sink=model_audit_sink, transport=model_transport)
         self.trace = TraceLog(log=log)
 
         self.observe_count = 0
@@ -93,11 +96,13 @@ class Planner:
         self.total_hit = 0
 
         log(f"planner: {len(state.ids)} targets ({sum(state.required)} required), "
-            f"{len(state.nights)} nights, llm model={self.llm.model} base_url={self.llm.base_url}")
+            f"{len(state.nights)} nights, llm model={self.llm.safe_text(self.llm.model)} "
+            f"base_url={self.llm.safe_text(self.llm.base_url)}")
 
     # -- top-level decision ----------------------------------------------------
 
     def decide(self, payload: dict) -> dict:
+        model_deadline = self._model_deadline(payload)
         state = self.state
         now = parse_utc(payload["now_utc"])
         hours = (now - state.survey_start).total_seconds() / 3600.0
@@ -123,7 +128,7 @@ class Planner:
 
         if self.night_index_seen != night_index:
             self.night_index_seen = night_index
-            self._night_advice(night_start, payload)
+            self._night_advice(night_start, payload, model_deadline=model_deadline)
 
         if (night_end - now).total_seconds() < state.min_exposure:
             nxt = state.next_night_start(now)
@@ -135,7 +140,7 @@ class Planner:
             return {"action": "wait", "duration_seconds": self._to_next_slot(now, night_start),
                     "reason": "bulletin: rain/storm over the whole sky"}
 
-        report = self._maybe_report(hours, payload)
+        report = self._maybe_report(hours, payload, model_deadline=model_deadline)
         if report is not None:
             return report
 
@@ -177,14 +182,41 @@ class Planner:
 
     # -- LLM: two calls once per night, merged -----------------------------------
 
-    def _night_advice(self, night_start, payload: dict) -> None:
+    def _audit_model_consumption(self, reference, context, outcome, reason,
+                                 accepted=(), rejected=()):
+        # Test doubles and older clients need only implement ask_json.
+        audit = getattr(self.llm, "audit_consumption", None)
+        if audit is not None:
+            audit(question_id=reference[0], request_id=reference[1], context=context,
+                  outcome=outcome, reason=reason, accepted_fields=accepted,
+                  rejected_fields=rejected)
+
+    def _model_reference(self):
+        return (getattr(self.llm, "last_question_id", None),
+                getattr(self.llm, "last_request_id", None))
+
+    def _model_deadline(self, payload: dict) -> float:
+        """Bind a public remaining-time snapshot to this decision's real clock."""
+        now = time.monotonic()
+        wallclock = payload.get("wallclock")
+        left = wallclock.get("remaining_seconds", 0) if isinstance(wallclock, dict) else 0
+        try:
+            if isinstance(left, bool) or not isinstance(left, (int, float)) or not math.isfinite(left):
+                return now
+            deadline = now + max(0.0, left)
+            return deadline if math.isfinite(deadline) else now
+        except OverflowError:
+            return now
+
+    def _night_advice(self, night_start, payload: dict, *, model_deadline=None) -> None:
         """Two independent planning questions, asked once at the start of each night,
         each answered as {avoid_directions, duration_scale}. Their answers are merged
         (directions to avoid are unioned; the duration scale is averaged) before being
         applied to state.extra_avoid / state.duration_scale for the rest of the night."""
         state = self.state
         night_date = (night_start - timedelta(hours=12)).date().isoformat()
-        left = float((payload.get("wallclock") or {}).get("remaining_seconds", 0))
+        if model_deadline is None:
+            model_deadline = self._model_deadline(payload)
 
         forecast_tonight = [n for n in self._last_forecast_notices if night_date in (n.get("nights") or [])]
         bulletin_notices = (payload.get("latest_bulletin") or {}).get("notices", [])
@@ -195,8 +227,9 @@ class Planner:
             "and the current bulletin; use a larger duration_scale when the sky looks poor.",
             {"night": night_date, "forecast_notices_for_tonight": forecast_tonight,
              "current_bulletin_notices": bulletin_notices},
-            left,
+            max(0.0, model_deadline - time.monotonic()),
         )
+        forecast_reference = self._model_reference()
 
         hit_rate = (self.total_hit / self.total_assigned) if self.total_assigned > 0 else 1.0
         answer_bulletin = self.llm.ask_json(
@@ -208,19 +241,51 @@ class Planner:
             "lower it when the hit rate has been high.",
             {"night": night_date, "bulletin_text": _bulletin_text(bulletin_notices),
              "hit_rate_so_far": round(hit_rate, 3)},
-            left,
+            max(0.0, model_deadline - time.monotonic()),
         )
+        bulletin_reference = self._model_reference()
 
         avoid: set[str] = set()
         scales: list[float] = []
-        for answer in (answer_forecast, answer_bulletin):
-            if not answer:
+        for answer, reference, context in (
+                (answer_forecast, forecast_reference, "night_forecast"),
+                (answer_bulletin, bulletin_reference, "night_bulletin")):
+            if not isinstance(answer, dict) or not answer:
+                self._audit_model_consumption(reference, context,
+                    "rule_fallback" if answer is None or answer == {} else "rejected",
+                    "no_usable_advice")
                 continue
-            avoid |= {str(d).upper() for d in (answer.get("avoid_directions") or []) if str(d).upper() in DIRECTION_AZ}
+            accepted, rejected = [], []
+            directions = answer.get("avoid_directions")
+            if isinstance(directions, list):
+                valid = [d.upper() for d in directions if isinstance(d, str) and d.upper() in DIRECTION_AZ]
+                avoid |= set(valid)
+                if valid or not directions:
+                    accepted.append("avoid_directions")
+                if len(valid) != len(directions):
+                    rejected.append("avoid_directions")
+            else:
+                rejected.append("avoid_directions")
+            scale = answer.get("duration_scale", 1.0)
             try:
-                scales.append(min(1.4, max(0.7, float(answer.get("duration_scale", 1.0)))))
-            except (TypeError, ValueError):
-                pass
+                if isinstance(scale, (int, float)) and not isinstance(scale, bool) and math.isfinite(scale):
+                    scales.append(min(1.4, max(0.7, float(scale))))
+                    if "duration_scale" in answer:
+                        accepted.append("duration_scale")
+                        if not 0.7 <= scale <= 1.4:
+                            rejected.append("duration_scale")
+                    else:
+                        rejected.append("duration_scale")
+                else:
+                    rejected.append("duration_scale")
+            except OverflowError:
+                rejected.append("duration_scale")
+            if any(k not in ("avoid_directions", "duration_scale") for k in answer):
+                rejected.append("unsupported_fields")
+            self._audit_model_consumption(reference, context,
+                "partially_adopted" if accepted and rejected else "adopted" if accepted else "rejected",
+                "valid_fields_merged_with_peer" if accepted and not rejected else
+                "invalid_missing_or_clamped_fields_use_rules", accepted, rejected)
         state.extra_avoid = avoid
         state.duration_scale = sum(scales) / len(scales) if scales else 1.0
         self.log(f"planner: night {night_date} llm advice (forecast call: "
@@ -233,7 +298,9 @@ class Planner:
 
     # -- instrument fault reporting (deterministic rules + LLM confirmation) -----
 
-    def _maybe_report(self, hours: float, payload: dict):
+    def _maybe_report(self, hours: float, payload: dict, *, model_deadline=None):
+        if model_deadline is None:
+            model_deadline = self._model_deadline(payload)
         state = self.state
         state.force_program = None
         if self.reports >= MAX_REPORTS or hours - self.last_report_hours < 24.0:
@@ -257,10 +324,20 @@ class Planner:
         verdict_answer = self.llm.ask_json(
             "You check telescope data quality. A false instrument-fault report costs points, "
             'a correct one earns points. Reply with one JSON object only: {"report": true|false}.',
-            evidence._asdict(), float((payload.get("wallclock") or {}).get("remaining_seconds", 0)),
+            evidence._asdict(), max(0.0, model_deadline - time.monotonic()),
         )
         verdict = verdict_answer.get("report") if isinstance(verdict_answer, dict) and \
             isinstance(verdict_answer.get("report"), bool) else None
+        extra_fields = isinstance(verdict_answer, dict) and any(k != "report" for k in verdict_answer)
+        self._audit_model_consumption(self._model_reference(), "fault_report",
+            "partially_adopted" if verdict is not None and extra_fields else
+            "adopted" if verdict is not None else
+            "rule_fallback" if verdict_answer is None or verdict_answer == {} else "rejected",
+            "model_veto_applied" if verdict is False else
+            "model_confirmation_applied" if verdict is True else "rule_report_used",
+            ("report",) if verdict is not None else (),
+            ("unsupported_fields",) if verdict is not None and extra_fields else
+            ("report",) if verdict is None else ())
         if verdict is False:
             self.log(f"planner: report vetoed by the model at {payload.get('now_utc')} ({evidence})")
             self.last_report_hours = hours

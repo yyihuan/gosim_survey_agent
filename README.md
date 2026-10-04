@@ -4,6 +4,8 @@
 
 ## 竞赛提交 / Competition submission
 
+2026-10-04 练习测试更新：模型调用预算、回复校验和可选审计已修正，核心搜索策略保持原方案；范围与验证见 [本次版本说明](docs/releases/2026-10-04-practice-update.md)。
+
 本仓库即比赛的**完整项目**来源：根目录 `observer.project.json` 是平台项目清单，`working_directory` 指向
 `experiments/current/agent`，`run` 为 `python3 -u agent.py`。平台会把整仓归档校验为项目（清单须位于归档根、
 上限 50 MB 压缩 / 100 MB 解压 / 10,000 文件），因此本地大体积运行产物、私有种子、正式任务卡与随仓库携带的
