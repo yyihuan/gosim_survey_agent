@@ -1,0 +1,15 @@
+{
+  "scope": "staged Git tree exported without .git or untracked files",
+  "checks": [
+    {
+      "command": "python3 -I -B scripts/demo_offline.py",
+      "exit_code": 0,
+      "output": "{\n  \"status\": \"pass\",\n  \"fixture\": \"synthetic-public-protocol\",\n  \"actions\": [\n    \"wait\",\n    \"wait\",\n    \"observe\",\n    \"wait\",\n    \"finish\"\n  ],\n  \"responses\": 5,\n  \"network_attempts\": 0,\n  \"llm_calls\": 0,\n  \"scope\": \"protocol replay; no official simulator or score\"\n}\n"
+    },
+    {
+      "command": "python3 -I -B -m unittest discover -s experiments/current/tests",
+      "exit_code": 0,
+      "output": ".........................................................\n----------------------------------------------------------------------\nRan 57 tests in 0.263s\n\nOK\n"
+    }
+  ]
+}

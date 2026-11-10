@@ -1,0 +1,12 @@
+flowchart TD
+    IN[Public JSONL messages] --> STATE[SurveyState]
+    STATE --> PLAN[Planner: geometry and exposure]
+    STATE -. Optional public context .-> LLM[LLMClient: budgets and retries]
+    LLM --> CHECK[Validate model advice]
+    CHECK --> PLAN
+    LLM -. Optional redacted events .-> AUDIT[Audit sink]
+    PLAN --> VALIDATE[Validate action]
+    VALIDATE --> OUT[JSONL decision response]
+    PLAN -. Exception .-> FALLBACK[Wait fallback]
+    VALIDATE -. Rejected .-> FALLBACK
+    FALLBACK --> OUT

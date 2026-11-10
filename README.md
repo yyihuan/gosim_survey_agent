@@ -1,57 +1,114 @@
-# 巡天智能体实验工作区
+# Survey Agent — planning observations under uncertainty
 
-当前正式协议为v4，环境固定到2026-10-03核对的官方提交`149c659`，默认使用Python离线工作副本与完整公开L1–L4。
+A Python survey-planning agent and research workspace for the **GOSIM 2026
+Agentic Observer Challenge**. The task is to choose where to point a simulated
+telescope, assign targets to fibres, and choose exposure times while weather,
+visibility, required targets, and limited time compete for attention.
 
-## 竞赛提交 / Competition submission
+This portfolio edition makes the published `dee21c62` implementation easy to
+inspect and run. It includes a credential-free demo, reproducible regression
+tests, and an evidence-based account of AI-assisted development. It does not
+bundle later local strategy or predictor branches.
 
-2026-10-04 练习测试更新：模型调用预算、回复校验和可选审计已修正，核心搜索策略保持原方案；范围与验证见 [本次版本说明](docs/releases/2026-10-04-practice-update.md)。
+**Start here:** [run the demo](#run-in-under-a-minute) ·
+[read the development case study](docs/portfolio/ai-collaboration.md) ·
+[inspect verification](docs/portfolio/verification.md) ·
+[中文技术文档](docs/README.md)
 
-本仓库即比赛的**完整项目**来源：根目录 `observer.project.json` 是平台项目清单，`working_directory` 指向
-`experiments/current/agent`，`run` 为 `python3 -u agent.py`。平台会把整仓归档校验为项目（清单须位于归档根、
-上限 50 MB 压缩 / 100 MB 解压 / 10,000 文件），因此本地大体积运行产物、私有种子、正式任务卡与随仓库携带的
-`.git` 均已由 `.gitignore` 排除。提交前可本地打成 ZIP 复核：
+## What this project demonstrates
 
-```bash
-cd experiments/current/agent && /usr/bin/python3 -B pack_agent.py --out /tmp/python-agent.zip
-```
+- **Problem formulation:** separate public observations from hidden simulation
+  truth, and distinguish a higher local score from evidence of generalisation.
+- **Software engineering:** JSONL protocol handling, deterministic fallback,
+  bounded model requests, reply validation, and optional redacted audit events.
+- **AI-assisted development:** turn questions into bounded tasks, preserve
+  experiment and decision records, and verify generated work with executable tests.
 
-主办方材料（`research/`、`docs/` 中转录内容）依 CC BY-NC 4.0 使用，署名与范围见 [NOTICE.md](NOTICE.md)。
+The agent builds on the organizers' Python example. Local adaptations include
+offline execution, experiment tooling, and model-boundary hardening; this is not
+a claim to have invented the upstream planner. The public decision record
+documents the project owner's choices about goals and evaluation stages.
+Individual coding ownership and any other human team members have not yet been
+confirmed for this portfolio. See [contribution evidence](docs/portfolio/ai-collaboration.md#roles-and-attribution).
 
-- 后续session先读[文档索引](docs/README.md)、[交接状态](docs/session-handoff.md)、[当前环境](docs/current-environment.md)；历史证据见[实验历史](docs/experiment-history.md)。
-- [完整规则与后端消息](docs/v4-rules-and-protocol.md)及[交互讲解HTML](docs/survey-rules-explorer.html)：跨slot、时间、消息、计分、源码边界和赛事政策。
-- [Python源码地图](docs/python-source-map.md)：UML对象关系、决策流程、后端状态与本地graphify导航。
-- [模拟与现实差异](docs/v4-observing-gaps.md)维护外推边界。
-- 首版方案仍供评审：[大纲](docs/agent-optimizer-outline.md)、[核对记录](docs/agent-optimizer-decisions.md)、[方法论](docs/agent-optimizer-methodology.md)。
-- [既有策略报告](docs/v4-strategy-study-report.md)及[策略讲解](docs/v4-strategy-study.html)保留84/97条v4研究证据；[程序与LLM协作](docs/v4-llm-collaboration.md)及[讲解](docs/v4-llm-collaboration.html)是后续设计，未验证真实模型收益。
+## Run in under a minute
 
-## 运行与验证
-
-双击`run_local.command`，或从根目录执行：
-
-```bash
-/usr/bin/python3 -B scripts/run_current.py --run-id my-L1-001 --card L1 --exclusive
-/usr/bin/python3 -B experiments/current/validate.py
-```
-
-当前机械权威是[environment.json](experiments/current/environment.json)。[_local完整示例](research/2026-10-03/latest-149c659/examples/_local/)独立于Python子目录。当前结果写入`experiments/current/runs/`唯一目录，LLM关闭；不继承真实凭据。历史v4复现使用[原入口](experiments/v4/harness/README.md)，不得覆盖冻结数据和运行登记。
-
-## 文档构建
-
-正文在docs的Markdown中维护，图只改`docs/diagrams/*.mmd`并渲染同名SVG，HTML为生成产物。规则页整合规则正文和源码地图，没有第二份手写规则。以下操作不调用模型或运行模拟：
+Use **Python 3.9 or newer**, from this repository's root. No installation, API
+key, account, task-card download, or third-party package is required.
 
 ```bash
-node /Users/cxjh168/.codex/skills/document-diagrams/scripts/diagram.mjs render-all docs/diagrams
-node scripts/build_rules_explorer.mjs
-node scripts/check_rules_explorer.mjs
-/usr/bin/python3 -B scripts/build_strategy_study.py
-node scripts/build_llm_collaboration.mjs
-node /Users/cxjh168/.codex/skills/document-diagrams/scripts/diagram.mjs check-all docs/diagrams
+python3 --version
+python3 -I -B scripts/demo_offline.py
 ```
 
-本地AST关系图使用`/usr/bin/python3 -B scripts/build_source_graphs.py`重建；工具在临时源码副本分析，避免缓存进入官方只读快照。graphify Studio需本地静态服务，规则讲解HTML无需服务器。规则专项验证可指定新输出目录：
+The script feeds synthetic public messages into the existing `agent.py` entry
+point. It checks the full response against a checked-in expected transcript.
+The five actions are:
+
+```text
+wait → wait → observe → wait → finish
+```
+
+The report must say `status: pass`, `responses: 5`, `network_attempts: 0`, and
+`llm_calls: 0`. Optionally save the response and log into a **new** directory:
 
 ```bash
-/usr/bin/python3 -B experiments/current/rules-audit/verify_interaction.py --out /tmp/survey-rules-check-001
+python3 -I -B scripts/demo_offline.py --out demo-result
+python3 -I -B -m unittest discover -s experiments/current/tests
 ```
 
-重新核对规则时固定新提交，复核源码与协议，再更新规则权威和交接页，不把公开卡称为盲测。真实模型、账号与线上提交按根AGENTS的受控试用路由办理。
+The demo clears inherited credentials and configuration, explicitly disables
+models, and blocks Python socket/HTTP connection attempts. It is a scripted
+protocol replay, **not a full simulator run or a score benchmark**. Read the
+[fixture walkthrough](examples/offline-demo/README.md) for inputs and limitations.
+Running the production entry point directly has different defaults: models are
+enabled unless `USE_LLM=0` is set.
+
+## How the agent works
+
+![Public messages enter state tracking and a planner; optional model advice is checked before use, and actions are validated before a JSONL response.](docs/diagrams/portfolio-agent-flow.svg)
+
+The program performs geometric search, fibre assignment, and exposure selection.
+The optional model client supplies bounded nightly advice and fault-report
+confirmation. Invalid or unavailable advice has rule-based fallback paths;
+exceptions or rejected actions at the entry point produce a wait response.
+The offline demo uses the program path only.
+
+| Code | Responsibility |
+| --- | --- |
+| [agent.py](experiments/current/agent/agent.py) | Message loop and final fallback |
+| [planner.py](experiments/current/agent/agent_core/planner.py) | Target, pointing, exposure, and program decisions |
+| [state.py](experiments/current/agent/agent_core/state.py) | Public catalogue and observation history |
+| [llm_client.py](experiments/current/agent/agent_core/llm_client.py) | Request budgets, retries, response parsing |
+| [model_audit.py](experiments/current/agent/agent_core/model_audit.py) | Optional audit events and redaction |
+| [validation.py](experiments/current/agent/agent_core/validation.py) | Action checks before protocol output |
+
+## Results and limits
+
+| Evidence | What it supports |
+| --- | --- |
+| Five-response synthetic replay, newly verified | The real message loop handles the demonstrated conditions without a model call |
+| 57 tests, newly verified on Python 3.9.6 | Model boundaries, audit behaviour, offline mode, and reproducible regression fixtures |
+| [Practice update](docs/releases/2026-10-04-practice-update.md), public commit `dee21c62` | A reviewable implementation change with 53 original boundary/audit tests |
+| [Historical strategy report](docs/v4-strategy-study-report.md) | Version-specific offline comparisons, including negative results; not rerun in this edition |
+| [Collaboration design](docs/v4-llm-collaboration.md) | A proposed division between numerical tools and model decisions, not measured model benefit |
+
+The historical report records negative total scores even in completed holdout
+runs; relative improvements did not establish reliable task completion. The
+current demo makes no claim about competition rank, real telescope operation,
+production readiness, or an LLM outperforming the program. Strategy-library and
+probability-predictor work on later branches is not integrated into this edition.
+
+The older documentation is a research archive. Some links refer to local-only
+run evidence that was never published. Use the demo and test commands above for
+the verified public reproduction path; the full historical simulator workflow
+has not been revalidated here.
+
+## Attribution and reuse
+
+The **GOSIM 2026 Agentic Observer Challenge** organizers supplied the challenge
+materials and example projects under **CC BY-NC 4.0**. Local work and upstream
+material have different provenance; the repository is not licensed as a whole
+under MIT. Preserve [NOTICE.md](NOTICE.md), upstream attribution, and the
+[fixture provenance](experiments/current/tests/fixtures/pre-hardening/README.md)
+when reusing or redistributing material.

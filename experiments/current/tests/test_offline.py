@@ -1,8 +1,10 @@
 import json
+import importlib.util
 import os
 from pathlib import Path
 import subprocess
 import sys
+import tempfile
 import unittest
 from unittest.mock import patch
 
@@ -25,18 +27,36 @@ class OfflineBoundary(unittest.TestCase):
             with self.assertRaises(MissingAPIKeyError): require_api_key()
 
     def test_upstream_unmodified_fails_without_key(self):
-        result=subprocess.run(['/usr/bin/python3','-B',str(ROOT/'research/2026-10-03/examples/python/agent.py')],
+        result=subprocess.run([sys.executable,'-E','-s','-B',str(ROOT/'research/2026-10-03/latest-149c659/examples/python/agent.py')],
                               input='',capture_output=True,text=True,env={'PATH':'/usr/bin:/bin'})
         self.assertEqual(result.returncode,1)
         self.assertIn('missing API key',result.stderr)
         self.assertEqual(result.stdout,'')
 
     def test_duplicate_run_refused(self):
-        path=ROOT/'experiments/current/runs/migration-python-L1/manifest.json'
-        before=path.read_bytes()
-        result=subprocess.run(['/usr/bin/python3','-B',str(ROOT/'scripts/run_current.py'),
-                               '--run-id','migration-python-L1'],capture_output=True,text=True)
-        self.assertNotEqual(result.returncode,0)
-        self.assertEqual(path.read_bytes(),before)
+        spec = importlib.util.spec_from_file_location('demo_test_runner', ROOT/'scripts/run_current.py')
+        runner = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(runner)
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            settings_dir = root/'experiments/current'
+            settings_dir.mkdir(parents=True)
+            (root/'cards/L1/config').mkdir(parents=True)
+            (root/'cards/L1/config/v4_scenario.json').write_text('{}')
+            (root/'examples').mkdir()
+            (root/'snapshot.json').write_text(json.dumps({'examples': runner.tree_manifest(root/'examples')}))
+            settings = {'agent': str(ROOT/'experiments/current/agent'), 'cards': 'cards',
+                        'snapshot_manifest': 'snapshot.json', 'runner': 'unused-runner',
+                        'python': sys.executable, 'runs': 'runs'}
+            (settings_dir/'environment.json').write_text(json.dumps(settings))
+            path = root/'runs/duplicate/manifest.json'
+            path.parent.mkdir(parents=True)
+            before = b'{"sentinel": "must remain unchanged"}\n'
+            path.write_bytes(before)
+            with patch.object(runner, 'ROOT', root), patch.object(runner.signal, 'signal'), \
+                    patch.object(runner.subprocess, 'Popen', side_effect=AssertionError('must not launch')):
+                with self.assertRaises(FileExistsError):
+                    runner.main(['--run-id', 'duplicate'])
+            self.assertEqual(path.read_bytes(), before)
 
 if __name__=='__main__': unittest.main()

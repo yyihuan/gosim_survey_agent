@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "fixture": "synthetic-public-protocol",
+  "actions": [
+    "wait",
+    "wait",
+    "observe",
+    "wait",
+    "finish"
+  ],
+  "responses": 5,
+  "network_attempts": 0,
+  "llm_calls": 0,
+  "scope": "protocol replay; no official simulator or score"
+}

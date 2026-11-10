@@ -1,0 +1,5 @@
+{"protocol_version":"participant-agent-protocol-v4","message_type":"decision_response","decision_sequence":1,"action":"wait","reason":"not initialized","decision_source":"deterministic","duration_seconds":900}
+{"protocol_version":"participant-agent-protocol-v4","message_type":"decision_response","decision_sequence":2,"action":"wait","reason":"daytime: sleep until the next night","until_utc":"2026-01-01T12:00:00Z"}
+{"protocol_version":"participant-agent-protocol-v4","message_type":"decision_response","decision_sequence":3,"action":"observe","pointing":{"alt_deg":70.7359,"az_deg":182.2735},"assignments":{"0":"demo-target"},"duration_seconds":600,"program":"DARK","reason":"1 fibres, program DARK"}
+{"protocol_version":"participant-agent-protocol-v4","message_type":"decision_response","decision_sequence":4,"action":"wait","reason":"bulletin: rain/storm over the whole sky","duration_seconds":300}
+{"protocol_version":"participant-agent-protocol-v4","message_type":"decision_response","decision_sequence":5,"action":"finish","reason":"no observing night left"}

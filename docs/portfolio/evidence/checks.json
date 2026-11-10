@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-11",
+  "python": "3.9.6",
+  "base_commit": "dee21c623e66073bb4523560e4207ed36d1dc9dd",
+  "checks": [
+    {
+      "name": "unit-tests",
+      "command": "python3 -I -B -m unittest discover -s experiments/current/tests",
+      "exit_code": 0
+    },
+    {
+      "name": "demo",
+      "command": "python3 -I -B scripts/demo_offline.py --out docs/portfolio/evidence/demo",
+      "exit_code": 0
+    },
+    {
+      "name": "inherited-config-isolation",
+      "exit_code": 0,
+      "unexpected_trace_created": false
+    },
+    {
+      "name": "existing-output-refused",
+      "exit_code": 2,
+      "expected_exit_code": 2
+    }
+  ],
+  "limits": [
+    "No real model requests or competition platform operations",
+    "No full simulator run",
+    "No independent-model review",
+    "Remote HEAD not confirmed; local remote-tracking base used"
+  ]
+}

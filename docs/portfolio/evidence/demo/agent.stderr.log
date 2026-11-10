@@ -1,0 +1,4 @@
+planner: 1 targets (1 required), 1 nights, llm model=k3 base_url=https://api.kimi.com/coding/v1
+planner: night 2026-01-01 llm advice (forecast call: fell back, bulletin call: fell back) merged avoid=[] duration x1.00
+planner: finished termination_reason=synthetic_demo_end observes=1 reports=0 llm_calls=0
+demo_network_attempts=0

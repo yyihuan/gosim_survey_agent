@@ -1,5 +1,7 @@
 # Documentation index
 
+Public portfolio entry: [English overview](../README.md), [AI-assisted development case](portfolio/ai-collaboration.md), and [fresh reproduction evidence](portfolio/verification.md). Older pages below preserve their historical scope; local-only evidence links may be unavailable in this checkout.
+
 后续 session 先读 [交接状态](session-handoff.md)，再按任务进入以下权威来源。当前主入口采用 2026-10-03 下载的官方 Python 示例；既有v4实验仍按原版本归档。
 
 总体方案已获用户确认，首版模拟数据已经构建，数据与三阶段评价见 [数据集契约](test-datasets.md)。[方案大纲](agent-optimizer-outline.md)和 [前置核对记录](agent-optimizer-decisions.md)继续保留供独立评审，涵盖首版架构和开发节点。研究原理见 [Agent 优化器方法论](agent-optimizer-methodology.md)，具体策略细节仍由历史报告维护。

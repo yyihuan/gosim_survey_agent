@@ -1,5 +1,7 @@
 # Session handoff
 
+2026-11-11 portfolio branch: this branch starts at published baseline `dee21c62`, not the later local main. The [portfolio verification](portfolio/verification.md) records the synthetic demo and reproducibility fixes; production Agent and environment.json are unchanged. Later strategy/predictor branches remain outside this edition. Personal contribution attribution awaits owner confirmation. No push or platform run was performed.
+
 更新时间：2026-10-03。最新完成：用户确认数据方案和模拟开发 → 官方练习卡复测 → 线上测试流程，已构建首版72张模拟卡。全部通过结构、几何、消息一致性校验；6张非冻结代表卡完整离线运行通过。配方、数据用途、信息边界和证据统一见 [数据集契约](test-datasets.md)，原始状态见 [数据清单](../experiments/current/datasets/sim-v1-20261003/manifest.json)，验收见 [acceptance.json](../experiments/current/datasets/sim-v1-20261003/acceptance.json)。没有改变规划算法、调用真实模型或线上提交。冻结组未运行候选；当前仍缺少对同一系统用户的OS访问隔离，天文扩展尚未做历史天气校准。
 
 先前讨论成果保留：在 [方法论](agent-optimizer-methodology.md)基础上，经用户前置核对形成 [方案大纲](agent-optimizer-outline.md)与 [核对记录](agent-optimizer-decisions.md)。原讨论轮只交付大纲；用户后来确认方案并授权数据构建，本轮推进M1，未开展候选策略搜索或独立评审。此前的 Python 环境迁移与完整链路验证仍按下文保留。

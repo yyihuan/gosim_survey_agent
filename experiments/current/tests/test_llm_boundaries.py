@@ -349,7 +349,7 @@ class Boundaries(unittest.TestCase):
         self.assertEqual(p.state.duration_scale, 1.)
 
     def test_constructed_offline_trajectory_matches_frozen_baseline(self):
-        baseline = ROOT / 'experiments/current/development/round-1/baseline-source/agent_core'
+        baseline = Path(__file__).resolve().parent / 'fixtures/pre-hardening'
         modules = {}
         for name in ('llm_client', 'planner'):
             spec = importlib.util.spec_from_file_location('agent_core._t2_baseline_' + name, baseline / (name + '.py'))
