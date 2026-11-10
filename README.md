@@ -24,12 +24,11 @@ bundle later local strategy or predictor branches.
 - **AI-assisted development:** turn questions into bounded tasks, preserve
   experiment and decision records, and verify generated work with executable tests.
 
-The agent builds on the organizers' Python example. Local adaptations include
-offline execution, experiment tooling, and model-boundary hardening; this is not
-a claim to have invented the upstream planner. The public decision record
-documents the project owner's choices about goals and evaluation stages.
-Individual coding ownership and any other human team members have not yet been
-confirmed for this portfolio. See [contribution evidence](docs/portfolio/ai-collaboration.md#roles-and-attribution).
+This is a solo project developed with AI assistance. The project owner completed
+all local development work, including offline execution, experiment tooling,
+and model-boundary hardening, and directed the research goals and evaluation
+stages. The agent builds on the organizers' Python example, whose authorship
+and attribution remain separate. See [contribution evidence](docs/portfolio/ai-collaboration.md#roles-and-attribution).
 
 ## Run in under a minute
 

@@ -71,12 +71,14 @@ The new portfolio material uses relative file links and synthetic inputs. It
 does not include private conversations, real credentials, later experiment logs,
 or hidden task-card truth. Third-party attribution and NOTICE remain in place;
 test copies retain the original provenance. This work does not assign a blanket
-MIT license or settle ownership of every team-authored line.
+MIT license. The owner confirmed on 2026-11-11 that all local development was
+their own; the [contribution statement](ai-collaboration.md#roles-and-attribution)
+now identifies this as a solo project developed with AI assistance. That
+clarification does not change upstream attribution or licensing.
 
 ## What remains unverified
 
 - The exact current remote HEAD and integration with later local branches.
-- Individual human contributions and team membership, pending owner confirmation.
 - Full simulator performance, competition ranking, real-model benefit, and
   deployment on the competition platform.
 - Historical run artifacts omitted from the public repository.

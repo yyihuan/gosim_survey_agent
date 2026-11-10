@@ -96,12 +96,17 @@ environment instead of assuming that local success transfers to a public repo.
 
 ## Roles and attribution
 
-The organizers supplied the simulation, protocol, and example planner. The
-project's local work includes research tooling, adaptations, and the hardening
-change described here. The public decision log supports the owner's direction
-of the project; it does not identify which person manually wrote each line.
-Human team membership and individual implementation ownership remain awaiting
-confirmation. No sole-author or personal competition-result claim is made.
+The project owner confirmed on 2026-11-11 that all local development work was
+their own. This was a solo project developed with AI assistance: the owner
+directed the research and completed the local implementation, including research
+tooling, adaptations, and the hardening change described here. The contribution
+statement is based on that direct confirmation; the decision log, code, and tests
+provide the technical evidence discussed above.
+
+The organizers supplied the simulation, protocol, and example planner. Their
+work remains separately attributed. Solo ownership of the local work does not
+imply that every line was manually typed or that upstream code was authored by
+the project owner. No new competition-result claim follows from this clarification.
 
 This edition contains an AI-assisted documentation and reproducibility pass.
 It has not undergone a separate independent-model review. Organizer materials

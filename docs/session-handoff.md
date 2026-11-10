@@ -1,6 +1,6 @@
 # Session handoff
 
-2026-11-11 portfolio branch: this branch starts at published baseline `dee21c62`, not the later local main. The [portfolio verification](portfolio/verification.md) records the synthetic demo and reproducibility fixes; production Agent and environment.json are unchanged. Later strategy/predictor branches remain outside this edition. Personal contribution attribution awaits owner confirmation. No push or platform run was performed.
+2026-11-11 portfolio branch: this branch starts at published baseline `dee21c62`, not the later local main. The [portfolio verification](portfolio/verification.md) records the synthetic demo and reproducibility fixes; production Agent and environment.json are unchanged. Later strategy/predictor branches remain outside this edition. The owner confirmed all local development was their own; the portfolio now describes a solo project developed with AI assistance and retains organizer attribution. No push or platform run was performed.
 
 更新时间：2026-10-03。最新完成：用户确认数据方案和模拟开发 → 官方练习卡复测 → 线上测试流程，已构建首版72张模拟卡。全部通过结构、几何、消息一致性校验；6张非冻结代表卡完整离线运行通过。配方、数据用途、信息边界和证据统一见 [数据集契约](test-datasets.md)，原始状态见 [数据清单](../experiments/current/datasets/sim-v1-20261003/manifest.json)，验收见 [acceptance.json](../experiments/current/datasets/sim-v1-20261003/acceptance.json)。没有改变规划算法、调用真实模型或线上提交。冻结组未运行候选；当前仍缺少对同一系统用户的OS访问隔离，天文扩展尚未做历史天气校准。
 
